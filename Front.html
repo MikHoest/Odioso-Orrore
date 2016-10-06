@@ -98,7 +98,17 @@ margin: 0px
 </span>
 <br>
 <strong class="choice">Rate our stupid ass restaurant!</strong>
-
+<form action="process.php" method="post">
+    Name    :
+    <input type="text" name="name" size="30"><br/>
+    Email   :
+    <input type="text" name="email" size="30"><br/>
+    Subject :
+    <input type="text" name="subject" size="30"><br/>
+    Comment <br/>
+    <textarea name="message" cols="30" rows="10"></textarea><br/>
+    <input type="submit" name="submit" value="Send Mail" />
+</form>
 
 
 
