@@ -109,6 +109,14 @@
 }
 
 @media (min-width: 1200px) {
+
+  .heading p {
+    font-size: 28;
+    padding-left: 25px;
+
+  }
+
+
   .row {
     margin-left: -30px;
     *zoom: 1;
@@ -898,8 +906,16 @@
 }
 
 @media (max-width: 480px) {
+
+
+  .navbar-fixed-top {
+    padding-left: 10%;
+    background-color: #b11515;
+  }
+
   .nav-collapse {
     -webkit-transform: translate3d(0, 0, 0);
+
   }
   .page-header h1 small {
     display: block;
