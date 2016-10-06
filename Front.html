@@ -13,13 +13,13 @@
             overflow: hidden;
             background-color: #b11515;
             font-family: Verdana;
-            font-size: 28px;
-            text-align: center;
+            font-size: 0px;
+            text-align: right;
         }
 
         li {
-            float: none;
-            horiz-align: center;
+            float: right;
+            horiz-align: left;
             display: inline-block;
 
         }
@@ -42,6 +42,8 @@
 </head>
 <body>
 
+<!-- We should make the other pages based on this one, to make sure the navigation and overall structure is the same. -->
+
 <div class="container" style="
 width: 100%;
 margin: 0px
@@ -54,10 +56,10 @@ margin: 0px
         <img src="picz/notlogo2.jpg" style="height: 135px">
         </a>
     </div>
-    <li><a href="Menu.html" style="float: right"><img src="picz/MENU-MENU.png"></a></li>
-    <li><a href="News.html" style="float: right"><img src="picz/MENU-MENU.png"></a></li>
-    <li><a href="Contacts.html" style="float: right"><img src="picz/MENU-MENU.png"></a></li>
-    <li><a href="Reservations.html" style="float: right"><img src="picz/MENU-MENU.png"></a></li>
+    <li><a href="Menu.html" style="float: inherit"><img src="picz/MENU-MENU.png" ></a></li>
+    <li><a href="News.html" style="float: left"><img src="picz/MENU-NEWS.png"></a></li>
+    <li><a href="Contacts.html" style="float: left"><img src="picz/MENU-CONTACTS.png"></a></li>
+    <li><a href="Reservations.html" style="float: left"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
         </nav>
 
 </ul>
@@ -71,11 +73,11 @@ margin: 0px
 
 <style type="text/css">
     @font-face {
-        font-family: "Itacursive";
-        src: url(fonts/Itacursive.TTF) format("truetype");
+        font-family: "SPOOKYHOUSE";
+        src: url(fonts/SPOOKYHOUSE.TTF) format("truetype");
     }
     p.customfont {
-        font-family: "Itacursive", Verdana, Tahoma;
+        font-family: "SPOOKYHOUSE", Verdana, Tahoma;
     }
 </style>
 <p class="customfont" style="font-size: 28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
