@@ -229,6 +229,11 @@ body {
   background-color: rgb(255, 245, 255);
 }
 
+div {
+  padding-left: 50px;
+  padding-top: 20px;
+  padding-right: 50px;
+
 a {
   color: #0088cc;
   text-decoration: none;
