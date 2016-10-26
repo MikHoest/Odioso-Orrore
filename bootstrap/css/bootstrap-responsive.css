@@ -133,6 +133,12 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 /*SLIDESHOW END*/
 
+.news-section {
+  align-content: center;
+
+}
+
+
 @-ms-viewport {
   width: 200px;
 }
