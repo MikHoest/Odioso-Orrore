@@ -42,14 +42,13 @@
 	}
 if (!empty($message)) {echo "<p>" . $message . "</p>";} ?>
 
-<h2>Please login</h2>
-<form action="" method="post">
-Username:
-<input type="text" name="user" maxlength="30" value="" />
-Password:
-<input type="password" name="pass" maxlength="30" value="" />
-<input type="submit" name="submit" value="Login" />
-</form>
+ <h2>Please login</h2>
+ <form action="Login/login.php" method="post">
+	 <input type="text" name="user" placeholder="Username" maxlength="30" value="" />
+	 <input type="password" name="pass" placeholder="Password" maxlength="30" value="" />
+	 <br>
+	 <input type="submit" name="submit" value="Login" />
+ </form>
 
 
 </body>
