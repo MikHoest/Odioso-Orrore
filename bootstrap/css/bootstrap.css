@@ -226,7 +226,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #8d0200;
-  background-color: rgb(255, 245, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 div {
@@ -829,7 +829,7 @@ ol ul {
 }
 
 li {
-  line-height: 20px;
+  line-height: 40px;
 }
 
 ul.unstyled,

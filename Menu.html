@@ -39,12 +39,43 @@
     </style>
 </head>
 <body>
-<ul>
-    <li><a href="Front.html">HOME</a></li>
-    <li><a href="Menu.html">MENU</a></li>
-    <li><a href="News.html">NEWS</a></li>
-    <li><a href="Contacts.html">CONTACTS</a></li>
-    <li><a href="Reservations.html">RESERVATIONS</a></li>
-</ul>
+<div class="container">
+    <ul class="navbar-fixed-top" id="myTopnav">
+        <div class="col-sm-3">
+            <div class="logo" style="float:left">
+                <a href="Front.html">
+                    <img src="picz/notlogo2.jpg" style="height: 135px">
+                </a>
+            </div>
+        </div>
+        <li><a href="News.html" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
+        <li><a href="Contacts.html" style="float: none"><img src="picz/MENU-CONTACTS.png"></a></li>
+        <li><a href="Reservations.html" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
+        <li><a href="Login/login.php" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
+        <li class="icon">
+            <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">☰</a>
+        </li>
+    </ul>
+
+
+
+</div>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navbar-fixed-top") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar-fixed-top";
+        }
+    }
+</script>
+
+
+<div class="container" style="padding: 10px">
+
+</div>
+
 </body>
 </html>

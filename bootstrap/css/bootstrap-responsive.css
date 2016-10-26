@@ -38,7 +38,7 @@ ul.navbar-fixed-top.responsive {
 }
 
 ul.navbar-fixed-top li a:hover {
-  background-color: #1a1a1a;
+  background-color: #360200;
 }
 
 ul.navbar-fixed-top li.icon {
@@ -64,7 +64,7 @@ body {font-family: Verdana,sans-serif;margin:0}
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: #ffffff;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -114,20 +114,21 @@ body {font-family: Verdana,sans-serif;margin:0}
     -webkit-animation-duration: 3.5s;
     animation-name: fade;
     animation-duration: 3.5s;
+
 }
 
 @-webkit-keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0}
     to {opacity: 1}
 }
 
 @keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0}
     to {opacity: 1}
 }
 
 @media only screen and (max-width: 300px) {
-    .prev, .next,.text {font-size: 11px}
+    .prev, .next,.text {font-size: 10px}
 }
 
 /*SLIDESHOW END*/
@@ -909,17 +910,22 @@ body {font-family: Verdana,sans-serif;margin:0}
   }
 }
 
+/* MOBILE MENU */
+
 @media (max-width: 600px) {
   body {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   ul.navbar-fixed-top {
     background-color: #800004;
   }
 
-  ul.navbar-fixed-top li:not(:first-child) {display: none;}
+  ul.navbar-fixed-top li:not(:first-child) {
+      display: none;
+  }
+
   ul.navbar-fixed-top li.icon {
     float: none;
     align-self: center;
@@ -927,7 +933,10 @@ body {font-family: Verdana,sans-serif;margin:0}
     background-color: #800004;
   }
 
-  ul.navbar-fixed-top.responsive {position: relative;}
+  ul.navbar-fixed-top.responsive {
+      position: relative;
+  }
+
   ul.navbar-fixed-top.responsive li.icon {
     position: absolute;
     right: 0;
@@ -937,6 +946,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   ul.navbar-fixed-top.responsive li {
     float: none;
     display: inline;
+
   }
 
   ul.navbar-fixed-top.responsive li a {
@@ -953,6 +963,9 @@ body {font-family: Verdana,sans-serif;margin:0}
     margin-right: -20px;
     margin-left: -20px;
   }
+
+   /* MOBILE MENU END */
+
   .container-fluid {
     padding: 0;
   }
