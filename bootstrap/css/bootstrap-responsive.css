@@ -934,7 +934,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   }
 
   ul.navbar-fixed-top.responsive {
-      position: relative;
+      position: absolute;
   }
 
   ul.navbar-fixed-top.responsive li.icon {
