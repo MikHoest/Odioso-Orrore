@@ -172,13 +172,7 @@
 </div>
 
 
-<div class="rating" style="float: left; padding-left: 30px;">
-    <span><img src="picz/star1.png" onclick=""></span>
-    <span><img src="picz/star1.png" onclick=""></span>
-    <span><img src="picz/star1.png" onclick=""></span>
-    <span><img src="picz/star1.png" onclick=""></span>
-    <span><img src="picz/star1.png" onclick=""></span>
-</div>
+
 <br>
 <strong class="choice" style="padding-left: 30px;">Rate our stupid ass restaurant!</strong>
 
@@ -186,7 +180,22 @@
 <form action="process.php" method="post">
     <input type="text" style="background-color: #caaea6"  name="name" placeholder="Name" size="30" align="center"><br/>
     <input type="text" style="background-color: #caaea6" name="email" placeholder="Email" size="30" align="right"><br/>
-    <input type="text" style="background-color: #caaea6" name="subject" placeholder="Subject" size="30" align="right"><br/>
+  <!--  <input type="text" style="background-color: #caaea6" name="subject" placeholder="Subject" size="30" align="right"><br/> -->
+
+    <input type="radio" id="1Star" name="star">
+    <input type="radio" id="2Star" name="star">
+    <input type="radio" id="3Star" name="star">
+    <input type="radio" id="4Star" name="star">
+    <input type="radio" id="5Star" name="star">
+
+    <div class="rating" style=" padding-left: 30px;">
+        <span><img src="picz/star1.png" ></span>
+        <span><img src="picz/star1.png" ></span>
+        <span><img src="picz/star1.png" ></span>
+        <span><img src="picz/star1.png" ></span>
+        <span><img src="picz/star1.png" ></span>
+    </div>
+
     <textarea name="message" style="background-color: #caaea6" cols="30" placeholder="Comment" rows="5" align="right"></textarea><br/>
     <input type="submit" name="submit" value="Send Mail" />
 </form>

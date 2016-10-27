@@ -8,8 +8,9 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
-.{
-  font-style: italic;
+input[type="radio"] {
+  width: 200px;
+
 }
 
 .rating {
@@ -1191,11 +1192,10 @@ input[type="color"]:focus,
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 }
 
-input[type="radio"],
 input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
-  *margin-top: 0;
+  margin-top: 0;
   line-height: normal;
 }
 
@@ -1204,7 +1204,6 @@ input[type="image"],
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-input[type="radio"],
 input[type="checkbox"] {
   width: auto;
 }
