@@ -8,24 +8,38 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
-input[type="radio"] {
-  width: 200px;
 
+label > input{
+  visibility: hidden;
+  position: absolute;
+  float: left;
+
+}
+label > input + img{
+  cursor:pointer;
+  border:2px solid transparent;
+}
+label > input:checked + img{
+  background-color: #c43c35;
 }
 
 .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
+  horiz-align: top;
+  transition: 0.2s;
+  floar:left;
+
 }
-.rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1.1em;
+
+.rating:hover {
+  background-color: #4bb1cf;
+  
 }
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-  content: "\2605";
-  position: absolute;
+
+.rating:checked {
+  background-color: #8d0200;
+
 }
 
 .clearfix {
@@ -1132,7 +1146,7 @@ input[type="color"],
 input,
 textarea,
 .uneditable-input {
-  width: 206px;
+  width: auto;
 }
 
 textarea {
@@ -1284,7 +1298,7 @@ textarea::-webkit-input-placeholder {
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
   float: left;
-  margin-left: -20px;
+  margin-left: -40px;
 }
 
 .controls > .radio:first-child,
