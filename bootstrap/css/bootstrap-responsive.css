@@ -1,4 +1,79 @@
 
+/** STAR RATING **/
+
+div.rating-form {
+
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  margin: 4% auto;c
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+
+
+div.stars {
+  width: 100%;
+  max-width: 280px;
+  text-align: left;
+
+}
+
+input.star {
+  display: none;
+}
+
+label.star {
+  float:right;
+  text-align: center;
+  font-size: 46px;
+  color: #800004;
+  transition: all .2s;
+}
+
+input.star:checked ~ label.star:before {
+  content: '★';
+  color: #FD4;
+  transition: all .2s;
+}
+
+input.star:hover ~ label.star:before {
+  content: '★';
+  color: #FD4;
+  transition: all .2s;
+}
+
+input.star-5:checked ~ label.star:before {
+  color: #fff85e;
+}
+
+input.star-4:checked ~ label.star:before {
+  color: #ffe603;
+}
+
+input.star-3:checked ~ label.star:before {
+  color: #ffcc00;
+}
+
+input.star-2:checked ~ label.star:before {
+  color: #ff8a2f;
+}
+
+
+input.star-1:checked ~ label.star:before {
+  color: #e6511b;
+}
+
+label.star:hover {
+  transform: rotate(-360deg) scale(1.3);
+}
+
+label.star:before {
+  content: '★'
+}
+
+/** STAR RATING END **/
 
 .clearfix {
   *zoom: 1;
@@ -111,20 +186,20 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 3.5s;
+    -webkit-animation-duration: 7.5s;
     animation-name: fade;
-    animation-duration: 3.5s;
+    animation-duration: 7.5s;
 
 }
 
 @-webkit-keyframes fade {
     from {opacity: 1}
-    to {opacity: 0}
+    to {opacity: 1}
 }
 
 @keyframes fade {
     from {opacity: 1}
-    to {opacity: 0}
+    to {opacity: 1}
 }
 
 @media only screen and (max-width: 300px) {

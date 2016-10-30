@@ -9,39 +9,6 @@
  */
 
 
-label > input{
-  visibility: hidden;
-  position: absolute;
-  float: left;
-
-}
-label > input + img{
-  cursor:pointer;
-  border:2px solid transparent;
-}
-label > input:checked + img{
-  background-color: #c43c35;
-}
-
-.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-  horiz-align: top;
-  transition: 0.2s;
-  floar:left;
-
-}
-
-.rating:hover {
-  background-color: #4bb1cf;
-  
-}
-
-.rating:checked {
-  background-color: #8d0200;
-
-}
-
 .clearfix {
   *zoom: 1;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Odioso Orrore</title>
@@ -174,57 +174,52 @@
 
 
 <br>
-<strong class="choice" style="padding-left: 30px;">Rate our stupid ass restaurant!</strong>
 
-<div style="padding-left: 30px">
-<form action="process.php" method="post">
+
+
+
+
+<div class="rating-form">
+    <strong class="choice">Rate our stupid ass restaurant!</strong>
+    <br>
+    <form action="process.php" method="post">
     <input type="text" style="background-color: #caaea6"  name="name" placeholder="Name" size="30" align="center"><br/>
     <input type="text" style="background-color: #caaea6" name="email" placeholder="Email" size="30" align="right"><br/>
-  <!--  <input type="text" style="background-color: #caaea6" name="subject" placeholder="Subject" size="30" align="right"><br/> -->
 
-<div class="rating" >
-    <label>
-        <input type="radio" id="1Star" name="star" value="1">
-        <img src="picz/star1.png" style="width: 20px; height: auto;">
-    </label>
+    <div class="stars">
+        <form action>
+            <input class="star star-5" id="star-5" type="radio" name="star" title="★" value="5">
+            <label class="star star-5" for="star-5">
+            </label>
 
-    <label>
-        <input type="radio" id="2Star" name="star" value="2">
-        <img src="picz/star1.png" style="width: 20px; height: auto;">
-    </label>
+            <input class="star star-4" id="star-4" type="radio" name="star" value="4">
+            <label class="star star-4" for="star-4">
+            </label>
 
-    <label>
-        <input type="radio" id="3Star" name="star" value="3">
-        <img src="picz/star1.png" style="width: 20px; height: auto;">
-    </label>
+            <input class="star star-3" id="star-3" type="radio" name="star" value="3">
+            <label class="star star-3" for="star-3">
+            </label>
 
-    <label>
-         <input type="radio" id="4Star" name="star" value="4">
-         <img src="picz/star1.png" style="width: 20px; height: auto;">
-    </label>
+            <input class="star star-2" id="star-2" type="radio" name="star" value="2">
+            <label class="star star-2" for="star-2">
+            </label>
 
-    <label>
-        <input type="radio" id="5Star" name="star" value="5">
-         <img src="picz/star1.png" style="width: 20px; height: auto;">
-    </label>
-</div>
+            <input class="star star-1" id="star-1" type="radio" name="star" value="1">
+            <label class="star star-1" for="star-1">
+            </label>
+        </form>
 
-   <!-- <div class="rating" style=" padding-left: 30px;">
-        <span><img src="picz/star1.png" ></span>
-        <span><img src="picz/star1.png" ></span>
-        <span><img src="picz/star1.png" ></span>
-        <span><img src="picz/star1.png" ></span>
-        <span><img src="picz/star1.png" ></span>
     </div>
 
-
 <br>
+    <!--
     <textarea name="message" style="background-color: #caaea6" cols="30" placeholder="Comment" rows="5" align="right"></textarea><br/>
     -->
-    <input type="submit" name="submit" value="Send Mail" />
+    <input type="submit" name="submit" value="SEND!" />
 </form>
 </div>
 
 </body>
-<footer><p style="margin: 20px">© 2016 | Odioso Orrore</p></footer>
+<br>
+<footer><p style="margin: 20px; float: left;">© 2016 | Odioso Orrore</p></footer>
 </html>
