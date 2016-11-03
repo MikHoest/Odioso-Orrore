@@ -1016,6 +1016,9 @@ body {font-family: Verdana,sans-serif;margin:0}
 
   ul.navbar-fixed-top {
     background-color: #800004;
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
 
   ul.navbar-fixed-top li:not(:first-child) {
@@ -1030,11 +1033,12 @@ body {font-family: Verdana,sans-serif;margin:0}
   }
 
   ul.navbar-fixed-top.responsive {
-      position: absolute;
+      position: fixed;
+      align-self: center;
   }
 
   ul.navbar-fixed-top.responsive li.icon {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
   }

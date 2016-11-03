@@ -21,20 +21,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="bootstrap-responsive.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="1039" column="29" selection-start-line="1039" selection-start-column="29" selection-end-line="1039" selection-end-column="29" />
+              <folding>
+                <marker date="1478179755662" expanded="true" signature="38:119" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3672">
-              <caret line="216" column="3" selection-start-line="216" selection-start-column="3" selection-end-line="216" selection-end-column="3" />
+            <state relative-caret-position="214">
+              <caret line="183" column="33" selection-start-line="183" selection-start-column="33" selection-end-line="183" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Front.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Front.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Front.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
+            <state relative-caret-position="969">
               <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -112,18 +124,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-responsive.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17085">
-              <caret line="1005" column="3" selection-start-line="1005" selection-start-column="3" selection-end-line="1005" selection-end-column="3" />
-              <folding>
-                <marker date="1478174736525" expanded="true" signature="38:119" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -178,12 +178,12 @@
         <option value="$PROJECT_DIR$/Contacts.html" />
         <option value="$PROJECT_DIR$/Rating.html" />
         <option value="$PROJECT_DIR$/bootstrap/css/Navigation.php" />
-        <option value="$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css" />
         <option value="$PROJECT_DIR$/stylesheet.css" />
         <option value="$PROJECT_DIR$/bootstrap/css/bootstrap.css" />
         <option value="$USER_HOME$/Downloads/phpmyadmin (2)" />
         <option value="$PROJECT_DIR$/process.php" />
         <option value="$PROJECT_DIR$/Front.html" />
+        <option value="$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css" />
       </list>
     </option>
   </component>
@@ -198,8 +198,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="216" />
-    <option name="y" value="52" />
+    <option name="x" value="239" />
+    <option name="y" value="53" />
     <option name="width" value="1213" />
     <option name="height" value="768" />
   </component>
@@ -369,15 +369,15 @@
       <workItem from="1475736751093" duration="90000" />
       <workItem from="1475739800017" duration="2265000" />
       <workItem from="1478171945691" duration="3842000" />
-      <workItem from="1478178637988" duration="639000" />
+      <workItem from="1478178637988" duration="1123000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83917000" />
+    <option name="totallyTimeSpent" value="84401000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="216" y="52" width="1213" height="768" extended-state="0" />
+    <frame x="239" y="53" width="1213" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2021721" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -591,16 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17085">
-          <caret line="1005" column="3" selection-start-line="1005" selection-start-column="3" selection-end-line="1005" selection-end-column="3" />
-          <folding>
-            <marker date="1478174736525" expanded="true" signature="38:119" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/phpmyadmin (2)">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -624,14 +614,6 @@
             <element signature="n#style#0;n#img#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3672">
-          <caret line="216" column="3" selection-start-line="216" selection-start-column="3" selection-end-line="216" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -697,7 +679,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Front.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
+        <state relative-caret-position="969">
           <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -719,6 +701,24 @@
             <element signature="n#style#0;n#input#1;n#form#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#form#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="183" column="33" selection-start-line="183" selection-start-column="33" selection-end-line="183" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="1039" column="29" selection-start-line="1039" selection-start-column="29" selection-end-line="1039" selection-end-column="29" />
+          <folding>
+            <marker date="1478179755662" expanded="true" signature="38:119" ph="{...}" />
           </folding>
         </state>
       </provider>
