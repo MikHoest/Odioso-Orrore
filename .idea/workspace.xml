@@ -34,8 +34,8 @@
       <file leaf-file-name="Front.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Front.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-993">
-              <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+            <state relative-caret-position="251">
+              <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -198,8 +198,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="208" />
-    <option name="y" value="91" />
+    <option name="x" value="216" />
+    <option name="y" value="52" />
     <option name="width" value="1213" />
     <option name="height" value="768" />
   </component>
@@ -369,15 +369,15 @@
       <workItem from="1475736751093" duration="90000" />
       <workItem from="1475739800017" duration="2265000" />
       <workItem from="1478171945691" duration="3842000" />
-      <workItem from="1478178637988" duration="305000" />
+      <workItem from="1478178637988" duration="639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83583000" />
+    <option name="totallyTimeSpent" value="83917000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="208" y="91" width="1213" height="768" extended-state="0" />
+    <frame x="216" y="52" width="1213" height="768" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2021721" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -697,8 +697,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Front.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-993">
-          <caret line="95" column="42" selection-start-line="95" selection-start-column="42" selection-end-line="95" selection-end-column="42" />
+        <state relative-caret-position="251">
+          <caret line="57" column="21" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
