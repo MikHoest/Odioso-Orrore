@@ -1,8 +1,8 @@
 <?php
     $mymail = "frid4463@easv365.dk";
     $name = $_POST["name"];
-    $email = $_POST["email"];
     $subject = $_POST["subject"];
+    $email = $_POST["email"];
     $message = $_POST["message"];
 
     if ($_POST["submit"])
@@ -12,3 +12,5 @@
         echo "Thanks for your E-mail $name!";
     }
 ?>
+
+
