@@ -33,14 +33,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Front.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Front.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Front.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
+            <state relative-caret-position="234">
+              <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
               <folding>
-                <element signature="e#2880#2888#1" expanded="true" />
-                <element signature="e#2937#2945#1" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2877#2885#1" expanded="true" />
+                <element signature="e#2934#2942#1" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -69,11 +72,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news_connect.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news_connect.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news_connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="390">
+              <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+              <folding>
+                <element signature="e#6#744#0#PHP" expanded="true" />
+                <marker date="1478521879761" expanded="true" signature="934:952" ph="SELECT * FRO... news" />
+                <marker date="1478521879761" expanded="true" signature="1131:1149" ph="SELECT * FRO... news" />
+                <marker date="1478521879761" expanded="true" signature="1482:1562" ph="INSERT INTO news... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../apps/phpmyadmin4.6.4/config.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,9 +158,10 @@
         <option value="$PROJECT_DIR$/Login.html" />
         <option value="$PROJECT_DIR$/Contacts.html" />
         <option value="$PROJECT_DIR$/Reservations.html" />
-        <option value="$PROJECT_DIR$/Front.html" />
         <option value="$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css" />
         <option value="$PROJECT_DIR$/news_connect.php" />
+        <option value="$PROJECT_DIR$/../../apps/phpmyadmin4.6.4/config.inc.php" />
+        <option value="$PROJECT_DIR$/Front.html" />
       </list>
     </option>
   </component>
@@ -157,10 +176,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="150" />
-    <option name="y" value="24" />
-    <option name="width" value="869" />
-    <option name="height" value="436" />
+    <option name="x" value="449" />
+    <option name="y" value="137" />
+    <option name="width" value="968" />
+    <option name="height" value="723" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -330,18 +349,18 @@
       <workItem from="1478171945691" duration="3842000" />
       <workItem from="1478178637988" duration="1648000" />
       <workItem from="1478456480212" duration="814000" />
-      <workItem from="1478504983954" duration="3770000" />
+      <workItem from="1478504983954" duration="11300000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89510000" />
+    <option name="totallyTimeSpent" value="97040000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="150" y="24" width="869" height="436" extended-state="0" />
+    <frame x="449" y="137" width="968" height="723" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22039859" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.197479" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776934" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -376,18 +395,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Front.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-          <folding>
-            <element signature="e#2880#2888#1" expanded="true" />
-            <element signature="e#2937#2945#1" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Reservations.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -646,18 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Front.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="97" column="44" selection-start-line="97" selection-start-column="44" selection-end-line="97" selection-end-column="44" />
-          <folding>
-            <element signature="e#2880#2888#1" expanded="true" />
-            <element signature="e#2937#2945#1" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3536">
@@ -670,9 +665,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/news_connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="390">
+          <caret line="82" column="43" selection-start-line="82" selection-start-column="43" selection-end-line="82" selection-end-column="43" />
+          <folding>
+            <element signature="e#6#744#0#PHP" expanded="true" />
+            <marker date="1478521879761" expanded="true" signature="934:952" ph="SELECT * FRO... news" />
+            <marker date="1478521879761" expanded="true" signature="1131:1149" ph="SELECT * FRO... news" />
+            <marker date="1478521879761" expanded="true" signature="1482:1562" ph="INSERT INTO news... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../apps/phpmyadmin4.6.4/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Front.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="48" column="62" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2877#2885#1" expanded="true" />
+            <element signature="e#2934#2942#1" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
