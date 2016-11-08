@@ -68,13 +68,13 @@
       <file leaf-file-name="theNews.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/theNews.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="200" column="202" selection-start-line="200" selection-start-column="202" selection-end-line="200" selection-end-column="202" />
+            <state relative-caret-position="526">
+              <caret line="208" column="6" selection-start-line="114" selection-start-column="0" selection-end-line="213" selection-end-column="7" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1478611659358" expanded="true" signature="4972:4990" ph="SELECT * FRO... news" />
-                <marker date="1478611659358" expanded="true" signature="5276:5313" ph="..." />
-                <marker date="1478611659358" expanded="true" signature="5368:5405" ph="..." />
+                <marker date="1478611763420" expanded="true" signature="4972:4990" ph="SELECT * FRO... news" />
+                <marker date="1478611763420" expanded="true" signature="5276:5313" ph="..." />
+                <marker date="1478611763420" expanded="true" signature="5368:5405" ph="..." />
               </folding>
             </state>
           </provider>
@@ -388,12 +388,12 @@
       <workItem from="1478504983954" duration="12606000" />
       <workItem from="1478589712721" duration="4138000" />
       <workItem from="1478607576013" duration="474000" />
-      <workItem from="1478611423384" duration="276000" />
+      <workItem from="1478611423384" duration="425000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103234000" />
+    <option name="totallyTimeSpent" value="103383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -705,13 +705,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/theNews.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="200" column="202" selection-start-line="200" selection-start-column="202" selection-end-line="200" selection-end-column="202" />
+        <state relative-caret-position="526">
+          <caret line="208" column="6" selection-start-line="114" selection-start-column="0" selection-end-line="213" selection-end-column="7" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1478611659358" expanded="true" signature="4972:4990" ph="SELECT * FRO... news" />
-            <marker date="1478611659358" expanded="true" signature="5276:5313" ph="..." />
-            <marker date="1478611659358" expanded="true" signature="5368:5405" ph="..." />
+            <marker date="1478611763420" expanded="true" signature="4972:4990" ph="SELECT * FRO... news" />
+            <marker date="1478611763420" expanded="true" signature="5276:5313" ph="..." />
+            <marker date="1478611763420" expanded="true" signature="5368:5405" ph="..." />
           </folding>
         </state>
       </provider>
