@@ -184,7 +184,7 @@
     </ul>
 </div>
 
-<div style="padding-left:50px; font-size: 16px;">
+<div style="align-content: center; font-size: 16px;">
 <?php
 $db = mysqli_connect('localhost','root','12345','news')
 or die('Error connecting to MySQL server.');
@@ -196,9 +196,15 @@ $result = mysqli_query($db, $query);
 $row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {
-    echo $row['title'] . ' ' . $row['description'] . ': ' . $row['date'] .'<br />';
+    $title=$row['title'];
+    $description=$row['description'];
+    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<br>";
+    //echo $row['title'] . ' ' . $row['description'] . ': ' . $row['date'] .'<br />';
 }
+
 ?>
+
+</div>
 <div id="footer">
     <p>© 2016 | Odioso Orrore</p>
 </div>
