@@ -174,7 +174,7 @@
 </head>
 <body>
 
-<div id="header">
+<div id="content "id="header">
     <h1>Odioso Orrore NEWS</h1>
 </div>
 
