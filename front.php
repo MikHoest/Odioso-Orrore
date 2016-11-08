@@ -45,7 +45,7 @@ ul
     <ul class="navbar-fixed-top" id="myTopnav">
     <div class="col-sm-3">
         <div class="logo" style="float:left">
-            <a href="Front.html">
+            <a href="front.php">
                 <img src="picz/Logo1.png" style="width: 160px;">
             </a>
         </div>
@@ -151,6 +151,22 @@ ul
 
 
 
+<?php
+$db = mysqli_connect('localhost','root','12345','news')
+or die('Error connecting to MySQL server.');
+
+$query = "SELECT * FROM news LIMIT 2";
+mysqli_query($db, $query) or die('Error querying database.');
+
+$result = mysqli_query($db, $query);
+$row = mysqli_fetch_array($result);
+
+while ($row = mysqli_fetch_array($result)) {
+    $title=$row['title'];
+    $description=$row['description'];
+    echo "<div id='content' align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<br>";
+}
+?>
    </div>
 
    <div class="daily-special" >

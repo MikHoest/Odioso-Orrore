@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,7 +50,7 @@
                 </a>
             </div>
         </div>
-        <li><a href="Front.html" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
+        <li><a href="front.php" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
         <li><a href="Menu.html" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
         <li><a href="Reservations.html" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
         <li><a href="Login.html" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>

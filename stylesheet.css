@@ -87,3 +87,9 @@ div.footer {
     padding-top: 30pt;
 
 }
+div#content
+{
+    margin-left: 25%;
+    padding: 5px;
+    background-color: #b81515;
+}
