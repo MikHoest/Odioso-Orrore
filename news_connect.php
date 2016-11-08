@@ -1,6 +1,6 @@
 <?php
 
-
+//UNUSED just for funsies
 $mysqli = new mysqli("localhost", "root", "12345", "news");
 if ($mysqli->connect_errno) {
     echo "Failed to connect to Database: " . $mysqli->connect_error;
@@ -41,11 +41,9 @@ try {
     echo "Created successfullyferfdjfnsjf";
 
 }
-
 catch (PDOException $e){
     echo "Error: " . $e->getMessage();
 }
-
 $conn = null;
 /*
 $sql = $conn->prepare("INSERT INTO news (title, description, date) VALUES (?,?,?)");
