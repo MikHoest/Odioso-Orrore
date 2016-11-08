@@ -65,25 +65,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news_connect.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="news_connect.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/news_connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state relative-caret-position="150">
+              <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
               <folding>
-                <marker date="1478551547553" expanded="true" signature="195:213" ph="SELECT * FRO... news" />
-                <marker date="1478551547553" expanded="true" signature="392:410" ph="SELECT * FRO... news" />
-                <marker date="1478551547553" expanded="true" signature="743:823" ph="INSERT INTO news... " />
+                <marker date="1478601902634" expanded="true" signature="195:213" ph="SELECT * FRO... news" />
+                <marker date="1478601902634" expanded="true" signature="392:410" ph="SELECT * FRO... news" />
+                <marker date="1478601902634" expanded="true" signature="743:823" ph="INSERT INTO news... " />
+                <marker date="1478601902634" expanded="true" signature="1227:1286" ph="INSERT INTO news... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="News.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="News.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/News.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+            <state relative-caret-position="424">
+              <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -138,12 +139,12 @@
         <option value="$PROJECT_DIR$/Login.html" />
         <option value="$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css" />
         <option value="$PROJECT_DIR$/../../apps/phpmyadmin4.6.4/config.inc.php" />
-        <option value="$PROJECT_DIR$/news_connect.php" />
         <option value="$PROJECT_DIR$/Front.html" />
-        <option value="$PROJECT_DIR$/News.html" />
         <option value="$PROJECT_DIR$/Menu.html" />
         <option value="$PROJECT_DIR$/Contacts.html" />
         <option value="$PROJECT_DIR$/Reservations.html" />
+        <option value="$PROJECT_DIR$/News.html" />
+        <option value="$PROJECT_DIR$/news_connect.php" />
       </list>
     </option>
   </component>
@@ -158,10 +159,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="178" />
-    <option name="y" value="65" />
-    <option name="width" value="1016" />
-    <option name="height" value="723" />
+    <option name="x" value="344" />
+    <option name="y" value="58" />
+    <option name="width" value="996" />
+    <option name="height" value="755" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -406,18 +407,18 @@
       <workItem from="1478178637988" duration="1648000" />
       <workItem from="1478456480212" duration="814000" />
       <workItem from="1478504983954" duration="12606000" />
-      <workItem from="1478589712721" duration="3388000" />
+      <workItem from="1478589712721" duration="4138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101734000" />
+    <option name="totallyTimeSpent" value="102484000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="178" y="65" width="1016" height="723" extended-state="0" />
+    <frame x="344" y="58" width="996" height="755" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.194" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19795918" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736155" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -717,14 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="339">
@@ -737,22 +730,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/news_connect.php">
+    <entry file="file://$PROJECT_DIR$/Menu.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding>
-            <marker date="1478551547553" expanded="true" signature="195:213" ph="SELECT * FRO... news" />
-            <marker date="1478551547553" expanded="true" signature="392:410" ph="SELECT * FRO... news" />
-            <marker date="1478551547553" expanded="true" signature="743:823" ph="INSERT INTO news... " />
-          </folding>
+        <state relative-caret-position="323">
+          <caret line="59" column="9" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/News.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+        <state relative-caret-position="424">
+          <caret line="135" column="0" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -765,6 +754,19 @@
             <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#2;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/news_connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+          <folding>
+            <marker date="1478601902634" expanded="true" signature="195:213" ph="SELECT * FRO... news" />
+            <marker date="1478601902634" expanded="true" signature="392:410" ph="SELECT * FRO... news" />
+            <marker date="1478601902634" expanded="true" signature="743:823" ph="INSERT INTO news... " />
+            <marker date="1478601902634" expanded="true" signature="1227:1286" ph="INSERT INTO news... " />
           </folding>
         </state>
       </provider>

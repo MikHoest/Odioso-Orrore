@@ -47,3 +47,10 @@ catch (PDOException $e){
 }
 
 $conn = null;
+
+$sql = $conn->prepare("INSERT INTO news (title, description, area) VALUES (? ,?,?)");
+
+$sql->bindParam(1, $title);
+$sql->bindParam(2, $description);
+$sql->bindParam(3, $date);
+$sql->execute();
