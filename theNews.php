@@ -151,8 +151,8 @@
 
         div#content
         {
-            margin: 5px;
-            padding: 10px;
+            margin-left: 25%;
+            padding: 5px;
             background-color: #b81515;
         }
 
@@ -184,7 +184,7 @@
     </ul>
 </div>
 
-<div style="align-content: center; font-size: 16px;">
+<div id="content" style="align-content: center; font-size: 16px; max-width: 800px">
 <?php
 $db = mysqli_connect('localhost','root','12345','news')
 or die('Error connecting to MySQL server.');
