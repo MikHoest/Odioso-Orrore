@@ -1,18 +1,18 @@
 <?php
 
 
-$mysqli = new mysqli("localhost:8080", "root", "", "news");
+$mysqli = new mysqli("localhost", "root", "12345", "news");
 if ($mysqli->connect_errno) {
     echo "Failed to connect to Database: " . $mysqli->connect_error;
 }
 
 $query = $mysqli->query("SELECT * FROM news");
 $row = $query->fetch_assoc();
-echo $row['news'];
+echo $row['title'];
 
 $user="root";
-$pass="";
-    $DBH = new PDO('mysql:host=localhost:8080;dbname=news', $user, $pass);
+$pass="12345";
+    $DBH = new PDO('mysql:host=localhost;dbname=news', $user, $pass);
     foreach ($DBH->query('SELECT * FROM news') as $row) {
         echo $row[1];
     }
@@ -28,7 +28,7 @@ try {
     $conn = new PDO("mysql:host=$servername;dbname=$db", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-    $stmt = $conn->prepare("INSERT INTO news (title, description, area) VALUES (:title, :description, :date)");
+    $stmt = $conn->prepare("INSERT INTO news (title, description, date) VALUES (:title, :description, :date)");
     $stmt->bindParam(':title', $title);
     $stmt->bindParam(':description', $description);
     $stmt->bindParam(':date', $date);
@@ -47,10 +47,10 @@ catch (PDOException $e){
 }
 
 $conn = null;
-
-$sql = $conn->prepare("INSERT INTO news (title, description, area) VALUES (? ,?,?)");
+/*
+$sql = $conn->prepare("INSERT INTO news (title, description, date) VALUES (?,?,?)");
 
 $sql->bindParam(1, $title);
 $sql->bindParam(2, $description);
 $sql->bindParam(3, $date);
-$sql->execute();
+$sql->execute(); */
