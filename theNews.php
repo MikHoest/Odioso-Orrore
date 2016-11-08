@@ -183,6 +183,8 @@
         <li>News</li>
     </ul>
 </div>
+
+<div style="padding-left:50px; font-size: 16px;">
 <?php
 $db = mysqli_connect('localhost','root','12345','news')
 or die('Error connecting to MySQL server.');
