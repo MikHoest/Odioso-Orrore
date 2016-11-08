@@ -13,7 +13,7 @@ div.rating-form {
 
 div.stars {
   width: 100%;
-  max-width: 270px;
+  max-width: 275px;
   text-align: left;
 }
 
@@ -24,61 +24,61 @@ input.star {
 label.star {
   float:right;
   text-align: center;
-  font-size: 46px;
-  color: #800004;
+  font-size: 40px;
+  color: #000000;
   transition: all .2s;
 }
 
 input.star:checked ~ label.star:before {
-  content: '★';
+  content: '☠;
   color: #FD4;
   transition: all .2s;
 }
 
 input.star:hover ~ label.star:before {
-  content: '★';
-  color: #FD4;
+  content: '☠';
+  color: #436d7a;
   transition: all .2s;
 }
 
 input.star-5:checked ~ label.star:before {
-  color: #fff85e;
+  color: #dd0f03;
 }
 
 input.star-5:hover ~ label.star:before {
-    color: #fff85e;
+    color: #dd0f03;
 }
 
 input.star-4:checked ~ label.star:before {
-  color: #ffe92c;
+  color: #ac2e28;
 }
 
 input.star-4:hover ~ label.star:before {
-    color: #ffe92c;
+    color: #ac2e28;
 }
 
 input.star-3:checked ~ label.star:before {
-  color: #ffcc00;
+  color: #8e453b;
 }
 
 input.star-3:hover ~ label.star:before {
-    color: #ffcc00;
+    color: #8e453b;
 }
 
 input.star-2:checked ~ label.star:before {
-  color: #ff8a2f;
+  color: #825b5f;
 }
 
 input.star-2:hover ~ label.star:before {
-    color: #ff8a2f;
+    color: #825b5f;
 }
 
 input.star-1:checked ~ label.star:before {
-  color: #e6511b;
+  color: #434344;
 }
 
 input.star-1:hover ~ label.star:before {
-    color: #e6511b;
+    color: #434344;
 }
 
 label.star:hover {
@@ -86,7 +86,7 @@ label.star:hover {
 }
 
 label.star:before {
-  content: '★'
+  content: '☠'
 }
 
 /** STAR RATING END **/
