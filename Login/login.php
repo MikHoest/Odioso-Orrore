@@ -3,7 +3,7 @@
 <?php require_once("include/functions.php"); ?>
 <?php
 		if (logged_in()) {
-		redirect_to("frontpage.php");
+		redirect_to("front.php");
 	}
  ?>
  
@@ -19,7 +19,7 @@
 		$username = trim(mysqli_real_escape_string($connection, $_POST['user']));
 		$password = trim(mysqli_real_escape_string($connection,$_POST['pass']));
 
-		$query = "SELECT id, user, pass FROM users WHERE user = '{$username}' LIMIT 1";
+		$query = "SELECT user, pass FROM login WHERE user == '{$username}' LIMIT 1";
 		$result = mysqli_query($connection, $query);
 			
 			if (mysqli_num_rows($result) == 1) {
@@ -29,18 +29,25 @@
                 if(password_verify($password, $found_user['pass'])){
 				    $_SESSION['user_id'] = $found_user['id'];
 				    $_SESSION['user'] = $found_user['user'];
-				    redirect_to("frontpage.php");
+				    redirect_to("front.php");
 			} else {
 				// username/password combo was not found in the database
 				$message = "Username/password combination incorrect.<br />
 					Please make sure your caps lock key is off and try again.";
-			}}
-	} else { // Form has not been submitted.
-		if (isset($_GET['logout']) && $_GET['logout'] == 1) {
+			}
+		}
+	} else
+	    { // Form has not been submitted.
+		if (isset($_GET['logout']) && $_GET['logout'] == 1)
+		{
 			$message = "You are now logged out.";
 		} 
 	}
-if (!empty($message)) {echo "<p>" . $message . "</p>";} ?>
+if (!empty($message))
+{
+    echo "<p>" . $message . "</p>";
+}
+?>
 
  <h2>Please login</h2>
  <form action="Login/login.php" method="post">
@@ -49,8 +56,10 @@ if (!empty($message)) {echo "<p>" . $message . "</p>";} ?>
 	 <br>
 	 <input type="submit" name="submit" value="Login" />
  </form>
-
-
+ <h2>New User</h2>
+ <form action="Login/newuser.php" method="post">
+	 <input type="submit" name="submit" value="CREATE" />
+ </form>
 </body>
 </html>
 <?php
