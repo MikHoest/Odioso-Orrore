@@ -57,7 +57,7 @@ ul
     <li><a href="Login.html" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
     <li class="icon">
         <a href="javascript:void(0)" style="font-size:30px;" onclick="myFunction()">
-            <p class="customfont"> ☰Navigation☰ </p>
+            <p class="customfont"> ☰    ☰ </p>
         </a>
 
     </li>

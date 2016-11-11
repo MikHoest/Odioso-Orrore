@@ -203,7 +203,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 3s;
-    animation-name: fade;
+    animation-name: cf3FadeInOut;
     animation-duration: 3s;
 }
 
