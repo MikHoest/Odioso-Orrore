@@ -10,6 +10,6 @@
 </head>
 
 <body>
-<h1 align="center">Welcome to the backend</h1>
+<h1 align="center">Welcome to the News section</h1>
 </body>
 </html>

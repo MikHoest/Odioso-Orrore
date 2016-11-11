@@ -40,9 +40,6 @@ if (!empty($message))
 {
     echo "<p>" . $message . "</p>";
 }
-echo $_SESSION['user_id'];
-echo $_SESSION['user'];
-
 
 ?>
 <!DOCTYPE html>
