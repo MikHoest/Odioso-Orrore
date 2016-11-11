@@ -55,7 +55,7 @@ ul
     <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
     <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
     <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
-    <li><a href="Login.html" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
+    <li><a href="login.php" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
     <li class="icon">
         <a href="javascript:void(0)" style="font-size:30px;" onclick="myFunction()">
             <p class="customfont"> ☰    ☰ </p>
@@ -170,9 +170,10 @@ while ($row = mysqli_fetch_array($result)) {
 ?>
    </div>
 
+
    <div class="daily-special" >
 
-       <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000">The Daily Special!</a></p>
+       <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
        <form>
 
        </form>

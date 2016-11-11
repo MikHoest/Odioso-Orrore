@@ -16,11 +16,13 @@
  <?php
 	// START FORM PROCESSING
 	if (isset($_POST['submit'])) { // Form has been submitted.
-		$username = trim(mysqli_real_escape_string($connection, $_POST['user']));
-		$password = trim(mysqli_real_escape_string($connection,$_POST['pass']));
+		$username = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['user'])));
+		$password = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['pass'])));
 
-		$query = "SELECT user, pass FROM login WHERE user == '{$username}' LIMIT 1";
-		$result = mysqli_query($connection, $query);
+
+		$query = "SELECT user, pass FROM users WHERE user = '{$username}' LIMIT 1";
+		echo $query;
+        $result = mysqli_query($connection, $query);
 			
 			if (mysqli_num_rows($result) == 1) {
 				// username/password authenticated
@@ -29,7 +31,7 @@
                 if(password_verify($password, $found_user['pass'])){
 				    $_SESSION['user_id'] = $found_user['id'];
 				    $_SESSION['user'] = $found_user['user'];
-				    redirect_to("front.php");
+				    redirect_to("../front.php");
 			} else {
 				// username/password combo was not found in the database
 				$message = "Username/password combination incorrect.<br />
@@ -50,7 +52,7 @@ if (!empty($message))
 ?>
 
  <h2>Please login</h2>
- <form action="Login/login.php" method="post">
+ <form action="" method="post">
 	 <input type="text" name="user" placeholder="Username" maxlength="30" value="" />
 	 <input type="password" name="pass" placeholder="Password" maxlength="30" value="" />
 	 <br>

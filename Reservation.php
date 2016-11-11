@@ -52,7 +52,7 @@
         <li><a href="front.php" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
         <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
         <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
-        <li><a href="Login.html" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
+        <li><a href="login.php" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
         <li class="icon">
             <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()"> ☰Navigation☰ </a>
         </li>
