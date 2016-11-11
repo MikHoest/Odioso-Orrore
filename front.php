@@ -51,12 +51,8 @@ ul
                 </a>
             </div>
         </div>
-<<<<<<< HEAD
-    </div>
-    <li><a class="active" href="front.php">Home</a></li>
-=======
-    <li><a class="active" href="Front.html">Home</a></li>
->>>>>>> origin/master
+        
+        <li><a class="active" href="front.php">Home</a></li>
     <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
     <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
     <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
