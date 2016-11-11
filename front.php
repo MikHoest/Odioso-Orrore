@@ -175,9 +175,23 @@ while ($row = mysqli_fetch_array($result)) {
    <div class="daily-special" >
 
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
-       <form>
+       <?php
+       $db = mysqli_connect('localhost','root','12345','menu')
+       or die('Error connecting to MySQL server.');
 
-       </form>
+       $query = "SELECT * FROM menuitems LIMIT 2";
+       mysqli_query($db, $query) or die('Error querying database.');
+
+       $result = mysqli_query($db, $query);
+       $row = mysqli_fetch_array($result);
+
+       while ($row = mysqli_fetch_array($result)) {
+           $mainCourse=$row['mainCourse'];
+           $ingredients=$row['ingredients'];
+           echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<hr>";
+       }
+
+       ?>
 
    </div>
    <br>

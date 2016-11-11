@@ -190,7 +190,7 @@ $row = mysqli_fetch_array($result);
 while ($row = mysqli_fetch_array($result)) {
     $mainCourse=$row['mainCourse'];
     $ingredients=$row['ingredients'];
-    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $foodItem. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<hr>";
+    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<hr>";
 }
 
 ?>

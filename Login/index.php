@@ -33,8 +33,8 @@ switch ($page)
  case "newNews";
   include ("newNews.php");
   break;
- case "content";
-  include ("content.php");
+ case "";
+  include ("");
   break;
 }
 

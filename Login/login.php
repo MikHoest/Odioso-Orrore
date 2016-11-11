@@ -3,7 +3,7 @@
 <?php require_once("include/functions.php"); ?>
 <?php
 		if (logged_in()) {
-		redirect_to("front.php");
+		redirect_to("../front.php");
 	}
 	// START FORM PROCESSING
 	if (isset($_POST['submit'])) { // Form has been submitted.
