@@ -149,7 +149,7 @@
 <div id ="setup">
     <div class="restaurant">
         <?php
-        require_once ('connect.php');
+        require_once ('restaurantReservation/connect.php');
 
         $display = "SELECT * FROM tables";
         $show_data = mysqli_query($conn, $display) or die ("query error");
