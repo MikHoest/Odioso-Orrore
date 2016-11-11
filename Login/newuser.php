@@ -2,7 +2,7 @@
 require_once("include/session.php");
 require_once("include/connection.php");
 require_once("include/functions.php");
-//confirm_logged_in();
+confirm_logged_in();
 ?>
 
 <html>
@@ -33,6 +33,8 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 
 if (!empty($message)) {echo "<p>" . $message . "</p>";}
 ?>
+
+
 <h2>Create New User</h2>
 
 <form action="" method="post">
