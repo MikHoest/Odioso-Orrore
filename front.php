@@ -44,13 +44,13 @@ ul
 
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
-    <div class="col-sm-3">
-        <div class="logo" style="float:left">
-            <a href="front.php">
-                <img src="picz/Logo1.png" style="width: 160px;">
-            </a>
+        <div class="col-sm-3">
+            <div class="logo" style="float:left">
+                <a href="front.php">
+                    <img src="picz/Logo1.png" style="width: 160px;">
+                </a>
+            </div>
         </div>
-    </div>
     <li><a class="active" href="Front.html">Home</a></li>
     <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
     <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
