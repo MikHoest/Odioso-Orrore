@@ -147,7 +147,7 @@ ul
 
    <div class="news-section" >
 
-       <p class="customfont" style="font-size: 28px; padding: 30px;">Read the latest from Odioso Orrore!</p>
+       <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='theNews.php'>Read the latest from Odioso Orrore!</a></p>
 
 
 
@@ -171,7 +171,7 @@ while ($row = mysqli_fetch_array($result)) {
 
    <div class="daily-special" >
 
-       <p class="customfont" style="font-size: 28px; padding: 30px;">The Daily Special!</p>
+       <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php'>The Daily Special!</a></p>
        <form>
 
        </form>
