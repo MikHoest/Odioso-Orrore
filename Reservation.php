@@ -42,28 +42,28 @@
 <body>
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
-<<<<<<< HEAD
         <div class="col-sm-3">
             <div class="logo" style="float:left">
                 <a href="front.php">
                     <img src="picz/notlogo2.jpg" style="height: 135px">
                 </a>
             </div>
-=======
     <div class="col-sm-3">
         <div class="logo" style="float:left">
             <a href="front.php">
                 <img src="picz/Logo1.png" style="width: 160px;">
             </a>
->>>>>>> origin/master
         </div>
     </div>
+            <li><a class="active" href="front.php">Home</a></li>
         <li><a href="front.php" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
         <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
         <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
         <li><a href="Login/login.php" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
         <li class="icon">
-            <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()"> ☰Navigation☰ </a>
+            <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
+                <p class="customfont"> ☰    ☰ </p>
+            </a>
         </li>
     </ul>
 

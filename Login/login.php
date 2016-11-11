@@ -93,6 +93,7 @@ if (!empty($message))
                 </a>
             </div>
         </div>
+        <li><a class="active" href="front.php">Home</a></li>
         <li><a href="../front.php" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
         <li><a href="../Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
         <li><a href="../theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
