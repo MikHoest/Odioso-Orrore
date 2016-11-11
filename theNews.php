@@ -51,8 +51,8 @@
             </div>
         </div>
         <li><a href="front.php" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
-        <li><a href="Menu.html" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
-        <li><a href="Reservations.html" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
+        <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
+        <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
         <li><a href="Login.html" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
         <li class="icon">
             <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()"> ☰Navigation☰ </a>

@@ -1,13 +1,14 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Menu</title>
+    <title>Reservations</title>
     <link rel="stylesheet" type="text/css" href="bootstrap" />
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <style>
-ul {
-    list-style-type: none;
+        ul {
+            list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
@@ -18,27 +19,26 @@ ul {
         }
 
         li {
-    float: none;
-    display: inline-block;
+            float: none;
+            display: inline-block;
 
-}
+        }
 
         li a {
-    display: inline-block;
-    color: #fefffd;
-    padding: 0px;
+            display: inline-block;
+            color: #fefffd;
+            padding: 0px;
         }
 
         li a:hover {
 
-    background-color: rgba(255, 104, 107, 0);
+            background-color: rgba(255, 104, 107, 0);
             color: rgba(177, 21, 21, 0.8);
             font-style: normal;
             text-decoration: none;
         }
     </style>
 </head>
-
 <body>
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
@@ -50,15 +50,13 @@ ul {
             </div>
         </div>
         <li><a href="front.php" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
+        <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
         <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
-        <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
         <li><a href="Login.html" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
         <li class="icon">
             <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()"> ☰Navigation☰ </a>
         </li>
     </ul>
-
-
 
 </div>
 <div class="slideshow-container">
@@ -129,68 +127,23 @@ ul {
         }
     }
 </script>
-<div class="rating-form">
-    <strong class="choice"><h2>Rate This Dish!</h2></strong>
 
-    <form action="process.php" method="post">
-        <input type="text" style="background-color: #caaea6"  name="name" placeholder="Name" size="30" align="center"><br/>
-        <input type="text" style="background-color: #caaea6" name="email" placeholder="Email" size="30" align="right"><br/>
 
-        <div class="stars">
-            <form action>
-
-                <input class="star star-5" id="star-5" type="radio" name="star" value="5">
-                <label class="star star-5" for="star-5">
-                </label>
-
-                <input class="star star-4" id="star-4" type="radio" name="star" value="4">
-                <label class="star star-4" for="star-4">
-                </label>
-
-                <input class="star star-3" id="star-3" type="radio" name="star" value="3">
-                <label class="star star-3" for="star-3">
-                </label>
-
-                <input class="star star-2" id="star-2" type="radio" name="star" value="2">
-                <label class="star star-2" for="star-2">
-                </label>
-
-                <input class="star star-1" id="star-1" type="radio" name="star" value="1">
-                <label class="star star-1" for="star-1">
-                </label>
-
-            </form>
-        </div>
-        <br>
-
-        <textarea class="nooResize" name="message" style="background-color: #caaea6" cols="30" placeholder= "Comment" rows="5" align="right"></textarea><br/>
-        <style>
-textarea.nooResize
-            {
-                resize: none;
-            }
-        </style>
-        <input type="submit" name="submit" value="SEND!" />
-    </form>
+<style type="text/css">
+    @font-face {
+        font-family: "SPOOKYHOUSE";
+        src: url(fonts/SPOOKYHOUSE.TTF) format("truetype");
+    }
+    p.customfont {
+        font-family: "SPOOKYHOUSE", Verdana, Tahoma;
+    }
+</style>
+<div class="heading" style="padding-top: 190px;">
+    <p class="customfont" style="font-size: 28px; padding: 30px;">Reserve your table here!
+    </p>
 </div>
 
-<?php
-$db = mysqli_connect('localhost','root','12345','menu')
-or die('Error connecting to MySQL server.');
 
-$query = "SELECT * FROM menu";
-mysqli_query($db, $query) or die('Error querying database.');
-
-$result = mysqli_query($db, $query);
-$row = mysqli_fetch_array($result);
-
-while ($row = mysqli_fetch_array($result)) {
-    $food=$row['title'];
-    $description=$row['description'];
-    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<hr>";
-}
-
-?>
 
 </body>
 </html>
