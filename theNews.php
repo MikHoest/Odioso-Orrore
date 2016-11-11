@@ -197,7 +197,7 @@ $row = mysqli_fetch_array($result);
 while ($row = mysqli_fetch_array($result)) {
     $title=$row['title'];
     $description=$row['description'];
-    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<hr>";
+    echo "<div align='center' style='font-size: 28px; font-family: Verdana'><a href='Menu.php'>" . $title. "</a></div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<hr>";
 }
 
 ?>
