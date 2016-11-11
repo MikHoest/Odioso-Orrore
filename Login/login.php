@@ -11,7 +11,7 @@
         $password = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['pass'])));
 
 
-        $query = "SELECT user, pass FROM users WHERE user = '{$username}' LIMIT 1";
+        $query = "SELECT ID, user, pass FROM users WHERE user = '{$username}' LIMIT 1";
         echo $query;
         $result = mysqli_query($connection, $query);
 
@@ -20,9 +20,9 @@
             // and only 1 match
             $found_user = mysqli_fetch_array($result);
             if(password_verify($password, $found_user['pass'])){
-                $_SESSION['user_id'] = $found_user['id'];
+                $_SESSION['user_id'] = $found_user['ID'];
                 $_SESSION['user'] = $found_user['user'];
-                redirect_to("../front.php");
+                redirect_to("index.php");
             } else {
                 // username/password combo was not found in the database
                 $message = "Username/password combination incorrect.<br />
@@ -40,6 +40,10 @@ if (!empty($message))
 {
     echo "<p>" . $message . "</p>";
 }
+echo $_SESSION['user_id'];
+echo $_SESSION['user'];
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

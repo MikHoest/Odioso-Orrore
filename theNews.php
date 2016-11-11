@@ -46,11 +46,11 @@
         <div class="col-sm-3">
             <div class="logo" style="float:left">
                 <a href="front.php">
-<<<<<<< HEAD
+
                     <img src="picz/notlogo2.jpg" style="height: 135px">
-=======
+
                     <img src="picz/Logo1.png" style="width: 160px;">
->>>>>>> origin/master
+
                 </a>
             </div>
         </div>

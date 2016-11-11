@@ -178,16 +178,16 @@ textarea.nooResize
 $db = mysqli_connect('localhost','root','12345','menu')
 or die('Error connecting to MySQL server.');
 
-$query = "SELECT * FROM menu";
+$query = "SELECT * FROM menuitems";
 mysqli_query($db, $query) or die('Error querying database.');
 
 $result = mysqli_query($db, $query);
 $row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {
-    $food=$row['title'];
-    $description=$row['description'];
-    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<hr>";
+    $mainCourse=$row['mainCourse'];
+    $ingredients=$row['ingredients'];
+    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $foodItem. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<hr>";
 }
 
 ?>
