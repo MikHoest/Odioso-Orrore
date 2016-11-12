@@ -23,8 +23,9 @@ mysqli_query($db, $query) or die('Error querying database.');
 <div class="rating-form">
 
  <form action="newsDB.php" method="post">
-  <input type="text" style="background-color: #caaea6"  name="title" placeholder="TITLE" size="30" align="center"><br/>
-  <textarea class="nooResize" name="description" style="background-color: #caaea6" cols="30" placeholder= "DESCRIPTION" rows="5" align="right"></textarea><br/>
+  <h2 align="left">Publish New News</h2>
+  <input type="text" style="background-color: #ffffff" name="title" placeholder="TITLE" size="30"><br/>
+  <textarea class="nooResize" name="description" style="background-color: #ffffff" cols="30" placeholder= "DESCRIPTION" rows="5"></textarea><br/>
   <style>
    textarea.nooResize
    {
