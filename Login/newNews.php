@@ -26,7 +26,7 @@
     resize: none;
    }
   </style>
-  <input type="submit" name="submit" value="SEND!" />
+  <input type="submit" name="submit" value="Publish" />
  </form>
 </div>
 </body>

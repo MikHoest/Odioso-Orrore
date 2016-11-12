@@ -1,6 +1,6 @@
-<a href="index.php?page=home">HOME / HEIM / HJEM</a>
+<a href="index.php?page=home">HOME</a>
 <br>
-<a href="index.php?page=newNews">NEWS / FRETTIR / NYHEDER</a>
+<a href="index.php?page=newNews">NEWS</a>
 <br>
-<a href="index.php?page=content">CONTENT / INNIHALD / INDHOLD</a>
+<a href="index.php?page=content">CONTENT</a>
 <br><br>

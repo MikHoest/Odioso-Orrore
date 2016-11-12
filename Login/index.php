@@ -15,7 +15,8 @@
 
 
 
-<?php include ('menu.php');
+<?php
+include ('menu.php');//why is this shit here?
 
 if(isset($_GET['page']))
 {
@@ -28,7 +29,7 @@ else
 switch ($page)
 {
  default:
-  include("home.php");
+  include("home.php"); //what the f*ck is this?
   break;
  case "newNews";
   include ("newNews.php");
@@ -36,8 +37,8 @@ switch ($page)
  case "newMenu";
   include ("newMenu.php");
   break;
- case " ";
-  include (" .php");
+ case "theFrontpage";
+  include ("../front.php");
   break;
 }
 
