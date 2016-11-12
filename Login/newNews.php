@@ -2,7 +2,13 @@
  require_once("include/connection.php");
  require_once("include/functions.php");
  confirm_logged_in();
+/*
+$db = mysqli_connect('localhost','root','12345','news')
+or die('Error connecting to MySQL server.');
 
+$query = "INSERT INTO `news`(`ID`, `title`, `description`, `date`) VALUES ([value-1],[value-2],[value-3],[value-4])";
+mysqli_query($db, $query) or die('Error querying database.');
+*/
 
 ?>
 

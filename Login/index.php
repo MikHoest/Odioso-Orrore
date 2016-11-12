@@ -29,7 +29,7 @@ else
 switch ($page)
 {
  default:
-  include("home.php"); //what the f*ck is this?
+  include("menu.php"); //what the f*ck is this? was ..home.php.. changed to ..menu.php..
   break;
  case "newNews";
   include ("newNews.php");
