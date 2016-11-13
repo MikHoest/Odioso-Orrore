@@ -153,7 +153,7 @@
             }
             else
             {
-                echo "<img data-number='invalid' class='tables taken' src='tableRes.png' />";
+                echo "<img data-number='invalid' class='tables taken' src='picz/tableRes.png' />";
             }
         }
         ?>
@@ -163,7 +163,7 @@
     <input type="text" id="output" name="table">
 </div>
 <div>
-    <form action="reserve.php" method="post">
+    <form action="restaurantReservation/reserve.php" method="post">
         Table:<input type="text" id="output"><br/>
         From:<input type="text"><br/>
         To:<input type="text"><br/>
