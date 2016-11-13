@@ -142,14 +142,13 @@
         <?php
         require_once ('restaurantReservation/connect.php');
 
-        $display = "SELECT * FROM tables";
+        $display = "SELECT * FROM reservation";
         $show_data = mysqli_query($conn, $display) or die ("query error");
 
         foreach($show_data as $table)
         {
             if($table['isReserved']=='no')
             {
-                echo "<img height='100px' width='150px' data-number='" . $table['number'] ."' class='tables' src='tableRes.png'/>";
             }
             else
             {
