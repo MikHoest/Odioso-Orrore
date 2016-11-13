@@ -123,8 +123,27 @@ ul {
         }
     }
 </script>
+
+<?php
+$db = mysqli_connect('localhost','root','12345','menu')
+or die('Error connecting to MySQL server.');
+
+$query = "SELECT * FROM menuitems";
+mysqli_query($db, $query) or die('Error querying database.');
+
+$result = mysqli_query($db, $query);
+$row = mysqli_fetch_array($result);
+
+while ($row = mysqli_fetch_array($result)) {
+    $mainCourse=$row['mainCourse'];
+    $ingredients=$row['ingredients'];
+    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<hr>";
+}
+
+?>
+
 <div class="rating-form">
-    <strong class="choice"><h2>Rate This Dish!</h2></strong>
+    <strong class="choice"><h3>Rate This Dish!</h3></strong>
 
     <form action="process.php" method="post">
         <input type="text" style="background-color: #caaea6"  name="name" placeholder="Name" size="30" align="center"><br/>
@@ -167,24 +186,6 @@ textarea.nooResize
         <input type="submit" name="submit" value="SEND!" />
     </form>
 </div>
-
-<?php
-$db = mysqli_connect('localhost','root','12345','menu')
-or die('Error connecting to MySQL server.');
-
-$query = "SELECT * FROM menuitems";
-mysqli_query($db, $query) or die('Error querying database.');
-
-$result = mysqli_query($db, $query);
-$row = mysqli_fetch_array($result);
-
-while ($row = mysqli_fetch_array($result)) {
-    $mainCourse=$row['mainCourse'];
-    $ingredients=$row['ingredients'];
-    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<hr>";
-}
-
-?>
 
 </body>
 </html>
