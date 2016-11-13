@@ -50,7 +50,7 @@
                 </a>
             </div>
         </div>
-        <li><a class="active" href="front.php">Home</a></li>
+        <li><a class="active">Space</a></li>
         <li><a href="front.php" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
         <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
         <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
@@ -65,26 +65,17 @@
 
 
 </div>
-<div class="slideshow-container">
-
-    <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="picz/slide1.png" style="width:100%">
-        <div class="text">CAPTION</div>
+<div class="w3-content w3-display-container">
+    <img class="mySlides" src="picz/slide1.png" style="width:100%">
+    <img class="mySlides" src="picz/slide2.png" style="width:100%">
+    <img class="mySlides" src="picz/slide1.png" style="width:100%">
+    <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+        <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
     </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="picz/slide1.png" style="width:100%">
-        <div class="text">Caption Two</div>
-    </div>
-
-    <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="picz/slide1.png" style="width:100%">
-        <div class="text">Caption Three</div>
-    </div>
-
 </div>
 <br>
 
