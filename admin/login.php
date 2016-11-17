@@ -2,9 +2,9 @@
 //require_once("../admin/include/session.php");
 //require_once("../admin/include/connection.php");
 //require_once("../admin/include/functions.php");
-$db = mysqli_connect('localhost','root','12345','odiosoorrore');
+$db = mysqli_connect('localhost','root','12345','login');
 		if (logged_in()) {
-		redirect_to("../front.php");
+		redirect_to("../index.php");
 	}
 	// START FORM PROCESSING
 	if (isset($_POST['submit'])) { // Form has been submitted.
