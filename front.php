@@ -172,7 +172,7 @@ while ($row = mysqli_fetch_array($result)) {
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div align='right' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div id='content' align='center' style='font-size: 28px; font-family: Verdana'>" .$title . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>".$description."</div>";
+    echo "<div class='wrapper' align='left' style='font-size: 14px; font-family: Verdana'>"."Date: ".$date. "</div><br>"."<div align='left' style='font-size: 28px; font-family: Verdana'>" .$title . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>".$description."</div>";
 }
 ?>
    </div>
@@ -201,12 +201,37 @@ while ($row = mysqli_fetch_array($result)) {
        ?>
 
    </div>
+
+<div class="Drink" >
+
+    <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Special Drink!</a></p>
+    <?php
+    $db = mysqli_connect('localhost','root','12345','odiosoorrore')
+    or die('Error connecting to MySQL server.');
+
+    $query = "SELECT * FROM drinks LIMIT 2";
+    mysqli_query($db, $query) or die('Error querying database.');
+
+    $result = mysqli_query($db, $query);
+    $row = mysqli_fetch_array($result);
+
+    while ($row = mysqli_fetch_array($result)) {
+        $drink=$row['drink'];
+        $ingredients=$row['ingredients'];
+        $price=$row['price'];
+        echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $drink. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>"."Price: ".$price.".- DKK" ."</div>";
+    }
+
+    ?>
+
+</div>
+
    <br>
-   <div class="rating-form">
+   <div class="contact">
        <strong class="choice"><h2>Contact</h2></strong>
 
        <form action="process.php" method="post">
-       <input type="text" style="background-color: #caaea6"  name="name" placeholder="Name" size="30" align="center"><br/>
+       <input type="text" style="background-color: #caaea6"  name="name" placeholder="Name" size="30" align="left"><br/>
        <input type="text" style="background-color: #caaea6" name="email" placeholder="Email" size="30" align="right"><br/>
        <textarea class="nooResize" name="message" style="background-color: #caaea6" cols="30" placeholder= "Message" rows="5" align="right"></textarea><br/>
        <style>

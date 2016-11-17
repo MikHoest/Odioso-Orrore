@@ -171,48 +171,14 @@
     <h1>Odioso Orrore NEWS</h1>
 </div>
 
-<div class="wrapper">
-    Just testing, no worries!
-    <br>
-    Hello it's me!
-    <br>
-    I feel wrapped today.
-    <br>
-    Yeah
-    <br>
-    Just testing, no worries!
-    <br>
-    Hello it's me!
-    <br>
-    I feel wrapped today.
-    <br>
-    Yeah
-    <br>
-    Just testing, no worries!
-    <br>
-    Hello it's me!
-    <br>
-    I feel wrapped today.
-    <br>
-    Yeah
-    <br>
-    Just testing, no worries!
-    <br>
-    Hello it's me!
-    <br>
-    I feel wrapped today.
-    <br>
-    Yeah
-    <br>
-</div>
-
 <div id="menu">
     <ul>
         <li>News</li>
     </ul>
 </div>
 
-<div id="content" style="align-content: center; font-size: 16px; max-width: 800px">
+
+<div class="wrapper" id="content" style="align-content: center; font-size: 16px; max-width: 800px">
 <?php
 
 //require_once("admin/include/constants.php");
@@ -237,7 +203,7 @@ while ($row = mysqli_fetch_array($result)) {
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div align='right' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<hr>";
+    echo "<div class='wrapper' align='right' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<hr>";
 }
 
 ?>
