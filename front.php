@@ -153,10 +153,13 @@ ul
 
 
 <?php
+
 //require_once("admin/include/session.php");
 //require_once("admin/include/connection.php");
 //require_once("admin/include/functions.php");
-$db = mysqli_connect('localhost','root','12345','news')
+//$db = mysqli_connect('DB_SERVER','DB_USER','DB_PASS','DB_NAME') //C-PANEL DATABASE
+//$db = mysqli_connect('DB_SERVER_X','DB_USER_X','DB_PASS_X','DB_NAME_X') //LOCAL DATABASE
+$db = mysqli_connect('localhost','root','12345','odiosoorrore')
 or die('Error connecting to MySQL server.');
 
 $query = "SELECT * FROM news LIMIT 2";
@@ -179,20 +182,20 @@ while ($row = mysqli_fetch_array($result)) {
 
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
        <?php
-       $db = mysqli_connect('localhost','root','12345','menu')
+       $db = mysqli_connect('localhost','root','12345','odiosoorrore')
        or die('Error connecting to MySQL server.');
 
-       $query = "SELECT * FROM menuitems LIMIT 2";
+       $query = "SELECT * FROM dailyspecial LIMIT 2";
        mysqli_query($db, $query) or die('Error querying database.');
 
        $result = mysqli_query($db, $query);
        $row = mysqli_fetch_array($result);
 
        while ($row = mysqli_fetch_array($result)) {
-           $mainCourse=$row['mainCourse'];
+           $dailySpecial=$row['dailySpecial'];
            $ingredients=$row['ingredients'];
            $price=$row['price'];
-           echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$price . "</div>";
+           echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$price . "</div>";
        }
 
        ?>

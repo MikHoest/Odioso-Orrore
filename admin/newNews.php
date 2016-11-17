@@ -1,10 +1,15 @@
 <?php
-require_once("../admin/include/session.php");
+//require_once("../admin/include/session.php");
 require_once("../admin/include/connection.php");
 require_once("../admin/include/functions.php");
 confirm_logged_in();
-/*
-$db = mysqli_connect('localhost','root','12345','news')
+
+
+
+//$db = mysqli_connect('DB_SERVER','DB_USER','DB_PASS','DB_NAME') //C-PANEL DATABASE
+//$db = mysqli_connect('DB_SERVER_X','DB_USER_X','DB_PASS_X','DB_NAME_X') //LOCAL DATABASE
+
+$db = mysqli_connect('localhost','root','12345','odiosoorrore')
 or die('Error connecting to MySQL server.');
 
 $query = "INSERT INTO `news`(`ID`, `title`, `description`, `date`) VALUES ([],[$title],[$description],[$date])";
@@ -14,7 +19,6 @@ $title=$row['title'];
 $description=$row['description'];
 $date=$row['date'];
 
-*/
 ?>
 
 
