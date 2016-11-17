@@ -141,7 +141,7 @@ ul
        }
    </style>
 
-   <div class="heading" style="text-align: center;">
+   <div class="heading" style="text-align: left;">
        <p class="customfont" style="font-size: 38px; padding: 30px;">Celebrating the scariest of Italian cuisine since 2016!
        </p>
    </div>
