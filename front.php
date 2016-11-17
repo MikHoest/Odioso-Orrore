@@ -53,7 +53,12 @@ ul
         </div>
 
 
+        <div class="icon">
+            <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
+                <p class="customfont" style="color: white;"> ☰ </p>
             </a>
+        </div>
+
     <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
     <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
     <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
