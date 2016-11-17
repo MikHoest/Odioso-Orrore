@@ -1010,6 +1010,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   body {
     padding-right: 0;
     padding-left: 0;
+    line-height: inherit;
   }
 
   ul.navbar-fixed-top {
@@ -1027,7 +1028,7 @@ body {font-family: Verdana,sans-serif;margin:0}
     float: none;
     align-self: center;
     display: inline-block;
-    background-color: #800004;
+    color: #fffdff;
   }
 
   ul.navbar-fixed-top.responsive {
