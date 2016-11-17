@@ -151,6 +151,9 @@ ul
 
 
 <?php
+//require_once("admin/include/session.php");
+//require_once("admin/include/connection.php");
+//require_once("admin/include/functions.php");
 $db = mysqli_connect('localhost','root','12345','news')
 or die('Error connecting to MySQL server.');
 
