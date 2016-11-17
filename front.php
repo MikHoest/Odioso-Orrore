@@ -172,7 +172,7 @@ while ($row = mysqli_fetch_array($result)) {
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div align='right' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div id='content' align='center' style='font-size: 28px; font-family: Verdana'>" .$title . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>";
+    echo "<div align='right' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div id='content' align='center' style='font-size: 28px; font-family: Verdana'>" .$title . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>".$description."</div>";
 }
 ?>
    </div>
@@ -195,7 +195,7 @@ while ($row = mysqli_fetch_array($result)) {
            $dailySpecial=$row['dailySpecial'];
            $ingredients=$row['ingredients'];
            $price=$row['price'];
-           echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK" . "</div>";
+           echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>"."Price: ".$price.".- DKK" ."</div>";
        }
 
        ?>
