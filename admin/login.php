@@ -1,9 +1,8 @@
 <?php
-require_once("../admin/include/session.php");
-require_once("../admin/include/connection.php");
-require_once("../admin/include/functions.php");
-?>
-<?php
+//require_once("../admin/include/session.php");
+//require_once("../admin/include/connection.php");
+//require_once("../admin/include/functions.php");
+$db = mysqli_connect('localhost','root','12345','odiosoorrore');
 		if (logged_in()) {
 		redirect_to("../front.php");
 	}
@@ -13,7 +12,7 @@ require_once("../admin/include/functions.php");
         $password = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['pass']))); //sanitized well
 
 
-        $query = "SELECT ID, user, pass FROM users WHERE user = '{$username}' LIMIT 1";
+        $query = "SELECT ID, userName, password FROM login WHERE userName = '{$username}' LIMIT 1";
         echo $query;
         $result = mysqli_query($connection, $query);
 
