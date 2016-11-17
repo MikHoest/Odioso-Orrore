@@ -1,5 +1,6 @@
-<?php
 
+<?php
+/*
 //UNUSED just for funsies
 $mysqli = new mysqli("localhost", "root", "12345", "news");
 if ($mysqli->connect_errno) {
@@ -52,3 +53,4 @@ $sql->bindParam(1, $title);
 $sql->bindParam(2, $description);
 $sql->bindParam(3, $date);
 $sql->execute(); */
+*/

@@ -1,7 +1,7 @@
 <?php
-require_once("include/session.php");
-require_once("include/connection.php");
-require_once("include/functions.php");
+require_once("../admin/include/session.php");
+require_once("../admin/include/connection.php");
+require_once("../admin/include/functions.php");
 confirm_logged_in();
 /*
 $db = mysqli_connect('localhost','root','12345','news')
