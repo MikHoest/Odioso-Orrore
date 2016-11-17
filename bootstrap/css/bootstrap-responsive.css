@@ -132,7 +132,7 @@ ul.navbar-fixed-top li a:hover {
   background-color: #360200;
 }
 
-ul.navbar-fixed-top li.icon {
+div.icon {
   display: none;
 }
 
