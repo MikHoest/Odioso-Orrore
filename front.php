@@ -55,7 +55,7 @@ ul
 
         <div class="icon">
             <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
-                <p class="customfont" style="color: white;"> ☰ </p>
+                <p class="navicon" style="color: white;"> ☠ </p>
             </a>
         </div>
 

@@ -132,8 +132,12 @@ ul.navbar-fixed-top li a:hover {
   background-color: #360200;
 }
 
-div.icon {
+div.navicon {
   display: none;
+}
+
+div.icon {
+    display: none;
 }
 
 /* SLIDESHOW */
@@ -1024,7 +1028,7 @@ body {font-family: Verdana,sans-serif;margin:0}
       display: none;
   }
 
-  ul.navbar-fixed-top li.icon {
+  ul.navbar-fixed-top div.icon {
     float: none;
     align-self: center;
     display: inline-block;
@@ -1036,8 +1040,7 @@ body {font-family: Verdana,sans-serif;margin:0}
       align-self: center;
   }
 
-  ul.navbar-fixed-top.responsive li.icon {
-    position: absolute;
+  ul.navbar-fixed-top.responsive div.icon {
     right: 0;
     top: 0;
   }
