@@ -38,8 +38,18 @@
       <file leaf-file-name="bootstrap-responsive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+            <state relative-caret-position="368">
+              <caret line="1047" column="24" selection-start-line="1047" selection-start-column="24" selection-end-line="1047" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="STARS_TEMP.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/STARS_TEMP.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -48,8 +58,8 @@
       <file leaf-file-name="front.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/front.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+            <state relative-caret-position="27">
+              <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -75,14 +85,14 @@
                 <element signature="n#style#0;n#input#1;n#form#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#textarea#0;n#form#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1479390554924" expanded="true" signature="5117:5143" ph="SELECT * FRO... news" />
-                <marker date="1479390554924" expanded="true" signature="5453:5490" ph="..." />
-                <marker date="1479390554924" expanded="true" signature="5557:5594" ph="..." />
-                <marker date="1479390554924" expanded="true" signature="5652:5689" ph="..." />
-                <marker date="1479390554924" expanded="true" signature="6054:6085" ph="SELECT * FRO... menuitems" />
-                <marker date="1479390554924" expanded="true" signature="6463:6500" ph="..." />
-                <marker date="1479390554924" expanded="true" signature="6560:6597" ph="..." />
-                <marker date="1479390554924" expanded="true" signature="6661:6698" ph="..." />
+                <marker date="1479393154421" expanded="true" signature="5117:5143" ph="SELECT * FRO... news" />
+                <marker date="1479393154421" expanded="true" signature="5453:5490" ph="..." />
+                <marker date="1479393154421" expanded="true" signature="5557:5594" ph="..." />
+                <marker date="1479393154421" expanded="true" signature="5652:5689" ph="..." />
+                <marker date="1479393154421" expanded="true" signature="6054:6085" ph="SELECT * FRO... menuitems" />
+                <marker date="1479393154421" expanded="true" signature="6463:6500" ph="..." />
+                <marker date="1479393154421" expanded="true" signature="6560:6597" ph="..." />
+                <marker date="1479393154421" expanded="true" signature="6661:6698" ph="..." />
               </folding>
             </state>
           </provider>
@@ -144,8 +154,8 @@
         <option value="$PROJECT_DIR$/Reservation.php" />
         <option value="$PROJECT_DIR$/bootstrap/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/theNews.php" />
-        <option value="$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css" />
         <option value="$PROJECT_DIR$/front.php" />
+        <option value="$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css" />
       </list>
     </option>
   </component>
@@ -160,8 +170,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="75" />
-    <option name="y" value="49" />
+    <option name="x" value="273" />
+    <option name="y" value="93" />
     <option name="width" value="1261" />
     <option name="height" value="704" />
   </component>
@@ -374,15 +384,15 @@
       <workItem from="1478869407972" duration="1188000" />
       <workItem from="1478949206927" duration="1781000" />
       <workItem from="1479378821853" duration="8157000" />
-      <workItem from="1479390164715" duration="417000" />
+      <workItem from="1479390164715" duration="3903000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124997000" />
+    <option name="totallyTimeSpent" value="128483000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="75" y="49" width="1261" height="704" extended-state="0" />
+    <frame x="273" y="93" width="1261" height="704" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23453815" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -420,7 +430,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Welcome2.php" />
     <entry file="file://$PROJECT_DIR$/Welcome.php" />
     <entry file="file://$PROJECT_DIR$/BigForm.php" />
     <entry file="file://$PROJECT_DIR$/names.php" />
@@ -519,13 +528,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Login/include/connection.php" />
-    <entry file="file://$PROJECT_DIR$/Rating.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Login/frontpage.php" />
     <entry file="file://$PROJECT_DIR$/Contacts.html" />
     <entry file="file://$PROJECT_DIR$/Reservations.html">
@@ -619,10 +621,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Rating.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/STARS_TEMP.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/front.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
+        <state relative-caret-position="27">
+          <caret line="55" column="26" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -648,22 +666,22 @@
             <element signature="n#style#0;n#input#1;n#form#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#textarea#0;n#form#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#footer#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1479390554924" expanded="true" signature="5117:5143" ph="SELECT * FRO... news" />
-            <marker date="1479390554924" expanded="true" signature="5453:5490" ph="..." />
-            <marker date="1479390554924" expanded="true" signature="5557:5594" ph="..." />
-            <marker date="1479390554924" expanded="true" signature="5652:5689" ph="..." />
-            <marker date="1479390554924" expanded="true" signature="6054:6085" ph="SELECT * FRO... menuitems" />
-            <marker date="1479390554924" expanded="true" signature="6463:6500" ph="..." />
-            <marker date="1479390554924" expanded="true" signature="6560:6597" ph="..." />
-            <marker date="1479390554924" expanded="true" signature="6661:6698" ph="..." />
+            <marker date="1479393154421" expanded="true" signature="5117:5143" ph="SELECT * FRO... news" />
+            <marker date="1479393154421" expanded="true" signature="5453:5490" ph="..." />
+            <marker date="1479393154421" expanded="true" signature="5557:5594" ph="..." />
+            <marker date="1479393154421" expanded="true" signature="5652:5689" ph="..." />
+            <marker date="1479393154421" expanded="true" signature="6054:6085" ph="SELECT * FRO... menuitems" />
+            <marker date="1479393154421" expanded="true" signature="6463:6500" ph="..." />
+            <marker date="1479393154421" expanded="true" signature="6560:6597" ph="..." />
+            <marker date="1479393154421" expanded="true" signature="6661:6698" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bootstrap/css/bootstrap-responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="32" column="15" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="15" />
+        <state relative-caret-position="368">
+          <caret line="1047" column="24" selection-start-line="1047" selection-start-column="24" selection-end-line="1047" selection-end-column="24" />
           <folding />
         </state>
       </provider>

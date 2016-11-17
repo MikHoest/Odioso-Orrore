@@ -126,6 +126,7 @@ label.star:before {
 ul.navbar-fixed-top.responsive {
   max-width: 100%;
   max-height: inherit;
+    height: 0;
 }
 
 ul.navbar-fixed-top li a:hover {
@@ -1022,6 +1023,7 @@ body {font-family: Verdana,sans-serif;margin:0}
     position: fixed;
     top: 0;
     width: 100%;
+
   }
 
   ul.navbar-fixed-top li:not(:first-child) {
@@ -1038,7 +1040,21 @@ body {font-family: Verdana,sans-serif;margin:0}
   ul.navbar-fixed-top.responsive {
       position: fixed;
       align-self: center;
+      height: 60px;
   }
+
+    ul.navbar-fixed-top.responsive:hover,
+    ul.navbar-fixed-top.responsive:after{
+        position: fixed;
+        align-self: center;
+        height: 300px;
+        color: #0e90d2;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
 
   ul.navbar-fixed-top.responsive div.icon {
     right: 0;
@@ -1048,7 +1064,6 @@ body {font-family: Verdana,sans-serif;margin:0}
   ul.navbar-fixed-top.responsive li {
     float: none;
     display: inline;
-
   }
 
   ul.navbar-fixed-top.responsive li a {
@@ -1065,6 +1080,7 @@ body {font-family: Verdana,sans-serif;margin:0}
     margin-right: 20px;
     margin-left: 20px;
   }
+
 
    /* MOBILE MENU END */
 
