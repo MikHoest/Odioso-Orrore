@@ -141,7 +141,7 @@ while ($row = mysqli_fetch_array($result)) {
     $dailySpecial=$row['dailySpecial'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
-    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$price . "</div>"."<hr>";
+    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . "    DKK" . "</div>";
 }
 
 ?>
