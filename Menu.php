@@ -125,19 +125,19 @@ ul {
 </script>
 
 <?php
-$db = mysqli_connect('localhost','root','12345','menu')
+$db = mysqli_connect('localhost','root','12345','odiosoorrore')
 or die('Error connecting to MySQL server.');
 
-$query = "SELECT * FROM menuitems";
+$query = "SELECT * FROM dailyspecial";
 mysqli_query($db, $query) or die('Error querying database.');
 
 $result = mysqli_query($db, $query);
 $row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {
-    $mainCourse=$row['mainCourse'];
+    $dailySpecial=$row['dailySpecial'];
     $ingredients=$row['ingredients'];
-    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<hr>";
+    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<hr>";
 }
 
 ?>

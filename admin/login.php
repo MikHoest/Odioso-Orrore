@@ -2,7 +2,7 @@
 //require_once("../admin/include/session.php");
 //require_once("../admin/include/connection.php");
 //require_once("../admin/include/functions.php");
-$db = mysqli_connect('localhost','root','12345','login');
+$db = mysqli_connect('localhost','root','12345','odiosoorrore');
 		if (logged_in()) {
 		redirect_to("../index.php");
 	}
@@ -172,7 +172,7 @@ if (isset($connection)){mysqli_close($connection);}
 
 
 <h2>Please login</h2>
-<form action="" method="post">
+<form action="login.php" method="post">
     <input type="text" name="user" placeholder="Username" maxlength="30" value="" />
     <input type="password" name="pass" placeholder="Password" maxlength="30" value="" />
     <br>

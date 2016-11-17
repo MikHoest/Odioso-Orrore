@@ -13,9 +13,6 @@ confirm_logged_in(); ?>
 <body>
 <h1 align="center">Welcome to the backend</h1>
 
-
-
-
 <?php
 include ('menu.php');//why is this shit here?
 
