@@ -1,6 +1,6 @@
-<?php require_once("include/connection.php"); ?>
-<?php require_once("include/session.php"); ?>
-<?php require_once("include/functions.php"); ?>
+<?php require_once("../include/connection.php"); ?>
+<?php require_once("../include/session.php"); ?>
+<?php require_once("../include/functions.php"); ?>
 <?php
 		if (logged_in()) {
 		redirect_to("../front.php");

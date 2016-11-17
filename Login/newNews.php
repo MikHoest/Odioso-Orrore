@@ -1,7 +1,8 @@
-<?php require_once("include/session.php");
- require_once("include/connection.php");
- require_once("include/functions.php");
- confirm_logged_in();
+<?php
+require_once("include/session.php");
+require_once("include/connection.php");
+require_once("include/functions.php");
+confirm_logged_in();
 /*
 $db = mysqli_connect('localhost','root','12345','news')
 or die('Error connecting to MySQL server.');

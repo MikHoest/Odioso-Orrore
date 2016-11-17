@@ -140,7 +140,7 @@
 <div id ="setup">
     <div class="restaurant">
         <?php
-        require_once ('restaurantReservation/connect.php');
+        require_once('restaurantReservation/connect.php');
 
         $display = "SELECT * FROM reservation";
         $show_data = mysqli_query($conn, $display) or die ("query error");
@@ -162,7 +162,7 @@
     <input type="text" id="output" name="table">
 </div>
 <div>
-    <form action="restaurantReservation/reserve.php" method="post">
+    <form action="../restaurantReservation/reserve.php" method="post">
         Table:<input type="text" id="output"><br/>
         From:<input type="text"><br/>
         To:<input type="text"><br/>
