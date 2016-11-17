@@ -231,16 +231,16 @@ while ($row = mysqli_fetch_array($result)) {
        <strong class="choice"><h2>Contact</h2></strong>
 
        <form action="process.php" method="post">
-       <input type="text" style="background-color: #caaea6"  name="name" placeholder="Name" size="30" align="left"><br/>
-       <input type="text" style="background-color: #caaea6" name="email" placeholder="Email" size="30" align="right"><br/>
-       <textarea class="nooResize" name="message" style="background-color: #caaea6" cols="30" placeholder= "Message" rows="5" align="right"></textarea><br/>
+       <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="left"><br/>
+       <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="right"><br/>
+       <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="right"></textarea><br/>
        <style>
 textarea.nooResize
            {
                resize: none;
            }
        </style>
-       <input type="submit" name="submit" value="SEND!" />
+       <input type="submit" style="background-color: #a21b0c" name="submit" value="SEND!" />
    </form>
    </div>
 </body>
