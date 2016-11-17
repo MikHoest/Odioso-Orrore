@@ -141,7 +141,7 @@ while ($row = mysqli_fetch_array($result)) {
     $dailySpecial=$row['dailySpecial'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
-    echo "<div align='center' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . "    DKK" . "</div>";
+    echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK" . "</div>";
 }
 
 ?>
@@ -150,8 +150,6 @@ while ($row = mysqli_fetch_array($result)) {
     <strong class="choice"><h3>Rate This Dish!</h3></strong>
 
     <form action="process.php" method="post">
-        <input type="text" style="background-color: #caaea6"  name="name" placeholder="Name" size="30" align="center"><br/>
-        <input type="text" style="background-color: #caaea6" name="email" placeholder="Email" size="30" align="right"><br/>
 
         <div class="stars">
             <form action>
@@ -178,16 +176,17 @@ while ($row = mysqli_fetch_array($result)) {
 
             </form>
         </div>
-        <br>
-
+        <input type="text" style="background-color: #caaea6"  name="name" placeholder="Name" size="30" align="center"><br/>
+        <input type="text" style="background-color: #caaea6" name="email" placeholder="Email" size="30" align="right"><br/>
         <textarea class="nooResize" name="message" style="background-color: #caaea6" cols="30" placeholder= "Comment" rows="5" align="right"></textarea><br/>
         <style>
-textarea.nooResize
+            textarea.nooResize
             {
                 resize: none;
             }
         </style>
         <input type="submit" name="submit" value="SEND!" />
+        <br>
     </form>
 </div>
 
