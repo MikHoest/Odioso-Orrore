@@ -8,7 +8,7 @@
 	// START FORM PROCESSING
 	if (isset($_POST['submit'])) { // Form has been submitted.
         $username = trim(htmlspecialchars(mysqli_real_escape_string($connection, $_POST['user'])));
-        $password = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['pass'])));
+        $password = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['pass']))); //sanitized well
 
 
         $query = "SELECT ID, user, pass FROM users WHERE user = '{$username}' LIMIT 1";
