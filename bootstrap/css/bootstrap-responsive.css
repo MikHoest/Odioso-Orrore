@@ -1367,6 +1367,10 @@ body {font-family: Verdana,sans-serif;margin:0}
 }
 .wrapper {
   height: relative;
-  border-radius: 10px;
-  background-color: #9ac483;
+  border-radius: 25px;
+  color: #ffffff;
+  background-color: #870900;
+  max-width: 800px;
+  margin-left: 25%;
+  text-align: center;
 }
