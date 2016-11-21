@@ -16,12 +16,12 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 	$errors = array();
 
 	// perform validations on the form data
-	$username = trim(mysqli_real_escape_string($connection, $_POST['user']));
-	$password = trim(mysqli_real_escape_string($connection, $_POST['pass']));
+	$username = trim(mysqli_real_escape_string($connection, $_POST['userName']));
+	$password = trim(mysqli_real_escape_string($connection, $_POST['password']));
     $iterations = ['cost' => 15];//?What is this?
     $hashed_password = password_hash($password, PASSWORD_BCRYPT, $iterations);
 
-	$query = "INSERT INTO userName ('userName', 'password') VALUES ('{$username}', '{$hashed_password}')";
+	$query = "INSERT INTO login (userName, password) VALUES ('{$username}', '{$hashed_password}')";
 	$result = mysqli_query($connection, $query);
 		if ($result) {
 			$message = "User Created.";

@@ -193,7 +193,7 @@
 $db = mysqli_connect('localhost','root','12345','odiosoorrore')
 or die('Error connecting to MySQL server.');
 
-$query = "SELECT * FROM news";
+$query = "SELECT * FROM news ORDER BY date DESC LIMIT 0, 10";
 mysqli_query($db, $query) or die('Error querying database.');
 
 $result = mysqli_query($db, $query);
@@ -203,7 +203,7 @@ while ($row = mysqli_fetch_array($result)) {
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div class='wrapper' align='right' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<hr>";
+    echo "<div align='left' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<hr>";
 }
 
 ?>
