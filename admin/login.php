@@ -1,10 +1,11 @@
 <?php
-//require_once("../admin/include/session.php");
-//require_once("../admin/include/connection.php");
-//require_once("../admin/include/functions.php");
+//require_once("include/session.php");
+//require_once("include/connection.php");
+//require_once("include/functions.php");
 $db = mysqli_connect('localhost','root','12345','odiosoorrore');
-		if (logged_in()) {
-		redirect_to("../index.php");
+
+    if (logged_in()) {
+		redirect_to("index.php");
 	}
 	// START FORM PROCESSING
 	if (isset($_POST['submit'])) { // Form has been submitted.
@@ -20,9 +21,9 @@ $db = mysqli_connect('localhost','root','12345','odiosoorrore');
             // username/password authenticated
             // and only 1 match
             $found_user = mysqli_fetch_array($result);
-            if(password_verify($password, $found_user['pass'])){
+            if(password_verify($password, $found_user['password'])){
                 $_SESSION['user_id'] = $found_user['ID'];
-                $_SESSION['user'] = $found_user['user'];
+                $_SESSION['user'] = $found_user['userName'];
                 redirect_to("index.php");
             } else {
                 // username/password combo was not found in the database
@@ -170,9 +171,9 @@ if (isset($connection)){mysqli_close($connection);}
 <body>
 
 
-
+<div class="wrapper">
 <h2>Please login</h2>
-<form action="login.php" method="post">
+<form class="wrapper" action="login.php" method="post">
     <input type="text" name="user" placeholder="Username" maxlength="30" value="" />
     <input type="password" name="pass" placeholder="Password" maxlength="30" value="" />
     <br>
@@ -182,6 +183,7 @@ if (isset($connection)){mysqli_close($connection);}
 <form action="newuser.php" method="post">
     <input type="submit" name="submit" value="CREATE" />
 </form>
+</div>
 </body>
 </html>
 

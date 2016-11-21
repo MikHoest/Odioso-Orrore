@@ -140,13 +140,13 @@ ul
     font-family: "SPOOKYHOUSE", Verdana, Tahoma, sans-serif;
        }
    </style>
-
-   <div class="heading" style="text-align: left;">
-       <p class="customfont" style="font-size: 38px; padding: 30px;">Celebrating the scariest of Italian cuisine since 2016!
+<br><br>
+   <div class="wrapper" style="text-align: left;">
+       <p class="customfont" style="font-size: 34px; padding: 30px;">Celebrating the scariest of Italian cuisine since 2016!
        </p>
    </div>
-
-   <div class="news-section" >
+<br>
+   <div class="wrapper" >
 
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='theNews.php' style="color: #000000">Read the latest from Odioso Orrore!</a></p>
 
@@ -172,13 +172,13 @@ while ($row = mysqli_fetch_array($result)) {
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div class='wrapper' align='left' style='font-size: 14px; font-family: Verdana'>"."Date: ".$date. "</div><br>"."<div align='left' style='font-size: 28px; font-family: Verdana'>" .$title . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>".$description."</div>";
+    echo "<div align='left' style='font-size: 14px; font-family: Verdana'>"."Date: ".$date. "</div><br>"."<div align='left' style='font-size: 28px; font-family: Verdana'>" .$title . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>".$description."</div>";
 }
 ?>
    </div>
 
-
-   <div class="daily-special" >
+<br><br>
+   <div class="wrapper" >
 
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
        <?php
@@ -201,8 +201,8 @@ while ($row = mysqli_fetch_array($result)) {
        ?>
 
    </div>
-
-<div class="Drink" >
+<br>
+<div class="wrapper" >
 
     <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Special Drink!</a></p>
     <?php
@@ -225,9 +225,8 @@ while ($row = mysqli_fetch_array($result)) {
     ?>
 
 </div>
-
-   <br>
-   <div class="contact">
+<br><br>
+   <div class="wrapper">
        <strong class="choice"><h2>Contact</h2></strong>
 
        <form action="process.php" method="post">
