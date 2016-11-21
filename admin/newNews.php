@@ -12,7 +12,6 @@ confirm_logged_in();
 $db = mysqli_connect('localhost','root','12345','odiosoorrore')
 or die('Error connecting to MySQL server.');
 
-$query = "INSERT INTO `news`(`ID`, `title`, `description`, `date`) VALUES ([],[$title],[$description],[$date])";
 mysqli_query($db, $query) or die('Error querying database.');
 
 $title=$row['title'];

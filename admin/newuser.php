@@ -5,7 +5,7 @@ require_once("include/functions.php");
 confirm_logged_in();
 ?>
 
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
 </head>
@@ -18,10 +18,10 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 	// perform validations on the form data
 	$username = trim(mysqli_real_escape_string($connection, $_POST['user']));
 	$password = trim(mysqli_real_escape_string($connection, $_POST['pass']));
-    $iterations = ['cost' => 15];
+    $iterations = ['cost' => 15];//?What is this?
     $hashed_password = password_hash($password, PASSWORD_BCRYPT, $iterations);
 
-	$query = "INSERT INTO `userName` (user, pass) VALUES ('{$username}', '{$hashed_password}')";
+	$query = "INSERT INTO userName ('userName', 'password') VALUES ('{$username}', '{$hashed_password}')";
 	$result = mysqli_query($connection, $query);
 		if ($result) {
 			$message = "User Created.";
@@ -34,9 +34,8 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 if (!empty($message)) {echo "<p>" . $message . "</p>";}
 ?>
 
-
+<div class="wrapper">
 <h2>Create New User</h2>
-
 <form action="newuser.php" method="post">
 Username:
 <input type="text" name="user" maxlength="30" value="" />
@@ -44,7 +43,7 @@ Password:
 <input type="password" name="pass" maxlength="30" value="" />
 <input type="submit" name="submit" value="Create" />
 </form>
-
+</div>
 </body>
 </html>
 <?php
