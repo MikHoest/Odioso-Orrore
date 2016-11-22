@@ -154,9 +154,9 @@ ul
 
 <?php
 
-//require_once("admin/include/session.php");
-//require_once("admin/include/connection.php");
-//require_once("admin/include/functions.php");
+require_once("admin/include/session.php");
+require_once("admin/include/connection.php");
+require_once("admin/include/functions.php");
 //$db = mysqli_connect('DB_SERVER','DB_USER','DB_PASS','DB_NAME') //C-PANEL DATABASE
 //$db = mysqli_connect('DB_SERVER_X','DB_USER_X','DB_PASS_X','DB_NAME_X') //LOCAL DATABASE
 $db = mysqli_connect('localhost','root','12345','odiosoorrore')
