@@ -74,11 +74,11 @@ input.star-2:hover ~ label.star:before {
 }
 
 input.star-1:checked ~ label.star:before {
-  color: #434344;
+  color: #a0a0a0;
 }
 
 input.star-1:hover ~ label.star:before {
-    color: #434344;
+    color: #a0a0a0;
 }
 
 label.star:hover {
@@ -1391,6 +1391,6 @@ body {font-family: Verdana,sans-serif;margin:0}
   color: #ffffff;
   background-color: #870900;
   max-width: 800px;
-  margin-left: 50%;
+  margin-left: 25%;
   text-align: center;
 }

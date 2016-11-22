@@ -2,10 +2,10 @@
 require_once("include/session.php");
 require_once("include/connection.php");
 require_once("include/functions.php");
-include ('menu.php');
+include('adminSwitch.php');
 confirm_logged_in();
 
-$query = "INSERT INTO news('ID', 'title', 'description', 'date') VALUES ([],[$title],[$description],[$date])";
+$query = "INSERT INTO `news`(`ID`, `title`, `description`, `date`) VALUES ([],[$title],[$description],[$date])";
 mysqli_query($connection, $query) or die('Error querying database.');
 
 $title=$row['title'];
