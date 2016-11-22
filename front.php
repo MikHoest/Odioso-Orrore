@@ -156,8 +156,6 @@ ul
 
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='theNews.php' style="color: #000000">Read the latest from Odioso Orrore!</a></p>
 
-
-
 <?php
 
 $query = "SELECT * FROM news LIMIT 2";
