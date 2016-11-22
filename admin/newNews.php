@@ -33,8 +33,8 @@ $date=$row['date'];
 
  <form action="newNews.php" method="post">
   <h2 align="left">Publish New News</h2>
-  <input type="text" style="background-color: #ffffff" name="title" placeholder="TITLE" size="30"><br/>
-  <textarea class="nooResize" name="description" style="background-color: #ffffff" cols="30" placeholder= "DESCRIPTION" rows="5"></textarea><br/>
+  <input type="text" style="background-color: #ffffff" name="title" placeholder="TITLE" size="30">.$title.<br/>
+  <textarea class="nooResize" name="description" style="background-color: #ffffff" cols="30" placeholder= "DESCRIPTION" rows="5">.$description.</textarea><br/>
   <style>
    textarea.nooResize
    {

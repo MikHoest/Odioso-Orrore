@@ -1387,10 +1387,10 @@ body {font-family: Verdana,sans-serif;margin:0}
 }
 .wrapper {
   height: relative;
-  border-radius: 15px;
+  border-radius: 10px;
   color: #ffffff;
   background-color: #870900;
-  max-width: 800px;
-  margin-left: 50%;
-  text-align: left;
+  max-width: 500px;
+  margin-left: 25%;
+  text-align: center;
 }

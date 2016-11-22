@@ -193,7 +193,7 @@
 $db = mysqli_connect('localhost','root','12345','odiosoorrore')
 or die('Error connecting to MySQL server.');
 
-$query = "SELECT * FROM news ORDER BY date DESC LIMIT 0, 10";
+$query = "SELECT * FROM news ORDER BY date DESC";
 mysqli_query($db, $query) or die('Error querying database.');
 
 $result = mysqli_query($db, $query);
