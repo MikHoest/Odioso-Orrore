@@ -59,10 +59,10 @@ ul
             </a>
         </div>
 
-    <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
+    <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png"></a></li>
     <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
-    <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
-    <li><a href="admin/login.php" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
+    <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png"></a></li>
+
 
 
     </ul>
@@ -154,7 +154,7 @@ ul
 
 <?php
 
-require_once("admin/include/session.php");
+//require_once("admin/include/session.php");
 require_once("admin/include/connection.php");
 require_once("admin/include/functions.php");
 //$db = mysqli_connect('DB_SERVER','DB_USER','DB_PASS','DB_NAME') //C-PANEL DATABASE
@@ -177,7 +177,7 @@ while ($row = mysqli_fetch_array($result)) {
 ?>
    </div>
 
-<br><br>
+<br>
    <div class="wrapper" >
 
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
@@ -225,7 +225,7 @@ while ($row = mysqli_fetch_array($result)) {
     ?>
 
 </div>
-<br><br>
+<br>
    <div class="wrapper">
        <strong class="choice"><h2>Contact</h2></strong>
 
@@ -243,6 +243,6 @@ textarea.nooResize
    </form>
    </div>
 </body>
-<br>
-<footer><p style="margin: 20px; float: left;">© 2016 | Odioso Orrore</p></footer>
+
+<footer><p style="margin: 20px; float: left;">© 2016 | Odioso Orrore</p><li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></footer>
 </html>
