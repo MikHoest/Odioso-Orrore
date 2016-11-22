@@ -15,7 +15,7 @@ confirm_logged_in();
 <h1 align="center">Welcome to the backend</h1>
 
 <?php
-include ('menu.php');//why is this shit here?
+//include ('menu.php');//why is this shit here?
 
 if(isset($_GET['page']))
 {

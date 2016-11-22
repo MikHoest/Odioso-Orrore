@@ -1,3 +1,10 @@
+<?php
+require_once("admin/include/session.php");
+require_once("admin/include/connection.php");
+require_once("admin/include/functions.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -181,22 +188,10 @@
 <div class="wrapper" id="content" style="align-content: center; font-size: 16px; max-width: 800px">
 <?php
 
-//require_once("admin/include/constants.php");
-//require_once("admin/include/session.php");
-//require_once("admin/include/connection.php");
-//require_once("admin/include/functions.php");
+$query = "SELECT * FROM news ORDER BY ID ASC";
+mysqli_query($connection, $query) or die('Error querying database.');
 
-
-//$db = mysqli_connect('DB_SERVER','DB_USER','DB_PASS','DB_NAME') //C-PANEL DATABASE
-//$db = mysqli_connect('DB_SERVER_X','DB_USER_X','DB_PASS_X','DB_NAME_X') //LOCAL DATABASE
-
-$db = mysqli_connect('localhost','root','12345','odiosoorrore')
-or die('Error connecting to MySQL server.');
-
-$query = "SELECT * FROM news ORDER BY date DESC";
-mysqli_query($db, $query) or die('Error querying database.');
-
-$result = mysqli_query($db, $query);
+$result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {

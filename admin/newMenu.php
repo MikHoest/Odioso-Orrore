@@ -2,14 +2,12 @@
 require_once("include/session.php");
 require_once("include/connection.php");
 require_once("include/functions.php");
+include ('menu.php');
 confirm_logged_in();
 
-//$db = mysqli_connect('DB_SERVER','DB_USER','DB_PASS','DB_NAME') //C-PANEL DATABASE
-$db = mysqli_connect('DB_SERVER_X','DB_USER_X','DB_PASS_X','DB_NAME_X') //LOCAL DATABASE
-or die('Error connecting to MySQL server.');
 
 $query = "INSERT INTO menuitems(`ID`, `mainCourse`, `ingredients`, `price`, 'review') VALUES ([],[$mainCourse],[$ingredients],[$price], [review])";
-mysqli_query($db, $query) or die('Error querying database.');
+mysqli_query($connection, $query) or die('Error querying database.');
 
 $mainCourse=$row['mainCourse'];
 $ingredients=$row['ingredients'];

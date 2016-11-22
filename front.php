@@ -1,3 +1,9 @@
+<?php
+require_once("admin/include/session.php");
+require_once("admin/include/connection.php");
+require_once("admin/include/functions.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -154,18 +160,10 @@ ul
 
 <?php
 
-//require_once("admin/include/session.php");
-require_once("admin/include/connection.php");
-require_once("admin/include/functions.php");
-//$db = mysqli_connect('DB_SERVER','DB_USER','DB_PASS','DB_NAME') //C-PANEL DATABASE
-//$db = mysqli_connect('DB_SERVER_X','DB_USER_X','DB_PASS_X','DB_NAME_X') //LOCAL DATABASE
-$db = mysqli_connect('localhost','root','12345','odiosoorrore')
-or die('Error connecting to MySQL server.');
-
 $query = "SELECT * FROM news LIMIT 2";
-mysqli_query($db, $query) or die('Error querying database.');
+mysqli_query($connection, $query) or die('Error querying database.');
 
-$result = mysqli_query($db, $query);
+$result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {
@@ -182,13 +180,11 @@ while ($row = mysqli_fetch_array($result)) {
 
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
        <?php
-       $db = mysqli_connect('localhost','root','12345','odiosoorrore')
-       or die('Error connecting to MySQL server.');
 
        $query = "SELECT * FROM dailyspecial LIMIT 2";
-       mysqli_query($db, $query) or die('Error querying database.');
+       mysqli_query($connection, $query) or die('Error querying database.');
 
-       $result = mysqli_query($db, $query);
+       $result = mysqli_query($connection, $query);
        $row = mysqli_fetch_array($result);
 
        while ($row = mysqli_fetch_array($result)) {
@@ -206,13 +202,10 @@ while ($row = mysqli_fetch_array($result)) {
 
     <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Special Drink!</a></p>
     <?php
-    $db = mysqli_connect('localhost','root','12345','odiosoorrore')
-    or die('Error connecting to MySQL server.');
-
     $query = "SELECT * FROM drinks LIMIT 2";
-    mysqli_query($db, $query) or die('Error querying database.');
+    mysqli_query($connection, $query) or die('Error querying database.');
 
-    $result = mysqli_query($db, $query);
+    $result = mysqli_query($connection, $query);
     $row = mysqli_fetch_array($result);
 
     while ($row = mysqli_fetch_array($result)) {

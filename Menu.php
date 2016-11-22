@@ -1,3 +1,9 @@
+<?php
+require_once("admin/include/session.php");
+require_once("admin/include/connection.php");
+require_once("admin/include/functions.php");
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -125,16 +131,10 @@ ul {
 </script>
 
 <?php
-
-
-
-$db = mysqli_connect('localhost','root','12345','odiosoorrore')
-or die('Error connecting to MySQL server.');
-
 $query = "SELECT * FROM dailyspecial";
-mysqli_query($db, $query) or die('Error querying database.');
+mysqli_query($connection, $query) or die('Error querying database.');
 
-$result = mysqli_query($db, $query);
+$result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {
@@ -176,9 +176,9 @@ while ($row = mysqli_fetch_array($result)) {
 
             </form>
         </div>
-        <input type="text" style="background-color: #caaea6"  name="name" placeholder="Name" size="30" align="center"><br/>
-        <input type="text" style="background-color: #caaea6" name="email" placeholder="Email" size="30" align="right"><br/>
-        <textarea class="nooResize" name="message" style="background-color: #caaea6" cols="30" placeholder= "Comment" rows="5" align="right"></textarea><br/>
+        <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
+        <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="right"><br/>
+        <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Comment" rows="5" align="right"></textarea><br/>
         <style>
             textarea.nooResize
             {
