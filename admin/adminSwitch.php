@@ -6,8 +6,5 @@
 <br>
 <a href="index.php?page=content">CONTENT</a>
 <br>
-<a href="index.php?page=theFrontpage">FRONTPAGE</a>
-<br><br>
-<br><br>
-<br><br>
-<br><br>
+<a href="../front.php">FRONTPAGE</a>
+

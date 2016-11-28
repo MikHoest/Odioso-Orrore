@@ -1,3 +1,9 @@
+<?php
+require_once("admin/include/session.php");
+require_once("admin/include/connection.php");
+require_once("admin/include/functions.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -60,10 +66,10 @@ ul
             </a>
         </div>
 
-    <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
+    <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png"></a></li>
     <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
-    <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
-    <li><a href="admin/login.php" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
+    <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png"></a></li>
+
 
 
     </ul>
@@ -151,22 +157,12 @@ ul
 
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='theNews.php' style="color: #000000">Read the latest from Odioso Orrore!</a></p>
 
-
-
 <?php
 
-require_once("admin/include/session.php");
-require_once("admin/include/connection.php");
-require_once("admin/include/functions.php");
-//$db = mysqli_connect('DB_SERVER','DB_USER','DB_PASS','DB_NAME') //C-PANEL DATABASE
-//$db = mysqli_connect('DB_SERVER_X','DB_USER_X','DB_PASS_X','DB_NAME_X') //LOCAL DATABASE
-$db = mysqli_connect('localhost','root','12345','odiosoorrore')
-or die('Error connecting to MySQL server.');
-
 $query = "SELECT * FROM news LIMIT 2";
-mysqli_query($db, $query) or die('Error querying database.');
+mysqli_query($connection, $query) or die('Error querying database.');
 
-$result = mysqli_query($db, $query);
+$result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {
@@ -178,18 +174,16 @@ while ($row = mysqli_fetch_array($result)) {
 ?>
    </div>
 
-<br><br>
+<br>
    <div class="wrapper" >
 
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
        <?php
-       $db = mysqli_connect('localhost','root','12345','odiosoorrore')
-       or die('Error connecting to MySQL server.');
 
        $query = "SELECT * FROM dailyspecial LIMIT 2";
-       mysqli_query($db, $query) or die('Error querying database.');
+       mysqli_query($connection, $query) or die('Error querying database.');
 
-       $result = mysqli_query($db, $query);
+       $result = mysqli_query($connection, $query);
        $row = mysqli_fetch_array($result);
 
        while ($row = mysqli_fetch_array($result)) {
@@ -207,13 +201,10 @@ while ($row = mysqli_fetch_array($result)) {
 
     <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Special Drink!</a></p>
     <?php
-    $db = mysqli_connect('localhost','root','12345','odiosoorrore')
-    or die('Error connecting to MySQL server.');
-
     $query = "SELECT * FROM drinks LIMIT 2";
-    mysqli_query($db, $query) or die('Error querying database.');
+    mysqli_query($connection, $query) or die('Error querying database.');
 
-    $result = mysqli_query($db, $query);
+    $result = mysqli_query($connection, $query);
     $row = mysqli_fetch_array($result);
 
     while ($row = mysqli_fetch_array($result)) {
@@ -226,14 +217,14 @@ while ($row = mysqli_fetch_array($result)) {
     ?>
 
 </div>
-<br><br>
+<br>
    <div class="wrapper">
        <strong class="choice"><h2>Contact</h2></strong>
 
        <form action="process.php" method="post">
-       <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="left"><br/>
-       <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="right"><br/>
-       <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="right"></textarea><br/>
+       <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
+       <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
+       <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="center"></textarea><br/>
        <style>
 textarea.nooResize
            {
@@ -244,6 +235,6 @@ textarea.nooResize
    </form>
    </div>
 </body>
-<br>
-<footer><p style="margin: 20px; float: left;">© 2016 | Odioso Orrore</p></footer>
+
+<footer><p style="margin: 20px; float: left;">© 2016 | Odioso Orrore</p><li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></footer>
 </html>

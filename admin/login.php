@@ -1,8 +1,8 @@
 <?php
-//require_once("include/session.php");
-//require_once("include/connection.php");
-//require_once("include/functions.php");
-$db = mysqli_connect('localhost','root','12345','odiosoorrore');
+require_once("include/session.php");
+require_once("include/connection.php");
+require_once("include/functions.php");
+
 
     if (logged_in()) {
 		redirect_to("index.php");
@@ -180,9 +180,7 @@ if (isset($connection)){mysqli_close($connection);}
     <input type="submit" name="submit" value="Login" />
 </form>
 <h2>New User</h2>
-<form action="newuser.php" method="post">
-    <input type="submit" name="submit" value="CREATE" />
-</form>
+    <a href="newuser.php">Create User</a>
 </div>
 </body>
 </html>

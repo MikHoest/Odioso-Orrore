@@ -2,15 +2,11 @@
 require_once("include/session.php");
 require_once("include/connection.php");
 require_once("include/functions.php");
+include('adminSwitch.php');
 confirm_logged_in();
-//$db = mysqli_connect('DB_SERVER','DB_USER','DB_PASS','DB_NAME') //C-PANEL DATABASE
-//$db = mysqli_connect('DB_SERVER_X','DB_USER_X','DB_PASS_X','DB_NAME_X') //LOCAL DATABASE
 
-$db = mysqli_connect('localhost','root','12345','odiosoorrore')
-or die('Error connecting to MySQL server.');
-
-$query = "INSERT INTO news(`ID`, `title`, `description`, `date`) VALUES ([],[$title],[$description],[$date])";
-mysqli_query($db, $query) or die('Error querying database.');
+$query = "INSERT INTO `news`(`ID`, `title`, `description`, `date`) VALUES ([],[$title],[$description],[$date])";
+mysqli_query($connection, $query) or die('Error querying database.');
 
 $title=$row['title'];
 $description=$row['description'];
@@ -31,7 +27,7 @@ $date=$row['date'];
  <form action="newNews.php" method="post">
   <h2 align="left">Publish New News</h2>
   <input type="text" style="background-color: #ffffff" name="title" placeholder="TITLE" size="30">.$title.<br/>
-  <textarea class="nooResize" name="description" style="background-color: #ffffff" cols="30" placeholder= "DESCRIPTION" rows="5">.$description.</textarea><br/>
+  <textarea class="nooResize" name="description" style="background-color: #ffffff" cols="30" placeholder= "DESCRIPTION" rows="5">.$description.</textarea><br/> <!--Is this the right way to insert into a DB?-->
   <style>
    textarea.nooResize
    {
