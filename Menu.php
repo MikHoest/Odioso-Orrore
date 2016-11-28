@@ -141,7 +141,6 @@ while ($row = mysqli_fetch_array($result)) {
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     $review=$row['review'];
-    $id=$row['ID'];
     echo "<div class='wrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
 }
 

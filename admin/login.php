@@ -14,7 +14,6 @@ require_once("include/functions.php");
 
 
         $query = "SELECT ID, userName, password FROM login WHERE userName = '{$username}' LIMIT 1";
-        echo $query;
         $result = mysqli_query($connection, $query);
 
         if (mysqli_num_rows($result) == 1) {
@@ -107,8 +106,11 @@ if (isset($connection)){mysqli_close($connection);}
     <br>
     <input type="submit" name="submit" value="Login" />
 </form>
-<h2>New User</h2>
-    <a href="newuser.php">Create User</a>
+
+<h2><a href="newuser.php">Create User</a></h2>
+
+<h2><a href="../front.php">Frontpage</a></h2>
+<br>
 </div>
 </body>
 </html>
