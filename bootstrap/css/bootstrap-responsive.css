@@ -666,6 +666,8 @@ body {font-family: Verdana,sans-serif;margin:0}
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
+
+
   .row {
     margin-left: -20px;
     *zoom: 1;
@@ -936,7 +938,14 @@ body {font-family: Verdana,sans-serif;margin:0}
     margin-left: 8.56353591160221%;
     *margin-left: 8.457152932878806%;
   }
-  input,
+
+  .wrapper {
+        max-width: 600px;
+        margin-left: 10%;
+  }
+
+
+    input,
   textarea,
   .uneditable-input {
     margin-left: 0;
@@ -1040,11 +1049,11 @@ body {font-family: Verdana,sans-serif;margin:0}
   ul.navbar-fixed-top.responsive {
       position: fixed;
       align-self: center;
-      height: 60px;
+      height: 40px;
+
   }
 
-    ul.navbar-fixed-top.responsive:hover,
-    ul.navbar-fixed-top.responsive:after{
+    ul.navbar-fixed-top.responsive:active:after{
         position: fixed;
         align-self: center;
         height: 300px;
@@ -1390,7 +1399,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   border-radius: 10px;
   color: #ffffff;
   background-color: #870900;
-  max-width: 600px;
+  max-width: 800px;
   margin-left: 25%;
   text-align: left;
 }
