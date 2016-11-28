@@ -17,14 +17,23 @@ if(isset($_POST{'publish'})) {
 ?>
 
 
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
-</head>
 
+<head>
+ <!DOCTYPE html>
+ <html lang="en" xmlns="http://www.w3.org/1999/html">
+
+  <meta charset="UTF-8">
+  <title>Odioso Orrore</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap" />
+  <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+</head>
+ </html>
 <body>
 <h1 align="center">Welcome to the News section</h1>
-<div class="rating-form">
+<div class="wrapper">
 
  <form action="newNews.php" method="post">
   <h2 align="left">Publish New News</h2>
@@ -40,4 +49,4 @@ if(isset($_POST{'publish'})) {
  </form>
 </div>
 </body>
-</html>
+
