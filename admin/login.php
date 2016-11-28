@@ -102,6 +102,7 @@ if (isset($connection)){mysqli_close($connection);}
 <h2>Please login</h2>
 <form class="wrapper" action="login.php" method="post">
     <input type="text" name="user" placeholder="Username" maxlength="30" value="" />
+    <br>
     <input type="password" name="pass" placeholder="Password" maxlength="30" value="" />
     <br>
     <input type="submit" name="submit" value="Login" />
