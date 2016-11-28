@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Odioso Orrore</title>
     <link rel="stylesheet" type="text/css" href="bootstrap" />
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <style>
         ul
@@ -42,6 +42,7 @@
     </style>
 </head>
 <body>
+<div class="wrapper">
 <a href="index.php?page=home">HOME</a>
 <br>
 <a href="index.php?page=newNews">NEWS</a>
@@ -51,5 +52,7 @@
 <a href="index.php?page=content">UNUSED</a>
 <br>
 <a href="../front.php">FRONTPAGE</a>
+</div>
 </html>
+
 
