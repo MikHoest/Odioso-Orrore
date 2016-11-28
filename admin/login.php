@@ -49,9 +49,9 @@ if (!empty($message))
 <head>
     <meta charset="UTF-8">
     <title>LOGIN</title>
-    <link rel="stylesheet" type="text/css" href="bootstrap" />
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" type="text/css" href="../bootstrap" />
+    <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <style>
         ul {
             list-style-type: none;
@@ -91,15 +91,15 @@ if (!empty($message))
         <div class="col-sm-3">
             <div class="logo" style="float:left">
                 <a href="../front.php">
-                    <img src="picz/notlogo2.jpg" style="height: 135px">
+                    <img src="../picz/notlogo2.jpg" style="height: 135px">
                 </a>
             </div>
         </div>
         <li><a class="active" href="front.php">Home</a></li>
-        <li><a href="../front.php" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
-        <li><a href="../Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
-        <li><a href="../theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
-        <li><a href="../Reservations.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
+        <li><a href="../front.php" style="float: none"><img src="../picz/MENU-HOME.png" ></a></li>
+        <li><a href="../Menu.php" style="float: none"><img src="../picz/MENU-MENU.png" ></a></li>
+        <li><a href="../theNews.php" style="float: none"><img src="../picz/MENU-NEWS.png"></a></li>
+        <li><a href="../Reservations.php" style="float: none"><img src="../picz/MENU-RESERVATIONS.png" ></a></li>
         <li class="icon">
             <a href="javascript:void(0)" style="font-size:30px;" onclick="myFunction()">
                 <p class="customfont"> ☰    ☰ </p>
@@ -111,9 +111,9 @@ if (!empty($message))
 
 </div>
 <div class="w3-content w3-display-container">
-    <img class="mySlides" src="picz/slide1.png" style="width:100%">
-    <img class="mySlides" src="picz/slide2.png" style="width:100%">
-    <img class="mySlides" src="picz/slide1.png" style="width:100%">
+    <img class="mySlides" src="../picz/slide1.png" style="width:100%">
+    <img class="mySlides" src="../picz/slide2.png" style="width:100%">
+    <img class="mySlides" src="../picz/slide1.png" style="width:100%">
     <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
         <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
         <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
