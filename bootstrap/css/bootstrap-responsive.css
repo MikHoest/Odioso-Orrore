@@ -1395,13 +1395,10 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 }
 .wrapper {
-<<<<<<< HEAD
-  height: 100%;
   width: 100%;
+  align-content: center;
   position: relative;
-=======
   height: inherit;
->>>>>>> origin/master
   border-radius: 10px;
   color: #ffffff;
   background-color: #870900;
