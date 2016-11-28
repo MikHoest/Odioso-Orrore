@@ -10,7 +10,7 @@ confirm_logged_in();
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
 </head>
 <body>
-<h1 align="center">Welcome to the backend</h1>
+<h1 align="left">Welcome to the backend</h1>
 
 <?php
 if(isset($_GET['page']))

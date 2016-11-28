@@ -22,7 +22,7 @@ if(isset($_POST{'publish'})) {
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
 </head>
 <body>
-<h1 align="center">Welcome to the Daily Special section</h1>
+<h1 align="left">Welcome to the Daily Special section</h1>
 <div class="wrapper">
 
     <form action="newDrink.php" method="post">

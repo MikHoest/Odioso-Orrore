@@ -34,7 +34,7 @@
         {
 
             background-color: rgba(255, 104, 107, 0);
-            color: rgba(177, 21, 21, 0.8);
+            color: rgb(255, 255, 255);
             font-style: normal;
             text-decoration: none;
         }
@@ -42,16 +42,16 @@
     </style>
 </head>
 <body>
-<div class="wrapper">
-<a href="index.php?page=home">HOME</a>
+<div class="wrapper" align="left">
+<h4><a href="index.php?page=home">HOME</a></h4>
 <br>
-<a href="index.php?page=newNews">NEWS</a>
+<h4><a href="index.php?page=newNews">ADD NEWS</a></h4>
 <br>
-<a href="index.php?page=newMenu">MENU</a>
+<h4><a href="index.php?page=newMenu">ADD MENU ITEMS</a></h4>
 <br>
-<a href="index.php?page=content">UNUSED</a>
+<h4><a href="index.php?page=content">UNUSED</a></h4>
 <br>
-<a href="../front.php">FRONTPAGE</a>
+<h4><a href="../front.php">FRONTPAGE</a></h4>
 </div>
 </html>
 
