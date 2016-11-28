@@ -135,14 +135,13 @@ $query = "SELECT * FROM dailyspecial";
 mysqli_query($connection, $query) or die('Error querying database.');
 
 $result = mysqli_query($connection, $query);
-$row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {
     $dailySpecial=$row['dailySpecial'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     $id=$row['ID'];
-    echo "<div class='wrapper' </div><div class='' align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK" . "</div><hr>";
+    echo "<table><div class='wrapper' </div><div class='' align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK" . "</div><hr></table>";
 }
 
 ?>
@@ -196,13 +195,12 @@ $query = "SELECT * FROM menuitems";
 mysqli_query($connection, $query) or die('Error querying database.');
 
 $result = mysqli_query($connection, $query);
-$row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {
     $mainCourse=$row['mainCourse'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
-    echo "<div class='wrapper' </div><div class='' align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK" . "</div><hr>";
+    echo "<table><div class='wrapper' </div><div class='' align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK" . "</div><hr></table>";
 }
 
 ?>
@@ -246,7 +244,7 @@ while ($row = mysqli_fetch_array($result)) {
                 resize: none;
             }
         </style>
-        <input type="submit" name="submit" value="SEND!" />
+        <input type="submit" name="publish" value="SEND!" />
         <br>
     </form>
 </div>
