@@ -26,7 +26,10 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 	$result = mysqli_query($connection, $query);
 		if ($result) {
 			$message = "User Created.";
-		} else {
+			redirect_to("index.php");
+		}
+		else
+		{
 			$message = "User could not be created.";
 			$message .= "<br />" . mysqli_error();
 		}
