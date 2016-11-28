@@ -140,8 +140,9 @@ while ($row = mysqli_fetch_array($result)) {
     $dailySpecial=$row['dailySpecial'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
+    $review=$row['review'];
     $id=$row['ID'];
-    echo "<table><div class='wrapper' </div><div class='' align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK" . "</div><hr></table>";
+    echo "<div class='wrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
 }
 
 ?>
@@ -185,7 +186,7 @@ while ($row = mysqli_fetch_array($result)) {
                 resize: none;
             }
         </style>
-        <input type="submit" name="submit" value="SEND!" />
+        <input type="submit" name="publish" value="SEND!" />
         <br>
     </form>
 </div>
@@ -200,7 +201,8 @@ while ($row = mysqli_fetch_array($result)) {
     $mainCourse=$row['mainCourse'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
-    echo "<table><div class='wrapper' </div><div class='' align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK" . "</div><hr></table>";
+    $review=$row['review'];
+    echo "<div class='wrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
 }
 
 ?>
