@@ -5,7 +5,7 @@ require_once("include/functions.php");
 include('adminSwitch.php');
 confirm_logged_in();
 
-$query = "INSERT INTO `menuitems`(`ID`, `mainCourse`, `ingredients`, `price`, `review`) VALUES ([],[$mainCourse],[$ingredients],[$price], [review])";
+$query = "INSERT INTO menuitems(ID, mainCourse, ingredients, price, review) VALUES ([],[$mainCourse],[$ingredients],[$price], [review])";
 mysqli_query($connection, $query) or die('Error querying database.');
 
 $mainCourse=$row['mainCourse'];

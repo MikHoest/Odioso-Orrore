@@ -4,7 +4,7 @@
 <br>
 <a href="index.php?page=newMenu">MENU</a>
 <br>
-<a href="index.php?page=content">CONTENT</a>
+<a href="index.php?page=content">UNUSED</a>
 <br>
 <a href="../front.php">FRONTPAGE</a>
 

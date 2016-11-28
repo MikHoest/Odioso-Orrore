@@ -137,7 +137,7 @@ mysqli_query($connection, $query) or die('Error querying database.');
 $result = mysqli_query($connection, $query);
 $row = mysqli_fetch_array($result);
 
-foreach ($row = mysqli_fetch_array($result)) {
+while ($row = mysqli_fetch_array($result)) {
     $dailySpecial=$row['dailySpecial'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];

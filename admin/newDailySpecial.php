@@ -5,7 +5,7 @@ require_once("include/functions.php");
 include('adminSwitch.php');
 confirm_logged_in();
 
-$query = "INSERT INTO `dailyspecial`(`ID`, `dailySpecial`, `ingredients`, `price`, `review`) VALUES ([],[$dailyspecial],[$ingredients],[$price], [review])";
+$query = "INSERT INTO dailyspecial(ID, dailySpecial, ingredients, price, review) VALUES ([],[$dailyspecial],[$ingredients],[$price], [review])";
 mysqli_query($connection, $query) or die('Error querying database.');
 
 $dailyspecial=$row['dailySpecial'];
