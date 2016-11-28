@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
     $hashed_password = password_hash($password, PASSWORD_BCRYPT, $iterations);
 
 	$query = "INSERT INTO login (userName, password) VALUES ('{$username}', '{$hashed_password}')";
-	echo $query;
+
 	$result = mysqli_query($connection, $query);
 		if ($result) {
 			$message = "User Created.";

@@ -159,11 +159,10 @@ ul
 
 <?php
 
-$query = "SELECT * FROM news LIMIT 2";
+$query = "SELECT * FROM news LIMIT 1";
 mysqli_query($connection, $query) or die('Error querying database.');
 
 $result = mysqli_query($connection, $query);
-$row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {
     $title=$row['title'];
@@ -180,11 +179,10 @@ while ($row = mysqli_fetch_array($result)) {
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
        <?php
 
-       $query = "SELECT * FROM dailyspecial LIMIT 2";
+       $query = "SELECT * FROM dailyspecial LIMIT 1";
        mysqli_query($connection, $query) or die('Error querying database.');
 
        $result = mysqli_query($connection, $query);
-       $row = mysqli_fetch_array($result);
 
        while ($row = mysqli_fetch_array($result)) {
            $dailySpecial=$row['dailySpecial'];
@@ -201,11 +199,10 @@ while ($row = mysqli_fetch_array($result)) {
 
     <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Special Drink!</a></p>
     <?php
-    $query = "SELECT * FROM drinks LIMIT 2";
+    $query = "SELECT * FROM drinks LIMIT 1";
     mysqli_query($connection, $query) or die('Error querying database.');
 
     $result = mysqli_query($connection, $query);
-    $row = mysqli_fetch_array($result);
 
     while ($row = mysqli_fetch_array($result)) {
         $drink=$row['drink'];
