@@ -1,3 +1,7 @@
+<?php
+require_once "logout.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -52,6 +56,8 @@
 <h4><a href="index.php?page=content">UNUSED</a></h4>
 <br>
 <h4><a href="../front.php">FRONTPAGE</a></h4>
+<br><a href="logout.php">LOGOUT</a>
+
 </div>
 </html>
 

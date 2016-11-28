@@ -185,20 +185,19 @@ require_once("admin/include/functions.php");
 </div>
 
 
-<div class="wrapper" id="content" style="align-content: center; font-size: 16px; max-width: 800px">
+<div class="wrapper" id="content" style="align-content: justify; font-size: 16px; max-width: 800px">
 <?php
 
 $query = "SELECT * FROM news ORDER BY ID ASC";
 mysqli_query($connection, $query) or die('Error querying database.');
 
 $result = mysqli_query($connection, $query);
-$row = mysqli_fetch_array($result);
 
 while ($row = mysqli_fetch_array($result)) {
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div align='left' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<hr>";
+    echo "<div align='left' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<hr>";
 }
 
 ?>
