@@ -61,7 +61,6 @@ require_once("admin/include/functions.php");
         <li><a href="front.php" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
         <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
         <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
-        <li><a href="admin/login.php" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
         <li class="icon">
             <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
                 <p class="customfont"> ☰    ☰ </p>
@@ -203,9 +202,7 @@ while ($row = mysqli_fetch_array($result)) {
 ?>
 
 </div>
-<div id="footer">
-    <p>© 2016 | Odioso Orrore</p>
-</div>
+<footer><p style="margin: 20px; float: left;">© 2016 | Odioso Orrore</p><li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></footer>
 
 </body>
 </html>
