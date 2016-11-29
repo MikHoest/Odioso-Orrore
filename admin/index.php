@@ -30,8 +30,12 @@ switch ($page)
   include ("newNews.php");
   break;
  case "newMenu";
-  include ("newMenu.php");
+     include ("newMenu.php");
+  break;
+  case "newDrink";
      include ("newDrink.php");
+  break;
+  case "newDailySpecial";
      include ("newDailySpecial.php");
   break;
  case "theFrontpage";

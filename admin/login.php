@@ -97,7 +97,7 @@ if (isset($connection)){mysqli_close($connection);}
 <body>
 
 
-<div class="wrapper">
+<div class="wrapper" style="margin-left: 25%">
 <h2>Please login</h2>
 <form class="wrapper" action="login.php" method="post">
     <input type="text" name="user" placeholder="Username" maxlength="30" value="" />

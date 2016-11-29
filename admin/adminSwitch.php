@@ -42,14 +42,16 @@
     </style>
 </head>
 <body>
-<div class="wrapper" align="left">
+<div class="wrapper" align="center" style="margin-left: 25%">
 <h4><a href="index.php?page=home">HOME</a></h4>
 <br>
 <h4><a href="index.php?page=newNews">ADD NEWS</a></h4>
 <br>
 <h4><a href="index.php?page=newMenu">ADD MENU ITEMS</a></h4>
 <br>
-<h4><a href="index.php?page=content">UNUSED</a></h4>
+<h4><a href="index.php?page=newDrink">ADD NEW DRINKS</a></h4>
+<br>
+<h4><a href="index.php?page=newDailySpecial">ADD NEW DAILY SPECAIL</a></h4>
 <br>
 <h4><a href="../front.php">FRONTPAGE</a></h4>
 <br>

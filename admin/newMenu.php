@@ -22,8 +22,8 @@ if(isset($_POST{'publish'})) {
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
 </head>
 <body>
-<h1 align="left">Welcome to the Main Course section</h1>
-<div class="wrapper">
+<h2 align="center">Welcome to the Main Course section</h2>
+<div class="wrapper" style="margin-left: 25%">
 
     <form action="newMenu.php" method="post">
         <input type="text" style="background-color: #ffffff" name="maincourse" placeholder="Main Course" size="30" align="center"><br/>

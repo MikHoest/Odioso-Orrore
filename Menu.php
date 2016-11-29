@@ -59,7 +59,6 @@ ul {
         <li><a href="front.php" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
         <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
         <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
-        <li><a href="admin/login.php" style="float: none"><img src="picz/MENU-LOGIN.png" ></a></li>
         <li class="icon">
             <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
                 <p class="customfont"> ☰    ☰ </p>
@@ -149,7 +148,7 @@ while ($row = mysqli_fetch_array($result)) {
 <div class="rating-form">
     <strong class="choice"><h3>Rate This Dish!</h3></strong>
 
-    <form action="process.php" method="post">
+    <form action="reviewDailySpecial.php" method="post">
 
         <div class="stars">
             <form action>
@@ -218,7 +217,7 @@ while ($row = mysqli_fetch_array($result)) {
 <div class="rating-form">
     <strong class="choice">Rate This Dish!</strong>
 
-    <form action="process.php" method="post">
+    <form action="reviewMenuitems.php" method="post">
 
         <div class="stars">
             <form action>
@@ -259,4 +258,5 @@ while ($row = mysqli_fetch_array($result)) {
     </form>
 </div>
 </body>
+<footer><p style="margin: 20px; float: left;">© 2016 | Odioso Orrore</p><li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></footer>
 </html>
