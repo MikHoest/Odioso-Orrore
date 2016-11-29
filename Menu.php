@@ -141,7 +141,7 @@ while ($row = mysqli_fetch_array($result)) {
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     $review=$row['review'];
-    echo "<div class='wrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
+    echo "<div class='wrapper' style='margin-left: 25%';><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
 }
 
 ?>
@@ -189,25 +189,34 @@ while ($row = mysqli_fetch_array($result)) {
         <br>
     </form>
 </div>
+<html>
+<head>
+<body>
 
-<?php
-$query = "SELECT * FROM menuitems";
-mysqli_query($connection, $query) or die('Error querying database.');
 
-$result = mysqli_query($connection, $query);
+<table>
+    <tr>
+    <?php
+    $query = "SELECT * FROM menuitems";
+    mysqli_query($connection, $query) or die('Error querying database.');
 
-while ($row = mysqli_fetch_array($result)) {
-    $mainCourse=$row['mainCourse'];
-    $ingredients=$row['ingredients'];
-    $price=$row['price'];
-    $review=$row['review'];
-    echo "<div class='wrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
-}
+    $result = mysqli_query($connection, $query);
 
-?>
+    while ($row = mysqli_fetch_array($result)) {
+        $mainCourse=$row['mainCourse'];
+        $ingredients=$row['ingredients'];
+        $price=$row['price'];
+        $review=$row['review'];
+        echo "<th><div class='wrapper' style='margin-left: 25%';><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br></th>";
+    }
+
+    ?>
+    </tr>
+</table>
+</head>
 
 <div class="rating-form">
-    <strong class="choice"><h3>Rate This Dish!</h3></strong>
+    <strong class="choice">Rate This Dish!</strong>
 
     <form action="process.php" method="post">
 
@@ -238,7 +247,7 @@ while ($row = mysqli_fetch_array($result)) {
         </div>
         <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
         <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="right"><br/>
-        <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Comment" rows="5" align="right"></textarea><br/>
+        <textarea class="nooResize" name="review" style="background-color: #ffffff" cols="32" placeholder= "Comment" rows="5" align="right"></textarea><br/>
         <style>
             textarea.nooResize
             {
@@ -249,6 +258,5 @@ while ($row = mysqli_fetch_array($result)) {
         <br>
     </form>
 </div>
-
 </body>
 </html>
