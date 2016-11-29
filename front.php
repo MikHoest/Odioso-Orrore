@@ -178,7 +178,7 @@ while ($row = mysqli_fetch_array($result)) {
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
        <?php
 
-       $query = "SELECT * FROM dailyspecial LIMIT 1";
+       $query = "SELECT * FROM dailyspecial ORDER BY rand(" . date("Ymd") . ") LIMIT 1";
        mysqli_query($connection, $query) or die('Error querying database.');
 
        $result = mysqli_query($connection, $query);
