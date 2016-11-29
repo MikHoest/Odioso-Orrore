@@ -32,7 +32,7 @@ switch ($page)
  case "newMenu";
      include ("newMenu.php");
   break;
-  case "newDrink";
+  case "newDrink"; //what is going on here??
      include ("newDrink.php");
   break;
   case "newDailySpecial";
