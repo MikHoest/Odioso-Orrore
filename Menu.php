@@ -140,7 +140,7 @@ while ($row = mysqli_fetch_array($result)) {
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     $review=$row['review'];
-    echo "<div class='wrapper' style='margin-left: 25%';><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
+    echo "<div class='wrapper' style='margin-left: 25%; height: 250px' ><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
 }
 
 ?>
@@ -206,7 +206,49 @@ while ($row = mysqli_fetch_array($result)) {
         $ingredients=$row['ingredients'];
         $price=$row['price'];
         $review=$row['review'];
-        echo "<th><div class='wrapper' style='margin-left: 25%';><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br></th>";
+        echo "<th><div class='wrapper rating-form' style='margin-left: 33,333333%'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div><br><strong class=\"choice\">Rate This Dish!</strong>
+
+    <form action=\"reviewMenuitems.php\" method=\"post\">
+
+        <div class=\"stars\">
+            <form action>
+
+                <input class=\"star star-5\" id=\"star-5\" type=\"radio\" name=\"star\" value=\"5\">
+                <label class=\"star star-5\" for=\"star-5\">
+                </label>
+
+                <input class=\"star star-4\" id=\"star-4\" type=\"radio\" name=\"star\" value=\"4\">
+                <label class=\"star star-4\" for=\"star-4\">
+                </label>
+
+                <input class=\"star star-3\" id=\"star-3\" type=\"radio\" name=\"star\" value=\"3\">
+                <label class=\"star star-3\" for=\"star-3\">
+                </label>
+
+                <input class=\"star star-2\" id=\"star-2\" type=\"radio\" name=\"star\" value=\"2\">
+                <label class=\"star star-2\" for=\"star-2\">
+                </label>
+
+                <input class=\"star star-1\" id=\"star-1\" type=\"radio\" name=\"star\" value=\"1\">
+                <label class=\"star star-1\" for=\"star-1\">
+                </label>
+
+            </form>
+        </div>
+        <input type=\"text\" style=\"background-color: #ffffff\" name=\"name\" placeholder=\"Name\" size=\"30\" align=\"center\"><br/>
+        <input type=\"text\" style=\"background-color: #ffffff\" name=\"email\" placeholder=\"Email\" size=\"30\" align=\"right\"><br/>
+        <textarea class=\"nooResize\" name=\"review\" style=\"background-color: #ffffff\" cols=\"32\" placeholder= \"Comment\" rows=\"5\" align=\"right\"></textarea><br/>
+        <style>
+            textarea.nooResize
+            {
+                resize: none;
+            }
+        </style>
+        <input type=\"submit\" name=\"publish\" value=\"SEND!\" />
+        <br>
+        </table></div>
+    </form>
+    </th>";
     }
 
     ?>
@@ -214,49 +256,6 @@ while ($row = mysqli_fetch_array($result)) {
 </table>
 </head>
 
-<div class="rating-form">
-    <strong class="choice">Rate This Dish!</strong>
-
-    <form action="reviewMenuitems.php" method="post">
-
-        <div class="stars">
-            <form action>
-
-                <input class="star star-5" id="star-5" type="radio" name="star" value="5">
-                <label class="star star-5" for="star-5">
-                </label>
-
-                <input class="star star-4" id="star-4" type="radio" name="star" value="4">
-                <label class="star star-4" for="star-4">
-                </label>
-
-                <input class="star star-3" id="star-3" type="radio" name="star" value="3">
-                <label class="star star-3" for="star-3">
-                </label>
-
-                <input class="star star-2" id="star-2" type="radio" name="star" value="2">
-                <label class="star star-2" for="star-2">
-                </label>
-
-                <input class="star star-1" id="star-1" type="radio" name="star" value="1">
-                <label class="star star-1" for="star-1">
-                </label>
-
-            </form>
-        </div>
-        <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
-        <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="right"><br/>
-        <textarea class="nooResize" name="review" style="background-color: #ffffff" cols="32" placeholder= "Comment" rows="5" align="right"></textarea><br/>
-        <style>
-            textarea.nooResize
-            {
-                resize: none;
-            }
-        </style>
-        <input type="submit" name="publish" value="SEND!" />
-        <br>
-    </form>
-</div>
 </body>
 <footer><p style="margin: 20px; float: left;">© 2016 | Odioso Orrore</p><li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></footer>
 </html>
