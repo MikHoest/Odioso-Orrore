@@ -148,17 +148,16 @@ ul
        }
    </style>
 <br><br>
-   <div class="wrapper" style="text-align: left;">
+   <div class="wrapper" style="text-align: justify; margin-left: 25%;">
        <p class="customfont" style="font-size: 34px; padding: 30px;">Celebrating the scariest of Italian cuisine since 2016!
        </p>
    </div>
 <br>
-   <div class="wrapper" >
+   <div class="wrapper" style="margin-left: 25%";>
 
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='theNews.php' style="color: #000000">Read the latest from Odioso Orrore!</a></p>
 
 <?php
-
 $query = "SELECT * FROM news LIMIT 1";
 mysqli_query($connection, $query) or die('Error querying database.');
 
@@ -174,7 +173,7 @@ while ($row = mysqli_fetch_array($result)) {
    </div>
 
 <br>
-   <div class="wrapper" >
+   <div class="wrapper" style="margin-left: 25%";>
 
        <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
        <?php
@@ -195,7 +194,7 @@ while ($row = mysqli_fetch_array($result)) {
 
    </div>
 <br>
-<div class="wrapper" >
+<div class="wrapper" style="margin-left: 25%";>
 
     <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Special Drink!</a></p>
     <?php
@@ -215,7 +214,7 @@ while ($row = mysqli_fetch_array($result)) {
 
 </div>
 <br>
-   <div class="wrapper">
+   <div class="wrapper" style="margin-left: 25%";>
        <strong class="choice"><h2>Contact</h2></strong>
 
        <form action="process.php" method="post">
