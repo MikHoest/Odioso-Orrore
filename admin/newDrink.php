@@ -12,7 +12,7 @@ if(isset($_POST{'publish'})) {
     $price = $row['price'];
     $review = $row['review'];
 
-    $query = "INSERT INTO drinks(ID, drink, ingredients, price, review) VALUES ($drink,$ingredients,$price, review)";
+    $query = "INSERT INTO drinks('ID', 'drink', 'ingredients', 'price', 'review') VALUES ($drink,$ingredients,$price, $review)";
     mysqli_query($connection, $query) or die('Error querying database.');
 
 }
