@@ -137,16 +137,16 @@ ul
     }
 </script>
 
-
-   <style type="text/css">
+<style type="text/css">
     @font-face {
-    font-family: "SPOOKYHOUSE";
-           src: url(fonts/SPOOKYHOUSE.TTF) format("truetype");
-       }
-       p.customfont {
-    font-family: "SPOOKYHOUSE", Verdana, Tahoma, sans-serif;
-       }
-   </style>
+        font-family: "Cardinal";
+        src: url(fonts/Cardinal.ttf) format("truetype");
+    }
+    p.customfont {
+        font-family: "Cardinal", Verdana, Tahoma, sans-serif;
+    }
+</style>
+
 <br><br>
    <div class="wrapper" style="text-align: left;">
        <p class="customfont" style="font-size: 34px; padding: 30px;">Celebrating the scariest of Italian cuisine since 2016!

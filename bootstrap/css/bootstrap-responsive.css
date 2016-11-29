@@ -1053,7 +1053,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 
   }
 
-    ul.navbar-fixed-top.responsive:active:after{
+    ul.navbar-fixed-top.responsive:hover{
         position: fixed;
         align-self: center;
         height: 300px;
