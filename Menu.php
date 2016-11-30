@@ -175,6 +175,7 @@ while ($row = mysqli_fetch_array($result)) {
 
             </form>
         </div>
+        <!--
         <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
         <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="right"><br/>
         <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Comment" rows="5" align="right"></textarea><br/>
@@ -186,6 +187,7 @@ while ($row = mysqli_fetch_array($result)) {
         </style>
         <input type="submit" name="publish" value="SEND!" />
         <br>
+        -->
     </form>
 </div>
 <html>

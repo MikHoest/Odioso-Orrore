@@ -11,8 +11,11 @@ if(isset($_POST{'publish'})) {
     $ingredients = $_POST['ingredients'];
     $price = $_POST['price'];
     $review = $_POST['review'];
-
+//  $filename = $_POST('filename');
+//    BEGIN;
     $query = "INSERT INTO menuitems('ID', 'mainCourse', 'ingredients', 'price', 'review') VALUES ($mainCourse, $ingredients, $price)";
+//             "INSERT INTO picz ('ID', 'filename') VALUES ($filename)";
+//    COMMIT;
     mysqli_query($connection, $query) or die('Error querying database.');
 }
 ?>
