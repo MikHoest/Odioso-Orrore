@@ -140,7 +140,7 @@ while ($row = mysqli_fetch_array($result)) {
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     $review=$row['review'];
-    echo "<div class='wrapper' style='margin-left: 25%; height: 250px' ><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
+    echo "<div class='wrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
 }
 
 ?>
@@ -208,35 +208,35 @@ while ($row = mysqli_fetch_array($result)) {
         $ingredients=$row['ingredients'];
         $price=$row['price'];
         $review=$row['review'];
-        echo "<th><div class='wrapper rating-form' style='margin-left: 33,333333%'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div><br><strong class=\"choice\">Rate This Dish!</strong>
+        echo "<th><div class='wrapper'><table style='horiz-align: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
+        <br>
+            <strong class=\"choice\">Rate This Dish!</strong><br><br><br>
+            <form action=\"reviewMenuitems.php\" method=\"post\">
+            <div class=\"stars\">
+                <form action>
 
-    <form action=\"reviewMenuitems.php\" method=\"post\">
+                    <input class=\"star star-5\" id=\"star-5\" type=\"radio\" name=\"star\" value=\"5\">
+                    <label class=\"star star-5\" for=\"star-5\">
+                    </label>
 
-        <div class=\"stars\">
-            <form action>
+                    <input class=\"star star-4\" id=\"star-4\" type=\"radio\" name=\"star\" value=\"4\">
+                    <label class=\"star star-4\" for=\"star-4\">
+                    </label>
 
-                <input class=\"star star-5\" id=\"star-5\" type=\"radio\" name=\"star\" value=\"5\">
-                <label class=\"star star-5\" for=\"star-5\">
-                </label>
+                    <input class=\"star star-3\" id=\"star-3\" type=\"radio\" name=\"star\" value=\"3\">
+                    <label class=\"star star-3\" for=\"star-3\">
+                    </label>
+    
+                    <input class=\"star star-2\" id=\"star-2\" type=\"radio\" name=\"star\" value=\"2\">
+                    <label class=\"star star-2\" for=\"star-2\">
+                    </label>
+    
+                    <input class=\"star star-1\" id=\"star-1\" type=\"radio\" name=\"star\" value=\"1\">
+                    <label class=\"star star-1\" for=\"star-1\">
+                    </label>
 
-                <input class=\"star star-4\" id=\"star-4\" type=\"radio\" name=\"star\" value=\"4\">
-                <label class=\"star star-4\" for=\"star-4\">
-                </label>
-
-                <input class=\"star star-3\" id=\"star-3\" type=\"radio\" name=\"star\" value=\"3\">
-                <label class=\"star star-3\" for=\"star-3\">
-                </label>
-
-                <input class=\"star star-2\" id=\"star-2\" type=\"radio\" name=\"star\" value=\"2\">
-                <label class=\"star star-2\" for=\"star-2\">
-                </label>
-
-                <input class=\"star star-1\" id=\"star-1\" type=\"radio\" name=\"star\" value=\"1\">
-                <label class=\"star star-1\" for=\"star-1\">
-                </label>
-
-            </form>
-        </div>
+                </form>
+            </div>
         <!--
         <input type=\"text\" style=\"background-color: #ffffff\" name=\"name\" placeholder=\"Name\" size=\"30\" align=\"center\"><br/>
         <input type=\"text\" style=\"background-color: #ffffff\" name=\"email\" placeholder=\"Email\" size=\"30\" align=\"right\"><br/>
