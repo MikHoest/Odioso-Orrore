@@ -2,7 +2,8 @@
 require_once("include/session.php");
 require_once("include/connection.php");
 require_once("include/functions.php");
-//confirm_logged_in();
+confirm_logged_in();
+
 ?>
 
 <html xmlns="http://www.w3.org/1999/html">
@@ -35,7 +36,11 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 		}
 }
 
-if (!empty($message)) {echo "<p>" . $message . "</p>";}
+if (!empty($message))
+{
+	echo "<p>" . $message . "</p>";
+}
+
 ?>
 
 <div class="wrapper">

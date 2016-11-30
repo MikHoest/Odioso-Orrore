@@ -107,8 +107,6 @@ if (isset($connection)){mysqli_close($connection);}
     <input type="submit" name="submit" value="Login" />
 </form>
 
-<h2><a href="newuser.php">Create User</a></h2>
-
 <h2><a href="../front.php">Frontpage</a></h2>
 <br>
 </div>

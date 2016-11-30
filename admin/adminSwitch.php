@@ -56,7 +56,8 @@
 <h4><a href="../front.php">FRONTPAGE</a></h4>
 <br>
 <h4><a href="logout.php">LOGOUT</a> </h4>
-
+<br>
+<h4><a href="newuser.php">CREATE USER</a></h4>
 
 </div>
 </html>
