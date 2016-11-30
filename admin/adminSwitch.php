@@ -38,12 +38,12 @@
             font-style: normal;
             text-decoration: none;
         }
-         .vertical_line
-         {
-             height:150px;
-             width:1px;
-             background:#000;
-         }
+        .vertical_line
+        {
+            height:150px;
+            width:1px;
+            background:#000;
+        }
     </style>
 </head>
 <body>
