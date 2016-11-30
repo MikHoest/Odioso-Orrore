@@ -208,7 +208,7 @@ while ($row = mysqli_fetch_array($result)) {
         $ingredients=$row['ingredients'];
         $price=$row['price'];
         $review=$row['review'];
-        echo "<th><div class='wrapper' style='opacity: 80%'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
+        echo "<th><div class='foodwrapper' style='opacity: 80%'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
         <br>
             <strong class=\"choice\">Rate This Dish!</strong><br><br><br>
             <form action=\"reviewMenuitems.php\" method=\"post\">
