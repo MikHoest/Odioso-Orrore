@@ -44,6 +44,7 @@
 <body>
 <div class="wrapper" align="center" style="margin-left: 25%">
 <h4><a href="index.php?page=home">HOME</a></h4>
+    <hr style="width:50px; height:500px; position: absolute; left: 315px;"/>
 <br>
 <h4><a href="index.php?page=newNews">ADD NEWS</a></h4>
 <br>
