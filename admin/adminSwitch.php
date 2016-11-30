@@ -38,28 +38,25 @@
             font-style: normal;
             text-decoration: none;
         }
-
+         .vertical_line
+         {
+             height:150px;
+             width:1px;
+             background:#000;
+         }
     </style>
 </head>
 <body>
-<div class="wrapper" align="center" style="margin-left: 25%">
+<div class="wrapper" align="justify" style="margin-left: 25%">
 <h4><a href="index.php?page=home">HOME</a></h4>
-    <hr style="width:50px; height:500px; position: absolute; left: 315px;"/>
-<br>
 <h4><a href="index.php?page=newNews">ADD NEWS</a></h4>
-<br>
 <h4><a href="index.php?page=newMenu">ADD MENU ITEMS</a></h4>
-<br>
 <h4><a href="index.php?page=newDrink">ADD NEW DRINKS</a></h4>
-<br>
 <h4><a href="index.php?page=newDailySpecial">ADD NEW DAILY SPECAIL</a></h4>
-<br>
 <h4><a href="../front.php">FRONTPAGE</a></h4>
-<br>
 <h4><a href="logout.php">LOGOUT</a> </h4>
-<br>
 <h4><a href="newuser.php">CREATE USER</a></h4>
-
+    <div class="vertical_line" align="right" style="margin-left: 50%"></div>
 </div>
 </html>
 

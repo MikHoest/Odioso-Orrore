@@ -1408,10 +1408,10 @@ body {font-family: Verdana,sans-serif;margin:0}
   align-content: center;
   position: relative;
   height: inherit;
-  border-radius: 10px;
+  border-radius: 0px;
   color: #ffffff;
   background-color: #870900;
-  max-width: 800px;
+  max-width: 600px;
   float: none;
   text-align: center;
 }
