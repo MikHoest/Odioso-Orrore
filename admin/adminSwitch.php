@@ -47,8 +47,7 @@
     </style>
 </head>
 <body>
-<div class="wrapper" style="margin-left: 25%">
-<div class="vertical_line" align="right" style="margin-left: 50%"></div>
+<div class="wrapper"  style="margin-left: 25%">
 <h4><a href="index.php?page=home">HOME</a></h4>
 <h4><a href="index.php?page=newNews">ADD NEWS</a></h4>
 <h4><a href="index.php?page=newMenu">ADD MENU ITEMS</a></h4>
@@ -60,4 +59,4 @@
 </div>
 </html>
 
-
+<div class="vertical_line" align="right" style="margin-left: 50%"></div>
