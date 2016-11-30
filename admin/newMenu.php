@@ -11,10 +11,10 @@ if(isset($_POST{'publish'})) {
     $ingredients = $_POST['ingredients'];
     $price = $_POST['price'];
     $review = $_POST['review'];
-  $filename = $_POST['filename'];
+    $picture = $_POST['picture'];
 //    BEGIN;
-    $query = "INSERT INTO menuitems('ID', 'mainCourse', 'ingredients', 'price', 'review') VALUES ($mainCourse, $ingredients, $price)";
-             "INSERT INTO picz ('ID', 'filename') VALUES ($filename)";
+    $query = "INSERT INTO menuitems('ID', 'mainCourse', 'ingredients', 'price', 'review', 'picture') VALUES ($mainCourse, $ingredients, $price)";
+//             "INSERT INTO picz ('ID', 'filename') VALUES ($filename)";
 //    COMMIT;
     mysqli_query($connection, $query) or die('Error querying database.');
 }
@@ -30,7 +30,6 @@ if(isset($_POST{'publish'})) {
 
     <form action="newMenu.php" method="post">
         <input type="text" style="background-color: #ffffff" name="maincourse" placeholder="Main Course" size="30" align="center"><br/>
-   <!-- <input type="text" style="background-color: #ffffff" name="ingredients" placeholder="Ingredients" size="30" align="right"><br/>  -->
         <textarea class="nooResize" name="ingredients" style="background-color: #ffffff" cols="30" placeholder= "Ingredients" rows="5" align="right"></textarea><br/>
         <style>
             textarea.nooResize
@@ -41,7 +40,7 @@ if(isset($_POST{'publish'})) {
         <input type="number" style="background-color: #ffffff" name="price" placeholder="Price" size="30" align="left"> DKK.-<br/>
         <form action="../upload/upload_file.php" method="post" enctype="multipart/form-data">
             <label for="file">Picture:
-                <input type="file" name="file"></label>
+                <input type="file" name="picture"></label>
             <!--      <input type="submit" name="submit" value="Upload"> -->
         </form>
         <input type="submit" name="publish" value="Add To Menu!" />

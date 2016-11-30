@@ -11,8 +11,9 @@ if(isset($_POST{'publish'})) {
     $ingredients = $row['ingredients'];
     $price = $row['price'];
     $review = $row['review'];
+    $picture = $_POST['picture'];
 
-    $query = "INSERT INTO dailyspecial('ID', 'dailySpecial', 'ingredients', 'price', 'review') VALUES ($dailyspecial, $ingredients,$price, $review)";
+    $query = "INSERT INTO dailyspecial('ID', 'dailySpecial', 'ingredients', 'price', 'review', 'picture') VALUES ($dailyspecial, $ingredients,$price, $review)";
     mysqli_query($connection, $query) or die('Error querying database.');
 }
 ?>
@@ -27,7 +28,6 @@ if(isset($_POST{'publish'})) {
 
     <form action="newDrink.php" method="post">
         <input type="text" style="background-color: #ffffff" name="dailySpecial" placeholder="Daily Special" size="30" align="center"><br/>
-        <!-- <input type="text" style="background-color: #ffffff" name="ingredients" placeholder="Ingredients" size="30" align="right"><br/>  -->
         <textarea class="nooResize" name="ingredients" style="background-color: #ffffff" cols="30" placeholder= "Ingredients" rows="5" align="right"></textarea><br/>
         <style>
             textarea.nooResize
@@ -38,7 +38,7 @@ if(isset($_POST{'publish'})) {
         <input type="number" style="background-color: #ffffff" name="price" placeholder="Price" size="30" align="left"> DKK.-<br/>
         <form action="../upload/upload_file.php" method="post" enctype="multipart/form-data">
             <label for="file">Picture:
-            <input type="file" name="file"></label>
+            <input type="file" name="picture"></label>
             <!--      <input type="submit" name="submit" value="Upload"> -->
         </form>
         <input type="submit" name="publish" value="Add To Drinks!" />
