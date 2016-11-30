@@ -1408,7 +1408,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   align-content: center;
   position: relative;
   height: inherit;
-  border-radius: 0px;
+  border-radius: 1px;
   color: #ffffff;
   background-color: #870900;
   max-width: 600px;

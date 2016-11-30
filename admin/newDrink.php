@@ -21,7 +21,7 @@ if(isset($_POST{'publish'})) {
 
 <html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
+    <meta http-equiv="Content-Type" content="text/html; char    set=ISO-8859-15" />
 </head>
 <body>
 <h2 align="center">Welcome to the New Drink section</h2>
@@ -38,6 +38,11 @@ if(isset($_POST{'publish'})) {
             }
         </style>
         <input type="number" style="background-color: #ffffff" name="price" placeholder="Price" size="30" align="left"> DKK.-<br/>
+        <form action="../upload/upload_file.php" method="post" enctype="multipart/form-data">
+            <label for="file">Picture:
+                <input type="file" name="file"></label>
+            <!--      <input type="submit" name="submit" value="Upload"> -->
+        </form>
         <input type="submit" name="publish" value="Add To Drinks!" />
     </form>
 </div>

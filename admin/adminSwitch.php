@@ -47,7 +47,8 @@
     </style>
 </head>
 <body>
-<div class="wrapper" align="justify" style="margin-left: 25%">
+<div class="wrapper" style="margin-left: 25%">
+<div class="vertical_line" align="right" style="margin-left: 50%"></div>
 <h4><a href="index.php?page=home">HOME</a></h4>
 <h4><a href="index.php?page=newNews">ADD NEWS</a></h4>
 <h4><a href="index.php?page=newMenu">ADD MENU ITEMS</a></h4>
@@ -56,7 +57,6 @@
 <h4><a href="../front.php">FRONTPAGE</a></h4>
 <h4><a href="logout.php">LOGOUT</a> </h4>
 <h4><a href="newuser.php">CREATE USER</a></h4>
-    <div class="vertical_line" align="right" style="margin-left: 50%"></div>
 </div>
 </html>
 
