@@ -1415,5 +1415,5 @@ body {font-family: Verdana,sans-serif;margin:0}
   max-width: 750px;
   float: none;
   text-align: justify;
-  border: 10px darkmagenta;
+  opacity: 0.8;
 }

@@ -6,6 +6,7 @@ require_once("admin/include/functions.php");
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
+<div class="fixed-bg">
 <head>
     <meta charset="UTF-8">
     <title>Odioso Orrore</title>
@@ -43,6 +44,15 @@ ul
             color: rgba(177, 21, 21, 0.8);
             font-style: normal;
             text-decoration: none;
+        }
+        .fixed-bg
+        {
+            background-image: url("picz/slide1.png");
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
         }
 
     </style>
@@ -94,7 +104,7 @@ ul
     .w3-left, .w3-right, .w3-badge {cursor:pointer}
     .w3-badge {height:13px;width:13px;padding:0}
 </style>
-
+<!--
 <div class="w3-content w3-display-container">
     <img class="mySlides" src="picz/slide1.png" style="width:100%">
     <img class="mySlides" src="picz/slide2.png" style="width:100%">
@@ -107,7 +117,7 @@ ul
         <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
     </div>
 </div>
-
+-->
 <script>
     var slideIndex = 1;
     showDivs(slideIndex);
@@ -233,4 +243,5 @@ textarea.nooResize
 </body>
 
 <footer><p style="margin: 20px; float: left;">© 2016 | Odioso Orrore</p><li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></footer>
+</div>
 </html>
