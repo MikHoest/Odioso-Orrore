@@ -3,8 +3,9 @@ require_once("admin/include/session.php");
 require_once("admin/include/connection.php");
 require_once("admin/include/functions.php");
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
+<div class="fixed-bg">
 <head>
     <meta charset="UTF-8">
     <title>Menu</title>
@@ -13,7 +14,7 @@ require_once("admin/include/functions.php");
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <style>
 ul {
-    list-style-type: none;
+            list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
@@ -24,23 +25,32 @@ ul {
         }
 
         li {
-    float: none;
-    display: inline-block;
+                float: none;
+                display: inline-block;
 
 }
 
         li a {
-    display: inline-block;
-    color: #fefffd;
-    padding: 0px;
+            display: inline-block;
+            color: #fefffd;
+            padding: 0px;
         }
 
         li a:hover {
 
-    background-color: rgba(255, 104, 107, 0);
+            background-color: rgba(255, 104, 107, 0);
             color: rgba(177, 21, 21, 0.8);
             font-style: normal;
             text-decoration: none;
+        }
+        .fixed-bg
+        {
+            background-image: url("picz/slide1.png");
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
         }
     </style>
 </head>
@@ -69,6 +79,7 @@ ul {
 
 
 </div>
+<!--
 <div class="w3-content w3-display-container">
     <img class="mySlides" src="picz/slide1.png" style="width:100%">
     <img class="mySlides" src="picz/slide2.png" style="width:100%">
@@ -81,14 +92,15 @@ ul {
         <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
     </div>
 </div>
+-->
 <br>
-
+<!--
 <div style="text-align:center">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-
+-->
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -128,7 +140,7 @@ ul {
         }
     }
 </script>
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <?php
 $query = "SELECT * FROM dailyspecial";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -140,56 +152,56 @@ while ($row = mysqli_fetch_array($result)) {
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     $review=$row['review'];
-    echo "<div class='wrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
-}
+    echo "<div class='wrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table><div class=\"rating-form\">
+    <strong class=\"choice\"><h3>Rate This Dish!</h3></strong>
 
-?>
+    <form action=\"reviewDailySpecial.php\" method=\"post\">
 
-<div class="rating-form">
-    <strong class="choice"><h3>Rate This Dish!</h3></strong>
-
-    <form action="reviewDailySpecial.php" method="post">
-
-        <div class="stars">
+        <div class=\"stars\">
             <form action>
 
-                <input class="star star-5" id="star-5" type="radio" name="star" value="5">
-                <label class="star star-5" for="star-5">
+                <input class=\"star star-5\" id=\"star-5\" type=\"radio\" name=\"star\" value=\"5\">
+                <label class=\"star star-5\" for=\"star-5\">
                 </label>
 
-                <input class="star star-4" id="star-4" type="radio" name="star" value="4">
-                <label class="star star-4" for="star-4">
+                <input class=\"star star-4\" id=\"star-4\" type=\"radio\" name=\"star\" value=\"4\">
+                <label class=\"star star-4\" for=\"star-4\">
                 </label>
 
-                <input class="star star-3" id="star-3" type="radio" name="star" value="3">
-                <label class="star star-3" for="star-3">
+                <input class=\"star star-3\" id=\"star-3\" type=\"radio\" name=\"star\" value=\"3\">
+                <label class=\"star star-3\" for=\"star-3\">
                 </label>
 
-                <input class="star star-2" id="star-2" type="radio" name="star" value="2">
-                <label class="star star-2" for="star-2">
+                <input class=\"star star-2\" id=\"star-2\" type=\"radio\" name=\"star\" value=\"2\">
+                <label class=\"star star-2\" for=\"star-2\">
                 </label>
 
-                <input class="star star-1" id="star-1" type="radio" name="star" value="1">
-                <label class="star star-1" for="star-1">
+                <input class=\"star star-1\" id=\"star-1\" type=\"radio\" name=\"star\" value=\"1\">
+                <label class=\"star star-1\" for=\"star-1\">
                 </label>
 
             </form>
         </div>
         <!--
-        <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
-        <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="right"><br/>
-        <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Comment" rows="5" align="right"></textarea><br/>
+        <input type=\"text\" style=\"background-color: #ffffff\" name=\"name\" placeholder=\"Name\" size=\"30\" align=\"center\"><br/>
+        <input type=\"text\" style=\"background-color: #ffffff\" name=\"email\" placeholder=\"Email\" size=\"30\" align=\"right\"><br/>
+        <textarea class=\"nooResize\" name=\"message\" style=\"background-color: #ffffff\" cols=\"32\" placeholder= \"Comment\" rows=\"5\" align=\"right\"></textarea><br/>
         <style>
             textarea.nooResize
             {
                 resize: none;
             }
         </style>
-        <input type="submit" name="publish" value="SEND!" />
+        <input type=\"submit\" name=\"publish\" value=\"SEND!\" />
         <br>
         -->
     </form>
-</div>
+</div></div><br>";
+}
+
+?>
+
+
 <html>
 <head>
 <body>
@@ -208,7 +220,7 @@ while ($row = mysqli_fetch_array($result)) {
         $ingredients=$row['ingredients'];
         $price=$row['price'];
         $review=$row['review'];
-        echo "<th><div class='wrapper' style='opacity: 80%'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
+        echo "<th><div class='wrapper' style='opacity: 0.8'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $mainCourse. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
         <br>
             <strong class=\"choice\">Rate This Dish!</strong><br><br><br>
             <form action=\"reviewMenuitems.php\" method=\"post\">

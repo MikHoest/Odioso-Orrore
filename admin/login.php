@@ -105,9 +105,10 @@ if (isset($connection)){mysqli_close($connection);}
     <input type="password" name="pass" placeholder="Password" maxlength="30" value="" />
     <br>
     <input type="submit" name="submit" value="Login" />
+    <h2><a href="../front.php">Frontpage</a></h2>
 </form>
 
-<h2><a href="../front.php">Frontpage</a></h2>
+
 <br>
 </div>
 </body>
