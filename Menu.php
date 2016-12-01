@@ -160,7 +160,7 @@ while ($row = mysqli_fetch_array($result))
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     //$review=$row['review'];
-    echo "<div class='foodwrapper' style='margin-left: 15%'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
+    echo "<div class='foodwrapper' style='margin-left: 15%'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div><br><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
 }
 
 $query = "SELECT * FROM menuitems";
@@ -174,17 +174,15 @@ while ($row = mysqli_fetch_array($result))
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     //$review=$row['review'];
-    echo "<div class='foodwrapper' style='margin-left: 15%'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
+    echo "<div class='foodwrapper' style='margin-left: 15%'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div><br><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
 }
 ?>
 </head>
 <div class="container">
-<div class="row">
-</div>
+
 </div>
 </body>
-<div class="footer"><p style="margin: 20px; float: none;">© 2016 | Odioso Orrore<li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></p>
-</div>
+    <footer><p class="customfont" style="font-size: 20px; padding: 20px; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
 </html>
 <!--
 <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
