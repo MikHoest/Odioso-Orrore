@@ -187,7 +187,7 @@ require_once("admin/include/functions.php");
 <div class="wrapper" id="content" style="align-content: center; height: inherit; font-size: 16px; max-width: 800px">
 <?php
 
-$query = "SELECT * FROM news ORDER BY 'ID' DESC LIMIT 15";
+$query = "SELECT * FROM news ORDER BY ID DESC LIMIT 15";
 mysqli_query($connection, $query) or die('Error querying database.');
 
 $result = mysqli_query($connection, $query);
