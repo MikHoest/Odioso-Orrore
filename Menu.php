@@ -219,68 +219,22 @@ while ($row = mysqli_fetch_array($result)) {
     }
 </style>
 <table>
-    <tr>
+
     <?php
     $query = "SELECT * FROM menuitems";
     mysqli_query($connection, $query) or die('Error querying database.');
 
     $result = mysqli_query($connection, $query);
 
-    while ($row = mysqli_fetch_array($result)) {
+    while ($row = mysqli_fetch_array($result))
+    {
         $mainCourse=$row['mainCourse'];
         $ingredients=$row['ingredients'];
         $price=$row['price'];
         $review=$row['review'];
-        echo "<th><div class='foodwrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'><p class=\customfont\>" . $mainCourse. "</p></div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
-        <br>
-            <strong class=\"choice\">Rate This Dish!</strong><br><br><br>
-            <form action=\"reviewMenuitems.php\" method=\"post\">
-            <div class=\"stars\">
-                <form action>
-
-                    <input class=\"star star-5\" id=\"star-5\" type=\"radio\" name=\"star\" value=\"5\">
-                    <label class=\"star star-5\" for=\"star-5\">
-                    </label>
-
-                    <input class=\"star star-4\" id=\"star-4\" type=\"radio\" name=\"star\" value=\"4\">
-                    <label class=\"star star-4\" for=\"star-4\">
-                    </label>
-
-                    <input class=\"star star-3\" id=\"star-3\" type=\"radio\" name=\"star\" value=\"3\">
-                    <label class=\"star star-3\" for=\"star-3\">
-                    </label>
-    
-                    <input class=\"star star-2\" id=\"star-2\" type=\"radio\" name=\"star\" value=\"2\">
-                    <label class=\"star star-2\" for=\"star-2\">
-                    </label>
-    
-                    <input class=\"star star-1\" id=\"star-1\" type=\"radio\" name=\"star\" value=\"1\">
-                    <label class=\"star star-1\" for=\"star-1\">
-                    </label>
-
-                </form>
-            </div>
-        <!--
-        <input type=\"text\" style=\"background-color: #ffffff\" name=\"name\" placeholder=\"Name\" size=\"30\" align=\"center\"><br/>
-        <input type=\"text\" style=\"background-color: #ffffff\" name=\"email\" placeholder=\"Email\" size=\"30\" align=\"right\"><br/>
-        <textarea class=\"nooResize\" name=\"review\" style=\"background-color: #ffffff\" cols=\"32\" placeholder= \"Comment\" rows=\"5\" align=\"right\"></textarea><br/>
-        <style>
-            textarea.nooResize
-            {
-                resize: none;
-            }
-        </style>
-        <input type=\"submit\" name=\"publish\" value=\"SEND!\" />
-        <br>
-        -->
-        </table>
-        </div>
-    </form>
-    </th>";
+        echo "<div class='foodwrapper'><div align='left' style='font-size: 28px; font-family: Verdana'><p class=\customfont\>" . $mainCourse. "</p></div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div></div>";
     }
-
     ?>
-    </tr>
 </table>
 </head>
 

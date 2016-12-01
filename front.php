@@ -162,7 +162,7 @@ ul
        <p class="customfont" style="font-size: 40px; padding: 20px; font-weight: bold; text-align: center; color: #000000">Celebrating the scariest of Italian cuisine since</p>
        <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000">2016</p>
    </div>
-<br>
+
    <div class="wrapper" style="margin-left: 25%;">
 
        <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest from Odioso Orrore!</a></p>
