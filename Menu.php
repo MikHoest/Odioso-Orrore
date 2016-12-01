@@ -132,7 +132,15 @@ require_once("admin/include/functions.php");
         dots[slideIndex-1].className += " active";
     }
 </script>
-
+<style type="text/css">
+    @font-face {
+        font-family: "Cardinal";
+        src: url(fonts/Cardinal.ttf) format("truetype");
+    }
+    p.customfont {
+        font-family: "Cardinal", Verdana, Tahoma, sans-serif;
+    }
+</style>
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -160,15 +168,7 @@ while ($row = mysqli_fetch_array($result))
 }
 ?>
 
-<style type="text/css">
-    @font-face {
-        font-family: "Cardinal";
-        src: url(fonts/Cardinal.ttf) format("truetype");
-    }
-    p.customfont {
-        font-family: "Cardinal", Verdana, Tahoma, sans-serif;
-    }
-</style>
+
     <?php
     $query = "SELECT * FROM menuitems";
     mysqli_query($connection, $query) or die('Error querying database.');
