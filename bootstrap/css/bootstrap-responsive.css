@@ -1409,7 +1409,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 
   position: relative;
   height: 300px;
-
+  border-radius: 10px;
   color: #ffffff;
   background-color: #870900;
   border-image: url("borderIMG1.png");
