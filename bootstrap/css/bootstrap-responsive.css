@@ -1421,9 +1421,9 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 .foodwrapper {
   padding: 10px;
-  width: 33%;
+  width: 25%;
   position: relative;
-  border-radius: 3px;
+  border-radius: 10px;
   color: #ffffff;
   background-color: #870900;
   float: left;

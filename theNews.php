@@ -219,10 +219,8 @@ while ($row = mysqli_fetch_array($result))
     echo "<div class='wrapper' align='left'><p class=\"customfont\" style=\"font-size: 20px; padding: 20px; font-weight: bold; text-align: left;\">" . "Date: ". $date. "<br>"."<div align='center'><p class=\"customfont\" style=\"font-size: 35px; padding: 20px; font-weight: bold; text-align: center; color: #000000;\">" . $title. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$description . "</div></div><br><br>";
 }
 ?>
-
 </div>
-<footer><p style="margin: 20px; float: left;">© 2016 | Odioso Orrore</p><li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></footer>
-
+<footer><p class="customfont" style="font-size: 20px; padding: 20px; font-weight: bold; text-align: left;">© 2016 - Odioso Orrore</p><li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></footer>
 </body>
 </html>
 </body>

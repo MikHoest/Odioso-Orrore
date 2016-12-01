@@ -150,24 +150,21 @@ mysqli_query($connection, $query) or die('Error querying database.');
 
 $result = mysqli_query($connection, $query);
 
-while ($row = mysqli_fetch_array($result)) {
+while ($row = mysqli_fetch_array($result))
+{
     $dailySpecial=$row['dailySpecial'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     $review=$row['review'];
-    echo "<div class='wrapper' ><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
+    echo "<div class='foodwrapper' ><table style='float: left'><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div><br>";
 }
-
 ?>
 
 <div class="rating-form">
     <strong class="choice"><h3>Rate This Dish!</h3></strong>
-
     <form action="reviewDailySpecial.php" method="post">
-
         <div class="stars">
             <form action>
-
                 <input class="star star-5" id="star-5" type="radio" name="star" value="5">
                 <label class="star star-5" for="star-5">
                 </label>
@@ -187,22 +184,8 @@ while ($row = mysqli_fetch_array($result)) {
                 <input class="star star-1" id="star-1" type="radio" name="star" value="1">
                 <label class="star star-1" for="star-1">
                 </label>
-
             </form>
         </div>
-        <!--
-        <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
-        <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="right"><br/>
-        <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Comment" rows="5" align="right"></textarea><br/>
-        <style>
-            textarea.nooResize
-            {
-                resize: none;
-            }
-        </style>
-        <input type="submit" name="publish" value="SEND!" />
-        <br>
-        -->
     </form>
 </div>
 <html>
@@ -218,8 +201,6 @@ while ($row = mysqli_fetch_array($result)) {
         font-family: "Cardinal", Verdana, Tahoma, sans-serif;
     }
 </style>
-<table>
-    <tr>
     <?php
     $query = "SELECT * FROM menuitems";
     mysqli_query($connection, $query) or die('Error querying database.');
@@ -231,18 +212,10 @@ while ($row = mysqli_fetch_array($result)) {
         $ingredients=$row['ingredients'];
         $price=$row['price'];
         $review=$row['review'];
-        echo "<div class='foodwrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'><p class=\customfont\>" . $mainCourse. "</p></div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
-        <br>
-        </table>
-        </div>
-    </form>
-    ";
+        echo "<div class='foodwrapper' ><table style='float: none'><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">" . $mainCourse. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div><br>";
     }
 
     ?>
-    </tr>
-</table>
-
 </head>
 
 <div class="container">
@@ -253,3 +226,16 @@ while ($row = mysqli_fetch_array($result)) {
 <div class="footer"><p style="margin: 20px; float: none;">© 2016 | Odioso Orrore<li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></p>
 </div>
 </html>
+<!--
+<input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
+<input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="right"><br/>
+<textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Comment" rows="5" align="right"></textarea><br/>
+<style>
+textarea.nooResize
+{
+    resize: none;
+}
+</style>
+<input type="submit" name="publish" value="SEND!" />
+<br>
+-->
