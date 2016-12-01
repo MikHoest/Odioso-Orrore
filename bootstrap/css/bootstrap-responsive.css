@@ -1406,10 +1406,8 @@ body {font-family: Verdana,sans-serif;margin:0}
 .wrapper {
   padding: 10px;
   width: 100%;
-
   position: relative;
   height: 300px;
-
   color: #ffffff;
   background-color: #870900;
   border-image: url("borderIMG1.png");
@@ -1420,10 +1418,11 @@ body {font-family: Verdana,sans-serif;margin:0}
 }
 
 .foodwrapper {
-  padding: 10px;
-  width: 33%;
+  padding: 20px;
+  width: 25%;
   position: relative;
-  border-radius: 3px;
+  height: 250px;
+  border-radius: 10px;
   color: #ffffff;
   background-color: #870900;
   float: left;
@@ -1433,4 +1432,13 @@ body {font-family: Verdana,sans-serif;margin:0}
 .footer {
   position: absolute;
 
+}
+hr
+{
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
