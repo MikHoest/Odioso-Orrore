@@ -147,7 +147,7 @@ require_once("admin/include/functions.php");
     }
 </script>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+<p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Daily Specials</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM dailyspecial";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -160,9 +160,12 @@ while ($row = mysqli_fetch_array($result))
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     //$review=$row['review'];
-    echo "<div class='foodwrapper' style='margin-left: 15%'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div><br><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
+    echo "<div class='foodwrapper' style='margin-left: 15%'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div><br><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'><br><br>" . "Price: " .$price . ".- DKK</div></table></div>";
 }
+?>
 
+<p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Main Menu</a></p> <!-- fix this-->
+<?php
 $query = "SELECT * FROM menuitems";
 mysqli_query($connection, $query) or die('Error querying database.');
 
@@ -174,7 +177,7 @@ while ($row = mysqli_fetch_array($result))
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     //$review=$row['review'];
-    echo "<div class='foodwrapper' style='margin-left: 15%'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div><br><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
+    echo "<div class='foodwrapper' style='margin-left: 15%'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div><br><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'><br><br>" . "Price: " .$price . ".- DKK</div></table></div>";
 }
 ?>
 </head>
