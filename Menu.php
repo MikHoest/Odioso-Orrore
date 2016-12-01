@@ -283,8 +283,6 @@ while ($row = mysqli_fetch_array($result)) {
     </tr>
 </table>
 
-<div class="foodwrapper">HELLO</div>
-
 </head>
 
 <div class="container">
