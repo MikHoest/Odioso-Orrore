@@ -1420,6 +1420,8 @@ body {font-family: Verdana,sans-serif;margin:0}
 }
 
 .foodwrapper {
+  width: 90%;
+  height: 300px;
   padding: 10px;
   width: 25%;
   position: relative;
@@ -1432,5 +1434,6 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 .footer {
   position: absolute;
+  align-content: center;
 
 }
