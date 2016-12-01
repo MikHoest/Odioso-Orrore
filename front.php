@@ -156,7 +156,12 @@ ul
         font-family: "Cardinal", Verdana, Tahoma, sans-serif;
     }
 </style>
-
+<style>
+    textarea.nooResize
+    {
+        resize: none;
+    }
+</style>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
    <div class="wrapper" style="height: inherit; margin-left: 25%;">
        <p class="customfont" style="font-size: 40px; padding: 20px; font-weight: bold; text-align: center; color: #000000">Celebrating the scariest of Italian cuisine since</p>
@@ -164,9 +169,7 @@ ul
    </div>
 <br>
    <div class="wrapper" style="margin-left: 25%;">
-
        <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest from Odioso Orrore!</a></p>
-
 <?php
 $query = "SELECT * FROM news ORDER BY ID DESC LIMIT 1 ";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -180,8 +183,7 @@ while ($row = mysqli_fetch_array($result)) {
     echo "<div align='left' style='font-size: 14px; font-family: Verdana'>"."Date: ".$date. "</div><br>"."<div align='left' style='font-size: 28px; font-family: Verdana'>" .$title . "</div>"."<br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>".$description."</div>";
 }
 ?>
-   </div>
-
+</div>
 <br>
    <div class="wrapper" style="margin-left: 25%";>
 
@@ -205,7 +207,6 @@ while ($row = mysqli_fetch_array($result)) {
    </div>
 <br>
 <div class="wrapper" style="margin-left: 25%";>
-
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Special Drink!</a></p>
     <?php
     $query = "SELECT * FROM drinks LIMIT 1";
@@ -231,12 +232,6 @@ while ($row = mysqli_fetch_array($result)) {
        <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
        <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
        <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="center"></textarea><br/>
-       <style>
-textarea.nooResize
-           {
-               resize: none;
-           }
-       </style>
        <input type="submit" style="background-color: #a21b0c" name="submit" value="SEND!" />
    </form>
    </div>
