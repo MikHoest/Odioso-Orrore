@@ -198,10 +198,11 @@ require_once("admin/include/functions.php");
     </ul>
 </div>
 
-<div class="wrapper" style="margin-left: 25%;">
+<div class="wrapper" style="margin-left: 25%; height: inherit">
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore<p/>
     <p class="customfont" style="font-size: 50px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">NEWS<p/>
 </div>
+<br>
 <div class="wrapper" style="margin-left: 25%; height: inherit; font-size: 16px;">
 <?php
 
@@ -215,7 +216,7 @@ while ($row = mysqli_fetch_array($result))
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div align='left' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div align='center'><p class=\"customfont\" style=\"font-size: 35px; padding: 20px; font-weight: bold; text-align: center; color: #000000;\">" . $title. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$description . "</div><br>";
+    echo "<div align='left'><p class=\"customfont\" style=\"font-size: 20px; padding: 20px; font-weight: bold; text-align: left;\">" . "Date: ". $date. "</div><br>"."<div align='center'><p class=\"customfont\" style=\"font-size: 35px; padding: 20px; font-weight: bold; text-align: center; color: #000000;\">" . $title. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$description . "</div><br><br>";
 }
 ?>
 
@@ -224,5 +225,5 @@ while ($row = mysqli_fetch_array($result))
 
 </body>
 </html>
-    </body>
+</body>
 </html>
