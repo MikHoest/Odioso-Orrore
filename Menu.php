@@ -3,7 +3,6 @@ require_once("admin/include/session.php");
 require_once("admin/include/connection.php");
 require_once("admin/include/functions.php");
 ?>
-
 <html lang="en">
 <div class="fixed-bg">
 <head>
@@ -60,7 +59,6 @@ require_once("admin/include/functions.php");
          }
 </style>
 </head>
-
 <body>
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
@@ -79,9 +77,6 @@ require_once("admin/include/functions.php");
             <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">  </a>
         </li>
     </ul>
-
-
-
 </div>
 <!--
 <div class="w3-content w3-display-container">
@@ -152,6 +147,7 @@ require_once("admin/include/functions.php");
     }
 </script>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 <?php
 $query = "SELECT * FROM dailyspecial";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -164,7 +160,7 @@ while ($row = mysqli_fetch_array($result))
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     //$review=$row['review'];
-    echo "<div class='foodwrapper'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
+    echo "<div class='foodwrapper' style='margin-left: 15%'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
 }
 
 $query = "SELECT * FROM menuitems";
@@ -178,7 +174,7 @@ while ($row = mysqli_fetch_array($result))
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     //$review=$row['review'];
-    echo "<div class='foodwrapper'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
+    echo "<div class='foodwrapper' style='margin-left: 15%'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
 }
 ?>
 </head>
