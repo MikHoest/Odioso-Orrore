@@ -206,7 +206,7 @@ require_once("admin/include/functions.php");
 <div style="margin-left: 25%; height: inherit; font-size: 16px;">
 <?php
 
-$query = "SELECT * FROM news ORDER BY ID DESC LIMIT 15";
+$query = "SELECT * FROM news ORDER BY ID DESC";
 mysqli_query($connection, $query) or die('Error querying database.');
 
 $result = mysqli_query($connection, $query);
