@@ -163,13 +163,10 @@ while ($row = mysqli_fetch_array($result))
     $dailySpecial=$row['dailySpecial'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
-    $review=$row['review'];
+    //$review=$row['review'];
     echo "<div class='foodwrapper'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
 }
-?>
 
-
-<?php
 $query = "SELECT * FROM menuitems";
 mysqli_query($connection, $query) or die('Error querying database.');
 
@@ -180,16 +177,15 @@ while ($row = mysqli_fetch_array($result))
     $mainCourse=$row['mainCourse'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
-    $review=$row['review'];
+    //$review=$row['review'];
     echo "<div class='foodwrapper'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
 }
 ?>
 </head>
 <div class="container">
-
+<div class="row">
 </div>
-
-
+</div>
 </body>
 <div class="footer"><p style="margin: 20px; float: none;">© 2016 | Odioso Orrore<li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></p>
 </div>
