@@ -59,4 +59,4 @@
 </div>
 </html>
 
-<div class="vertical_line" align="right" style="margin-left: 50%"></div>
+

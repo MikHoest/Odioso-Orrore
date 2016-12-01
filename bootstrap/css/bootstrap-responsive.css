@@ -1412,6 +1412,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   border-radius: 3px;
   color: #ffffff;
   background-color: #870900;
+  background-image: image("../picz/borderIMGS/borderIMG1.png");
   max-width: 750px;
   float: inherit;
   text-align: justify;
