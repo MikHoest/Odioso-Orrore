@@ -231,7 +231,7 @@ while ($row = mysqli_fetch_array($result)) {
         $ingredients=$row['ingredients'];
         $price=$row['price'];
         $review=$row['review'];
-        echo "<th><div class='foodwrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'><p class=\customfont\>" . $mainCourse. "</p></div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
+        echo "<div class='foodwrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'><p class=\customfont\>" . $mainCourse. "</p></div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
         <br>
             <strong class=\"choice\">Rate This Dish!</strong><br><br><br>
             <form action=\"reviewMenuitems.php\" method=\"post\">
@@ -276,14 +276,22 @@ while ($row = mysqli_fetch_array($result)) {
         </table>
         </div>
     </form>
-    </th>";
+    ";
     }
 
     ?>
     </tr>
 </table>
+
+<div class="foodwrapper">HELLO</div>
+
 </head>
 
+<div class="container">
+
+</div>
+
 </body>
-<footer><p style="margin: 20px; float: left;">© 2016 | Odioso Orrore</p><li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></footer>
+<div class="footer"><p style="margin: 20px; float: none;">© 2016 | Odioso Orrore<li><a href="admin/login.php" style="float: none"><img src="picz/eyeBall.png" width="50" height="50"></a></li></p>
+</div>
 </html>

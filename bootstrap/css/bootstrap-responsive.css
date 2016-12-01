@@ -1421,11 +1421,16 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 .foodwrapper {
   padding: 10px;
-  width: 33.333%;
+  width: 33%;
   position: relative;
   border-radius: 3px;
   color: #ffffff;
   background-color: #870900;
   float: left;
   opacity: 0.9;
+}
+
+.footer {
+  position: absolute;
+
 }
