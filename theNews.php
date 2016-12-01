@@ -210,13 +210,13 @@ mysqli_query($connection, $query) or die('Error querying database.');
 
 $result = mysqli_query($connection, $query);
 
-while ($row = mysqli_fetch_array($result)) {
+while ($row = mysqli_fetch_array($result))
+{
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div align='left' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div align='center' style='font-size: 28px; font-family: Verdana'>" . $title. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$description . "</div>"."<hr>";
+    echo "<div align='left' style='font-size: 14px; font-family: Verdana'>" . "Date: ". $date. "</div><br>"."<div align='center'><p class=\"customfont\" style=\"font-size: 35px; padding: 20px; font-weight: bold; text-align: center; color: #000000;\">" . $title. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$description . "</div><br>";
 }
-
 ?>
 
 </div>
