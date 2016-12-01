@@ -57,6 +57,7 @@
 <h4><a href="logout.php">LOGOUT</a> </h4>
 <h4><a href="newuser.php">CREATE USER</a></h4>
 </div>
+</body>
 </html>
 
 

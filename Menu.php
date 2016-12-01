@@ -164,26 +164,26 @@ while ($row = mysqli_fetch_array($result))
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     $review=$row['review'];
-    echo "<div class='foodwrapper'><table style='float: left'><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">" . $dailySpecial. "</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div><br>";
+    echo "<div class='foodwrapper'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
 }
 ?>
 
 
-    <?php
-    $query = "SELECT * FROM menuitems";
-    mysqli_query($connection, $query) or die('Error querying database.');
+<?php
+$query = "SELECT * FROM menuitems";
+mysqli_query($connection, $query) or die('Error querying database.');
 
-    $result = mysqli_query($connection, $query);
+$result = mysqli_query($connection, $query);
 
-    while ($row = mysqli_fetch_array($result)) {
-        $mainCourse=$row['mainCourse'];
-        $ingredients=$row['ingredients'];
-        $price=$row['price'];
-        $review=$row['review'];
-        echo "<div class='foodwrapper' ><table style='float: none'><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">" . $mainCourse. "</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div><br>";
-    }
-
-    ?>
+while ($row = mysqli_fetch_array($result))
+{
+    $mainCourse=$row['mainCourse'];
+    $ingredients=$row['ingredients'];
+    $price=$row['price'];
+    $review=$row['review'];
+    echo "<div class='foodwrapper'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div><br><br><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div></table></div>";
+}
+?>
 </head>
 <div class="container">
 
