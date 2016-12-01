@@ -158,14 +158,14 @@ ul
 </style>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-   <div class="wrapper" style="text-align: justify; height: inherit; margin-left: 25%;">
-       <p class="customfont" style="font-size: 34px; padding: 30px;">Celebrating the scariest of Italian cuisine since 2016!
-       </p>
+   <div class="wrapper" style="height: inherit; margin-left: 25%;">
+       <p class="customfont" style="font-size: 40px; padding: 20px; font-weight: bold; text-align: center; color: #000000">Celebrating the scariest of Italian cuisine since</p>
+       <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000">2016</p>
    </div>
 <br>
-   <div class="wrapper" style="margin-left: 25%";>
+   <div class="wrapper" style="margin-left: 25%;">
 
-       <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='theNews.php' style="color: #000000">Read the latest from Odioso Orrore!</a></p>
+       <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest from Odioso Orrore!</a></p>
 
 <?php
 $query = "SELECT * FROM news ORDER BY ID DESC LIMIT 1 ";
@@ -185,7 +185,7 @@ while ($row = mysqli_fetch_array($result)) {
 <br>
    <div class="wrapper" style="margin-left: 25%";>
 
-       <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
+       <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
        <?php
 
        $query = "SELECT * FROM dailyspecial ORDER BY rand(" . date("Ymd") . ") LIMIT 1";
@@ -206,7 +206,7 @@ while ($row = mysqli_fetch_array($result)) {
 <br>
 <div class="wrapper" style="margin-left: 25%";>
 
-    <p class="customfont" style="font-size: 28px; padding: 30px;"><a href='Menu.php' style="color: #000000" >The Special Drink!</a></p>
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Special Drink!</a></p>
     <?php
     $query = "SELECT * FROM drinks LIMIT 1";
     mysqli_query($connection, $query) or die('Error querying database.');

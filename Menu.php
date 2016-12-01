@@ -12,49 +12,53 @@ require_once("admin/include/functions.php");
     <link rel="stylesheet" type="text/css" href="bootstrap" />
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
-    <style>
-            ul
-            {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: rgba(177, 21, 21, 0);
-                font-family: Verdana;
-                font-size: 0px;
-                text-align: center;
-            }
-            li
-            {
-                float: none;
-                display: inline-block;
-
-            }
-
-            li a
-            {
-                display: inline-block;
-                color: #fefffd;
-                padding: 0px;
-            }
-            li a:hover
-            {
-
-                 background-color: rgba(255, 104, 107, 0);
-                color: rgba(177, 21, 21, 0.8);
-                font-style: normal;
-                text-decoration: none;
-            }
-            .fixed-bg
-            {
-                background-image: url("picz/slide1.png");
-                min-height: 500px;
-                background-attachment: fixed;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: auto;
-            }
-    </style>
+    <style type="text/css">
+        @font-face {
+            font-family: "Cardinal";
+            src: url(fonts/Cardinal.ttf) format("truetype");
+        }
+        p.customfont {
+            font-family: "Cardinal", Verdana, Tahoma, sans-serif;
+        }
+        ul
+        {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgba(177, 21, 21, 0);
+            font-family: Verdana;
+            font-size: 0px;
+            text-align: center;
+        }
+        li
+        {
+            float: none;
+            display: inline-block;
+        }
+        li a
+        {
+            display: inline-block;
+            color: #fefffd;
+            padding: 0px;
+        }
+        li a:hover
+        {
+            background-color: rgba(255, 104, 107, 0);
+            color: rgba(177, 21, 21, 0.8);
+            font-style: normal;
+            text-decoration: none;
+        }
+        .fixed-bg
+        {
+             background-image: url("picz/slide1.png");
+             min-height: 500px;
+             background-attachment: fixed;
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: auto;
+         }
+</style>
 </head>
 
 <body>
@@ -72,15 +76,14 @@ require_once("admin/include/functions.php");
         <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS.png"></a></li>
         <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
         <li class="icon">
-            <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
-                <p class="customfont"> ☰    ☰ </p>
-            </a>
+            <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">  </a>
         </li>
     </ul>
 
 
 
 </div>
+<!--
 <div class="w3-content w3-display-container">
     <img class="mySlides" src="picz/slide1.png" style="width:100%">
     <img class="mySlides" src="picz/slide2.png" style="width:100%">
@@ -100,7 +103,7 @@ require_once("admin/include/functions.php");
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-
+-->
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -228,7 +231,7 @@ while ($row = mysqli_fetch_array($result)) {
         $ingredients=$row['ingredients'];
         $price=$row['price'];
         $review=$row['review'];
-        echo "<th><div class='foodwrapper' style='opacity: 80%'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'><p class=\customfont\>" . $mainCourse. "</p></div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
+        echo "<th><div class='foodwrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'><p class=\customfont\>" . $mainCourse. "</p></div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
         <br>
             <strong class=\"choice\">Rate This Dish!</strong><br><br><br>
             <form action=\"reviewMenuitems.php\" method=\"post\">

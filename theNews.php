@@ -45,6 +45,15 @@ require_once("admin/include/functions.php");
             text-decoration: none;
         }
     </style>
+    <style type="text/css">
+        @font-face {
+            font-family: "Cardinal";
+            src: url(fonts/Cardinal.ttf) format("truetype");
+        }
+        p.customfont {
+            font-family: "Cardinal", Verdana, Tahoma, sans-serif;
+        }
+    </style>
 </head>
 <body>
 
@@ -71,6 +80,7 @@ require_once("admin/include/functions.php");
 
 
 </div>
+<!--
 <div class="w3-content w3-display-container">
     <img class="mySlides" src="picz/slide1.png" style="width:100%">
     <img class="mySlides" src="picz/slide2.png" style="width:100%">
@@ -90,7 +100,7 @@ require_once("admin/include/functions.php");
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-
+-->
 <script>
     var slideIndex = 1;
     showSlides(slideIndex);
@@ -182,19 +192,17 @@ require_once("admin/include/functions.php");
     </style>
 </head>
 <body>
-
-<div id="content "id="header">
-    <h1>Odioso Orrore NEWS</h1>
-</div>
-
 <div id="menu">
     <ul>
         <li>News</li>
     </ul>
 </div>
 
-
-<div class="wrapper" id="content" style="align-content: center; height: inherit; font-size: 16px; max-width: 800px">
+<div class="wrapper" style="margin-left: 25%;">
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore<p/>
+    <p class="customfont" style="font-size: 50px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">NEWS<p/>
+</div>
+<div class="wrapper" style="margin-left: 25%; height: inherit; font-size: 16px;">
 <?php
 
 $query = "SELECT * FROM news ORDER BY ID DESC LIMIT 15";
