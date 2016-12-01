@@ -231,11 +231,7 @@ while ($row = mysqli_fetch_array($result)) {
         $ingredients=$row['ingredients'];
         $price=$row['price'];
         $review=$row['review'];
-        echo "<div class='foodwrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'><p class=\customfont\>" . $mainCourse. "</p></div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div>
-        <br>
-        </table>
-        </div>
-    </form>
+        echo "<div class='foodwrapper'><div align='left' style='font-size: 28px; font-family: Verdana'><p class=\customfont\>" . $mainCourse. "</p></div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK </div><br></div></form>
     ";
     }
 
