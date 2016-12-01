@@ -5,6 +5,7 @@ require_once("admin/include/functions.php");
 ?>
 
 <html lang="en">
+<div class="fixed-bg">
 <head>
     <meta charset="UTF-8">
     <title>Menu</title>
@@ -12,36 +13,47 @@ require_once("admin/include/functions.php");
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <style>
-ul {
-    list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: rgba(177, 21, 21, 0);
-            font-family: Verdana;
-            font-size: 0px;
-            text-align: center;
-        }
+            ul
+            {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgba(177, 21, 21, 0);
+                font-family: Verdana;
+                font-size: 0px;
+                text-align: center;
+            }
+            li
+            {
+                float: none;
+                display: inline-block;
 
-        li {
-    float: none;
-    display: inline-block;
+            }
 
-}
+            li a
+            {
+                display: inline-block;
+                color: #fefffd;
+                padding: 0px;
+            }
+            li a:hover
+            {
 
-        li a {
-    display: inline-block;
-    color: #fefffd;
-    padding: 0px;
-        }
-
-        li a:hover {
-
-    background-color: rgba(255, 104, 107, 0);
-            color: rgba(177, 21, 21, 0.8);
-            font-style: normal;
-            text-decoration: none;
-        }
+                 background-color: rgba(255, 104, 107, 0);
+                color: rgba(177, 21, 21, 0.8);
+                font-style: normal;
+                text-decoration: none;
+            }
+            .fixed-bg
+            {
+                background-image: url("picz/slide1.png");
+                min-height: 500px;
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: auto;
+            }
     </style>
 </head>
 
@@ -140,7 +152,7 @@ while ($row = mysqli_fetch_array($result)) {
     $ingredients=$row['ingredients'];
     $price=$row['price'];
     $review=$row['review'];
-    echo "<div class='wrapper'><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
+    echo "<div class='wrapper' ><table style='float: left'><div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='center' style='font-size: 16px; font-family: Verdana'>" . "Price: " .$price . ".- DKK</div><hr><div align='left' style='font-size: 16px; font-family: Verdana'>"."Review: " .$review ."</div></table></div><br>";
 }
 
 ?>

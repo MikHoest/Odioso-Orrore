@@ -1412,7 +1412,6 @@ body {font-family: Verdana,sans-serif;margin:0}
   border-radius: 3px;
   color: #ffffff;
   background-color: #870900;
-  background-image: image("../picz/borderIMGS/borderIMG1.png");
   max-width: 750px;
   float: inherit;
   text-align: justify;
@@ -1421,7 +1420,7 @@ body {font-family: Verdana,sans-serif;margin:0}
 
 .foodwrapper {
   padding: 10px;
-  width: 33.333%
+  width: 33.333%;
   position: relative;
   border-radius: 3px;
   color: #ffffff;

@@ -131,6 +131,7 @@ require_once("admin/include/functions.php");
     }
 </script>
 <html lang="en">
+<div class="fixed-bg">
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <title>OO</title>
@@ -168,6 +169,15 @@ require_once("admin/include/functions.php");
         div#menu ul li {
             display: inline;
             margin: 5px;
+        }
+        .fixed-bg
+        {
+            background-image: url("picz/slide1.png");
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
         }
     </style>
 </head>
