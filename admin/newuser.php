@@ -58,7 +58,7 @@ Username:
 Password:
 <input type="password" name="pass" maxlength="30" value="" /><br>
 Confirm password:
-<input type="confirm_password" name="con_pass" maxlength="30" value="" /><br>
+<input type="password" name="con_pass" maxlength="30" value="" /><br>
 <input type="submit" name="submit" value="Create" />
 </form>
 </div>
