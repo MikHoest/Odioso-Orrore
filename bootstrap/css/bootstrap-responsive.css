@@ -1432,6 +1432,19 @@ body {font-family: Verdana,sans-serif;margin:0}
   opacity: 0.9;
 }
 
+.left{
+  color: inherit;
+  width: 300px;
+  height: 200px;
+  float: left;
+}
+
+.right{
+  color: inherit;
+  width: 300px;
+  height: 200px;
+  float: right;
+}
 .footer
 {
   position: absolute;

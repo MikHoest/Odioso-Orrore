@@ -226,6 +226,7 @@ while ($row = mysqli_fetch_array($result)) {
 </div>
 <br>
    <div class="wrapper" style="margin-left: 25%";>
+       <div class="left">
        <strong class="choice"><h2>Contact</h2></strong>
 
        <form action="process.php" method="post">
@@ -233,8 +234,13 @@ while ($row = mysqli_fetch_array($result)) {
        <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
        <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="center"></textarea><br/>
        <input type="submit" style="background-color: #a21b0c" name="submit" value="SEND!" />
-   </form>
+       </form>
+       </div>
+       <div class="right">
+
+       </div>
    </div>
+
 </body>
     <footer><p class="customfont" style="font-size: 20px; padding: 20px; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
 </html>
