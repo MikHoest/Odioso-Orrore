@@ -72,7 +72,6 @@ ul
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            border: 1px dashed #000000;
             background-clip: content-box;
             padding: 2px;
             transition: .5s;
@@ -111,6 +110,7 @@ ul
 
         .social .link.twitter
         {
+            border: 1px solid #00ACEE;
             background-color: #00ACEE;
             background-image: url("twitter.png");
             background-size: 25%;
@@ -120,9 +120,20 @@ ul
 
         .social .link.facebook
         {
-            
+
+            border: 1px solid #3B5998;
             background-color: #3B5998;
             background-image: url("facebook.png");
+            background-size: 25%;
+            background-blend-mode: overlay;
+            color: #000000;
+        }
+        .social .link.instagram
+        {
+
+            border: 1px solid purple;
+            background-color: purple;
+            background-image: url("instagram.png");
             background-size: 25%;
             background-blend-mode: overlay;
             color: #000000;
@@ -313,6 +324,7 @@ while ($row = mysqli_fetch_array($result)) {
 <div class="wrapper social" style="margin-left: 25%; height: inherit;">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Our Social Media</p>
+    <a href="https://www.instagram.com/odiosoorrore/"  class="link instagram" target="_parent blank"><span class="fa fa-instagram"></span></a>
     <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
     <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
 </div>
@@ -328,8 +340,8 @@ while ($row = mysqli_fetch_array($result)) {
             }
         }
         ?>
-        <strong><h2>Contact</h2></strong>
-        <form action="process.php" method="post">
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold;color: black; text-align: center;">Contact us</p>
+        <form action="process.php" method="post" style="content: inherit">
             <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
             <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
             <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="center"></textarea><br/>
@@ -350,7 +362,7 @@ while ($row = mysqli_fetch_array($result)) {
                 <td><input name="Submit" type="submit" onclick="return validate();" value="Send"></td>
             </table>
         </form>
-    </div>
+</div>
 <br>
 <footer><p class="customfont" style="font-size: 20px; padding: 20px; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
 </html>
