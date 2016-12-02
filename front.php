@@ -245,9 +245,9 @@ while ($row = mysqli_fetch_array($result)) {
 
 </div>
 <br>
-   <div class="wrapper" style="background-image: picz/borderIMGS/borderImage.png; height: inherit; margin-left: 25%"; content="center" align="center" >
+   <div class="wrapper" style="padding-left: 15%; height: inherit; margin-left: 25%"; content="center" align="center" >
 
-       <strong class="choice"><h2>Contact</h2></strong>
+       <strong><h2>Contact</h2></strong>
        <form action="process.php" method="post">
        <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
        <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
@@ -260,7 +260,7 @@ while ($row = mysqli_fetch_array($result)) {
                    </tr>
                 <?php } ?>
                <tr>
-                    <td align="left" valign="top"> Validation code:</td>
+                    <td align="center" valign="top"> Validation code:</td>
                     <img src="captcha.php?rand=<?php echo rand();?>" id='captchaimg'><br><br>
                     <input id="captcha_code" name="captcha_code" type="text" placeholder="Enter the code above here :">
                     <br>
