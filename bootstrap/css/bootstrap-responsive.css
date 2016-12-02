@@ -1413,6 +1413,7 @@ body {font-family: Verdana,sans-serif;margin:0}
   background-color: #870900;
   background-image: url("borderIMG1.png");
   background-size: 100%;
+  background-blend-mode: overlay;
   max-width: 750px;
   float: inherit;
   text-align: justify;

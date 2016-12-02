@@ -231,8 +231,8 @@ while ($row = mysqli_fetch_array($result)) {
         }
     }
     ?>
-    <!doctype html>
-    <html>
+<!doctype html>
+<html>
     <head>
         <script type='text/javascript'>
             function refreshCaptcha(){
@@ -241,11 +241,10 @@ while ($row = mysqli_fetch_array($result)) {
             }
         </script>
     </head>
-    <body>
-
+<body>
 </div>
 <br>
-   <div class="wrapper" style="padding-left: 15%; height: inherit; margin-left: 25%"; content="center" align="center" >
+   <div class="wrapper" style="padding-left: 15%; height: inherit; margin-left: 25%"; content="center">
 
        <strong><h2>Contact</h2></strong>
        <form action="process.php" method="post">
