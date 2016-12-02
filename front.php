@@ -96,7 +96,7 @@ ul
 
         .social .link:hover
         {
-            padding: 20px;
+            padding: 15px;
             color: #000000;
             margin-left: -5px;
             transform: translateX(10px) rotate(360deg);
@@ -113,30 +113,51 @@ ul
             border: 1px solid #00ACEE;
             background-color: #00ACEE;
             background-image: url("twitter.png");
-            background-size: 25%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 75%;
             background-blend-mode: overlay;
             color: #000000;
+        }
+
+        .social .link.twitter:hover
+        {
+            background-size: 50%;
         }
 
         .social .link.facebook
         {
-
             border: 1px solid #3B5998;
-            background-color: #3B5998;
+            background-color: #223b80;
             background-image: url("facebook.png");
-            background-size: 25%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 75%;
             background-blend-mode: overlay;
             color: #000000;
         }
+
+        .social .link.facebook:hover
+        {
+            background-size: 50%;
+        }
+
         .social .link.instagram
         {
 
             border: 1px solid purple;
             background-color: purple;
             background-image: url("instagram.png");
-            background-size: 25%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 75%;
             background-blend-mode: overlay;
             color: #000000;
+        }
+
+        .social .link.instagram:hover
+        {
+            background-size: 50%;
         }
 
     </style>
