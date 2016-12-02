@@ -57,7 +57,7 @@ ul
         }
         .social
         {
-            position: absolute;
+            position: inherit;
             width: 100%;
             top: 50%;
             text-align: center;
@@ -72,9 +72,9 @@ ul
             width: 100px;
             height: 100px;
             border-radius: 50%;
-            border: 2px dashed white;
+            border: 1px dashed #000000;
             background-clip: content-box;
-            padding: 10px;
+            padding: 2px;
             transition: .5s;
             color: #D7D0BE;
             margin-left: 15px;
@@ -98,7 +98,7 @@ ul
         .social .link:hover
         {
             padding: 20px;
-            color: white;
+            color: #000000;
             margin-left: -5px;
             transform: translateX(10px) rotate(360deg);
         }
@@ -154,7 +154,6 @@ ul
         <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png"></a></li>
 
     </ul>
-
 
 
 </div class="SlideshowContainer">
@@ -231,10 +230,10 @@ ul
     }
 </style>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-   <div class="wrapper" style="height: inherit; margin-left: 25%;">
+<div class="wrapper" style="height: inherit; margin-left: 25%;">
        <p class="customfont" style="font-size: 40px; padding: 20px; font-weight: bold; text-align: center; color: #000000">Celebrating the scariest of Italian cuisine since</p>
        <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000">2016</p>
-   </div>
+</div>
 <br>
 <!-- NEWS-->
 <div class="wrapper" style="margin-left: 25%;">
@@ -309,7 +308,14 @@ while ($row = mysqli_fetch_array($result)) {
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 </div>-->
-<br>
+<br><br><br><br><br><br><br>
+<!-- SocialMedia-->
+<div class="wrapper social" style="margin-left: 25%; height: inherit;">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Our Social Media</p>
+    <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
+    <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
+</div>
 <!-- CONTACT -->
 <div class="wrapper" style="margin-left: 25%; height: inherit;">
         <?php
@@ -346,12 +352,5 @@ while ($row = mysqli_fetch_array($result)) {
         </form>
     </div>
 <br>
-<!-- SocialMedia-->
-<div class="wrapper social" style="margin-left: 25%; height: inherit;">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Our Social Media</p>
-            <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
-            <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
-</div>
 <footer><p class="customfont" style="font-size: 20px; padding: 20px; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
 </html>
