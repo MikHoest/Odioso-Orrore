@@ -69,8 +69,8 @@ ul
             display: inline-block;
             vertical-align: middle;
             position: relative;
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             border: 2px dashed white;
             background-clip: content-box;
@@ -82,7 +82,7 @@ ul
             text-shadow:
                 0 -1px 0 rgba(0, 0, 0, 0.2),
                 0 1px 0 rgba(255, 255, 255, 0.2);
-            font-size: 70px;
+            font-size: 15px;
         }
 
         .social .link span
@@ -112,13 +112,20 @@ ul
         .social .link.twitter
         {
             background-color: #00ACEE;
-            color: white;
+            background-image: url("twitter.png");
+            background-size: 25%;
+            background-blend-mode: overlay;
+            color: #000000;
         }
 
         .social .link.facebook
         {
+            
             background-color: #3B5998;
-            color: white;
+            background-image: url("facebook.png");
+            background-size: 25%;
+            background-blend-mode: overlay;
+            color: #000000;
         }
 
     </style>
@@ -210,7 +217,6 @@ ul
         dots[slideIndex-1].className += " w3-white";
     }
 </script>
-
 <style type="text/css">
     @font-face {
         font-family: "Cardinal";
@@ -293,7 +299,6 @@ while ($row = mysqli_fetch_array($result)) {
             }
             (function(d, s, id)
         </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     </head>
 <!-- <div id="fb-root"></div>
 <script>(function(d, s, id) {
@@ -343,6 +348,7 @@ while ($row = mysqli_fetch_array($result)) {
 <br>
 <!-- SocialMedia-->
 <div class="wrapper social" style="margin-left: 25%; height: inherit;">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Our Social Media</p>
             <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
             <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
