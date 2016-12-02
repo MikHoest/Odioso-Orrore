@@ -55,6 +55,71 @@ ul
             background-repeat: no-repeat;
             background-size: auto;
         }
+        .social
+        {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            text-align: center;
+            transform: translateY(-50%);
+        }
+
+        .social .link
+        {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px dashed white;
+            background-clip: content-box;
+            padding: 10px;
+            transition: .5s;
+            color: #D7D0BE;
+            margin-left: 15px;
+            margin-right: 15px;
+            text-shadow:
+                0 -1px 0 rgba(0, 0, 0, 0.2),
+                0 1px 0 rgba(255, 255, 255, 0.2);
+            font-size: 70px;
+        }
+
+        .social .link span
+        {
+            display: block;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .social .link:hover
+        {
+            padding: 20px;
+            color: white;
+            margin-left: -5px;
+            transform: translateX(10px) rotate(360deg);
+        }
+
+        .social .link.google-plus
+        {
+            background-color: tomato;
+            color: white;
+        }
+
+        .social .link.twitter
+        {
+            background-color: #00ACEE;
+            color: white;
+        }
+
+        .social .link.facebook
+        {
+            background-color: #3B5998;
+            color: white;
+        }
 
     </style>
 </head>
@@ -77,11 +142,9 @@ ul
             </a>
         </div>
 
-    <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU%20-%20Kopi.png"></a></li>
-    <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS%20-%20Kopi.png"></a></li>
-    <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png"></a></li>
-
-
+        <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU%20-%20Kopi.png"></a></li>
+        <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS%20-%20Kopi.png"></a></li>
+        <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png"></a></li>
 
     </ul>
 
@@ -99,13 +162,13 @@ ul
         }
     }
 </script>
-
+<!--
 <style>
     .mySlides {display:none}
     .w3-left, .w3-right, .w3-badge {cursor:pointer}
     .w3-badge {height:13px;width:13px;padding:0}
 </style>
-<!--
+
 <div class="w3-content w3-display-container">
     <img class="mySlides" src="picz/slide1.png" style="width:100%">
     <img class="mySlides" src="picz/slide2.png" style="width:100%">
@@ -156,21 +219,20 @@ ul
     p.customfont {
         font-family: "Cardinal", Verdana, Tahoma, sans-serif;
     }
-</style>
-<style>
     textarea.nooResize
     {
         resize: none;
     }
 </style>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
    <div class="wrapper" style="height: inherit; margin-left: 25%;">
        <p class="customfont" style="font-size: 40px; padding: 20px; font-weight: bold; text-align: center; color: #000000">Celebrating the scariest of Italian cuisine since</p>
        <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000">2016</p>
    </div>
 <br>
-   <div class="wrapper" style="margin-left: 25%;">
-       <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest from Odioso Orrore!</a></p>
+<!-- NEWS-->
+<div class="wrapper" style="margin-left: 25%;">
+       <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest from Odioso Orrore</a></p>
 <?php
 $query = "SELECT * FROM news ORDER BY ID DESC LIMIT 1 ";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -186,12 +248,12 @@ while ($row = mysqli_fetch_array($result)) {
 ?>
 </div>
 <br>
-   <div class="wrapper" style="margin-left: 25%";>
-
-       <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Daily Special!</a></p>
+<!--Daily Special-->
+<div class="wrapper" style="margin-left: 25%";>
+       <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Daily Special</a></p>
        <?php
 
-       $query = "SELECT * FROM dailyspecial ORDER BY rand(" . date("Ymd") . ") LIMIT 1";
+       $query = "SELECT * FROM dailyspecial ORDER BY rand(" . date("Ymd") . ") LIMIT 1"; //need to fix this for new special every day!!
        mysqli_query($connection, $query) or die('Error querying database.');
 
        $result = mysqli_query($connection, $query);
@@ -202,13 +264,12 @@ while ($row = mysqli_fetch_array($result)) {
            $price=$row['price'];
            echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>"."Price: ".$price.".- DKK" ."</div>";
        }
-
        ?>
-
-   </div>
+</div>
 <br>
+<!-- DRINKS-->
 <div class="wrapper" style="margin-left: 25%";>
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Special Drink!</a></p>
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Special Drink</a></p>
     <?php
     $query = "SELECT * FROM drinks LIMIT 1";
     mysqli_query($connection, $query) or die('Error querying database.');
@@ -221,56 +282,70 @@ while ($row = mysqli_fetch_array($result)) {
         $price=$row['price'];
         echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $drink. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>"."Price: ".$price.".- DKK" ."</div>";
     }
-
-    if(isset($_POST['Submit'])){
-        // code for check server side validation
-        if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0){
-            $msg="<span style='color:red'>The Validation code does not match!</span>";// Captcha verification is incorrect.
-        }else{// Captcha verification is Correct. Final Code Execute here!
-            $msg="<span style='color:green'>The Validation code has been matched.</span>";
-        }
-    }
     ?>
-<!doctype html>
-<html>
+</div>
     <head>
         <script type='text/javascript'>
-            function refreshCaptcha(){
+            function refreshCaptcha()
+            {
                 var img = document.images['captchaimg'];
                 img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
             }
+            (function(d, s, id)
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     </head>
-<body>
-</div>
+<!-- <div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+</div>-->
 <br>
-   <div class="wrapper" style="padding-left: 15%; height: inherit; margin-left: 25%"; content="center">
-
-       <strong><h2>Contact</h2></strong>
-       <form action="process.php" method="post">
-       <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
-       <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
-       <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="center"></textarea><br/>
-       <!-- <input type="submit" style="background-color: #a21b0c" name="submit" value="SEND!" /> -->
+<!-- CONTACT -->
+<div class="wrapper" style="margin-left: 25%; height: inherit;">
+        <?php
+        if(isset($_POST['Submit'])){
+            // code for check server side validation
+            if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0){
+                $msg="<span style='color:red'>The Validation code does not match!</span>";// Captcha verification is incorrect.
+            }else{// Captcha verification is Correct. Final Code Execute here!
+                $msg="<span style='color:green'>The Validation code has been matched.</span>";
+            }
+        }
+        ?>
+        <strong><h2>Contact</h2></strong>
+        <form action="process.php" method="post">
+            <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
+            <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
+            <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="center"></textarea><br/>
+            <!-- <input type="submit" style="background-color: #a21b0c" name="submit" value="SEND!" /> -->
             <table>
                 <?php if(isset($msg)){?>
-                   <tr>
-                       <td colspan="2" align="left" valign="top"><?php echo $msg;?></td>
-                   </tr>
+                    <tr>
+                        <td colspan="2" align="left" valign="top"><?php echo $msg;?></td>
+                    </tr>
                 <?php } ?>
-               <tr>
+                <tr>
                     <td align="center" valign="top"> Validation code:</td>
                     <img src="captcha.php?rand=<?php echo rand();?>" id='captchaimg'><br><br>
                     <input id="captcha_code" name="captcha_code" type="text" placeholder="Enter the code above here :">
                     <br>
                     Can't read the image? click <a href='javascript: refreshCaptcha();'>here</a> to refresh.
-               </tr>
-               <td><input name="Submit" type="submit" onclick="return validate();" value="Send"></td>
+                </tr>
+                <td><input name="Submit" type="submit" onclick="return validate();" value="Send"></td>
             </table>
-       </form>
-   </div>
-<div class="left" ><br><br><br></div>
-<div class="right"><br><br><br></div>
-</body>
-    <footer><p class="customfont" style="font-size: 20px; padding: 20px; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
+        </form>
+    </div>
+<br>
+<!-- SocialMedia-->
+<div class="wrapper social" style="margin-left: 25%; height: inherit;">
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Our Social Media</p>
+            <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
+            <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
+</div>
+<footer><p class="customfont" style="font-size: 20px; padding: 20px; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
 </html>
