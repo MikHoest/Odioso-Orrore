@@ -30,7 +30,7 @@ if(isset($_POST{'publish'})) {
 </head>
  </html>
 <body>
-<h2 align="center">Welcome to the News section</h2>
+<h2 align="center">The News section</h2>
 <div class="wrapper" style="margin-left: 25%">
 
  <form action="newNews.php" method="post">

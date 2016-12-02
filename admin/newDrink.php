@@ -25,7 +25,7 @@ if(isset($_POST{'publish'})) {
     <meta http-equiv="Content-Type" content="text/html; char    set=ISO-8859-15" />
 </head>
 <body>
-<h2 align="center">Welcome to the New Drink section</h2>
+<h2 align="center">New Drink section</h2>
 <div class="wrapper" style="margin-left: 25%">
 
     <form action="newDrink.php" method="post">

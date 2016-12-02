@@ -4,19 +4,12 @@ require_once("include/connection.php");
 require_once("include/functions.php");
 confirm_logged_in();
 
-?>
-
-<html xmlns="http://www.w3.org/1999/html">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
-</head>
-
-<?php
 // START FORM PROCESSING
 if (isset($_POST['submit'])) { // Form has been submitted.
 	$errors = array();
 
 	// perform validations on the form data
+	$name = trim(mysqli_real_escape_string($connection, $_POST['name']));
 	$username = trim(mysqli_real_escape_string($connection, $_POST['user']));
 	$password = trim(mysqli_real_escape_string($connection, $_POST['pass']));
 	$confirm_password = trim(mysqli_real_escape_string($connection, $_POST['con_pass']));
@@ -24,7 +17,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
     $hashed_password = password_hash($password, PASSWORD_BCRYPT, $iterations);
 	$hashed_confirm_password = password_hash($confirm_password, PASSWORD_BCRYPT, $iterations);
 
-	$query = "INSERT INTO login (userName, password, confirm_password) VALUES ('{$username}', '{$hashed_password}','{$hashed_confirm_password}')";
+	$query = "INSERT INTO login (name, userName, password, confirm_password) VALUES ('{$name}' '{$username}', '{$hashed_password}','{$hashed_confirm_password}')";
 
 	$result = mysqli_query($connection, $query);
 		if($password != $confirm_password)
@@ -49,20 +42,25 @@ if (!empty($message))
 }
 
 ?>
-
-<div class="wrapper">
-<h2>Create New User</h2>
-<form action="newuser.php" method="post">
-Username:
-<input type="text" name="user"  maxlength="30" value="" /><br>
-Password:
-<input type="password" name="pass" maxlength="30" value="" /><br>
-Confirm password:
-<input type="password" name="con_pass" maxlength="30" value="" /><br>
-<input type="submit" name="submit" value="Create" />
-</form>
-</div>
-</body>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
+	</head>
+	<body><h2 align="center">Create New User</h2>
+		<div class="wrapper" style="margin-left: 25%">
+			<form action="newuser.php" method="post">
+			Full Name:
+			<input type="text" name="name"  maxlength="50" value="" /><br>
+			Username:
+			<input type="text" name="user"  maxlength="30" value="" /><br>
+			Password:
+			<input type="password" name="pass" maxlength="30" value="" /><br>
+			Confirm password:
+			<input type="password" name="con_pass" maxlength="30" value="" /><br>
+			<input type="submit" name="submit" value="Create" />
+			</form>
+		</div>
+	</body>
 </html>
 <?php
 if (isset($connection))

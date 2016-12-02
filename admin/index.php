@@ -15,32 +15,35 @@ confirm_logged_in();
 <?php
 if(isset($_GET['page']))
 {
- $page = $_GET['page'];
+    $page = $_GET['page'];
 }
 else
 {
- $page ="index";
+    $page ="index";
 }
 switch ($page)
 {
- default:
-  include("adminSwitch.php");
-  break;
- case "newNews";
-  include ("newNews.php");
-  break;
- case "newMenu";
-     include ("newMenu.php");
-  break;
-  case "newDrink";
-     include ("newDrink.php");
-  break;
-  case "newDailySpecial";
-     include ("newDailySpecial.php");
-  break;
- case "theFrontpage";
-  include ("../front.php");
-  break;
+     default:
+          include("adminSwitch.php");
+          break;
+     case "newNews";
+          include ("newNews.php");
+          break;
+     case "newMenu";
+          include ("newMenu.php");
+          break;
+     case "newDrink";
+          include ("newDrink.php");
+          break;
+     case "newDailySpecial";
+          include ("newDailySpecial.php");
+          break;
+     case "theFrontpage";
+          include ("../front.php");
+          break;
+     case "newUser";
+          include ("newuser.php");
+          break;
 }
 ?>
 

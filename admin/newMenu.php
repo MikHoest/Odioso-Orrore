@@ -10,10 +10,10 @@ if(isset($_POST{'publish'})) {
     $mainCourse = $_POST['mainCourse'];
     $ingredients = $_POST['ingredients'];
     $price = $_POST['price'];
-    $review = $_POST['review'];
+    //$review = $_POST['review'];
     $picture = $_POST['picture'];
 
-    $query = "INSERT INTO menuitems('mainCourse', 'ingredients', 'price', 'review', 'picture') VALUES ($mainCourse, $ingredients, $price)";
+    $query = "INSERT INTO menuitems('mainCourse', 'ingredients', 'price', 'picture') VALUES ($mainCourse, $ingredients, $price)";
 
     mysqli_query($connection, $query) or die('Error querying database.');
 }
@@ -24,7 +24,7 @@ if(isset($_POST{'publish'})) {
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
 </head>
 <body>
-<h2 align="center">Welcome to the Main Course section</h2>
+<h2 align="center">Main Course section</h2>
 <div class="wrapper" style="margin-left: 25%">
 
     <form action="newMenu.php" method="post">

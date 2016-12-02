@@ -53,9 +53,9 @@
 <h4><a href="index.php?page=newMenu">ADD MENU ITEMS</a></h4>
 <h4><a href="index.php?page=newDrink">ADD NEW DRINKS</a></h4>
 <h4><a href="index.php?page=newDailySpecial">ADD NEW DAILY SPECAIL</a></h4>
+<h4><a href="index.php?page=newUser">CREATE USER</a></h4>
 <h4><a href="../front.php">FRONTPAGE</a></h4>
 <h4><a href="logout.php">LOGOUT</a> </h4>
-<h4><a href="newuser.php">CREATE USER</a></h4>
 </div>
 </body>
 </html>
