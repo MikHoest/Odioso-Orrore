@@ -245,39 +245,33 @@ while ($row = mysqli_fetch_array($result)) {
 
 </div>
 <br>
-   <div class="wrapper" style="margin-left: 25%"; >
-       <div class="left" >
-       <strong class="choice"><h2>Contact</h2></strong>
+   <div class="wrapper" style="background-image: picz/borderIMGS/borderImage.png; height: inherit; margin-left: 25%"; content="center" align="center" >
 
+       <strong class="choice"><h2>Contact</h2></strong>
        <form action="process.php" method="post">
        <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
        <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
        <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="center"></textarea><br/>
        <!-- <input type="submit" style="background-color: #a21b0c" name="submit" value="SEND!" /> -->
-       </form>
-       </div>
-       <div class="right">
-           <br><br><br>
-           <form action="process.php" method="post" name="form1" id="form1" >
-               <table width="400" border="0" align="left" cellpadding="5" cellspacing="1" class="table">
-                   <?php if(isset($msg)){?>
-                       <tr>
-                           <td colspan="2" align="left" valign="top"><?php echo $msg;?></td>
-                       </tr>
-                   <?php } ?>
+            <table>
+                <?php if(isset($msg)){?>
                    <tr>
-                       <td align="left" valign="top"> Validation code:</td>
-                       <td><img src="captcha.php?rand=<?php echo rand();?>" id='captchaimg'><br>
-                           <input id="captcha_code" name="captcha_code" type="text" placeholder="Enter the code above here :">
-                           <br>
-                           Can't read the image? click <a href='javascript: refreshCaptcha();'>here</a> to refresh.</td>
+                       <td colspan="2" align="left" valign="top"><?php echo $msg;?></td>
                    </tr>
-                   <td><input name="Submit" type="submit" onclick="return validate();" value="Send"></td>
-               </table>
-           </form>
-       </div>
+                <?php } ?>
+               <tr>
+                    <td align="left" valign="top"> Validation code:</td>
+                    <img src="captcha.php?rand=<?php echo rand();?>" id='captchaimg'><br><br>
+                    <input id="captcha_code" name="captcha_code" type="text" placeholder="Enter the code above here :">
+                    <br>
+                    Can't read the image? click <a href='javascript: refreshCaptcha();'>here</a> to refresh.
+               </tr>
+               <td><input name="Submit" type="submit" onclick="return validate();" value="Send"></td>
+            </table>
+       </form>
    </div>
-
+<div class="left" ><br><br><br></div>
+<div class="right"><br><br><br></div>
 </body>
     <footer><p class="customfont" style="font-size: 20px; padding: 20px; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
 </html>
