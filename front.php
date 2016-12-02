@@ -8,8 +8,9 @@ require_once("admin/include/functions.php");
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <div class="fixed-bg">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8 utf-8">
     <title>Odioso Orrore</title>
+    <link href="cssCap/style.css">
     <link rel="stylesheet" type="text/css" href="bootstrap" />
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
@@ -221,23 +222,59 @@ while ($row = mysqli_fetch_array($result)) {
         echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $drink. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>"."Price: ".$price.".- DKK" ."</div>";
     }
 
+    if(isset($_POST['Submit'])){
+        // code for check server side validation
+        if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0){
+            $msg="<span style='color:red'>The Validation code does not match!</span>";// Captcha verification is incorrect.
+        }else{// Captcha verification is Correct. Final Code Execute here!
+            $msg="<span style='color:green'>The Validation code has been matched.</span>";
+        }
+    }
     ?>
+    <!doctype html>
+    <html>
+    <head>
+        <script type='text/javascript'>
+            function refreshCaptcha(){
+                var img = document.images['captchaimg'];
+                img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
+            }
+        </script>
+    </head>
+    <body>
 
 </div>
 <br>
-   <div class="wrapper" style="margin-left: 25%";>
-       <div class="left">
+   <div class="wrapper" style="margin-left: 25%"; >
+       <div class="left" >
        <strong class="choice"><h2>Contact</h2></strong>
 
        <form action="process.php" method="post">
        <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
        <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
        <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="center"></textarea><br/>
-       <input type="submit" style="background-color: #a21b0c" name="submit" value="SEND!" />
+       <!-- <input type="submit" style="background-color: #a21b0c" name="submit" value="SEND!" /> -->
        </form>
        </div>
        <div class="right">
-
+           <br><br><br>
+           <form action="process.php" method="post" name="form1" id="form1" >
+               <table width="400" border="0" align="left" cellpadding="5" cellspacing="1" class="table">
+                   <?php if(isset($msg)){?>
+                       <tr>
+                           <td colspan="2" align="left" valign="top"><?php echo $msg;?></td>
+                       </tr>
+                   <?php } ?>
+                   <tr>
+                       <td align="left" valign="top"> Validation code:</td>
+                       <td><img src="captcha.php?rand=<?php echo rand();?>" id='captchaimg'><br>
+                           <input id="captcha_code" name="captcha_code" type="text" placeholder="Enter the code above here :">
+                           <br>
+                           Can't read the image? click <a href='javascript: refreshCaptcha();'>here</a> to refresh.</td>
+                   </tr>
+                   <td><input name="Submit" type="submit" onclick="return validate();" value="Send"></td>
+               </table>
+           </form>
        </div>
    </div>
 

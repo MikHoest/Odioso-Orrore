@@ -1435,14 +1435,14 @@ body {font-family: Verdana,sans-serif;margin:0}
 .left{
   color: inherit;
   width: 300px;
-  height: 200px;
+  height: inherit;
   float: left;
 }
 
 .right{
   color: inherit;
   width: 300px;
-  height: 200px;
+  height: inherit;
   float: right;
 }
 .footer
