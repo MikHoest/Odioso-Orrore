@@ -48,7 +48,6 @@ ul
         }
         .fixed-bg
         {
-            background-image: url("picz/slide1.png");
             min-height: 500px;
             background-attachment: fixed;
             background-position: center;
@@ -160,6 +159,83 @@ ul
             background-size: 50%;
         }
 
+        .cb-slideshow,
+        .cb-slideshow:after {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 0;
+        }
+        .cb-slideshow:after {
+            content: '';
+
+        }
+
+        .cb-slideshow li span {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: none;
+            opacity: 0;
+            z-index: 0;
+            animation: imageAnimation 12s linear infinite 0s;
+        }
+
+        .cb-slideshow li div {
+            z-index: 1000;
+            position: absolute;
+            bottom: 30px;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            color: #fff;
+            animation: titleAnimation 36s linear infinite 0s;
+        }
+
+        .cb-slideshow li div h3 {
+            font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+            font-size: 240px;
+            padding: 0;
+            line-height: 200px;
+        }
+
+        .cb-slideshow li:nth-child(1) span {
+            background-image: url("picz/slide1.png")
+        }
+
+        }
+        .cb-slideshow li:nth-child(2) span {
+            background-image: url("picz/slide02.jpg");
+            animation-delay: 6s;
+        }
+
+        .cb-slideshow li:nth-child(3) span {
+        background-image: url("picz/slide1.png")
+            animation-delay: 12s;
+        }
+
+        @keyframes imageAnimation {
+            0% { opacity: 0; animation-timing-function: ease-in; }
+            17% { opacity: 1; animation-timing-function: ease-out; }
+            33% { opacity: 1 }
+            43% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+
+        @media screen and (max-width: 1140px) {
+            .cb-slideshow li div h3 { font-size: 140px }
+        }
+        @media screen and (max-width: 600px) {
+            .cb-slideshow li div h3 { font-size: 80px }
+        }
     </style>
 </head>
 <body>
@@ -186,10 +262,23 @@ ul
         <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png"></a></li>
 
     </ul>
+</div>
+
+<ul class="cb-slideshow">
+    <li>
+        <span>Image 01</span>
+
+    </li>
+    <li>
+        <span>Image 02</span>
+
+    <li>
+        <span>Image 03</span>
+    </li>
+</ul>
 
 
-</div class="SlideshowContainer">
-
+<script src="slidescript.js"></script>
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
