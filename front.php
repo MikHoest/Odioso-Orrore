@@ -170,7 +170,7 @@ ul
         }
         .cb-slideshow:after {
             content: '';
-            background: url("picz/Scanlines.png");
+            background: url("picz/Scanlines.png") repeat top left;
 
         }
 
@@ -191,35 +191,35 @@ ul
 
         .cb-slideshow li div {
             z-index: 1000;
-            position: absolute;
-            bottom: 30px;
+            float: left;
             left: 0;
             width: 100%;
-            text-align: center;
+            text-align: left;
+            padding-left: 15%;
             opacity: 0;
             color: #fff;
             animation: titleAnimation 18s linear infinite 0s;
         }
 
+
         .cb-slideshow li div h3 {
-            font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-            font-size: 140px;
+            font-family: Cardinal, sans-serif;
+            font-size: 100px;
             padding: 0;
-            line-height: 500px;
+            line-height: 700px;
         }
 
         .cb-slideshow li:nth-child(1) span {
-            background-image: url("picz/slide01.jpg")
+            background-image: url("picz/slide01.jpg");
         }
 
-        }
         .cb-slideshow li:nth-child(2) span {
             background-image: url("picz/slide2.jpg");
             animation-delay: 6s;
         }
 
         .cb-slideshow li:nth-child(3) span {
-            background-image: url("picz/slide2.jpg")
+            background-image: url("picz/slide3.jpg");
             animation-delay: 12s;
         }
 
@@ -235,9 +235,9 @@ ul
 
         @keyframes imageAnimation {
             0% { opacity: 0; animation-timing-function: ease-in; }
-            17% { opacity: 1; animation-timing-function: ease-out; }
-            33% { opacity: 1 }
-            43% { opacity: 0 }
+            23% { opacity: 1; animation-timing-function: ease-out; }
+            29% { opacity: 1 }
+            35% { opacity: 0 }
             100% { opacity: 0 }
         }
 
