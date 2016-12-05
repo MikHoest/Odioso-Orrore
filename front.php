@@ -164,12 +164,13 @@ ul
             position: fixed;
             width: 100%;
             height: 100%;
-            top: 0px;
-            left: 0px;
+            top: 0;
+            left: 0;
             z-index: 0;
         }
         .cb-slideshow:after {
             content: '';
+            background: url("picz/Scanlines.png");
 
         }
 
@@ -177,48 +178,58 @@ ul
             width: 100%;
             height: 100%;
             position: absolute;
-            top: 0px;
-            left: 0px;
+            top: 0;
+            left: 0;
             color: transparent;
             background-size: cover;
-            background-position: 50% 50%;
-            background-repeat: none;
+            background-position: 70% 50%;
+            background-repeat: no-repeat;
             opacity: 0;
             z-index: 0;
-            animation: imageAnimation 12s linear infinite 0s;
+            animation: imageAnimation 18s linear infinite 0s;
         }
 
         .cb-slideshow li div {
             z-index: 1000;
             position: absolute;
             bottom: 30px;
-            left: 0px;
+            left: 0;
             width: 100%;
             text-align: center;
             opacity: 0;
             color: #fff;
-            animation: titleAnimation 36s linear infinite 0s;
+            animation: titleAnimation 18s linear infinite 0s;
         }
 
         .cb-slideshow li div h3 {
             font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
-            font-size: 240px;
+            font-size: 140px;
             padding: 0;
-            line-height: 200px;
+            line-height: 500px;
         }
 
         .cb-slideshow li:nth-child(1) span {
-            background-image: url("picz/slide1.png")
+            background-image: url("picz/slide01.jpg")
         }
 
         }
         .cb-slideshow li:nth-child(2) span {
-            background-image: url("picz/slide02.jpg");
+            background-image: url("picz/slide2.jpg");
             animation-delay: 6s;
         }
 
         .cb-slideshow li:nth-child(3) span {
-        background-image: url("picz/slide1.png")
+            background-image: url("picz/slide2.jpg")
+            animation-delay: 12s;
+        }
+
+        .cb-slideshow li:nth-child(1) div {
+        }
+
+        .cb-slideshow li:nth-child(2) div {
+            animation-delay: 6s;
+        }
+        .cb-slideshow li:nth-child(3) div {
             animation-delay: 12s;
         }
 
@@ -227,6 +238,14 @@ ul
             17% { opacity: 1; animation-timing-function: ease-out; }
             33% { opacity: 1 }
             43% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+
+        @keyframes titleAnimation {
+            0% { opacity: 0; animation-timing-function: ease-in; }
+            23% { opacity: 1; animation-timing-function: ease-out; }
+            29% { opacity: 1 }
+            35% { opacity: 0 }
             100% { opacity: 0 }
         }
 
@@ -264,21 +283,27 @@ ul
     </ul>
 </div>
 
+
+<!-- SLIDESHOW -->
 <ul class="cb-slideshow">
     <li>
-        <span>Image 01</span>
-
+        <span>1</span>
+        <div><h3>ODIOSOSOSOSOS</h3></div>
     </li>
-    <li>
-        <span>Image 02</span>
 
     <li>
-        <span>Image 03</span>
+        <span>2</span>
+        <div><h3>LALALALLALALALALA</h3></div>
+    </li>
+
+    <li>
+        <span>3</span>
+        <div><h3>BROSKI</h3></div>
     </li>
 </ul>
-
-
 <script src="slidescript.js"></script>
+<!-- SLIDESHOW END -->
+
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -289,54 +314,8 @@ ul
         }
     }
 </script>
-<!--
-<style>
-    .mySlides {display:none}
-    .w3-left, .w3-right, .w3-badge {cursor:pointer}
-    .w3-badge {height:13px;width:13px;padding:0}
-</style>
 
-<div class="w3-content w3-display-container">
-    <img class="mySlides" src="picz/slide1.png" style="width:100%">
-    <img class="mySlides" src="picz/slide2.png" style="width:100%">
-    <img class="mySlides" src="picz/slide1.png" style="width:100%">
-    <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-        <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-        <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-    </div>
-</div>
--->
-<script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
 
-    function plusDivs(n) {
-        showDivs(slideIndex += n);
-    }
-
-    function currentDiv(n) {
-        showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" w3-white", "");
-        }
-        x[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " w3-white";
-    }
-</script>
 <style type="text/css">
     @font-face {
         font-family: "Cardinal";
