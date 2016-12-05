@@ -288,17 +288,17 @@ ul
 <ul class="cb-slideshow">
     <li>
         <span>1</span>
-        <div><h3>ODIOSOSOSOSOS</h3></div>
+        <div><h3>Welcome to Odioso Orrore!</h3></div>
     </li>
 
     <li>
         <span>2</span>
-        <div><h3>LALALALLALALALALA</h3></div>
+        <div><h3>Terrible food!</h3></div>
     </li>
 
     <li>
         <span>3</span>
-        <div><h3>BROSKI</h3></div>
+        <div><h3>Reserve a table today!</h3></div>
     </li>
 </ul>
 <script src="slidescript.js"></script>

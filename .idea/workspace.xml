@@ -59,8 +59,8 @@
       <file leaf-file-name="front.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/front.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="207" column="26" selection-start-line="207" selection-start-column="26" selection-end-line="207" selection-end-column="26" />
+            <state relative-caret-position="414">
+              <caret line="296" column="9" selection-start-line="296" selection-start-column="9" selection-end-line="296" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
@@ -91,20 +91,20 @@
                 <element signature="n#style#0;n#textarea#0;n#form#0;n#div#6;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#footer#0;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#a#0;n#p#0;n#footer#0;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1480934632138" expanded="true" signature="9627:9670" ph="SELECT * FRO... news" />
-                <marker date="1480934632138" expanded="true" signature="9959:9996" ph="..." />
-                <marker date="1480934632138" expanded="true" signature="10055:10092" ph="..." />
-                <marker date="1480934632138" expanded="true" signature="10151:10188" ph="..." />
-                <marker date="1480934632138" expanded="true" signature="10509:10578" ph="SELECT * FRO... dailyspecial" />
-                <marker date="1480934632138" expanded="true" signature="10978:11015" ph="..." />
-                <marker date="1480934632138" expanded="true" signature="11078:11115" ph="..." />
-                <marker date="1480934632138" expanded="true" signature="11177:11214" ph="..." />
-                <marker date="1480934632138" expanded="true" signature="11547:11575" ph="SELECT * FRO... drinks" />
-                <marker date="1480934632138" expanded="true" signature="11893:11930" ph="..." />
-                <marker date="1480934632138" expanded="true" signature="11986:12023" ph="..." />
-                <marker date="1480934632138" expanded="true" signature="12085:12122" ph="..." />
-                <marker date="1480934632138" expanded="true" signature="14040:14049" ph="..." />
-                <marker date="1480934632138" expanded="true" signature="14247:14258" ph="..." />
+                <marker date="1480939835508" expanded="true" signature="9652:9695" ph="SELECT * FRO... news" />
+                <marker date="1480939835508" expanded="true" signature="9984:10021" ph="..." />
+                <marker date="1480939835508" expanded="true" signature="10080:10117" ph="..." />
+                <marker date="1480939835508" expanded="true" signature="10176:10213" ph="..." />
+                <marker date="1480939835508" expanded="true" signature="10534:10603" ph="SELECT * FRO... dailyspecial" />
+                <marker date="1480939835508" expanded="true" signature="11003:11040" ph="..." />
+                <marker date="1480939835508" expanded="true" signature="11103:11140" ph="..." />
+                <marker date="1480939835508" expanded="true" signature="11202:11239" ph="..." />
+                <marker date="1480939835508" expanded="true" signature="11572:11600" ph="SELECT * FRO... drinks" />
+                <marker date="1480939835508" expanded="true" signature="11918:11955" ph="..." />
+                <marker date="1480939835508" expanded="true" signature="12011:12048" ph="..." />
+                <marker date="1480939835508" expanded="true" signature="12110:12147" ph="..." />
+                <marker date="1480939835508" expanded="true" signature="14065:14074" ph="..." />
+                <marker date="1480939835508" expanded="true" signature="14272:14283" ph="..." />
               </folding>
             </state>
           </provider>
@@ -462,12 +462,12 @@
       <workItem from="1480609257333" duration="638000" />
       <workItem from="1480670978922" duration="6574000" />
       <workItem from="1480882717492" duration="565000" />
-      <workItem from="1480929422941" duration="4852000" />
+      <workItem from="1480929422941" duration="5570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155647000" />
+    <option name="totallyTimeSpent" value="156365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="224" y="114" width="1228" height="719" extended-state="0" />
@@ -721,8 +721,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="207" column="26" selection-start-line="207" selection-start-column="26" selection-end-line="207" selection-end-column="26" />
+        <state relative-caret-position="414">
+          <caret line="296" column="9" selection-start-line="296" selection-start-column="9" selection-end-line="296" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
@@ -753,20 +753,20 @@
             <element signature="n#style#0;n#textarea#0;n#form#0;n#div#6;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#footer#0;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#p#0;n#footer#0;n#body#0;n#div#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1480934632138" expanded="true" signature="9627:9670" ph="SELECT * FRO... news" />
-            <marker date="1480934632138" expanded="true" signature="9959:9996" ph="..." />
-            <marker date="1480934632138" expanded="true" signature="10055:10092" ph="..." />
-            <marker date="1480934632138" expanded="true" signature="10151:10188" ph="..." />
-            <marker date="1480934632138" expanded="true" signature="10509:10578" ph="SELECT * FRO... dailyspecial" />
-            <marker date="1480934632138" expanded="true" signature="10978:11015" ph="..." />
-            <marker date="1480934632138" expanded="true" signature="11078:11115" ph="..." />
-            <marker date="1480934632138" expanded="true" signature="11177:11214" ph="..." />
-            <marker date="1480934632138" expanded="true" signature="11547:11575" ph="SELECT * FRO... drinks" />
-            <marker date="1480934632138" expanded="true" signature="11893:11930" ph="..." />
-            <marker date="1480934632138" expanded="true" signature="11986:12023" ph="..." />
-            <marker date="1480934632138" expanded="true" signature="12085:12122" ph="..." />
-            <marker date="1480934632138" expanded="true" signature="14040:14049" ph="..." />
-            <marker date="1480934632138" expanded="true" signature="14247:14258" ph="..." />
+            <marker date="1480939835508" expanded="true" signature="9652:9695" ph="SELECT * FRO... news" />
+            <marker date="1480939835508" expanded="true" signature="9984:10021" ph="..." />
+            <marker date="1480939835508" expanded="true" signature="10080:10117" ph="..." />
+            <marker date="1480939835508" expanded="true" signature="10176:10213" ph="..." />
+            <marker date="1480939835508" expanded="true" signature="10534:10603" ph="SELECT * FRO... dailyspecial" />
+            <marker date="1480939835508" expanded="true" signature="11003:11040" ph="..." />
+            <marker date="1480939835508" expanded="true" signature="11103:11140" ph="..." />
+            <marker date="1480939835508" expanded="true" signature="11202:11239" ph="..." />
+            <marker date="1480939835508" expanded="true" signature="11572:11600" ph="SELECT * FRO... drinks" />
+            <marker date="1480939835508" expanded="true" signature="11918:11955" ph="..." />
+            <marker date="1480939835508" expanded="true" signature="12011:12048" ph="..." />
+            <marker date="1480939835508" expanded="true" signature="12110:12147" ph="..." />
+            <marker date="1480939835508" expanded="true" signature="14065:14074" ph="..." />
+            <marker date="1480939835508" expanded="true" signature="14272:14283" ph="..." />
           </folding>
         </state>
       </provider>
