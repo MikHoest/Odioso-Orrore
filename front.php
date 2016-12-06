@@ -149,7 +149,7 @@ require_once("admin/include/functions.php");
 
         .social .link:hover
         {
-            padding: 15px;
+
             color: #000000;
             margin-left: -5px;
             transform: translateX(10px) rotate(360deg);
@@ -174,7 +174,7 @@ require_once("admin/include/functions.php");
 
         .social .link.facebook
         {
-            border: 1px solid #3B5998;
+            border: 1px solid #223b80;
             background-color: #223b80;
             background-image: url("socialIcons/facebook.png");
             background-repeat: no-repeat;
