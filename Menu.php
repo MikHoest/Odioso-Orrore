@@ -359,7 +359,7 @@ require_once("admin/include/functions.php");
     }
 </script>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="wrapper left" style="width: 50%"><p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Daily Specials</a></p> <!-- fix this-->
+<div class="wrapper left" style="width: 35%"><p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Daily Specials</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM dailyspecial";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -377,7 +377,7 @@ while ($row = mysqli_fetch_array($result))
 ?>
 </div>
 
-<div class="wrapper right" style="width: 50%"><p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Main Menu</a></p> <!-- fix this-->
+<div class="wrapper right" style="width: 35%"><p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Main Menu</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM menuitems";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -399,7 +399,7 @@ while ($row = mysqli_fetch_array($result))
 
 </div>
 </body>
-    <footer><p class="customfont" style="font-size: 20px; position: relative; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
+    <footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
 </html>
 <!--
 <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>

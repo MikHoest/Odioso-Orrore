@@ -129,10 +129,6 @@ ul.navbar-fixed-top.responsive {
   height: 0;
 }
 
-//*ul.navbar-fixed-top li[id=home]:hover {
-    : url("MENU-HOME-CLICK.png")
-}
-*//
 div.navicon {
   display: none;
 }
@@ -140,10 +136,6 @@ div.navicon {
 div.icon {
   display: none;
 }
-
-/* SLIDESHOW */
-
-/*SLIDESHOW END*/
 
 .news-section {
   align-content: center;
@@ -854,11 +846,6 @@ div.icon {
   .row-fluid .offset1:first-child {
     margin-left: 8.56353591160221%;
     *margin-left: 8.457152932878806%;
-  }
-
-  .wrapper {
-    max-width: 600px;
-    margin-left: 10%;
   }
 
 
