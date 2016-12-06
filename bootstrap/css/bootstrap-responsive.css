@@ -129,10 +129,6 @@ ul.navbar-fixed-top.responsive {
   height: 0;
 }
 
-//*ul.navbar-fixed-top li[id=home]:hover {
-    : url("MENU-HOME-CLICK.png")
-}
-*//
 div.navicon {
   display: none;
 }

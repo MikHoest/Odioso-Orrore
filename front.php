@@ -16,6 +16,63 @@ require_once("admin/include/functions.php");
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <style>
+        /* Popup container - can be anything you want */
+        .popup {
+            position: absolute;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* The actual popup */
+        .popup .popuptext {
+            visibility: hidden;
+            width: 200px;
+            height: inherit;
+            background-color: rgb(37, 122, 39);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: inherit;
+            top: -150%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgba(162, 27, 12, 0) transparent transparent transparent;
+        }
+
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity:1 ;}
+        }
         ul
         {
             list-style-type: none;
@@ -432,13 +489,21 @@ while ($row = mysqli_fetch_array($result)) {
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 </div>-->
-<br>
+<br><br><br><br>
 <!-- RESERVE TABLE -->
-<div class="wrapper" style="margin-left: 25%; height: inherit; align-content: center";>
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Reserve a Table</p>
+<div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
 
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;"onclick="myFunction()">Reserve a Table</p>
+        <span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: left; color: black">Reserve<br> on</p><a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank" style="height: 300px; width: 300px;"><span class="fa fa-facebook-square"></span></a></span>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById('myPopup');
+            popup.classList.toggle('show');
+        }
+    </script>
 </div>
-<br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 <!-- SocialMedia-->
 <div class="wrapper social" style="margin-left: 25%; height: inherit;">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
