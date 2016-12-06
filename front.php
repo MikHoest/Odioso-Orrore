@@ -155,12 +155,6 @@ require_once("admin/include/functions.php");
             transform: translateX(10px) rotate(360deg);
         }
 
-        .social .link.google-plus
-        {
-            background-color: tomato;
-            color: white;
-        }
-
         .social .link.twitter
         {
             border: 1px solid #00ACEE;
