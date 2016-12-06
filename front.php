@@ -170,7 +170,9 @@ require_once("admin/include/functions.php");
         }
         .cb-slideshow:after {
             content: '';
-            background: url("picz/Scanlines.png") repeat top left;
+            background-image: url("picz/OldTV1.png");
+            background-size: cover;
+            background-repeat: no-repeat;
 
         }
 

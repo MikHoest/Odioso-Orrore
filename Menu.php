@@ -399,7 +399,7 @@ while ($row = mysqli_fetch_array($result))
 
 </div>
 </body>
-    <footer><p class="customfont" style="font-size: 20px; padding: 20px; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
+    <footer><p class="customfont" style="font-size: 20px; position: relative; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
 </html>
 <!--
 <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
