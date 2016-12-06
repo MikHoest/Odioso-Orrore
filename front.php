@@ -170,10 +170,10 @@ require_once("admin/include/functions.php");
         }
         .cb-slideshow:after {
             content: '';
-            background-image: url("picz/Scanlines.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-
+            background-image: url("picz/CRTscanlines.png");
+            width: 100%;
+            height: 100%;
+            background-repeat:no-repeat;
         }
 
         .cb-slideshow li span {
@@ -184,7 +184,7 @@ require_once("admin/include/functions.php");
             left: 0;
             color: transparent;
             background-size: cover;
-            background-position: 70% 50%;
+            background-position: 50% 50%;
             background-repeat: no-repeat;
             opacity: 0;
             z-index: 0;
