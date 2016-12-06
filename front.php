@@ -331,6 +331,19 @@ require_once("admin/include/functions.php");
 
             }
         }
+        input[type=submit] {
+            font-family: "Cardinal", Verdana, Tahoma, sans-serif;
+            font-size: 24px;
+            width: 100%;
+            background-color: #000000;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
@@ -499,7 +512,7 @@ while ($row = mysqli_fetch_array($result)) {
     <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
     <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
 </div>
-<!-- CONTACT -->
+
 <script type='text/javascript'>
     function refreshCaptcha()
     {
@@ -508,7 +521,7 @@ while ($row = mysqli_fetch_array($result)) {
     }
     //(function(d, s, id) //what the fuck is this?
 </script>
-<!-- CAPTCHA -->
+<!-- CONTACT -->
 <div class="wrapper" style="margin-left: 25%; height: inherit;">
         <?php
         if(isset($_POST['Submit'])){
@@ -544,5 +557,5 @@ while ($row = mysqli_fetch_array($result)) {
         </form>
 </div>
 <br>
-<footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</a>-     Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22</p></footer>
+<footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22 ☠<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
 </html>
