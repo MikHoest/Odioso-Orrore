@@ -18,7 +18,7 @@ require_once("admin/include/functions.php");
     <style>
         /* Popup container - can be anything you want */
         .popup {
-            position: absolute;
+            position: static;
             display: inline-block;
             cursor: pointer;
             -webkit-user-select: none;
@@ -26,11 +26,10 @@ require_once("admin/include/functions.php");
             -ms-user-select: none;
             user-select: none;
         }
-
         /* The actual popup */
         .popup .popuptext {
             visibility: hidden;
-            width: 200px;
+            width: inherit;
             height: inherit;
             background-color: rgb(37, 122, 39);
             color: #fff;
@@ -39,11 +38,10 @@ require_once("admin/include/functions.php");
             padding: 8px 0;
             position: absolute;
             z-index: 1;
-            bottom: 125%;
-            left: 50%;
+            bottom: 100%;
+            left: 10%;
             margin-left: -80px;
         }
-
         /* Popup arrow */
         .popup .popuptext::after {
             content: "";
@@ -55,12 +53,11 @@ require_once("admin/include/functions.php");
             border-style: solid;
             border-color: rgba(162, 27, 12, 0) transparent transparent transparent;
         }
-
         /* Toggle this class - hide and show the popup */
         .popup .show {
             visibility: visible;
-            -webkit-animation: fadeIn 1s;
-            animation: fadeIn 1s;
+            -webkit-animation: fadeIn 2s;
+            animation: fadeIn 2s;
         }
 
         /* Add animation (fade in the popup) */
@@ -494,7 +491,7 @@ while ($row = mysqli_fetch_array($result)) {
 <div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
 
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;"onclick="myFunction()">Reserve a Table</p>
-        <span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: left; color: black">Reserve<br> on</p><a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank" style="height: 300px; width: 300px;"><span class="fa fa-facebook-square"></span></a></span>
+        <span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: left; color: black">Reserve on</p><a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank" style="height: 300px; width: 300px;"><span class="fa fa-facebook-square"></span></a></span>
     <script>
         // When the user clicks on div, open the popup
         function myFunction() {
@@ -503,7 +500,7 @@ while ($row = mysqli_fetch_array($result)) {
         }
     </script>
 </div>
-<br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
 <!-- SocialMedia-->
 <div class="wrapper social" style="margin-left: 25%; height: inherit;">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
