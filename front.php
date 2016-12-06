@@ -255,6 +255,26 @@ ul
         @media screen and (max-width: 600px) {
             .cb-slideshow li div h3 { font-size: 80px }
         }
+
+        h3 {
+            position: relative;
+            padding-top: 300px;
+            padding-left:120px;
+            font-size: 90px;
+
+        }
+
+        h2 {
+            position: relative;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            h3 {
+                font-size: 40px;
+
+            }
+        }
     </style>
 </head>
 <body>
@@ -284,21 +304,22 @@ ul
 </div>
 
 
+
 <!-- SLIDESHOW -->
 <ul class="cb-slideshow">
     <li>
         <span>1</span>
-        <div><h3>Welcome to Odioso Orrore!</h3></div>
+
     </li>
 
     <li>
         <span>2</span>
-        <div><h3>Terrible food!</h3></div>
+
     </li>
 
     <li>
         <span>3</span>
-        <div><h3>Reserve a table today!</h3></div>
+
     </li>
 </ul>
 <script src="slidescript.js"></script>
@@ -329,6 +350,7 @@ ul
         resize: none;
     }
 </style>
+<h3><p class="customfont">Welcome to Odioso Orrore</p></h3>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="wrapper" style="height: inherit; margin-left: 25%;">
        <p class="customfont" style="font-size: 40px; padding: 20px; font-weight: bold; text-align: center; color: #000000">Celebrating the scariest of Italian cuisine since</p>
@@ -418,6 +440,7 @@ while ($row = mysqli_fetch_array($result)) {
     <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
 </div>
 <!-- CONTACT -->
+
 <div class="wrapper" style="margin-left: 25%; height: inherit;">
         <?php
         if(isset($_POST['Submit'])){
@@ -452,6 +475,7 @@ while ($row = mysqli_fetch_array($result)) {
             </table>
         </form>
 </div>
+
 <br>
-<footer><p class="customfont" style="font-size: 20px; padding: 20px; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
+<footer><p class="customfont" style="font-size: 20px; position: relative; font-weight: bold; text-align: center;"><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore</p></a></footer>
 </html>
