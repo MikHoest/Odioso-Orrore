@@ -14,35 +14,264 @@ require_once("admin/include/functions.php");
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <style>
-        ul {
+        ul
+        {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: rgba(177, 21, 21, 0);
-            font-family: Verdana;
-            font-size: 0px;
+            font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+            font-size: 0;
             text-align: center;
         }
-
-        li {
+        li
+        {
             float: none;
             display: inline-block;
-
         }
-
-        li a {
+        li a
+        {
             display: inline-block;
             color: #fefffd;
-            padding: 0px;
+            padding: 0;
         }
-
-        li a:hover {
+        li a:hover
+        {
 
             background-color: rgba(255, 104, 107, 0);
             color: rgba(177, 21, 21, 0.8);
             font-style: normal;
             text-decoration: none;
+        }
+        .fixed-bg
+        {
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+        .social
+        {
+            position: inherit;
+            width: 100%;
+            top: 50%;
+            text-align: center;
+            transform: translateY(-50%);
+        }
+
+        .social .link
+        {
+            display: inline-block;
+            vertical-align: middle;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-clip: content-box;
+            padding: 2px;
+            transition: .5s;
+            color: #D7D0BE;
+            margin-left: 15px;
+            margin-right: 15px;
+            text-shadow:
+                0 -1px 0 rgba(0, 0, 0, 0.2),
+                0 1px 0 rgba(255, 255, 255, 0.2);
+            font-size: 15px;
+        }
+
+        .social .link span
+        {
+            display: block;
+            position: absolute;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .social .link:hover
+        {
+            padding: 15px;
+            color: #000000;
+            margin-left: -5px;
+            transform: translateX(10px) rotate(360deg);
+        }
+
+        .social .link.google-plus
+        {
+            background-color: tomato;
+            color: white;
+        }
+
+        .social .link.twitter
+        {
+            border: 1px solid #00ACEE;
+            background-color: #00ACEE;
+            background-image: url("twitter.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 75%;
+            background-blend-mode: overlay;
+            color: #000000;
+        }
+
+        .social .link.twitter:hover
+        {
+            background-size: 50%;
+        }
+
+        .social .link.facebook
+        {
+            border: 1px solid #3B5998;
+            background-color: #223b80;
+            background-image: url("facebook.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 75%;
+            background-blend-mode: overlay;
+            color: #000000;
+        }
+
+        .social .link.facebook:hover
+        {
+            background-size: 50%;
+        }
+
+        .social .link.instagram
+        {
+
+            border: 1px solid purple;
+            background-color: purple;
+            background-image: url("instagram.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 75%;
+            background-blend-mode: overlay;
+            color: #000000;
+        }
+
+        .social .link.instagram:hover
+        {
+            background-size: 50%;
+        }
+
+        .cb-slideshow,
+        .cb-slideshow:after {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        .cb-slideshow:after {
+            content: '';
+            background: url("picz/Scanlines.png") repeat top left;
+
+        }
+
+        .cb-slideshow li span {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: transparent;
+            background-size: cover;
+            background-position: 70% 50%;
+            background-repeat: no-repeat;
+            opacity: 0;
+            z-index: 0;
+            animation: imageAnimation 18s linear infinite 0s;
+        }
+
+        .cb-slideshow li div {
+            z-index: 1000;
+            float: left;
+            left: 0;
+            width: 100%;
+            text-align: left;
+            padding-left: 15%;
+            opacity: 0;
+            color: #fff;
+            animation: titleAnimation 18s linear infinite 0s;
+        }
+
+
+        .cb-slideshow li div h3 {
+            font-family: Cardinal, sans-serif;
+            font-size: 100px;
+            padding: 0;
+            line-height: 700px;
+        }
+
+        .cb-slideshow li:nth-child(1) span {
+            background-image: url("picz/slide01.jpg");
+        }
+
+        .cb-slideshow li:nth-child(2) span {
+            background-image: url("picz/slide2.jpg");
+            animation-delay: 6s;
+        }
+
+        .cb-slideshow li:nth-child(3) span {
+            background-image: url("picz/slide3.jpg");
+            animation-delay: 12s;
+        }
+
+        .cb-slideshow li:nth-child(1) div {
+        }
+
+        .cb-slideshow li:nth-child(2) div {
+            animation-delay: 6s;
+        }
+        .cb-slideshow li:nth-child(3) div {
+            animation-delay: 12s;
+        }
+
+        @keyframes imageAnimation {
+            0% { opacity: 0; animation-timing-function: ease-in; }
+            23% { opacity: 1; animation-timing-function: ease-out; }
+            29% { opacity: 1 }
+            35% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+
+        @keyframes titleAnimation {
+            0% { opacity: 0; animation-timing-function: ease-in; }
+            23% { opacity: 1; animation-timing-function: ease-out; }
+            29% { opacity: 1 }
+            35% { opacity: 0 }
+            100% { opacity: 0 }
+        }
+
+        @media screen and (max-width: 1140px) {
+            .cb-slideshow li div h3 { font-size: 140px }
+        }
+        @media screen and (max-width: 600px) {
+            .cb-slideshow li div h3 { font-size: 80px }
+        }
+
+        h3 {
+            position: relative;
+            padding-top: 300px;
+            padding-left:120px;
+            font-size: 90px;
+
+        }
+
+        h2 {
+            position: relative;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            h3 {
+                font-size: 40px;
+
+            }
         }
     </style>
     <style type="text/css">
@@ -66,69 +295,42 @@ require_once("admin/include/functions.php");
                 </a>
             </div>
         </div>
-        <li><a class="active">Space</a></li>
-        <li><a href="front.php" style="float: none"><img src="picz/MENU-HOME.png" ></a></li>
-        <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU.png" ></a></li>
-        <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS.png" ></a></li>
-        <li class="icon">
+
+
+        <div class="icon">
             <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
-                <p class="customfont"> ☰    ☰ </p>
+                <p class="navicon" style="color: white;"> ☠ </p>
             </a>
-        </li>
+        </div>
+
+        <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU%20-%20Kopi.png"></a></li>
+        <li><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS%20-%20Kopi.png"></a></li>
+        <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png"></a></li>
+
     </ul>
-
-
-
 </div>
-<!--
-<div class="w3-content w3-display-container">
-    <img class="mySlides" src="picz/slide1.png" style="width:100%">
-    <img class="mySlides" src="picz/slide2.png" style="width:100%">
-    <img class="mySlides" src="picz/slide1.png" style="width:100%">
-    <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-        <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-        <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-    </div>
-</div>
-<br>
 
-<div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
-</div>
--->
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
+<!-- SLIDESHOW -->
+<ul class="cb-slideshow">
+    <li>
+        <span>1</span>
 
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-    }
-</script>
+    </li>
+
+    <li>
+        <span>2</span>
+
+    </li>
+
+    <li>
+        <span>3</span>
+
+    </li>
+</ul>
+<script src="slidescript.js"></script>
+<!-- SLIDESHOW END -->
 
 <script>
     function myFunction() {
@@ -142,55 +344,7 @@ require_once("admin/include/functions.php");
 </script>
 <html lang="en">
 <div class="fixed-bg">
-<head>
-    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <title>OO</title>
-    <style>
-        body
-        {
-            font-family: Verdana,sans-serif;
-            font-size: 0.9em;
-        }
 
-        div#header, div#footer
-        {
-            padding: 10px;
-            color: white;
-            background-color: #b81515;
-        }
-
-        div#content
-        {
-            margin-left: 25%;
-            padding: 5px;
-            background-color: #b81515;
-        }
-
-        div.article  {
-            margin: 5px;
-            padding: 10px;
-            background-color: #dbdbdb;
-        }
-
-        div#menu ul {
-            padding: 0;
-        }
-
-        div#menu ul li {
-            display: inline;
-            margin: 5px;
-        }
-        .fixed-bg
-        {
-            background-image: url("picz/slide1.png");
-            min-height: 500px;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: auto;
-        }
-    </style>
-</head>
 <body>
 <div id="menu">
     <ul>
