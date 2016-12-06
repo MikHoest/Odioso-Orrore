@@ -129,10 +129,10 @@ ul.navbar-fixed-top.responsive {
   height: 0;
 }
 
-ul.navbar-fixed-top li a:hover {
-  background-color: #360200;
+//*ul.navbar-fixed-top li[id=home]:hover {
+    : url("MENU-HOME-CLICK.png")
 }
-
+*//
 div.navicon {
   display: none;
 }
@@ -142,89 +142,6 @@ div.icon {
 }
 
 /* SLIDESHOW */
-
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;margin:0}
-.mySlides {display:inline-block}
-
-.slideshow-container {
-  width: 100%;
-  position: relative;
-  margin: auto;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.numbertext {
-  color: #ffffff;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #000000;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #800004;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 3s;
-  animation-name: cf3FadeInOut;
-  animation-duration: 3s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: 0}
-  to {opacity: 1}
-}
-
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 10px}
-}
 
 /*SLIDESHOW END*/
 
@@ -1028,16 +945,19 @@ body {font-family: Verdana,sans-serif;margin:0}
   }
 
   ul.navbar-fixed-top {
-    background-color: #800004;
     position: fixed;
     top: 0;
     width: 100%;
-
+    background-color: #6b0704;
   }
 
   ul.navbar-fixed-top li:not(:first-child) {
     display: none;
   }
+    
+    ul.navbar-fixed-top li a:hover {
+        background-color: #3c0603;
+    }
 
   ul.navbar-fixed-top div.icon {
     float: none;
@@ -1401,6 +1321,8 @@ body {font-family: Verdana,sans-serif;margin:0}
     height: auto !important;
     overflow: visible !important;
   }
+
+
 
 }
 .wrapper {

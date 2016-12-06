@@ -36,14 +36,11 @@ require_once("admin/include/functions.php");
             color: #fefffd;
             padding: 0;
         }
-        li a:hover
-        {
+        li a:hover {
 
-            background-color: rgba(255, 104, 107, 0);
-            color: rgba(177, 21, 21, 0.8);
-            font-style: normal;
-            text-decoration: none;
         }
+
+
         .fixed-bg
         {
             min-height: 500px;
@@ -271,6 +268,7 @@ require_once("admin/include/functions.php");
             h3 {
                 font-size: 40px;
 
+
             }
         }
     </style>
@@ -303,9 +301,9 @@ require_once("admin/include/functions.php");
             </a>
         </div>
 
-        <li><a href="front.php" style="float: none"><img src="picz/MENU-HOME%20-%20Kopi.png"></a></li>
-        <li><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU%20-%20Kopi.png"></a></li>
-        <li><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png"></a></li>
+        <li id="home"><a href="front.php" style="float: none"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a>
+        <li id="menu"><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU%20-%20Kopi.png" onmouseover="this.src='picz/MENU-MENU-HOVER'" onmouseout="this.src='picz/MENU-MENU%20-%20Kopi.png'"></a></li>
+        <li id="reservations"><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png" onmouseover="this.src='picz/MENU-RESERVATIONS-HOVER'" onmouseout="this.src='picz/MENU-RESERVATIONS%20-%20Kopi.png'"></a></li>
 
     </ul>
 </div>
