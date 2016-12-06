@@ -62,6 +62,7 @@
     </ul>
 
 </div>
+<!--
 <div class="w3-content w3-display-container">
     <img class="mySlides" src="picz/slide1.png" style="width:100%">
     <img class="mySlides" src="picz/slide2.png" style="width:100%">
@@ -110,7 +111,7 @@
         dots[slideIndex-1].className += " active";
     }
 </script>
-
+-->
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
