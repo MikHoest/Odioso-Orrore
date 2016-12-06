@@ -14,6 +14,8 @@ require_once("admin/include/functions.php");
     <link rel="stylesheet" type="text/css" href="bootstrap" />
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <style>
         /* Popup container - can be anything you want */
@@ -485,16 +487,30 @@ while ($row = mysqli_fetch_array($result)) {
 </div>-->
 <br><br><br><br>
 <!-- RESERVE TABLE -->
+<body>
+
+
+
+
+</body>
+</html>
+
 <div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
 
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;"onclick="myFunction()">Reserve a Table</p>
-        <span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: left; color: black">Reserve on</p><a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank" style="height: 300px; width: 300px;"><span class="fa fa-facebook-square"></span></a></span>
+    <span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Date <input type="text" id="datepicker"></p></span>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script>
         // When the user clicks on div, open the popup
         function myFunction() {
             var popup = document.getElementById('myPopup');
             popup.classList.toggle('show');
         }
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
     </script>
 </div>
 <br><br><br><br><br>
