@@ -421,7 +421,7 @@ require_once("admin/include/functions.php");
 </div>
 <br>
 <!-- NEWS-->
-<div class="wrapper" style="margin-left: 25%;">
+<div class="wrapper" style="margin-left: 25%; height: inherit">
        <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest from Odioso Orrore</a></p>
 <?php
 $query = "SELECT * FROM news ORDER BY ID DESC LIMIT 1 ";
@@ -439,7 +439,7 @@ while ($row = mysqli_fetch_array($result)) {
 </div>
 <br>
 <!--Daily Special-->
-<div class="wrapper" style="margin-left: 25%";>
+<div class="wrapper" style="margin-left: 25%; height: inherit";>
        <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Daily Special</a></p>
        <?php
 
@@ -458,7 +458,7 @@ while ($row = mysqli_fetch_array($result)) {
 </div>
 <br>
 <!-- DRINKS-->
-<div class="wrapper" style="margin-left: 25%";>
+<div class="wrapper" style="margin-left: 25%; height: inherit";>
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Special Drink</a></p>
     <?php
     $query = "SELECT * FROM drinks LIMIT 1";
