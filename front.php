@@ -165,7 +165,7 @@ require_once("admin/include/functions.php");
         {
             border: 1px solid #00ACEE;
             background-color: #00ACEE;
-            background-image: url("twitter.png");
+            background-image: url("socialIcons/twitter.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 75%;
@@ -182,7 +182,7 @@ require_once("admin/include/functions.php");
         {
             border: 1px solid #3B5998;
             background-color: #223b80;
-            background-image: url("facebook.png");
+            background-image: url("socialIcons/facebook.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 75%;
@@ -200,7 +200,7 @@ require_once("admin/include/functions.php");
 
             border: 1px solid purple;
             background-color: purple;
-            background-image: url("instagram.png");
+            background-image: url("socialIcons/instagram.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 75%;
@@ -557,5 +557,5 @@ while ($row = mysqli_fetch_array($result)) {
         </form>
 </div>
 <br>
-<footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22 ☠<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
+<footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
 </html>
