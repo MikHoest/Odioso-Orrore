@@ -430,6 +430,12 @@ while ($row = mysqli_fetch_array($result)) {
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 </div>-->
+<br>
+<!-- RESERVE TABLE -->
+<div class="wrapper" style="margin-left: 25%; height: inherit; align-content: center";>
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Reserve a Table</p>
+
+</div>
 <br><br><br><br><br><br><br>
 <!-- SocialMedia-->
 <div class="wrapper social" style="margin-left: 25%; height: inherit;">
