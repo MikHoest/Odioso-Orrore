@@ -467,16 +467,6 @@ while ($row = mysqli_fetch_array($result)) {
     }
     ?>
 </div>
-    <head>
-        <script type='text/javascript'>
-            function refreshCaptcha()
-            {
-                var img = document.images['captchaimg'];
-                img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
-            }
-            (function(d, s, id)
-        </script>
-    </head>
 <!-- <div id="fb-root"></div>
 <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -510,7 +500,6 @@ while ($row = mysqli_fetch_array($result)) {
     <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
 </div>
 <!-- CONTACT -->
-
 <div class="wrapper" style="margin-left: 25%; height: inherit;">
         <?php
         if(isset($_POST['Submit'])){
