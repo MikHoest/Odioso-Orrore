@@ -1323,6 +1323,7 @@ div.icon {
   background-image: url("borderIMG1.png");
   background-size: 100%;
   background-blend-mode: overlay;
+
   max-width: 750px;
   float: inherit;
   text-align: justify;
@@ -1355,24 +1356,8 @@ div.icon {
   height: inherit;
   float: right;
 }
-.footer
-{
-  position: absolute;
-  align-content: center;
 
-}
 .menuwrapper
 {
 
-}
-.fieldset
-{
-  display: block;
-  margin-left: 2px;
-  margin-right: 2px;
-  padding-top: 0.35em;
-  padding-bottom: 0.625em;
-  padding-left: 0.75em;
-  padding-right: 0.75em;
-  border: 2px groove (internal value);
 }
