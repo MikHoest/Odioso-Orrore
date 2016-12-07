@@ -323,6 +323,7 @@ require_once("admin/include/functions.php");
         }
     </style>
 </head>
+<body>
 <!-- buttons on top - links -->
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
@@ -428,8 +429,8 @@ while ($row = mysqli_fetch_array($result))
     }
     ?>
 </div>
-<br>
 <footer>
     <p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p>
 </footer>
+</body>
 </html>

@@ -4,7 +4,6 @@ require_once("admin/include/connection.php");
 require_once("admin/include/functions.php");
 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -326,7 +325,6 @@ require_once("admin/include/functions.php");
 </ul>
 <script src="slidescript.js"></script>
 <!-- SLIDESHOW END -->
-
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
