@@ -219,7 +219,7 @@ require_once("admin/include/functions.php");
             left: 0;
             color: transparent;
             background-size: cover;
-            background-position: 50% 50%;
+            background-position: 40% 50%;
             background-repeat: no-repeat;
             opacity: 0;
             z-index: 0;
@@ -329,7 +329,7 @@ require_once("admin/include/functions.php");
         <div class="col-sm-3">
             <div class="logo" style="float:left">
                 <a href="front.php">
-                    <img src="picz/Logo1.png" style="width: 160px;">
+                    <img src="picz/Logo2.png" style="width: 160px;">
                 </a>
             </div>
         </div>
