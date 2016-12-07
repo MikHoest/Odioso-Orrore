@@ -283,7 +283,7 @@ require_once("admin/include/functions.php");
     </style>
 </head>
 <body>
-
+<!-- buttons on top - links -->
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
         <div class="col-sm-3">
@@ -307,9 +307,6 @@ require_once("admin/include/functions.php");
 
     </ul>
 </div>
-
-
-
 <!-- SLIDESHOW -->
 <ul class="cb-slideshow">
     <li>
@@ -340,17 +337,13 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
-
-
-
-
-    <div id="menu">
+<div id="menu">
     <ul>
         <li>News</li>
     </ul>
 </div>
 <br>
-<div class="wrapper" style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; max-width: 72.5%;">
+<div class="wrapper" style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; max-width: 72.3%;">
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">Odioso Orrore<p/>
     <p class="customfont" style="font-size: 50px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">NEWS<p/>
 </div>
@@ -369,7 +362,7 @@ while ($row = mysqli_fetch_array($result))
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div class='wrapper' align='left'><p class=\"customfont\" style=\"font-size: 20px; padding: 10px; text-align: left;\">" . "Date: ". $date. "<br>"."<div align='center'><p class=\"customfont\" style=\"font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000;\">" . $title. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$description . "</div></div><br><br>";
+    echo "<div class='wrapper' align='left' style='border-radius: 3px;'><p class=\"customfont\" style=\"font-size: 20px; padding: 10px; text-align: left;\">" . "Date: ". $date. "<br>"."<div align='center'><p class=\"customfont\" style=\"font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000;\">" . $title. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$description . "</div></div><br>";
 }
 ?>
 </div>

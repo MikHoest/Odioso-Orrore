@@ -1317,7 +1317,7 @@ div.icon {
   width: 100%;
   position: relative;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 2px;
   color: #ffffff;
   background-color: #870900;
   background-image: url("borderIMG1.png");
@@ -1335,7 +1335,7 @@ div.icon {
   padding: 10px;
   width: 25%;
   position: static;
-  border-radius: 10px;
+  border-radius: 2px;
   color: #ffffff;
   background-color: #870900;
   float: left;

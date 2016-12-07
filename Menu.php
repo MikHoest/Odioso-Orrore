@@ -4,7 +4,6 @@ require_once("admin/include/connection.php");
 require_once("admin/include/functions.php");
 ?>
 <html lang="en">
-<div class="fixed-bg">
 <head>
     <meta charset="UTF-8">
     <title>Menu</title>
@@ -281,6 +280,7 @@ require_once("admin/include/functions.php");
 </style>
 </head>
 <body>
+<!-- buttons on top - links -->
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
         <div class="col-sm-3">
@@ -353,13 +353,13 @@ require_once("admin/include/functions.php");
     }
 </script>
 <br><br><br>
-<div class="wrapper" style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; max-width: 82.5%;">
+<div class="wrapper" style="height: inherit; background-color: white; border-radius: 1px; opacity: 0.5; max-width: 82.5%;">
     <p class="customfont" style="font-size: 40px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">Odioso Orrore<p/>
     <p class="customfont" style="font-size: 55px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">MENU<p/>
 </div>
-<br><br>
+<br>
 <!-- Daily Special -->
-<div class="foodwrapper left" style="width: 35%; margin-left: 13%;"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Daily Specials</a></p> <!-- fix this-->
+<div class="foodwrapper left" style="width: 35%; margin-left: 13%; border-radius: 2px;"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Daily Specials</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM dailyspecial";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -373,12 +373,12 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='wrapper' style='width: 87%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div></p><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
+    echo "<div class='wrapper' style='width: 87%; border-radius: 2px;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div></p><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
 }
 ?>
 </div>
 <!-- Main Menu -->
-<div class="foodwrapper right" style="width: 35%; margin-right: 13%"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Main Menu</a></p> <!-- fix this-->
+<div class="foodwrapper right" style="width: 35%; margin-right: 13%; border-radius: 2px;"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Main Menu</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM menuitems";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -392,12 +392,12 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='wrapper' style='width: 87%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div></p><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
+    echo "<div class='wrapper' style='width: 87%; border-radius: 2px;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div></p><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
 }
 ?>
 </div>
 <!-- Drinks -->
-<div class="foodwrapper left" style="width: 35%; margin-left: 13%;"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Drinks</a></p> <!-- fix this-->
+<div class="foodwrapper left" style="width: 35%; margin-left: 13%; border-radius: 2px;"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Drinks</a></p> <!-- fix this-->
     <?php
     $query = "SELECT * FROM drink";
     mysqli_query($connection, $query) or die('Error querying database.');
@@ -411,7 +411,7 @@ while ($row = mysqli_fetch_array($result))
         $price=$row['price'];
         $picture=$row['picture'];
         //$review=$row['review'];
-        echo "<div class='wrapper' style='width: 87%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$drink."</div></p><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
+        echo "<div class='wrapper' style='width: 87%; border-radius: 2px;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$drink."</div></p><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
     }
     ?>
 </div>
