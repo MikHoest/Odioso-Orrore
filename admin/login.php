@@ -84,22 +84,12 @@ if (!empty($message))
         }
     </style>
 </head>
-
-</html>
 <?php
 if (isset($connection)){mysqli_close($connection);}
 ?>
-
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
-</head>
-<body>
-
-
 <div class="wrapper" style="margin-left: 25%">
 <h2>Please login</h2>
-<form action="login.php" method="post">
+    <form action="login.php" method="post">
     <input type="text" name="user" placeholder="Username" maxlength="30" value="" />
     <br>
     <input type="password" name="pass" placeholder="Password" maxlength="30" value="" />
@@ -107,11 +97,8 @@ if (isset($connection)){mysqli_close($connection);}
     <input type="submit" name="submit" value="Login" />
     <h2><a href="../front.php">Frontpage</a></h2>
 </form>
-
-
 <br>
 </div>
-</body>
 </html>
 
 <!--comment out-->

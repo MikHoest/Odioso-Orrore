@@ -381,12 +381,12 @@ mysqli_query($connection, $query) or die('Error querying database.');
 
 $result = mysqli_query($connection, $query);
 
-while ($row = mysqli_fetch_array($result)) {
-    $title=$row['title'];
-    $description=$row['description'];
-    $date=$row['date'];
-    echo "<div align='left' style='font-size: 14px; font-family: Verdana'>"."Date: ".$date. "</div><br>"."<div align='left' style='font-size: 28px; font-family: Verdana'>" .$title . "</div>"."<br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>".$description."</div>";
-}
+    while ($row = mysqli_fetch_array($result)) {
+        $title=$row['title'];
+        $description=$row['description'];
+        $date=$row['date'];
+        echo "<div align='left'><p class=\"customfont\" style=\"font-size: 20px; padding: 10px; text-align: left;\">"."Date: ".$date. "</div><br>"."<div align='left' style='font-size: 28px; font-family: Verdana'>" .$title . "</div>"."<br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>".$description."</div>";
+    }
 ?>
 </div>
 <br>
