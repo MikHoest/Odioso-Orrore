@@ -387,7 +387,7 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='wrapper' style='width: 87%; border-radius: 2px;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div></p><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
+    echo "<div class='wrapper' style='width: 87%; border-radius: 2px;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 30px; padding: 15px; text-align: left;\">".$dailySpecial."</div></p><br><br>"."<div align='justify' style='font-size: 18   px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
 }
 ?>
 </div>
@@ -406,14 +406,14 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='wrapper' style='width: 87%; border-radius: 2px;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div></p><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
+    echo "<div class='wrapper' style='width: 87%; border-radius: 2px;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 30px; padding: 15px; text-align: left;\">".$mainCourse."</div></p><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
 }
 ?>
 </div>
 <!-- Drinks -->
 <div class="foodwrapper left" style="width: 35%; margin-left: 13%; border-radius: 2px;"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Drinks</a></p> <!-- fix this-->
     <?php
-    $query = "SELECT * FROM drink";
+    $query = "SELECT * FROM drinks";
     mysqli_query($connection, $query) or die('Error querying database.');
 
     $result = mysqli_query($connection, $query);
@@ -425,10 +425,11 @@ while ($row = mysqli_fetch_array($result))
         $price=$row['price'];
         $picture=$row['picture'];
         //$review=$row['review'];
-        echo "<div class='wrapper' style='width: 87%; border-radius: 2px;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$drink."</div></p><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
+        echo "<div class='wrapper' style='width: 87%; border-radius: 2px;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 30px; padding: 15px; text-align: left;\">".$drink."</div></p><br><br>"."<div align='justify' style='font-size: 18  px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
     }
     ?>
 </div>
+<div class="container"></div>
 <footer>
     <p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p>
 </footer>
