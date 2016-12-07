@@ -342,7 +342,7 @@ require_once("admin/include/functions.php");
 
     </style>
 </head>
-<body>
+
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
         <div class="col-sm-3">
@@ -409,7 +409,7 @@ require_once("admin/include/functions.php");
     }
 </style>
 <h3><p class="customfont">Welcome to Odioso Orrore</p></h3>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="wrapper" style="height: inherit; margin-left: 25%;">
        <p class="customfont" style="font-size: 40px; padding: 20px; font-weight: bold; text-align: center; color: #000000">Celebrating the scariest of Italian cuisine since</p>
        <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000">2016</p>
@@ -552,5 +552,5 @@ while ($row = mysqli_fetch_array($result)) {
 </div>
 <br>
 <footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
-</body>
+
 </html>

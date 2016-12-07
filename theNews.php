@@ -106,7 +106,7 @@ require_once("admin/include/functions.php");
         {
             border: 1px solid #00ACEE;
             background-color: #00ACEE;
-            background-image: url("twitter.png");
+            background-image: url("socialIcons/twitter.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 75%;
@@ -123,7 +123,7 @@ require_once("admin/include/functions.php");
         {
             border: 1px solid #3B5998;
             background-color: #223b80;
-            background-image: url("facebook.png");
+            background-image: url("socialIcons/facebook.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 75%;
@@ -141,7 +141,7 @@ require_once("admin/include/functions.php");
 
             border: 1px solid purple;
             background-color: purple;
-            background-image: url("instagram.png");
+            background-image: url("socialIcons/instagram.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 75%;
@@ -340,11 +340,11 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
-<html lang="en">
-<div class="fixed-bg">
 
-<body>
-<div id="menu">
+
+
+
+    <div id="menu">
     <ul>
         <li>News</li>
     </ul>
@@ -355,6 +355,7 @@ require_once("admin/include/functions.php");
     <p class="customfont" style="font-size: 50px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">NEWS<p/>
 </div>
 <br>
+<!-- NEWS -->
 <div style="margin-left: 25%; height: inherit; font-size: 16px;">
 <?php
 
@@ -368,12 +369,10 @@ while ($row = mysqli_fetch_array($result))
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div class='wrapper' align='left'><p class=\"customfont\" style=\"font-size: 20px; padding: 20px; font-weight: bold; text-align: left;\">" . "Date: ". $date. "<br>"."<div align='center'><p class=\"customfont\" style=\"font-size: 35px; padding: 20px; font-weight: bold; text-align: center; color: #000000;\">" . $title. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$description . "</div></div><br><br>";
+    echo "<div class='wrapper' align='left'><p class=\"customfont\" style=\"font-size: 20px; padding: 10px; text-align: left;\">" . "Date: ". $date. "<br>"."<div align='center'><p class=\"customfont\" style=\"font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000;\">" . $title. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$description . "</div></div><br><br>";
 }
 ?>
 </div>
 <footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
-</body>
-</html>
 </body>
 </html>
