@@ -358,7 +358,8 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!-- Daily Special -->
 <div class="foodwrapper left" style="width: 35%; margin-left: 13%;"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Daily Specials</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM dailyspecial";
@@ -377,8 +378,7 @@ while ($row = mysqli_fetch_array($result))
 }
 ?>
 </div>
-
-
+<!-- Main Menu -->
 <div class="foodwrapper right" style="width: 35%; margin-right: 13%"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Main Menu</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM menuitems";
@@ -397,7 +397,7 @@ while ($row = mysqli_fetch_array($result))
 }
 ?>
 </div>
-
+<!-- Drinks -->
 <div class="foodwrapper left" style="width: 35%; margin-left: 13%;"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Drinks</a></p> <!-- fix this-->
     <?php
     $query = "SELECT * FROM drink";
@@ -434,5 +434,5 @@ textarea.nooResize
 }
 </style>
 <input type="submit" name="publish" value="SEND!" />
-<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 -->

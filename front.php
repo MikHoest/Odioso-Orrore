@@ -454,7 +454,7 @@ while ($row = mysqli_fetch_array($result)) {
            $dailySpecial=$row['dailySpecial'];
            $ingredients=$row['ingredients'];
            $price=$row['price'];
-           echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>"."Price: ".$price.".- DKK" ."</div>";
+           echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK</p></div>";
        }
        ?>
 </div>
@@ -472,7 +472,7 @@ while ($row = mysqli_fetch_array($result)) {
         $drink=$row['drink'];
         $ingredients=$row['ingredients'];
         $price=$row['price'];
-        echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $drink. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<div align='left' style='font-size: 16px; font-family: Verdana'>"."Price: ".$price.".- DKK" ."</div>";
+        echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $drink. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK</p></div>";
     }
     ?>
 </div>
@@ -487,14 +487,6 @@ while ($row = mysqli_fetch_array($result)) {
 </div>-->
 <br><br><br><br>
 <!-- RESERVE TABLE -->
-<body>
-
-
-
-
-</body>
-</html>
-
 <div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
 
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;"onclick="myFunction()">Reserve a Table</p>
