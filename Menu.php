@@ -3,20 +3,70 @@ require_once("admin/include/session.php");
 require_once("admin/include/connection.php");
 require_once("admin/include/functions.php");
 ?>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8 utf-8">
     <title>Menu</title>
+    <link href="cssCap/style.css">
     <link rel="stylesheet" type="text/css" href="bootstrap" />
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <style type="text/css">
-        @font-face {
-            font-family: "Cardinal";
-            src: url(fonts/Cardinal.ttf) format("truetype");
+        /* Popup container - can be anything you want */
+        .popup {
+            position: static;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
         }
-        p.customfont {
-            font-family: "Cardinal", Verdana, Tahoma, sans-serif;
+        /* The actual popup */
+        .popup .popuptext {
+            visibility: hidden;
+            width: inherit;
+            height: inherit;
+            background-color: rgb(37, 122, 39);
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 100%;
+            left: 10%;
+            margin-left: -80px;
+        }
+        /* Popup arrow */
+        .popup .popuptext::after {
+            content: "";
+            position: inherit;
+            top: -150%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: rgba(162, 27, 12, 0) transparent transparent transparent;
+        }
+        /* Toggle this class - hide and show the popup */
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 2s;
+            animation: fadeIn 2s;
+        }
+        /* Add animation (fade in the popup) */
+        @-webkit-keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity:1 ;}
         }
         ul
         {
@@ -44,7 +94,7 @@ require_once("admin/include/functions.php");
         {
 
             background-color: rgba(255, 104, 107, 0);
-            color: rgba(177, 21, 21, 0.8);
+            color: rgba(134, 177, 139, 0.8);
             font-style: normal;
             text-decoration: none;
         }
@@ -64,7 +114,6 @@ require_once("admin/include/functions.php");
             text-align: center;
             transform: translateY(-50%);
         }
-
         .social .link
         {
             display: inline-block;
@@ -84,7 +133,6 @@ require_once("admin/include/functions.php");
                 0 1px 0 rgba(255, 255, 255, 0.2);
             font-size: 15px;
         }
-
         .social .link span
         {
             display: block;
@@ -94,21 +142,13 @@ require_once("admin/include/functions.php");
             left: 50%;
             transform: translate(-50%, -50%);
         }
-
         .social .link:hover
         {
-            padding: 15px;
+
             color: #000000;
             margin-left: -5px;
             transform: translateX(10px) rotate(360deg);
         }
-
-        .social .link.google-plus
-        {
-            background-color: tomato;
-            color: white;
-        }
-
         .social .link.twitter
         {
             border: 1px solid #00ACEE;
@@ -120,15 +160,13 @@ require_once("admin/include/functions.php");
             background-blend-mode: overlay;
             color: #000000;
         }
-
         .social .link.twitter:hover
         {
             background-size: 50%;
         }
-
         .social .link.facebook
         {
-            border: 1px solid #3B5998;
+            border: 1px solid #223b80;
             background-color: #223b80;
             background-image: url("socialIcons/facebook.png");
             background-repeat: no-repeat;
@@ -137,12 +175,10 @@ require_once("admin/include/functions.php");
             background-blend-mode: overlay;
             color: #000000;
         }
-
         .social .link.facebook:hover
         {
             background-size: 50%;
         }
-
         .social .link.instagram
         {
 
@@ -155,12 +191,10 @@ require_once("admin/include/functions.php");
             background-blend-mode: overlay;
             color: #000000;
         }
-
         .social .link.instagram:hover
         {
             background-size: 50%;
         }
-
         .cb-slideshow,
         .cb-slideshow:after {
             position: fixed;
@@ -172,10 +206,11 @@ require_once("admin/include/functions.php");
         }
         .cb-slideshow:after {
             content: '';
-            background: url("picz/Scanlines.png") repeat top left;
-
+            background-image: url("picz/CRTscanlines.png");
+            width: 100%;
+            height: 100%;
+            background-repeat:no-repeat;
         }
-
         .cb-slideshow li span {
             width: 100%;
             height: 100%;
@@ -184,13 +219,12 @@ require_once("admin/include/functions.php");
             left: 0;
             color: transparent;
             background-size: cover;
-            background-position: 70% 50%;
+            background-position: 50% 50%;
             background-repeat: no-repeat;
             opacity: 0;
             z-index: 0;
             animation: imageAnimation 18s linear infinite 0s;
         }
-
         .cb-slideshow li div {
             z-index: 1000;
             float: left;
@@ -202,39 +236,31 @@ require_once("admin/include/functions.php");
             color: #fff;
             animation: titleAnimation 18s linear infinite 0s;
         }
-
-
         .cb-slideshow li div h3 {
             font-family: Cardinal, sans-serif;
             font-size: 100px;
             padding: 0;
             line-height: 700px;
         }
-
         .cb-slideshow li:nth-child(1) span {
             background-image: url("picz/slide01.jpg");
         }
-
         .cb-slideshow li:nth-child(2) span {
             background-image: url("picz/slide2.jpg");
             animation-delay: 6s;
         }
-
         .cb-slideshow li:nth-child(3) span {
             background-image: url("picz/slide3.jpg");
             animation-delay: 12s;
         }
-
         .cb-slideshow li:nth-child(1) div {
         }
-
         .cb-slideshow li:nth-child(2) div {
             animation-delay: 6s;
         }
         .cb-slideshow li:nth-child(3) div {
             animation-delay: 12s;
         }
-
         @keyframes imageAnimation {
             0% { opacity: 0; animation-timing-function: ease-in; }
             23% { opacity: 1; animation-timing-function: ease-out; }
@@ -242,7 +268,6 @@ require_once("admin/include/functions.php");
             35% { opacity: 0 }
             100% { opacity: 0 }
         }
-
         @keyframes titleAnimation {
             0% { opacity: 0; animation-timing-function: ease-in; }
             23% { opacity: 1; animation-timing-function: ease-out; }
@@ -250,14 +275,12 @@ require_once("admin/include/functions.php");
             35% { opacity: 0 }
             100% { opacity: 0 }
         }
-
         @media screen and (max-width: 1140px) {
             .cb-slideshow li div h3 { font-size: 140px }
         }
         @media screen and (max-width: 600px) {
             .cb-slideshow li div h3 { font-size: 80px }
         }
-
         h3 {
             position: relative;
             padding-top: 300px;
@@ -265,21 +288,41 @@ require_once("admin/include/functions.php");
             font-size: 90px;
 
         }
-
         h2 {
             position: relative;
             text-align: center;
         }
-
         @media screen and (max-width: 600px) {
             h3 {
                 font-size: 40px;
 
             }
         }
-</style>
+        input[type=submit] {
+            font-family: "Cardinal", Verdana, Tahoma, sans-serif;
+            font-size: 24px;
+            width: 100%;
+            background-color: #000000;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        @font-face {
+            font-family: "Cardinal";
+            src: url(fonts/Cardinal.ttf) format("truetype");
+        }
+        p.customfont {
+            font-family: "Cardinal", Verdana, Tahoma, sans-serif;
+        }
+        textarea.nooResize
+        {
+            resize: none;
+        }
+    </style>
 </head>
-<body>
 <!-- buttons on top - links -->
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
@@ -306,42 +349,12 @@ require_once("admin/include/functions.php");
 </div>
 <!-- SLIDESHOW -->
 <ul class="cb-slideshow">
-    <li>
-        <span>1</span>
-
-    </li>
-
-    <li>
-        <span>2</span>
-
-    </li>
-
-    <li>
-        <span>3</span>
-
-    </li>
+    <li><span>1</span></li>
+    <li><span>2</span></li>
+    <li><span>3</span></li>
 </ul>
 <script src="slidescript.js"></script>
 <!-- SLIDESHOW END -->
-<script>
-    function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "navbar-fixed-top") {
-            x.className += " responsive";
-        } else {
-            x.className = "navbar-fixed-top";
-        }
-    }
-</script>
-<style type="text/css">
-    @font-face {
-        font-family: "Cardinal";
-        src: url(fonts/Cardinal.ttf) format("truetype");
-    }
-    p.customfont {
-        font-family: "Cardinal", Verdana, Tahoma, sans-serif;
-    }
-</style>
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -416,6 +429,7 @@ while ($row = mysqli_fetch_array($result))
     ?>
 </div>
 <br>
-<footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
-</body>
+<footer>
+    <p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p>
+</footer>
 </html>
