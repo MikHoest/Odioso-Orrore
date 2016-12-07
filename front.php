@@ -548,6 +548,7 @@ while ($row = mysqli_fetch_array($result)) {
             <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
             <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
             <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="center"></textarea><br/>
+            <td align="center" valign="top"><p class="customfont" style="font-size: 20px; text-align: left;"> Validation code:</p></td>
             <!-- <input type="submit" style="background-color: #a21b0c" name="submit" value="SEND!" /> -->
             <table>
                 <?php if(isset($msg)){?>
@@ -556,7 +557,6 @@ while ($row = mysqli_fetch_array($result)) {
                     </tr>
                 <?php } ?>
                 <tr>
-                    <td align="center" valign="top"> Validation code:</td>
                     <img src="captcha.php?rand=<?php echo rand();?>" id='captchaimg'><br><br>
                     <input id="captcha_code" name="captcha_code" type="text" placeholder="Enter the code above here :">
                     <br>

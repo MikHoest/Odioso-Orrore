@@ -114,7 +114,7 @@ require_once("admin/include/functions.php");
         {
             border: 1px solid #00ACEE;
             background-color: #00ACEE;
-            background-image: url("twitter.png");
+            background-image: url("socialIcons/twitter.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 75%;
@@ -131,7 +131,7 @@ require_once("admin/include/functions.php");
         {
             border: 1px solid #3B5998;
             background-color: #223b80;
-            background-image: url("facebook.png");
+            background-image: url("socialIcons/facebook.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 75%;
@@ -149,7 +149,7 @@ require_once("admin/include/functions.php");
 
             border: 1px solid purple;
             background-color: purple;
-            background-image: url("instagram.png");
+            background-image: url("socialIcons/instagram.png");
             background-repeat: no-repeat;
             background-position: center;
             background-size: 75%;
@@ -359,7 +359,7 @@ require_once("admin/include/functions.php");
     }
 </script>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="wrapper left" style="width: 35%"><p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Daily Specials</a></p> <!-- fix this-->
+<div class="foodwrapper left" style="width: 35%; margin-left: 13%;"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Daily Specials</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM dailyspecial";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -371,13 +371,14 @@ while ($row = mysqli_fetch_array($result))
     $dailySpecial=$row['dailySpecial'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
+    $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='foodwrapper left' style='margin-left: inherit'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div><br><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'><br><br>" . "Price: " .$price . ".- DKK</div></table></div>";
+    echo "<div class='left' style='margin-left: 20%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div></p><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: center;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
 }
 ?>
 </div>
 
-<div class="wrapper right" style="width: 35%"><p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Main Menu</a></p> <!-- fix this-->
+<div class="foodwrapper right" style="width: 35%; margin-right: 13%"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Main Menu</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM menuitems";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -389,12 +390,12 @@ while ($row = mysqli_fetch_array($result))
     $mainCourse=$row['mainCourse'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
+    $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='foodwrapper right' style='margin-left: inherit'><table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div><br><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><div align='center' style='font-size: 16px; font-family: Verdana'><br><br>" . "Price: " .$price . ".- DKK</div></table></div>";
+    echo "<div class='right' style='margin-right: 20%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div></p><br><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: center;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
 }
 ?>
 </div>
-</head>
 <div class="container">
 
 </div>
