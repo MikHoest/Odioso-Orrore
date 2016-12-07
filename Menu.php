@@ -378,6 +378,7 @@ while ($row = mysqli_fetch_array($result))
 ?>
 </div>
 
+
 <div class="foodwrapper right" style="width: 35%; margin-right: 13%"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Main Menu</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM menuitems";
@@ -396,6 +397,26 @@ while ($row = mysqli_fetch_array($result))
 }
 ?>
 </div>
+
+<div class="foodwrapper left" style="width: 35%; margin-left: 13%;"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Drinks</a></p> <!-- fix this-->
+    <?php
+    $query = "SELECT * FROM drink";
+    mysqli_query($connection, $query) or die('Error querying database.');
+
+    $result = mysqli_query($connection, $query);
+
+    while ($row = mysqli_fetch_array($result))
+    {
+        $drink=$row['drink'];
+        $ingredients=$row['ingredients'];
+        $price=$row['price'];
+        $picture=$row['picture'];
+        //$review=$row['review'];
+        echo "<div class='left' style='margin-left: 20%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$drink."</div></p><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: center;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
+    }
+    ?>
+</div>
+
 <div class="container">
 
 </div>
