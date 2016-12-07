@@ -349,7 +349,7 @@ require_once("admin/include/functions.php");
         <li>News</li>
     </ul>
 </div>
-<br><br><br><br>
+<br>
 <div class="wrapper" style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; max-width: 72.5%;">
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">Odioso Orrore<p/>
     <p class="customfont" style="font-size: 50px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">NEWS<p/>
