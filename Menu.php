@@ -304,9 +304,6 @@ require_once("admin/include/functions.php");
 
     </ul>
 </div>
-
-
-
 <!-- SLIDESHOW -->
 <ul class="cb-slideshow">
     <li>
@@ -326,7 +323,6 @@ require_once("admin/include/functions.php");
 </ul>
 <script src="slidescript.js"></script>
 <!-- SLIDESHOW END -->
-
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -337,8 +333,6 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
-
-
 <style type="text/css">
     @font-face {
         font-family: "Cardinal";
@@ -358,7 +352,12 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br>
+<div class="wrapper" style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; max-width: 82.5%;">
+    <p class="customfont" style="font-size: 40px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">Odioso Orrore<p/>
+    <p class="customfont" style="font-size: 55px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">MENU<p/>
+</div>
+<br><br>
 <!-- Daily Special -->
 <div class="foodwrapper left" style="width: 35%; margin-left: 13%;"><p class="customfont" style="color: black; font-size: 45px; padding: 20px; font-weight: bold; text-align: center;">Daily Specials</a></p> <!-- fix this-->
 <?php
@@ -374,7 +373,7 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='left' style='margin-left: 20%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div></p><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: center;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
+    echo "<div class='wrapper' style='width: 87%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$dailySpecial."</div></p><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
 }
 ?>
 </div>
@@ -393,7 +392,7 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='right' style='margin-right: 20%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div></p><br><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: center;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
+    echo "<div class='wrapper' style='width: 87%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$mainCourse."</div></p><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
 }
 ?>
 </div>
@@ -412,27 +411,11 @@ while ($row = mysqli_fetch_array($result))
         $price=$row['price'];
         $picture=$row['picture'];
         //$review=$row['review'];
-        echo "<div class='left' style='margin-left: 20%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$drink."</div></p><br><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: center;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
+        echo "<div class='wrapper' style='width: 87%;'>".$picture."<table><p class=\"customfont\" style=\"font-size: 28px; padding: 20px; font-weight: bold; text-align: left;\">".$drink."</div></p><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK<hr></p></table></div>";
     }
     ?>
 </div>
-
-<div class="container">
-
-</div>
+<br>
+<footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
 </body>
-    <footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
 </html>
-<!--
-<input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
-<input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="right"><br/>
-<textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Comment" rows="5" align="right"></textarea><br/>
-<style>
-textarea.nooResize
-{
-    resize: none;
-}
-</style>
-<input type="submit" name="publish" value="SEND!" />
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
--->

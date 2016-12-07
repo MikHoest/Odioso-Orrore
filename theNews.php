@@ -349,10 +349,10 @@ require_once("admin/include/functions.php");
         <li>News</li>
     </ul>
 </div>
-
-<div class="wrapper" style="margin-left: 25%; height: inherit">
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore<p/>
-    <p class="customfont" style="font-size: 50px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">NEWS<p/>
+<br><br><br><br>
+<div class="wrapper" style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; max-width: 72.5%;">
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">Odioso Orrore<p/>
+    <p class="customfont" style="font-size: 50px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">NEWS<p/>
 </div>
 <br>
 <div style="margin-left: 25%; height: inherit; font-size: 16px;">

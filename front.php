@@ -343,7 +343,6 @@ require_once("admin/include/functions.php");
     </style>
 </head>
 <body>
-
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
         <div class="col-sm-3">
@@ -367,9 +366,6 @@ require_once("admin/include/functions.php");
 
     </ul>
 </div>
-
-
-
 <!-- SLIDESHOW -->
 <ul class="cb-slideshow">
     <li>
@@ -389,7 +385,6 @@ require_once("admin/include/functions.php");
 </ul>
 <script src="slidescript.js"></script>
 <!-- SLIDESHOW END -->
-
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
@@ -400,8 +395,6 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
-
-
 <style type="text/css">
     @font-face {
         font-family: "Cardinal";
@@ -514,7 +507,6 @@ while ($row = mysqli_fetch_array($result)) {
     <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
     <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
 </div>
-
 <script type='text/javascript'>
     function refreshCaptcha()
     {
@@ -560,4 +552,5 @@ while ($row = mysqli_fetch_array($result)) {
 </div>
 <br>
 <footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
+</body>
 </html>
