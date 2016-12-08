@@ -7,6 +7,7 @@ require_once("admin/include/functions.php");
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8 utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Odioso Orrore</title>
     <link href="cssCap/style.css">
     <link rel="stylesheet" type="text/css" href="bootstrap" />
@@ -14,7 +15,8 @@ require_once("admin/include/functions.php");
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <style type="text/css">
         /* Popup container - can be anything you want */
         .popup {
@@ -437,7 +439,20 @@ $result = mysqli_query($connection, $query);
 </div>-->
 <br><br><br><br>
 <!-- RESERVE TABLE -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $( function() {
+        $( "#datepicker" ).datepicker();
+    } );
+</script>
+<br>
 <div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Reserve a Table</p>
+    <p>Date: <input type="text" id="datepicker"></p>
+
+</div>
+<!--     <div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
 
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;"onclick="myFunction()">Reserve a Table</p>
     <span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Date <input type="text" id="datepicker"></p></span>
@@ -454,8 +469,8 @@ $result = mysqli_query($connection, $query);
             $( "#datepicker" ).datepicker();
         } );
     </script>
-</div>
-<br><br><br><br><br>
+</div> DATEPICKER-->
+<br><br><br><br>
 <!-- SocialMedia-->
 <div class="wrapper social" style="margin-left: 25%; height: inherit;">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -487,7 +502,7 @@ $result = mysqli_query($connection, $query);
     <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold;color: black; text-align: center;">Contact us</p>
         <form action="process.php" method="post" style="content: inherit">
             <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center"><br/>
-            <input type="text" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
+            <input type="email" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center"><br/>
             <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="center"></textarea><br/>
             <td align="center" valign="top"><p class="customfont" style="font-size: 20px; text-align: left;"> Validation code:</p></td>
             <!-- <input type="submit" style="background-color: #a21b0c" name="submit" value="SEND!" /> -->

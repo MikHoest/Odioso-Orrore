@@ -1,3 +1,21 @@
+<?php
+require_once("admin/include/session.php");
+require_once("admin/include/connection.php");
+require_once("admin/include/functions.php");
+
+if(isset($_POST{'publish'})) {
+
+    $name = $row['name'];
+    $telephone = $row['telephone'];
+    $tableNumber = $row['tableNumber'];
+    $fromTime = $row['fromTime'];
+    $date = $row['date'];
+    $numberGuest = $row['numberGuest'];
+
+    $query = "INSERT INTO reservation( 'name', 'tableNumber', 'fromTime', 'telephone', 'date', 'numberGuest') VALUES ($name, $tableNumber, $fromTime, $telephone, $date, $numberGuest)";
+    mysqli_query($connection, $query) or die('Error querying database.');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,20 +60,38 @@
             font-style: normal;
             text-decoration: none;
         }
+        @font-face {
+            font-family: "Cardinal";
+            src: url(fonts/Cardinal.ttf) format("truetype");
+        }
         p.customfont {
             font-family: "Cardinal", Verdana, Tahoma, sans-serif;
         }
-
     </style>
     <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById('myPopup');
+            popup.classList.toggle('show');
+        }
         $( function() {
             $( "#datepicker" ).datepicker();
         } );
     </script>
-    <body>
-    <br><br><br><br><br>
-    <p>Date: <input type="text" id="datepicker"></p>
-    <link href="calendar.css" type="text/css" rel="stylesheet" />
+<li id="home"><a href="front.php" style="float: right"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a></li>
+<br><br><br>
+<div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;"onclick="myFunction()">Reserve a Table</p>
+    <p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Name<input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center" required>
+    <p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Phone<input type="number" style="background-color: #ffffff" name="name" placeholder="Number" size="8" align="center" required>
+    <span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Date <input type="text" id="datepicker" required></p></span>
+    <span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Time <input type="time" id="datepicker" required></p></span>
+    <p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Number Of Guests <input type="number" name="quantity" min="1" max="12" required></p>
+</div>
+<br>
+<!--<body>
+    <br><br><br>
+<link href="calendar.css" type="text/css" rel="stylesheet" />
 <?php
 include 'calendar.php';
 
@@ -63,7 +99,9 @@ $calendar = new Calendar();
 
 echo $calendar->show();
 ?>
-<footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
-</body>
+</body>-->
+<footer>
+    <p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p>
+</footer>
 </head>
 </html>
