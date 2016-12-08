@@ -84,11 +84,11 @@ if(isset($_POST{'submit'})) {
     <table style=" width: 100%">
         <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Reserve a Table</p> <!--  $tableNumber, $, $, $ -->
         <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Name<th><input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center" required></th></tr>
-        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Phone<th><input type="number" style="background-color: #ffffff" name="telephone" placeholder="Number" size="8" align="center" required></th></tr>
+        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Phone<th><input type="text" style="background-color: #ffffff" name="telephone" placeholder="Phoneumber" minlength="8" maxlength="8" required></th></tr>
         <tr><th><span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Date <th><input type="text" name="date" id="datepicker" required></p></span></th></tr>
         <tr><th><span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Time <th><input type="time" name="fromTime" id="datepicker" required></p></span></th></tr>
-        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Number Of Guests <th><input type="number" name="numberGuest" min="1" max="12" required></p></th></tr>
-        <tr><th><input name="Submit" type="submit" onclick="return validate();" value="Book Your Table"><input name="Submit" type="submit" value="Check if Available"></th></tr>
+        <tr><th><span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Number Of Guests <th><input type="number" name="numberGuest" min="1" max="12" required></p></span></th></tr>
+        <tr><th><input name="Submit" type="submit" onclick="return validate();" value="Book Your Table"> <input name="Submit" type="submit" value="Check if Available"> <input type="reset"></th></tr>
     </table>
 </div>
 <br>

@@ -7,7 +7,7 @@
     $nameErr = $emailErr = $subjectErr = $messageErr = "";
     $name = $email = $subject = $message = "";
 
-
+// GOT EVERYTHING ON W3SCHOOL - PHP form validation - http://www.w3schools.com/php/php_form_validation.asp
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
     if (empty($_POST["name"])) {
