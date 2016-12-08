@@ -3,7 +3,7 @@ require_once("admin/include/session.php");
 require_once("admin/include/connection.php");
 require_once("admin/include/functions.php");
 
-if(isset($_POST{'publish'})) {
+if(isset($_POST{'submit'})) {
 
     $name = $row['name'];
     $telephone = $row['telephone'];
@@ -81,12 +81,15 @@ if(isset($_POST{'publish'})) {
 <li id="home"><a href="front.php" style="float: right"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a></li>
 <br><br><br>
 <div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;"onclick="myFunction()">Reserve a Table</p>
-    <p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Name<input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center" required>
-    <p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Phone<input type="number" style="background-color: #ffffff" name="name" placeholder="Number" size="8" align="center" required>
-    <span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Date <input type="text" id="datepicker" required></p></span>
-    <span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Time <input type="time" id="datepicker" required></p></span>
-    <p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Number Of Guests <input type="number" name="quantity" min="1" max="12" required></p>
+    <table style=" width: 100%">
+        <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Reserve a Table</p> <!--  $tableNumber, $, $, $ -->
+        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Name<th><input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center" required></th></tr>
+        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Phone<th><input type="number" style="background-color: #ffffff" name="telephone" placeholder="Number" size="8" align="center" required></th></tr>
+        <tr><th><span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Date <th><input type="text" name="date" id="datepicker" required></p></span></th></tr>
+        <tr><th><span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Time <th><input type="time" name="fromTime" id="datepicker" required></p></span></th></tr>
+        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Number Of Guests <th><input type="number" name="numberGuest" min="1" max="12" required></p></th></tr>
+        <tr><th><input name="Submit" type="submit" onclick="return validate();" value="Book Your Table"><input name="Submit" type="submit" value="Check if Available"></th></tr>
+    </table>
 </div>
 <br>
 <!--<body>
