@@ -11,17 +11,17 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 {
     if (empty($_POST["name"])) {
-        $nameErr = "Name is required";
+        $nameErr = "We need to know your name!";
     } else {
         $name = test_input($_POST["name"]);
         // check if name only contains letters and whitespace
         if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-            $nameErr = "Only letters and white space allowed";
+            $nameErr = "And could you please write it correctly please?";
         }
     }
     if (empty($_POST["submit"]))
     {
-        $emailErr = "Email is required";
+        $emailErr = "We also need your Email!";
     }
     else
     {
@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
         // check if e-mail address is well-formed
         if (!filter_var($email, FILTER_VALIDATE_EMAIL))
         {
-            $emailErr = "Invalid email format";
+            $emailErr = "And could you maybe input your real Email, we won't spam you. Promise!";
         }
     }
 }
@@ -37,7 +37,7 @@ else
 {
     $body = "message\n\nName: $name\nEmail: $email";
     mail ($mymail, $body,"From: $email\n");
-    echo "Thanks for your E-mail $name!";
+    echo "Thanks for your E-mail $name! You are now subscribed to everything on the INTERNET, I lied about the spam";
 }
 function test_input($data) {
     $data = trim($data);
