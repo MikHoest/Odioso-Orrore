@@ -439,38 +439,11 @@ $result = mysqli_query($connection, $query);
 </div>-->
 <br><br><br><br>
 <!-- RESERVE TABLE -->
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script>
-    $( function() {
-        $( "#datepicker" ).datepicker();
-    } );
-</script>
-<br>
 <div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Reserve a Table</p>
-    <p>Date: <input type="text" id="datepicker"></p>
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">Reserve a Table</a></p>
 
 </div>
-<!--     <div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
-
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;"onclick="myFunction()">Reserve a Table</p>
-    <span class="popuptext" id="myPopup"><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: center; color: black;">Date <input type="text" id="datepicker"></p></span>
-
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        // When the user clicks on div, open the popup
-        function myFunction() {
-            var popup = document.getElementById('myPopup');
-            popup.classList.toggle('show');
-        }
-        $( function() {
-            $( "#datepicker" ).datepicker();
-        } );
-    </script>
-</div> DATEPICKER-->
-<br><br><br><br>
+<br><br><br><br><br>
 <!-- SocialMedia-->
 <div class="wrapper social" style="margin-left: 25%; height: inherit;">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
