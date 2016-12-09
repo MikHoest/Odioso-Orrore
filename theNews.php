@@ -22,7 +22,8 @@ require_once("admin/include/functions.php");
             background-color: rgba(177, 21, 21, 0);
             font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
             font-size: 0;
-            text-align: center;
+            text-align: right;
+
         }
         li
         {
@@ -282,30 +283,29 @@ require_once("admin/include/functions.php");
     </style>
 </head>
 <body>
-<!-- buttons on top - links -->
-<div class="container">
-    <ul class="navbar-fixed-top" id="myTopnav">
-        <div class="col-sm-3">
-            <div class="logo" style="float:left">
-                <a href="front.php">
-                    <img src="picz/Logo2.png" style="width: 160px;">
-                </a>
-            </div>
-        </div>
 
-
-        <div class="icon">
-            <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
-                <p class="navicon" style="color: white;"> ☠ </p>
+<ul class="navbar-fixed-top" id="myTopnav">
+    <div class="col-sm-3">
+        <div class="logo" style="float:left">
+            <a href="front.php">
+                <img src="picz/Logo2.png" style="width: 160px;">
             </a>
         </div>
+    </div>
 
-        <li id="home"><a href="front.php" style="float: none"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a>
-        <li id="menu"><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU%20-%20Kopi.png" onmouseover="this.src='picz/MENU-MENU-HOVER'" onmouseout="this.src='picz/MENU-MENU%20-%20Kopi.png'"></a></li>
-        <li id="reservations"><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png" onmouseover="this.src='picz/MENU-RESERVATIONS-HOVER'" onmouseout="this.src='picz/MENU-RESERVATIONS%20-%20Kopi.png'"></a></li>
 
-    </ul>
-</div>
+    <div class="icon">
+        <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
+            <p class="navicon" style="color: white;"> ☠ </p>
+        </a>
+    </div>
+
+    <li id="home"><a href="front.php" style="float: none"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a>
+    <li id="menu"><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU%20-%20Kopi.png" onmouseover="this.src='picz/MENU-MENU-HOVER'" onmouseout="this.src='picz/MENU-MENU%20-%20Kopi.png'"></a></li>
+    <li id="reservations"><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png" onmouseover="this.src='picz/MENU-RESERVATIONS-HOVER'" onmouseout="this.src='picz/MENU-RESERVATIONS%20-%20Kopi.png'"></a></li>
+
+</ul>
+
 <!-- SLIDESHOW -->
 <ul class="cb-slideshow">
     <li>
@@ -341,13 +341,13 @@ require_once("admin/include/functions.php");
     </ul>
 </div>
 <br>
-<div class="wrapper" style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; max-width: 72.3%;">
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">Odioso Orrore<p/>
-    <p class="customfont" style="font-size: 50px; padding: 20px; font-weight: bold; text-align: right; color: #000000;">NEWS<p/>
+<div class="wrapper" style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; ">
+    <p style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore<p/>
+    <p style="font-size: 50px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">NEWS<p/>
 </div>
 <br>
 <!-- NEWS -->
-<div style="margin-left: 25%; height: inherit; font-size: 16px;">
+<div style="margin-left: 25%; height: inherit;">
 <?php
 
 $query = "SELECT * FROM news ORDER BY ID DESC";
@@ -360,7 +360,7 @@ while ($row = mysqli_fetch_array($result))
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div class='wrapper' align='left' style='border-radius: 3px;'><p class=\"customfont\" style=\"font-size: 20px; padding: 10px; text-align: left;\">" . "Date: ". $date. "<br>"."<div align='center'><p class=\"customfont\" style=\"font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000;\">" . $title. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$description . "</div></div><br>";
+    echo "<div class='wrapper' align='left' style='border-radius: 3px;'><p class=\"customfont\" style=\"font-size: 20px; padding: 10px; text-align: left;\">" . "Date: ". $date. "<br>"."<div align='center'><p class=\"customfont\" style=\" padding-top: 20px; font-weight: bold; text-align: center; color: #000000;\">" . $title. "</div><br>"."<div align='justify' style=' font-family: Verdana'>" .$description . "</div></div><br>";
 }
 ?>
 </div>
