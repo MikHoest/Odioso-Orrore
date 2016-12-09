@@ -218,7 +218,7 @@ div.icon {
 
     .navbar-fixed-top {
         width: 95%;
-        height: 70%;
+        height: auto;
     }
 
   .heading p {
@@ -1109,7 +1109,7 @@ div.icon {
       opacity: 0.9;
   }
   .div {
-      margin-left: 0%;
+      margin-left: 0;
   }
 
 
