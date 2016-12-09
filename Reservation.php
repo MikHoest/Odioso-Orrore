@@ -78,19 +78,21 @@ if(isset($_POST{'submit'})) {
             $( "#datepicker" ).datepicker();
         } );
     </script>
-<li id="home"><a href="front.php" style="float: center"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a></li>
+<li id="home"><a href="front.php" style="float: inherit"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a></li>
 <br><br><br>
 <div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
-    <table style=" width: 100%">
-        <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Reserve a Table</p> <!--  $tableNumber, $, $, $ -->
-        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Name<th><input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center" required autofocus></th></tr>
-        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Phone<th><input type="text" style="background-color: #ffffff" name="telephone" placeholder="Phoneumber" minlength="8" maxlength="11" required></th></tr>
-        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Date <th><input type="text" name="date" id="datepicker" required></p></th></tr>
-        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Time <p class="customfont" style="font-size: 15px; text-align: left; color: black;">no reservation needed between 13:00-17:00 and after 21:00</p><th><input list="browsers" name="fromTime" id="datepicker" required><datalist id="browsers"><option value="11:00"><option value="11:30"><option value="12:00"><option value="12:30"><option value="13:00"><option value="17:00"><option value="17:30"><option value="18:00"><option value="18:30"><option value="19:00"><option value="19:30"><option value="20:00"><option value="20:30"><option value="21:00"></option></datalist></p></th></tr>
-        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Number Of Guests <p class="customfont" style="font-size: 15px; text-align: left; color: black;">For groups larger then 8 please call and reserve</p><th><input type="number" name="numberGuest" min="1" max="8" required></p></th></tr>
-        <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Select a Table <th><input type="text" id="output"><br/></th></tr>
-        <tr><th><input name="Submit" type="submit" onclick="return validate();" value="Book Your Table"> <input name="Submit" type="submit" value="Check if Available"> <input type="reset"></th></tr>
-    </table>
+    <form action="Reservation.php" method="post">
+        <table style=" width: 100%">
+            <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Reserve a Table</p> <!--  $tableNumber, $, $, $ -->
+            <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Name<th><input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center" required autofocus></th></tr>
+            <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Phone<th><input type="text" style="background-color: #ffffff" name="telephone" placeholder="Phoneumber" minlength="8" maxlength="11" required></th></tr>
+            <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Date <th><input type="text" name="date" id="datepicker" required></p></th></tr>
+            <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Time <p class="customfont" style="font-size: 15px; text-align: left; color: black;">no reservation needed between 13:00-17:00 and after 21:00</p><th><input list="browsers" name="fromTime" id="datepicker" required><datalist id="browsers"><option value="11:00"><option value="11:30"><option value="12:00"><option value="12:30"><option value="13:00"><option value="17:00"><option value="17:30"><option value="18:00"><option value="18:30"><option value="19:00"><option value="19:30"><option value="20:00"><option value="20:30"><option value="21:00"></option></datalist></p></th></tr>
+            <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Number Of Guests <p class="customfont" style="font-size: 15px; text-align: left; color: black;">For groups larger then 8 please call and reserve</p><th><input type="number" name="numberGuest" min="1" max="8" required></p></th></tr>
+            <tr><th><p class="customfont" style="font-size: 30px; font-weight: bold; text-align: left; color: black;">Select a Table <th><input type="text" id="output"><br/></th></tr>
+            <tr><th><input name="Submit" type="submit" onclick="return validate();" value="Book Your Table"> <input name="Submit" type="submit" value="Check if Available"> <input type="reset"></th></tr>
+        </table>
+    </form>
 </div>
 <br>
 <!--<body>
