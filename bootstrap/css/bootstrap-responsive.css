@@ -11,7 +11,7 @@
    background-size: 100%;
    background-blend-mode: overlay;
    max-width: 750px;
-    float: inherit;
+   float: inherit;
    text-align: left;
    opacity: 0.9;
  }
