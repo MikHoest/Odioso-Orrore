@@ -342,8 +342,8 @@ require_once("admin/include/functions.php");
 </div>
 <br>
 <div class="wrapper" style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; ">
-    <p style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore<p/>
-    <p style="font-size: 50px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">NEWS<p/>
+    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore<p/>
+    <p class="customfont" style="font-size: 50px; padding: 20px; font-weight: bold; text-align: center; color: #000000;">NEWS<p/>
 </div>
 <br>
 <!-- NEWS -->
