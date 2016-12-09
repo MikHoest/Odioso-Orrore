@@ -10,10 +10,10 @@ if(isset($_POST{'publish'})) {
     $dailyspecial = $row['dailySpecial'];
     $ingredients = $row['ingredients'];
     $price = $row['price'];
-    $review = $row['review'];
+    //$review = $row['review'];
     $picture = $_POST['picture'];
 
-    $query = "INSERT INTO dailyspecial('ID', 'dailySpecial', 'ingredients', 'price', 'review', 'picture') VALUES ($dailyspecial, $ingredients,$price, $review)";
+    $query = "INSERT INTO dailyspecial('ID', 'dailySpecial', 'ingredients', 'price', 'picture') VALUES ($dailyspecial, $ingredients,$price, $picture)";
     mysqli_query($connection, $query) or die('Error querying database.');
 }
 ?>
