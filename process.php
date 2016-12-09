@@ -37,7 +37,7 @@ else
 {
     $body = "message\n\nName: $name\nEmail: $email";
     mail ($mymail, $body,"From: $email\n");
-    echo "Thanks for your E-mail $name! You are now subscribed to everything on the INTERNET, I lied about the spam";
+    echo "Thanks for your E-mail $name! You are now subscribed to everything on the INTERNET, I lied about us not spamming you, sorry but not sorry!";
 }
 function test_input($data) {
     $data = trim($data);
