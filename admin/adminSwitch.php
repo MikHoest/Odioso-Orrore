@@ -44,18 +44,25 @@
             width:1px;
             background:#000;
         }
+        @font-face {
+            font-family: "Cardinal";
+            src: url(fonts/Cardinal.ttf) format("truetype");
+        }
+        p.customfont {
+            font-family: "Cardinal", Verdana, Tahoma, sans-serif;
+        }
     </style>
 </head>
 <body>
 <div class="wrapper"  style="margin-left: 25%">
-<h4><a href="index.php?page=home">HOME</a></h4>
-<h4><a href="index.php?page=newNews">ADD NEWS</a></h4>
-<h4><a href="index.php?page=newMenu">ADD MENU ITEMS</a></h4>
-<h4><a href="index.php?page=newDrink">ADD NEW DRINKS</a></h4>
-<h4><a href="index.php?page=newDailySpecial">ADD NEW DAILY SPECAIL</a></h4>
-<h4><a href="index.php?page=newUser">CREATE USER</a></h4>
-<h4><a href="../front.php">FRONTPAGE</a></h4>
-<h4><a href="logout.php">LOGOUT</a> </h4>
+<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=home">HOME</a></p>
+<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=newNews">ADD NEWS</a></p>
+<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=newMenu">ADD MENU ITEMS</a></p>
+<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=newDrink">ADD NEW DRINKS</a></p>
+<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=newDailySpecial">ADD NEW DAILY SPECAIL</a></p>
+<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=newUser">CREATE USER</a></p>
+<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="../front.php">FRONTPAGE</a></p>
+<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="logout.php">LOGOUT</a></p>
 </div>
 </body>
 </html>
