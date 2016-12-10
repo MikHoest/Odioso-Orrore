@@ -79,7 +79,7 @@ require_once("admin/include/functions.php");
             background-color: rgba(177, 21, 21, 0);
             font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
             font-size: 0;
-            text-align: center;
+            text-align: right;
         }
         li
         {
@@ -369,14 +369,14 @@ require_once("admin/include/functions.php");
 </script>
 <h3><p class="customfont">Welcome to Odioso Orrore</p></h3>
 <br>
-<div class="wrapper" style="height: inherit; background-color: white; border-radius: 1px; opacity: 0.5; max-width: 72.3%;">
-       <p class="customfont" style="font-size: 50px; padding: 20px; font-weight: bold; text-align: right; color: #000000">Celebrating the scariest of Italian cuisine since</p>
-       <p class="customfont" style="font-size: 55px; padding: 20px; font-weight: bold; text-align: right; color: #000000">2016</p>
+<div style="background-color: white; border-radius: 3px; opacity: 0.5; ">
+       <p class="customfont" style=" font-weight: bold; text-align: center; padding-top: 20px; color: #000000">Celebrating the scariest of Italian cuisine since</p>
+       <p class="customfont" style=" font-weight: bold; text-align: center; padding-bottom: 20px; color: #000000">2016</p>
 </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br>
 <!-- NEWS-->
 <div class="wrapper" style="margin-left: 25%; height: inherit">
-       <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest news from Odioso Orrore</a></p>
+       <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest news from Odioso Orrore</a></p>
 <?php
 $query = "SELECT * FROM news ORDER BY ID DESC LIMIT 1 ";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -387,14 +387,14 @@ $result = mysqli_query($connection, $query);
         $title=$row['title'];
         $description=$row['description'];
         $date=$row['date'];
-        echo "<div align='left'><p class=\"customfont\" style=\"font-size: 20px; padding: 10px; text-align: left;\">"."Date: ".$date. "</div><br>"."<div align='left' style='font-size: 28px; font-family: Verdana'>" .$title . "</div>"."<br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>".$description."</div>";
+        echo "<div align='left'><p class=\"customfont\" style=\"font-size: 20px; padding: 10px; text-align: left;\">"."Date: ".$date. "</div><br>"."<div align='left' style='font-size: 28px; font-family: Verdana'>" .$title . "</div>"."<br>"."<div align='justify' style=' font-family: Verdana'>".$description."</div>";
     }
 ?>
 </div>
 <br>
 <!--Daily Special-->
 <div class="wrapper" style="margin-left: 25%; height: inherit";>
-       <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Daily Special</a></p>
+       <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Daily Special</a></p>
        <?php
 
        $query = "SELECT * FROM dailyspecial ORDER BY rand(" . date("Ymd") . ") LIMIT 1"; //need to fix this for new special every day!!
@@ -406,14 +406,14 @@ $result = mysqli_query($connection, $query);
            $dailySpecial=$row['dailySpecial'];
            $ingredients=$row['ingredients'];
            $price=$row['price'];
-           echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK</p></div>";
+           echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='justify' style='font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK</p></div>";
        }
        ?>
 </div>
 <br>
 <!-- DRINKS-->
 <div class="wrapper" style="margin-left: 25%; height: inherit";>
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Special Drink</a></p>
+    <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Special Drink</a></p>
     <?php
     $query = "SELECT * FROM drinks LIMIT 1";
     mysqli_query($connection, $query) or die('Error querying database.');
@@ -424,7 +424,7 @@ $result = mysqli_query($connection, $query);
         $drink=$row['drink'];
         $ingredients=$row['ingredients'];
         $price=$row['price'];
-        echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $drink. "</div><br>"."<div align='justify' style='font-size: 16px; font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK</p></div>";
+        echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $drink. "</div><br>"."<div align='justify' style='font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK</p></div>";
     }
     ?>
 </div>
@@ -440,14 +440,14 @@ $result = mysqli_query($connection, $query);
 <br><br><br><br>
 <!-- RESERVE TABLE -->
 <div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">Reserve a Table</a></p>
+    <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">Reserve a Table</a></p>
 
 </div>
 <br><br><br><br><br>
 <!-- SocialMedia-->
 <div class="wrapper social" style="margin-left: 25%; height: inherit;">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold; text-align: center; color: black;">Our Social Media</p>
+    <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center; color: black;">Our Social Media</p>
     <a href="https://www.instagram.com/odiosoorrore/"  class="link instagram" target="_parent blank"><span class="fa fa-instagram"></span></a>
     <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
     <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
@@ -472,7 +472,7 @@ $result = mysqli_query($connection, $query);
             }
         }
         ?>
-    <p class="customfont" style="font-size: 45px; padding: 20px; font-weight: bold;color: black; text-align: center;">Contact us</p>
+    <p class="customfont" style="padding: 20px; font-weight: bold;color: black; text-align: center;">Contact us</p>
         <form action="process.php" method="post" style="content: inherit">
             <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center" required><br/>
             <input type="email" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center" required><br/>
