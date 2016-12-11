@@ -1,7 +1,8 @@
 .wrapper {
-   padding: 55px;
+   padding: 35px;
    position: relative;
    height: auto;
+   width: 750px;
    border-radius: 2px;
    font-size: 16px;
    font-family: Cardinal, sans-serif;
@@ -10,8 +11,7 @@
    background-image: url("borderIMG1.png");
    background-size: 100%;
    background-blend-mode: overlay;
-   max-width: 750px;
-   float: inherit;
+   float: none;
    text-align: left;
    opacity: 0.9;
  }
@@ -23,16 +23,20 @@
 }
 
 .foodwrapper {
-  height: 300px;
-  padding: 10px;
-  width: 25%;
-  position: static;
+  height: auto;
+  width: 30%;
+  position: relative;
   border-radius: 2px;
   color: #ffffff;
   background-color: #870900;
   float: left;
-  margin: 0 0 10px 10px;
+  margin-right: 1.5%;
+  margin-left: 1.5%;
   opacity: 0.9;
+}
+
+.foodContent {
+  padding: 10px;
 }
 
 /** STAR RATING **/
@@ -1124,6 +1128,13 @@ div.icon {
         font-size: 12px;
         background-image: none;
     }
+    
+    .foodwrapper {
+      width:80%;
+      text-align: center;
+      margin-left: 10% ;
+      margin-right: auto ;
+    }
 
     .customfont{
         font-size: 30px;
@@ -1290,6 +1301,12 @@ div.icon {
         word-break: normal;
     }
 
+    .foodwrapper {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: auto ;
+    }
+
     .nav-collapse {
         -webkit-transform: translate3d(0, 0, 0);
 
@@ -1354,14 +1371,19 @@ div.icon {
 @media (max-width: 1300px) {
 
     .wrapper {
-        width: 50%;
+        width: 550px;
         float: none;
         align-content: center;
     }
 
-    .foodwrapper {
-        width: 20%;
+    .customfont {
+        font-size: 35px;
     }
+
+    .foodwrapper {
+        font-size: 11px;
+    }
+
 }
 .left{
   color: inherit;
@@ -1374,7 +1396,4 @@ div.icon {
   width: 300px;
   height: inherit;
   float: right;
-}
-.menuwrapper{
-
 }
