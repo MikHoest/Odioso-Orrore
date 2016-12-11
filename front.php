@@ -367,7 +367,7 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
-<h3><p class="customfont">Welcome to Odioso Orrore</p></h3>
+<h3><p class="customfont" style="font-size: 90px;">Welcome to Odioso Orrore</p></h3>
 <br>
 <div style="background-color: white; border-radius: 3px; opacity: 0.5; ">
        <p class="customfont" style=" font-weight: bold; text-align: center; padding-top: 20px; color: #000000">Celebrating the scariest of Italian cuisine since</p>
