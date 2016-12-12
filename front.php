@@ -375,7 +375,7 @@ require_once("admin/include/functions.php");
 </div>
 <br><br><br><br><br>
 <!-- NEWS-->
-<div class="wrapper" style="margin-left: 25%; height: inherit">
+<div class="wrapper" style="height: inherit">
        <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest news from Odioso Orrore</a></p>
 <?php
 $query = "SELECT * FROM news ORDER BY ID DESC LIMIT 1 ";
@@ -393,7 +393,7 @@ $result = mysqli_query($connection, $query);
 </div>
 <br>
 <!--Daily Special-->
-<div class="wrapper" style="margin-left: 25%; height: inherit";>
+<div class="wrapper" style="height: inherit";>
        <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Daily Special</a></p>
        <?php
 
@@ -412,7 +412,7 @@ $result = mysqli_query($connection, $query);
 </div>
 <br>
 <!-- DRINKS-->
-<div class="wrapper" style="margin-left: 25%; height: inherit";>
+<div class="wrapper" style="height: inherit";>
     <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Special Drink</a></p>
     <?php
     $query = "SELECT * FROM drinks LIMIT 1";
@@ -439,18 +439,22 @@ $result = mysqli_query($connection, $query);
 </div>-->
 <br><br><br><br>
 <!-- RESERVE TABLE -->
-<div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
-    <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">Reserve a Table</a></p>
-
+<div class="wrapper" style="height: auto; align-content: center";>
+    <div class="popup social"><br><br><br><br>
+    <p class="customfont" style="font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">Reserve a Table</a></p>
+    </div>
 </div>
 <br><br><br><br><br>
 <!-- SocialMedia-->
-<div class="wrapper social" style="margin-left: 25%; height: inherit;">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center; color: black;">Our Social Media</p>
-    <a href="https://www.instagram.com/odiosoorrore/"  class="link instagram" target="_parent blank"><span class="fa fa-instagram"></span></a>
-    <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
-    <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
+<div class="wrapper" style="height: auto;">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+        <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center; color: black;">Our Social Media</p>
+    <div class=" social">
+        <br><br>
+        <a href="https://www.instagram.com/odiosoorrore/"  class="link instagram" target="_parent blank"><span class="fa fa-instagram"></span></a>
+        <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
+        <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
+    </div>
 </div>
 <script type='text/javascript'>
     function refreshCaptcha()
@@ -461,7 +465,7 @@ $result = mysqli_query($connection, $query);
     //(function(d, s, id) //what the fuck is this?
 </script>
 <!-- CONTACT -->
-<div class="wrapper" style="margin-left: 25%; height: inherit;">
+<div class="wrapper" style="height: inherit;">
         <?php
         if(isset($_POST['Submit'])){
             // code for check server side validation
@@ -497,6 +501,6 @@ $result = mysqli_query($connection, $query);
 </div>
 <br>
 <footer>
-    <p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p>
+    <div class="footer"><p class="customfont" style="font-size: 20px;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
 </footer>
 </html>

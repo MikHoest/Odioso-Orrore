@@ -2,7 +2,7 @@
    padding: 35px;
    position: relative;
    height: auto;
-   width: 750px;
+   width: 65%;
    border-radius: 2px;
    font-size: 16px;
    font-family: Cardinal, sans-serif;
@@ -11,10 +11,13 @@
    background-image: url("borderIMG1.png");
    background-size: 100%;
    background-blend-mode: overlay;
-   float: none;
+   float: left;
    text-align: left;
    opacity: 0.9;
+   margin-left: 15%;
+   margin-bottom: 5%;
  }
+
 
 .customfont {
     font-size: 45px;
@@ -38,6 +41,17 @@
 .foodContent {
   padding: 10px;
 }
+
+.footer {
+    font-family: "Cardinal", Verdana, Tahoma, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 30%;
+    line-height: 120%;
+}
+
 
 /** STAR RATING **/
 div.rating-form {
@@ -932,6 +946,11 @@ div.icon {
     margin-left: 0;
   }
 
+    .wrapper {
+        width: 70%;
+        margin-left: 10%;
+    }
+
     .customfont{
         font-size: 20px;
         word-break: normal;
@@ -1095,26 +1114,8 @@ div.icon {
     top: 20px;
   }
 
-  .wrapper {
-      padding-top: 50px;
-      padding-right: 50px;
-      padding-left: 30px;
-      padding-bottom: 10px;
-      width: 300px;
-      height: auto;
-      position: relative;
-      border-radius: 4px;
-      color: #ffffff;
-      background-color: #870900;
-      background-blend-mode: overlay;
-      max-width: none;
-      float: left;
-      text-align: left;
-      opacity: 0.9;
-  }
-  .div {
-      margin-left: 0;
-  }
+
+
 
 
 }
@@ -1127,13 +1128,17 @@ div.icon {
     .wrapper {
         font-size: 12px;
         background-image: none;
+        width: 80%;
+        text-align: center;
+        margin-left: 10% ;
+        margin-right: auto ;
     }
     
     .foodwrapper {
-      width:80%;
-      text-align: center;
-      margin-left: 10% ;
-      margin-right: auto ;
+        width: 80%;
+        text-align: center;
+        margin-left: 10% ;
+        margin-right: auto ;
     }
 
     .customfont{
@@ -1287,7 +1292,7 @@ div.icon {
 
 @media (max-width: 540px) {
 
-    .customfont{
+    .customfont {
         font-size: 20px;
     }
 
@@ -1295,65 +1300,76 @@ div.icon {
         display: none;
     }
 
-    .wrapper {
-        font-size: 12px;
-        text-align: left;
-        word-break: normal;
-    }
-
     .foodwrapper {
         text-align: center;
         margin-left: 10%;
-        margin-right: auto ;
+        margin-right: auto;
+    }
+
+    .wrapper {
+        text-align: center;
+        margin-left: 10%;
+        margin-right: auto;
     }
 
     .nav-collapse {
         -webkit-transform: translate3d(0, 0, 0);
 
     }
+
     .page-header h1 small {
         display: block;
         line-height: 20px;
     }
+
     input[type="checkbox"],
     input[type="radio"] {
         border: 1px solid #ccc;
     }
+
     .form-horizontal .control-label {
         float: none;
         width: auto;
         padding-top: 0;
         text-align: left;
     }
+
     .form-horizontal .controls {
         margin-left: 0;
     }
+
     .form-horizontal .control-list {
         padding-top: 0;
     }
+
     .form-horizontal .form-actions {
         padding-right: 10px;
         padding-left: 10px;
     }
+
     .media .pull-left,
     .media .pull-right {
         display: block;
         float: none;
         margin-bottom: 10px;
     }
+
     .media-object {
         margin-right: 0;
         margin-left: 0;
     }
+
     .modal {
         top: 10px;
         right: 10px;
         left: 10px;
     }
+
     .modal-header .close {
         padding: 10px;
         margin: -10px;
     }
+
     .carousel-caption {
         position: static;
     }
@@ -1368,12 +1384,14 @@ div.icon {
 }
 
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
 
     .wrapper {
-        width: 550px;
-        float: none;
+
+        float: left;
         align-content: center;
+        width: 100%;
+
     }
 
     .customfont {

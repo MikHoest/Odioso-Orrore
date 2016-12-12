@@ -342,12 +342,12 @@ require_once("admin/include/functions.php");
 </div>
 <br>
 <div style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; ">
-    <p class="customfont" style="padding-top: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore<p/>
-    <p class="customfont" style="padding-bottom: 20px; font-weight: bold; text-align: center; color: #000000;">NEWS<p/>
+    <p class="customfont" style="padding-top: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore</p>
+    <p class="customfont" style="padding-bottom: 20px; font-weight: bold; text-align: center; color: #000000;">NEWS</p>
 </div>
 <br>
 <!-- NEWS -->
-<div style="margin-left: 25%; height: inherit;">
+<div style=" height: inherit;">
 <?php
 
 $query = "SELECT * FROM news ORDER BY ID DESC";
@@ -364,6 +364,7 @@ while ($row = mysqli_fetch_array($result))
 }
 ?>
 </div>
-<footer><p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></footer>
+<br><br>
+<div class="footer">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
 </body>
 </html>
