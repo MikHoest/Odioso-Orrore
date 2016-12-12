@@ -411,7 +411,6 @@ while ($row = mysqli_fetch_array($result))
 ?>
 </div>
 <!-- Drinks -->
-
 <div class="foodwrapper" style="border-radius: 2px;"><p class="customfont" style="color: black; padding: 20px; font-weight: bold; text-align: center;">Drinks</a></p> <!-- fix this-->
     <?php
     $query = "SELECT * FROM drinks";
