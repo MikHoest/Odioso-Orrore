@@ -137,7 +137,6 @@ if(isset($_POST{'submit'})) {
             <tr>
                 <th>
                     <input name="submit" type="submit" onclick="return validate();" value="Book Your Table">
-                    
                     <!--<input name="Submit" type="submit" value="Check if Available">-->
                 </th>
             </tr>
@@ -147,7 +146,7 @@ if(isset($_POST{'submit'})) {
 <br>
 <!--<body>
     <br><br><br>
-<link href="calendar.css" type="text/css" rel="stylesheet" /> -->
+<link href="calendar.css" type="text/css" rel="stylesheet" /> 
 <?php
 include 'calendar.php';
 
