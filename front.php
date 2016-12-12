@@ -440,11 +440,14 @@ $result = mysqli_query($connection, $query);
 <br>
 <!-- RESERVE TABLE -->
 <div class="wrapper" style="height: inherit;">
-    <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">Reserve a Table</a></p>
-    <p class="customfont" style="padding: 5px; font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">HERE</a></p>
+    <br><br>
+    <p class="customfont" style="font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">Reserve a Table</a></p>
+    <p class="customfont" style="font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">HERE</a></p>
+    <?php
+
+    ?>
 </div>
 <br><br><br><br>
-<!-- SocialMedia-->
 
 <script type='text/javascript'>
     function refreshCaptcha()
@@ -466,8 +469,9 @@ $result = mysqli_query($connection, $query);
             }
         }
         ?>
+    <!-- SocialMedia -->
     <div class="right">
-    <p class="customfont" style="padding: 20px; font-weight: bold;color: black; text-align: center;">Visit Us</p>
+    <p class="customfont" style="padding: 20px; font-weight: bold;color: black; text-align: left;">Visit Us</p>
         <br><br><br><br><br>
         <div class="social" >
             <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -476,8 +480,9 @@ $result = mysqli_query($connection, $query);
             <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
         </div>
     </div>
+    <!-- Contact form -->
     <div class="left">
-    <p class="customfont" style="padding: 20px; font-weight: bold;color: black; text-align: center;">Contact Us</p>
+    <p class="customfont" style="padding: 20px; font-weight: bold;color: black; text-align: right;">Contact Us</p>
         <form action="process.php" method="post" style="content: inherit">
             <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center" required><br/>
             <input type="email" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center" required><br/>
