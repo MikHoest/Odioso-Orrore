@@ -7,15 +7,16 @@ if(isset($_POST{'submit'})) {
 
     $name = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['name'])));
     $telephone = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['telephone'])));
-    $tableNumber = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['table'])));
+    $tableID = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['tableID'])));
     $timeID = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['timeID'])));
     $date = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['date'])));
     $numberGuest = $_POST['numberGuest'];
-  //  if($tableNumber <= 4)
-  //  {
-  //      echo "Please select a valid Table!";
-  //  }
-    $query = "INSERT INTO `reservation`(`name`, `tableID`, `telephone`, `date`, `timeID`) VALUES ('$name', '$tableNumber', '$telephone', '$date', '$timeID')";
+//    if($tableID >= 4)
+//    {
+//        echo "Please select a valid Table!";
+//    }
+    $query = "INSERT INTO `reservation`(`name`, `tableID`, `telephone`, `date`, `timeID`) VALUES ('$name', '$tableID', '$telephone', '$date', '$timeID')";
+    "INSERT INTO `usertabletime`(`tableID`, `timeID`) VALUES ('$tableID', '$timeID')";
     mysqli_query($connection, $query) or die('Error querying database.');
 
     echo "Thank you ".$name." you have a reservation on the ".$date." at ".$timeID." for ".$numberGuest." guests.";
@@ -82,6 +83,7 @@ if(isset($_POST{'submit'})) {
         $( function() {
             $( "#datepicker" ).datepicker();
         });
+
     </script>
 <li id="home"><a href="front.php" style="float: inherit"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a></li>
 <br><br><br>
@@ -118,7 +120,7 @@ if(isset($_POST{'submit'})) {
             <tr>
                 <th>
                     <p class="customfont" style="font-size: 30px; text-align: left; color: black;">Table Number<th>
-                    <select name="table">
+                    <select name="tableID">
                         <option value="1">Table 1</option><option value="2">Table 2</option><option value="3">Table 3</option><option value="4">Table 4</option>
                     </select>
                 </th>
