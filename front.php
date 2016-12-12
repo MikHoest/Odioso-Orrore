@@ -437,17 +437,16 @@ $result = mysqli_query($connection, $query);
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 </div>-->
-<br><br><br><br>
+<br>
 <!-- RESERVE TABLE -->
-<div class="wrapper popup social" style="margin-left: 25%; height: inherit; align-content: center";>
+<div class="wrapper" style="margin-left: 25%; height: inherit; align-content: center";>
     <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">Reserve a Table</a></p>
 
 </div>
-<br><br><br><br><br>
+<br><br><br><br>
 <!-- SocialMedia-->
-<div class="wrapper social" style="margin-left: 25%; height: inherit;">
+<div class="social">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center; color: black;">Our Social Media</p>
     <a href="https://www.instagram.com/odiosoorrore/"  class="link instagram" target="_parent blank"><span class="fa fa-instagram"></span></a>
     <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
     <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
