@@ -11,15 +11,14 @@ if(isset($_POST{'submit'})) {
     $timeID = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['timeID'])));
     $date = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['date'])));
     $numberGuest = $_POST['numberGuest'];
-    if($tableNumber <= 4)
-    {
-        echo "Please select a valid Table!";
-    }
-    else
-    {
+  //  if($tableNumber <= 4)
+  //  {
+  //      echo "Please select a valid Table!";
+  //  }
     $query = "INSERT INTO `reservation`(`name`, `tableID`, `telephone`, `date`, `timeID`) VALUES ('$name', '$tableNumber', '$telephone', '$date', '$timeID')";
     mysqli_query($connection, $query) or die('Error querying database.');
-    }
+
+    echo "Thank you ".$name." you have a reservation on the ".$date." at ".$timeID." for ".$numberGuest." guests.";
 }
 ?>
 <!DOCTYPE html>
@@ -82,7 +81,7 @@ if(isset($_POST{'submit'})) {
         }
         $( function() {
             $( "#datepicker" ).datepicker();
-        } );
+        });
     </script>
 <li id="home"><a href="front.php" style="float: inherit"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a></li>
 <br><br><br>
@@ -138,6 +137,7 @@ if(isset($_POST{'submit'})) {
             <tr>
                 <th>
                     <input name="submit" type="submit" onclick="return validate();" value="Book Your Table">
+                    
                     <!--<input name="Submit" type="submit" value="Check if Available">-->
                 </th>
             </tr>
@@ -147,7 +147,7 @@ if(isset($_POST{'submit'})) {
 <br>
 <!--<body>
     <br><br><br>
-<link href="calendar.css" type="text/css" rel="stylesheet" />
+<link href="calendar.css" type="text/css" rel="stylesheet" /> -->
 <?php
 include 'calendar.php';
 
