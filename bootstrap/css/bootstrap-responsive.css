@@ -1408,10 +1408,12 @@ div.icon {
   width: 300px;
   height: inherit;
   float: left;
+  align-content: center;
 }
 .right{
   color: inherit;
   width: 300px;
   height: inherit;
   float: right;
+  align-content: center;
 }

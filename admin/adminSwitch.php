@@ -54,15 +54,15 @@
     </style>
 </head>
 <body>
-<div class="wrapper"  style="margin-left: 25%">
-<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=home">HOME</a></p>
-<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=newNews">ADD NEWS</a></p>
-<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=newMenu">ADD MENU ITEMS</a></p>
-<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=newDrink">ADD NEW DRINKS</a></p>
-<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=newDailySpecial">ADD NEW DAILY SPECAIL</a></p>
-<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="index.php?page=newUser">CREATE USER</a></p>
-<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="../front.php">FRONTPAGE</a></p>
-<p class="customfont" style="font-size: 30px; padding: 10px; text-align: center;"><a href="logout.php">LOGOUT</a></p>
+<div class="wrapper"  style="background-color: #ffffff; opacity: 0.8;">
+<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=home">HOME</a></p>
+<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newNews">ADD NEWS</a></p>
+<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newMenu">ADD MENU ITEMS</a></p>
+<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newDrink">ADD NEW DRINKS</a></p>
+<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newDailySpecial">ADD NEW DAILY SPECAIL</a></p>
+<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newUser">CREATE USER</a></p>
+<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="../front.php">FRONTPAGE</a></p>
+<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="logout.php">LOGOUT</a></p>
 </div>
 </body>
 </html>

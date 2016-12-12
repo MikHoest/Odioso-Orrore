@@ -30,11 +30,10 @@ if(isset($_POST{'publish'})) {
 </head>
  </html>
 <body>
-<h2 align="center">The News section</h2>
-<div class="wrapper" style="margin-left: 25%">
-
+<div class="wrapper" style="background-color: #0011ff; background-image: none; opacity: 0.8; align-content: center">
  <form action="newNews.php" method="post">
-  <h2 align="center">Publish New News</h2>
+  <h1 align="left">The News section</h1>
+  <h2 align="left">Publish New News</h2>
   <input type="text" style="background-color: #ffffff" name="title" placeholder="TITLE" size="30"><br/>
   <textarea class="nooResize" name="description" style="background-color: #ffffff" cols="30" placeholder= "DESCRIPTION" rows="5"></textarea><br/> <!--Is this the right way to insert into a DB?-->
   <style>

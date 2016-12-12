@@ -26,7 +26,7 @@ if(isset($_POST{'publish'})) {
 </head>
 <body>
 <h2 align="center">New Drink section</h2>
-<div class="wrapper" style="margin-left: 25%">
+<div class="wrapper">
 
     <form action="newDrink.php" method="post">
         <input type="text" style="background-color: #ffffff" name="drink" placeholder="Drink" size="30" align="center"><br/>

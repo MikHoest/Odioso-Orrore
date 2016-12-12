@@ -15,32 +15,22 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 	$confirm_password = trim(mysqli_real_escape_string($connection, $_POST['con_pass']));
     $iterations = ['cost' => 10];//?What is this? = number of times hased!
     $hashed_password = password_hash($password, PASSWORD_BCRYPT, $iterations);
-	$hashed_confirm_password = password_hash($confirm_password, PASSWORD_BCRYPT, $iterations);
-
-	$query = "INSERT INTO login (name, userName, password, confirm_password) VALUES ('{$name}' '{$username}', '{$hashed_password}','{$hashed_confirm_password}')";
-
-	$result = mysqli_query($connection, $query);
-		if($password != $confirm_password)
-		{
-			$message = "Password Don´t match";
-		}
-		else
-		{
-			if ($result)
-			{
-				$message = "User Created.";
-				redirect_to("index.php");
-			}
-			$message = "User could not be created.";
-			$message .= "<br />" . mysqli_error();
-		}
+	//$hashed_confirm_password = password_hash($confirm_password, PASSWORD_BCRYPT, $iterations);
+	if($password != $confirm_password)
+	{
+		$message = "Password Don´t match";
+	}
+	else{
+		//$query = "INSERT INTO login (fname, userName, password) VALUES ($name, $username, $hashed_password)";
+		$query = "INSERT INTO `login` (`ID`, `fname`, `userName`, `password`) VALUES (NULL, '$name', '$username', '$hashed_password')";
+		$result = mysqli_query($connection, $query);
+		redirect_to("index.php");
+	}
 }
-
 if (!empty($message))
 {
 	echo "<p>" . $message . "</p>";
 }
-
 ?>
 <html>
 	<head>

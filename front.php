@@ -369,7 +369,7 @@ require_once("admin/include/functions.php");
 </script>
 <h3><p class="customfont" style="font-size: 90px;">Welcome to Odioso Orrore</p></h3>
 <br>
-<div style="background-color: white; border-radius: 3px; opacity: 0.5; ">
+<div style="background-color: white; border-radius: 3px; opacity: 0.5;">
        <p class="customfont" style=" font-weight: bold; text-align: center; padding-top: 20px; color: #000000">Celebrating the scariest of Italian cuisine since</p>
        <p class="customfont" style=" font-weight: bold; text-align: center; padding-bottom: 20px; color: #000000">2016</p>
 </div>
@@ -439,18 +439,13 @@ $result = mysqli_query($connection, $query);
 </div>-->
 <br>
 <!-- RESERVE TABLE -->
-<div class="wrapper" style="margin-left: 25%; height: inherit; align-content: center";>
+<div class="wrapper" style="height: inherit;">
     <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">Reserve a Table</a></p>
+    <p class="customfont" style="padding: 5px; font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">HERE</a></p>
 </div>
 <br><br><br><br>
 <!-- SocialMedia-->
-<div class="social">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <a href="https://www.instagram.com/odiosoorrore/"  class="link instagram" target="_parent blank"><span class="fa fa-instagram"></span></a>
-    <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
-    <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
 
-</div>
 <script type='text/javascript'>
     function refreshCaptcha()
     {
@@ -471,7 +466,18 @@ $result = mysqli_query($connection, $query);
             }
         }
         ?>
-    <p class="customfont" style="padding: 20px; font-weight: bold;color: black; text-align: center;">Contact us</p>
+    <div class="right">
+    <p class="customfont" style="padding: 20px; font-weight: bold;color: black; text-align: center;">Visit Us</p>
+        <br><br><br><br><br>
+        <div class="social" >
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+            <a href="https://www.instagram.com/odiosoorrore/"  class="link instagram" target="_parent blank"><span class="fa fa-instagram"></span></a>
+            <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
+            <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
+        </div>
+    </div>
+    <div class="left">
+    <p class="customfont" style="padding: 20px; font-weight: bold;color: black; text-align: center;">Contact Us</p>
         <form action="process.php" method="post" style="content: inherit">
             <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center" required><br/>
             <input type="email" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center" required><br/>
@@ -493,6 +499,7 @@ $result = mysqli_query($connection, $query);
                 <td><input name="Submit" type="submit" onclick="return validate();" value="Send"></td>
             </table>
         </form>
+    </div>
 </div>
 <br>
 <footer>

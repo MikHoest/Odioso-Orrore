@@ -25,7 +25,7 @@ if(isset($_POST{'publish'})) {
 </head>
 <body>
 <h2 align="center">Main Course section</h2>
-<div class="wrapper" style="margin-left: 25%">
+<div class="wrapper">
 
     <form action="newMenu.php" method="post">
         <input type="text" style="background-color: #ffffff" name="maincourse" placeholder="Main Course" size="30" align="center"><br/>
