@@ -470,13 +470,16 @@ $result = mysqli_query($connection, $query);
         }
         ?>
     <!-- SocialMedia -->
-    <div class="right">
-    <p class="customfont" style="padding: 20px; font-weight: bold;color: black; text-align: left;">Visit Us</p>
-        <br><br><br><br><br>
+    <div class="right" >
+    <p class="customfont" style="padding: 20px; font-weight: bold; color: black; text-align: left;">Visit Us</p>
+        <br><br><br><br><br><br><br><br>
         <div class="social" >
             <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+            <br>
             <a href="https://www.instagram.com/odiosoorrore/"  class="link instagram" target="_parent blank"><span class="fa fa-instagram"></span></a>
+            <br>
             <a href="https://www.facebook.com/OdiosoOrrore"  class="link facebook" target="_parent blank"><span class="fa fa-facebook-square"></span></a>
+            <br>
             <a href="https://twitter.com/OdiosoOrrore"  class="link twitter" target="_parent blank"><span class="fa fa-twitter"></span></a>
         </div>
     </div>
@@ -508,6 +511,6 @@ $result = mysqli_query($connection, $query);
 </div>
 <br>
 <footer>
-    <div class="footer"><p class="customfont" style="font-size: 20px;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
+    <div class="footer"><p class="customfont" style="font-size: 20px;">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
 </footer>
 </html>

@@ -10,13 +10,17 @@ if(isset($_POST{'submit'})) {
     $tableID = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['tableID'])));
     $timeID = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['timeID'])));
     $date = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['date'])));
+    $timeSlot = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['timeSlot'])));
     $numberGuest = $_POST['numberGuest'];
+
+    $resCheck = "";
 //    if($tableID >= 4)
 //    {
 //        echo "Please select a valid Table!";
 //    }
     $query = "INSERT INTO `reservation`(`name`, `tableID`, `telephone`, `date`, `timeID`) VALUES ('$name', '$tableID', '$telephone', '$date', '$timeID')";
-    "INSERT INTO `usertabletime`(`tableID`, `timeID`) VALUES ('$tableID', '$timeID')";
+            // "INSERT INTO `usertabletime`(`tableID`, `timeID`) VALUES ('$tableID', '$timeID')";
+            //"INSERT INTO `tabletime` (`timeSlot`) VALUES (`$timeSlot`)";
     mysqli_query($connection, $query) or die('Error querying database.');
 
     echo "Thank you ".$name." you have a reservation on the ".$date." at ".$timeID." for ".$numberGuest." guests.";
@@ -159,7 +163,7 @@ echo $calendar->show();
 </body>-->
     <div class="container"></div>
 <footer>
-    <p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thurday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p>
+    <p class="customfont" style="font-size: 20px; position: relative; text-align: center;">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p>
 </footer>
 </head>
 </html>
