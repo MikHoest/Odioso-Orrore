@@ -83,7 +83,7 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='foodContent'>".$picture."<table><p class='customfont'>".$dailySpecial."</div></p><br><br>"."<div align='justify' style='font-size: 18   px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
+    echo "<div class='foodContent'><table><p class='customfont'>".$dailySpecial."</p></div><br><br>"."<div align='justify' style='font-size: 18   px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><img src='$picture' alt='$dailySpecial, $ingredients, $price' style='height: 200px; width: 200px;'></table></div>";
 }
 ?>
 </div>
@@ -102,7 +102,7 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='foodContent' style='border-radius: 2px;'>".$picture."<table><p class='customfont'>".$mainCourse."</div></p><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
+    echo "<div class='foodContent' style='border-radius: 2px;'><table><p class='customfont'>".$mainCourse."</p></div><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class='customfont' align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><img src='$picture' alt='$mainCourse, $ingredients, $price'  style='height: 200px; width: 200px;'></table></div>";
 }
 ?>
 </div>
@@ -121,12 +121,14 @@ while ($row = mysqli_fetch_array($result))
         $price=$row['price'];
         $picture=$row['picture'];
         //$review=$row['review'];
-        echo "<div class='foodContent'>".$drink."</div></p><br><br>"."<div align='justify' style='font-size: 18  px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
+        echo "<div class='foodContent' style='border-radius: 2px;'><p class='customfont'>".$drink."</p></div><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class='customfont' align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><img src='$picture' alt='$drink, $ingredients, $price' style='height: 200px; width: 200px;'></table></div>";
     }
     ?>
 </div>
 <br><br><br>
 <div class="container"></div>
-<div class="footer">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
+<footer>
+    <div class="footer"><p class="customfont" style="font-size: 20px; color: white; font-weight: normal;">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
+</footer>
 </body>
 </html>

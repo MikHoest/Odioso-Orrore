@@ -84,6 +84,12 @@ h3 {
   font-size: 90px;
   font-family: "Cardinal", Verdana, Tahoma, sans-serif;
 }
+h4{
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+
+}
 
 /** STAR RATING **/
 div.rating-form {

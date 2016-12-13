@@ -55,14 +55,14 @@
 </head>
 <body>
 <div class="wrapper"  style="background-color: #ffffff; opacity: 0.8;">
-<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=home">HOME</a></p>
-<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newNews">ADD NEWS</a></p>
-<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newMenu">ADD MENU ITEMS</a></p>
-<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newDrink">ADD NEW DRINKS</a></p>
-<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newDailySpecial">ADD NEW DAILY SPECIAL</a></p>
-<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newUser">CREATE USER</a></p>
-<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="../front.php">FRONTPAGE</a></p>
-<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="logout.php">LOGOUT</a></p>
+<h4><a href="index.php?page=home">HOME</a></h4><br>
+<h4><a href="index.php?page=newNews">ADD NEWS</a></h4><br>
+<h4><a href="index.php?page=newMenu">ADD MENU ITEMS</a></h4><br>
+<h4><a href="index.php?page=newDrink">ADD NEW DRINKS</a></h4><br>
+<h4><a href="index.php?page=newDailySpecial">ADD NEW DAILY SPECIAL</a></h4><br>
+<h4><a href="index.php?page=newUser">CREATE USER</a></h4><br>
+<h4><a href="../front.php">FRONTPAGE</a></h4><br>
+<h4><a href="logout.php">LOGOUT</a></h4><br>
 </div>
 </body>
 </html>
