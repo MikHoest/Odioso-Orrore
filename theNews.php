@@ -28,15 +28,6 @@ require_once("admin/include/functions.php");
 <body>
 
 <ul class="navbar-fixed-top" id="myTopnav">
-    <div class="col-sm-3">
-        <div class="logo" style="float:left">
-            <a href="front.php">
-                <img src="picz/Logo2.png" style="width: 160px;">
-            </a>
-        </div>
-    </div>
-
-
     <div class="icon">
         <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
             <p class="navicon" style="color: white;"> ☠ </p>
@@ -66,7 +57,10 @@ require_once("admin/include/functions.php");
 
     </li>
 </ul>
-<script src="slidescript.js"></script>
+
+
+
+
 <!-- SLIDESHOW END -->
 <script>
     function myFunction() {
@@ -78,11 +72,20 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
+
 <div id="menu">
     <ul>
         <li>News</li>
     </ul>
 </div>
+
+<!-- Logo -->
+<div class="logo">
+    <a href="front.php">
+        <img src="picz/Logo2.png" style="width: 160px;">
+    </a>
+</div>
+
 <br>
 <div style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; ">
     <p class="customfont" style="padding-top: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore</p>

@@ -50,7 +50,7 @@ require_once("admin/include/functions.php");
     <li><span>2</span></li>
     <li><span>3</span></li>
 </ul>
-<script src="slidescript.js"></script>
+
 <!-- SLIDESHOW END -->
 <script>
     function myFunction() {
@@ -62,6 +62,14 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
+
+<!-- Logo -->
+<div class="logo">
+    <a href="front.php">
+        <img src="picz/Logo2.png" style="width: 160px;">
+    </a>
+</div>
+
 <br><br><br>
 <div style="height: inherit; background-color: white; border-radius: 1px; opacity: 0.5; max-width: 100%;">
     <p class="customfont" style="padding-top: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore<p/>
@@ -69,7 +77,7 @@ require_once("admin/include/functions.php");
 </div>
 <br>
 <!-- Daily Special -->
-<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont" style="color: black; padding: 20px; font-weight: bold; text-align: center;">Daily Specials</a></p> <!-- fix this-->
+<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont">Daily Specials</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM dailyspecial";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -83,12 +91,12 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='foodContent'>".$picture."<table><p class=\"customfont\" style=\" padding: 15px; text-align: left;\">".$dailySpecial."</div></p><br><br>"."<div align='justify' style='font-size: 18   px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
+    echo "<div class='foodContent'>".$picture."<table><p class='customfont'>".$dailySpecial."</div></p><br><br>"."<div align='justify' style='font-size: 18   px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
 }
 ?>
 </div>
 <!-- Main Menu -->
-<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont" style="color: black; padding: 20px; font-weight: bold; text-align: center;">Main Menu</a></p> <!-- fix this-->
+<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont">Main Menu</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM menuitems";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -102,12 +110,12 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture=$row['picture'];
     //$review=$row['review'];
-    echo "<div class='foodContent' style='border-radius: 2px;'>".$picture."<table><p class='customfont' font-size:35px; padding: 15px; text-align: left;'>".$mainCourse."</div></p><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
+    echo "<div class='foodContent' style='border-radius: 2px;'>".$picture."<table><p class='customfont'>".$mainCourse."</div></p><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
 }
 ?>
 </div>
 <!-- Drinks -->
-<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont" style="color: black; padding: 20px; font-weight: bold; text-align: center;">Drinks</a></p> <!-- fix this-->
+<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont">Drinks</a></p> <!-- fix this-->
     <?php
     $query = "SELECT * FROM drinks";
     mysqli_query($connection, $query) or die('Error querying database.');
@@ -121,7 +129,7 @@ while ($row = mysqli_fetch_array($result))
         $price=$row['price'];
         $picture=$row['picture'];
         //$review=$row['review'];
-        echo "<div class='foodContent' style='border-radius: 2px;'>".$picture."<table><p class=\"customfont\" style=\"padding: 15px; text-align: left;\">".$drink."</div></p><br><br>"."<div align='justify' style='font-size: 18  px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
+        echo "<div class='foodContent'>".$drink."</div></p><br><br>"."<div align='justify' style='font-size: 18  px; font-family: Verdana'>" .$ingredients . "</div><p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p></table></div>";
     }
     ?>
 </div>

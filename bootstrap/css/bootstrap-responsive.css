@@ -21,8 +21,24 @@
 
 .customfont {
     font-size: 45px;
+    font-weight: bold;
     text-space: 10px;
     margin-bottom: 5%;
+    color: #e2dc95;
+    padding: 20px;
+}
+
+.logo {
+  display: block;
+  float: left;
+  position: fixed;
+  z-index: +5;
+    transform: translate(+10%, +10%);
+    transition: 1s;
+}
+
+.logo:hover {
+    transform: translateX(30px) rotate(-60deg);
 }
 
 .foodwrapper {
@@ -254,6 +270,7 @@ div.icon {
         width: 95%;
         height: auto;
     }
+
 
   .heading p {
     font-size: 28px;
@@ -969,9 +986,18 @@ div.icon {
         font-size: 11px;
     }
 
+    .p {
+        padding: 20%;
+    }
+    
     .customfont{
         font-size: 20px;
         word-break: normal;
+    }
+
+
+    .logo {
+        display: none;
     }
 
     /* MOBILE MENU */
@@ -1037,9 +1063,7 @@ div.icon {
       -o-transition: all .75s ease;
       transition: all .75s ease;
     }
-    .logo {
-      display: none;
-    }
+
     .navbar-fixed-bottom,
     .navbar-static-top {
       margin-right: 20px;
@@ -1306,10 +1330,6 @@ div.icon {
         font-size: 20px;
     }
 
-    .logo {
-        display: none;
-    }
-
     .foodwrapper {
         text-align: center;
         margin-left: 10%;
@@ -1392,7 +1412,9 @@ div.icon {
 
 @media (max-width: 1200px) {
 
-
+    .welcome {
+        font-size: 60px;
+    }
 
     .customfont {
         font-size: 35px;
@@ -1574,11 +1596,8 @@ li a:hover
 .social .link.facebook
 {
   border: 1px solid #223b80;
-  background-color: #223b80;
-  background-image: url("socialIcons/facebook.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 75%;
+    background: #223b80 url("socialIcons/facebook.png") no-repeat center;
+    background-size: 75%;
   background-blend-mode: overlay;
   color: #000000;
 }
@@ -1590,11 +1609,8 @@ li a:hover
 {
 
   border: 1px solid purple;
-  background-color: purple;
-  background-image: url("socialIcons/instagram.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 75%;
+    background: purple url("socialIcons/instagram.png") no-repeat center;
+    background-size: 75%;
   background-blend-mode: overlay;
   color: #000000;
 }
@@ -1696,7 +1712,6 @@ h2 {
 @media screen and (max-width: 600px) {
   h3 {
     font-size: 40px;
-
   }
 }
 input[type=submit] {

@@ -14,22 +14,12 @@ require_once("admin/include/functions.php");
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
-    <style type="text/css">
 
-    </style>
 </head>
+
 <!-- buttons on top - links -->
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
-        <div class="col-sm-3">
-            <div class="logo" style="float:left">
-                <a href="front.php">
-                    <img src="picz/Logo2.png" style="width: 160px;">
-                </a>
-            </div>
-        </div>
-
-
         <div class="icon">
             <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
                 <p class="navicon" style="color: white;"> ☠ </p>
@@ -42,6 +32,8 @@ require_once("admin/include/functions.php");
 
     </ul>
 </div>
+
+
 <!-- SLIDESHOW -->
 <ul class="cb-slideshow">
     <li><span>1</span></li>
@@ -60,16 +52,29 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
+
+<!-- Logo -->
+<div class="logo">
+    <a href="front.php">
+        <img src="picz/Logo2.png" style="width: 160px;">
+    </a>
+</div>
+
 <div class="welcome">Welcome to Odioso Orrore</div>
 <br>
-<div style="background-color: white; border-radius: 3px; opacity: 0.5;">
+<div style="background-color: white; border-radius: 3px; opacity: 0.5; width: 75%; margin-left: 15%;">
        <p class="customfont" style=" font-weight: bold; text-align: center; padding-top: 20px; color: #000000">Celebrating the scariest of Italian cuisine since</p>
        <p class="customfont" style=" font-weight: bold; text-align: center; padding-bottom: 20px; color: #000000">2016</p>
 </div>
-<br><br><br><br><br>
+
+
+<br><br><br><br><br><br><br>
+
+
+
 <!-- NEWS-->
 <div class="wrapper" style="height: inherit">
-       <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest news from Odioso Orrore</a></p>
+       <p class="customfont"><a href='theNews.php' style="color: #000000">Read the latest news from Odioso Orrore</a></p>
 <?php
 $query = "SELECT * FROM news ORDER BY ID DESC LIMIT 1 ";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -87,7 +92,7 @@ $result = mysqli_query($connection, $query);
 <br>
 <!--Daily Special-->
 <div class="wrapper" style="height: inherit";>
-       <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Daily Special</a></p>
+       <p class="customfont"><a href='Menu.php' style="color: #000000" >The Daily Special</a></p>
        <?php
 
        $query = "SELECT * FROM dailyspecial ORDER BY rand(" . date("Ymd") . ") LIMIT 1"; //need to fix this for new special every day!!
