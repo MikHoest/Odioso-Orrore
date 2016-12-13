@@ -1666,7 +1666,7 @@ li a:hover
   line-height: 700px;
 }
 .cb-slideshow li:nth-child(1) span {
-  background-image: url("picz/slide01.jpg");
+  background-image: url('picz/test2.gif');
 }
 .cb-slideshow li:nth-child(2) span {
   background-image: url("picz/slide2.jpg");
