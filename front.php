@@ -62,7 +62,7 @@ require_once("admin/include/functions.php");
 
 <div class="welcome">Welcome to Odioso Orrore</div>
 <br>
-<div style="background-color: white; border-radius: 3px; opacity: 0.5; width: 75%; margin-left: 15%;">
+<div style="background-color: white; border-radius: 3px; opacity: 0.5; width: 100%;">
        <p class="customfont" style=" font-weight: bold; text-align: center; padding-top: 20px; color: #000000">Celebrating the scariest of Italian cuisine since</p>
        <p class="customfont" style=" font-weight: bold; text-align: center; padding-bottom: 20px; color: #000000">2016</p>
 </div>
