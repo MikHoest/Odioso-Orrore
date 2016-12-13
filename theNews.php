@@ -84,7 +84,7 @@ require_once("admin/include/functions.php");
     </a>
 </div>
 <br>
-<div style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; ">
+<div style="background-color: white; border-radius: 3px; opacity: 0.5; width: 75%; margin-left: 15%;">
     <p class="customfont" style="padding-top: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore</p>
     <p class="customfont" style="padding-bottom: 20px; font-weight: bold; text-align: center; color: #000000;">NEWS</p>
 </div>

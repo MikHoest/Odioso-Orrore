@@ -23,14 +23,6 @@ require_once("admin/include/functions.php");
 <!-- buttons on top - links -->
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
-        <div class="col-sm-3">
-            <div class="logo" style="float:left">
-                <a href="front.php">
-                    <img src="picz/Logo2.png" style="width: 160px;">
-                </a>
-            </div>
-        </div>
-
 
         <div class="icon">
             <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
@@ -71,9 +63,9 @@ require_once("admin/include/functions.php");
 </div>
 
 <br><br><br>
-<div style="height: inherit; background-color: white; border-radius: 1px; opacity: 0.5; max-width: 100%;">
-    <p class="customfont" style="padding-top: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore<p/>
-    <p class="customfont" style="padding-bottom: 20px; font-weight: bold; text-align: center; color: #000000;">MENU<p/>
+<div style="height: inherit; background-color: white; border-radius: 3px; opacity: 0.5; max-width: 75%; margin-left: 15%;">
+    <p class="customfont" style="font-weight: bold; text-align: center; color: black;">Odioso Orrore</p>
+    <p class="customfont" style="font-weight: bold; text-align: center; color: black;">MENU</p>
 </div>
 <br>
 <!-- Daily Special -->
@@ -135,8 +127,12 @@ while ($row = mysqli_fetch_array($result))
 </div>
 <br><br><br>
 <div class="container"></div>
+<<<<<<< HEAD
 <footer>
     <div class="footer"><p class="customfont" style="font-size: 20px; color: white; font-weight: normal;">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
 </footer>
+=======
+<div class="footer">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
+>>>>>>> origin/master
 </body>
 </html>
