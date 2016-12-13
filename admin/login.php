@@ -13,7 +13,7 @@ require_once("include/functions.php");
         $password = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['pass']))); //sanitized well
 
 
-        $query = "SELECT ID, userName, password FROM login WHERE userName = '{$username}' LIMIT 1";
+        $query = "SELECT `ID`, `userName`, `password` FROM `login` WHERE `userName` = ('$username') LIMIT 1";
         $result = mysqli_query($connection, $query);
 
         if (mysqli_num_rows($result) == 1) {
@@ -26,11 +26,12 @@ require_once("include/functions.php");
                 redirect_to("index.php");
             } else {
                 // username/password combo was not found in the database
-                $message = "Username/password combination incorrect.<br />
+                $message = "Username/password combination incorrect.<br/>
 					Please make sure your caps lock key is off and try again.";
             }
         }
-    } else
+    }
+    else
     { // Form has not been submitted.
         if (isset($_GET['logout']) && $_GET['logout'] == 1)
         {

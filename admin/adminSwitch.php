@@ -59,7 +59,7 @@
 <p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newNews">ADD NEWS</a></p>
 <p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newMenu">ADD MENU ITEMS</a></p>
 <p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newDrink">ADD NEW DRINKS</a></p>
-<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newDailySpecial">ADD NEW DAILY SPECAIL</a></p>
+<p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newDailySpecial">ADD NEW DAILY SPECIAL</a></p>
 <p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="index.php?page=newUser">CREATE USER</a></p>
 <p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="../front.php">FRONTPAGE</a></p>
 <p class="customfont" style="font-size: 22px; font-weight: bold; text-align: left;"><a href="logout.php">LOGOUT</a></p>

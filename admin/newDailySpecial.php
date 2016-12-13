@@ -13,7 +13,7 @@ if(isset($_POST{'publish'})) {
     //$review = $row['review'];
     $picture = $_POST['picture'];
 
-    $query = "INSERT INTO dailyspecial('ID', 'dailySpecial', 'ingredients', 'price', 'picture') VALUES ($dailyspecial, $ingredients,$price, $picture)";
+    $query = "INSERT INTO `dailyspecial`(`ID`, `dailySpecial`, `ingredients`, `price`, `picture`) VALUES ($dailyspecial, $ingredients,$price, $picture)";
     mysqli_query($connection, $query) or die('Error querying database.');
 }
 ?>
@@ -23,10 +23,10 @@ if(isset($_POST{'publish'})) {
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
 </head>
 <body>
-<h2 align="center">Daily Special section</h2>
-<div class="wrapper";>
 
-    <form action="newDrink.php" method="post">
+<div class="wrapper" style="background-color: #00ac08; background-image: none; opacity: 0.8;">
+    <h2 align="center">Daily Special section</h2>
+    <form action="newDailySpecial.php" method="post">
         <input type="text" style="background-color: #ffffff" name="dailySpecial" placeholder="Daily Special" size="30" align="center"><br/>
         <textarea class="nooResize" name="ingredients" style="background-color: #ffffff" cols="30" placeholder= "Ingredients" rows="5" align="right"></textarea><br/>
         <style>

@@ -141,9 +141,6 @@ $result = mysqli_query($connection, $query);
     <br><br>
     <p class="customfont" style="font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">Reserve a Table</a></p>
     <p class="customfont" style="font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">HERE</a></p>
-    <?php
-
-    ?>
 </div>
 <br><br><br><br>
 

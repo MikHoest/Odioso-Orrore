@@ -144,6 +144,7 @@ if(isset($_POST{'submit'})) {
                 <th>
                     <input name="submit" type="submit" onclick="return validate();" value="Book Your Table">
                     <!--<input name="Submit" type="submit" value="Check if Available">-->
+
                 </th>
             </tr>
         </table>
