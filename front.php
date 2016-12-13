@@ -52,29 +52,24 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
-
 <!-- Logo -->
 <div class="logo">
     <a href="front.php">
         <img src="picz/Logo2.png" style="width: 160px;">
     </a>
 </div>
-
 <div class="welcome">Welcome to Odioso Orrore</div>
 <br>
 <div style="background-color: white; border-radius: 3px; opacity: 0.5; width: 100%;">
        <p class="customfont" style=" font-weight: bold; text-align: center; padding-top: 20px; color: #000000">Celebrating the scariest of Italian cuisine since</p>
        <p class="customfont" style=" font-weight: bold; text-align: center; padding-bottom: 20px; color: #000000">2016</p>
 </div>
-
-
 <br><br><br><br><br><br><br>
-
-
-
 <!-- NEWS-->
 <div class="wrapper" style="height: inherit">
-       <p class="customfont" style="text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest news from Odioso Orrore</a></p>
+    <p class="customfont" style="text-align: center;">
+        <a href='theNews.php' style="color: #000000">Read the latest news from Odioso Orrore</a>
+    </p>
 <?php
 $query = "SELECT * FROM news ORDER BY ID DESC LIMIT 1 ";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -93,20 +88,20 @@ $result = mysqli_query($connection, $query);
 <!--Daily Special-->
 <div class="wrapper" style="height: inherit";>
        <p class="customfont" style="text-align: center;"><a href='Menu.php' style="color: #000000" >The Daily Special</a></p>
-       <?php
+           <?php
 
-       $query = "SELECT * FROM dailyspecial ORDER BY rand(" . date("Ymd") . ") LIMIT 1"; //need to fix this for new special every day!!
-       mysqli_query($connection, $query) or die('Error querying database.');
+           $query = "SELECT * FROM dailyspecial ORDER BY rand(" . date("Ymd") . ") LIMIT 1"; //need to fix this for new special every day!!
+           mysqli_query($connection, $query) or die('Error querying database.');
 
-       $result = mysqli_query($connection, $query);
+           $result = mysqli_query($connection, $query);
 
-       while ($row = mysqli_fetch_array($result)) {
-           $dailySpecial=$row['dailySpecial'];
-           $ingredients=$row['ingredients'];
-           $price=$row['price'];
-           echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='justify' style='font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK</p></div>";
-       }
-       ?>
+           while ($row = mysqli_fetch_array($result)) {
+               $dailySpecial=$row['dailySpecial'];
+               $ingredients=$row['ingredients'];
+               $price=$row['price'];
+               echo "<div align='left' style='font-size: 28px; font-family: Verdana'>" . $dailySpecial. "</div><br>"."<div align='justify' style='font-family: Verdana'>" .$ingredients . "</div>"."<br>"."<p class=\"customfont\" align='center' style=\"font-size: 25px; text-align: left;\"><br><br>" . "Price: " .$price . ".- DKK</p></div>";
+           }
+           ?>
 </div>
 <br>
 <!-- DRINKS-->
