@@ -37,7 +37,7 @@ if(isset($_POST{'publish'})) {
             }
         </style>
         <input type="number" style="background-color: #ffffff" name="price" placeholder="Price" size="30" align="left"> DKK.-<br/>
-        <form action="../upload/upload_file.php" method="post" enctype="multipart/form-data">
+        <form action="upload_file.php" method="post" enctype="multipart/form-data">
             <label for="file">PICTURE --><input type="file" name="picture"></label>
             <!--      <input type="submit" name="submit" value="Upload"> -->
         </form>
