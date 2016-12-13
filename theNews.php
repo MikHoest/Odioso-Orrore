@@ -72,20 +72,17 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
-
 <div id="menu">
     <ul>
         <li>News</li>
     </ul>
 </div>
-
 <!-- Logo -->
 <div class="logo">
     <a href="front.php">
         <img src="picz/Logo2.png" style="width: 160px;">
     </a>
 </div>
-
 <br>
 <div style="height: inherit; background-color: white; border-radius: 0px; opacity: 0.5; ">
     <p class="customfont" style="padding-top: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore</p>
@@ -95,10 +92,8 @@ require_once("admin/include/functions.php");
 <!-- NEWS -->
 <div style=" height: inherit;">
 <?php
-
 $query = "SELECT * FROM news ORDER BY ID DESC";
 mysqli_query($connection, $query) or die('Error querying database.');
-
 $result = mysqli_query($connection, $query);
 
 while ($row = mysqli_fetch_array($result))
@@ -110,7 +105,8 @@ while ($row = mysqli_fetch_array($result))
 }
 ?>
 </div>
-<br><br>
-<div class="footer">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
+<footer>
+    <div class="footer"><p class="customfont" style="font-size: 20px; color: white; font-weight: normal;">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
+</footer>
 </body>
 </html>

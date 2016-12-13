@@ -24,8 +24,8 @@ if(isset($_POST{'publish'})) {
 </head>
 <body>
 
-<div class="wrapper" style="background-color: #00ac08; background-image: none; opacity: 0.8;">
-    <h2 align="center">Daily Special section</h2>
+<div class="wrapper" style="background-color: #237d35; background-image: none; opacity: 0.8;">
+    <h4 align="center">Daily Special section</h4>
     <form action="newDailySpecial.php" method="post">
         <input type="text" style="background-color: #ffffff" name="dailySpecial" placeholder="Daily Special" size="30" align="center"><br/>
         <textarea class="nooResize" name="ingredients" style="background-color: #ffffff" cols="30" placeholder= "Ingredients" rows="5" align="right"></textarea><br/>
@@ -41,7 +41,7 @@ if(isset($_POST{'publish'})) {
             <input type="file" name="picture"></label>
             <!--      <input type="submit" name="submit" value="Upload"> -->
         </form>
-        <input type="submit" name="publish" value="Add To Drinks!" />
+        <input type="submit" name="publish" value="Add To DailySpecials!" />
     </form>
 </div>
 </body>

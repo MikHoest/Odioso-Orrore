@@ -74,7 +74,7 @@ require_once("admin/include/functions.php");
 
 <!-- NEWS-->
 <div class="wrapper" style="height: inherit">
-       <p class="customfont"><a href='theNews.php' style="color: #000000">Read the latest news from Odioso Orrore</a></p>
+       <p class="customfont" style="text-align: center;"><a href='theNews.php' style="color: #000000">Read the latest news from Odioso Orrore</a></p>
 <?php
 $query = "SELECT * FROM news ORDER BY ID DESC LIMIT 1 ";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -92,7 +92,7 @@ $result = mysqli_query($connection, $query);
 <br>
 <!--Daily Special-->
 <div class="wrapper" style="height: inherit";>
-       <p class="customfont"><a href='Menu.php' style="color: #000000" >The Daily Special</a></p>
+       <p class="customfont" style="text-align: center;"><a href='Menu.php' style="color: #000000" >The Daily Special</a></p>
        <?php
 
        $query = "SELECT * FROM dailyspecial ORDER BY rand(" . date("Ymd") . ") LIMIT 1"; //need to fix this for new special every day!!
@@ -206,6 +206,6 @@ $result = mysqli_query($connection, $query);
 </div>
 <br>
 <footer>
-    <div class="footer"><p class="customfont" style="font-size: 20px;">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
+    <div class="footer"><p class="customfont" style="font-size: 20px; color: white; font-weight: normal;">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
 </footer>
 </html>
