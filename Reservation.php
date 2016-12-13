@@ -39,6 +39,7 @@ if(isset($_POST{'submit'})) {
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="picz/Logo2.png">
     <style>
         ul {
             list-style-type: none;

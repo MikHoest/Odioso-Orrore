@@ -13,9 +13,8 @@ require_once("admin/include/functions.php");
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <style>
+    <link rel="icon" href="picz/Logo2.png">
 
-    </style>
     <style type="text/css">
         @font-face {
             font-family: "Cardinal";

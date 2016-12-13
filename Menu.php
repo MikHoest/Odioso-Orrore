@@ -15,9 +15,8 @@ require_once("admin/include/functions.php");
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <style type="text/css">
+    <link rel="icon" href="picz/Logo2.png">
 
-    </style>
 </head>
 <body>
 <!-- buttons on top - links -->
