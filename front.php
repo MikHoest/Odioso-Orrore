@@ -14,6 +14,7 @@ require_once("admin/include/functions.php");
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="icon" href="picz/Logo2.png">
 
 </head>
 
@@ -60,7 +61,7 @@ require_once("admin/include/functions.php");
 </div>
 <div class="welcome">Welcome to Odioso Orrore</div>
 <br>
-<div style="background-color: white; border-radius: 3px; opacity: 0.5; width: 100%;">
+<div style="background-color: white; border-radius: 3px; opacity: 0.5; width: 75%; margin-left: 15%;">
        <p class="customfont" style=" font-weight: bold; text-align: center; padding-top: 20px; color: #000000">Celebrating the scariest of Italian cuisine since</p>
        <p class="customfont" style=" font-weight: bold; text-align: center; padding-bottom: 20px; color: #000000">2016</p>
 </div>
@@ -68,7 +69,7 @@ require_once("admin/include/functions.php");
 <!-- NEWS-->
 <div class="wrapper" style="height: inherit">
     <p class="customfont" style="text-align: center;">
-        <a href='theNews.php' style="color: #000000">Read the latest news from Odioso Orrore</a>
+        <a href='theNews.php'>Read the latest news from Odioso Orrore</a>
     </p>
 <?php
 $query = "SELECT * FROM news ORDER BY ID DESC LIMIT 1 ";

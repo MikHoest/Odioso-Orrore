@@ -24,7 +24,7 @@
     font-weight: bold;
     text-space: 10px;
     margin-bottom: 5%;
-    color: #000000;
+    color: #ddd6ac;
     padding: 20px;
 }
 
@@ -1672,7 +1672,7 @@ li a:hover
   line-height: 700px;
 }
 .cb-slideshow li:nth-child(1) span {
-  background-image: url('picz/test2.gif');
+  background-image: url("picz/slide01.jpg");
 }
 .cb-slideshow li:nth-child(2) span {
   background-image: url("picz/slide2.jpg");
