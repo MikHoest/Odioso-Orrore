@@ -7,13 +7,13 @@ confirm_logged_in();
 
 if(isset($_POST{'publish'})) {
 
-    $dailyspecial = $_POST['dailySpecial'];
+    $dailySpecial = $_POST['dailySpecial'];
     $ingredients = $_POST['ingredients'];
     $price = $_POST['price'];
     //$review = $_POST['review'];
-    $picture = $_POST['picture'];
+   // $picture = $_POST['picture']; , `picture`, '$picture'
 
-    $query = "INSERT INTO dailyspecial (`dailySpecial`, `ingredients`, `price`, `picture`) VALUES ($dailyspecial, $ingredients,$price, $picture)";
+    $query = "INSERT INTO dailyspecial (`dailySpecial`, `ingredients`, `price`) VALUES ('$dailySpecial', '$ingredients', '$price')";
     mysqli_query($connection, $query) or die('Error querying database.');
 }
 ?>
@@ -34,9 +34,9 @@ if(isset($_POST{'publish'})) {
             }
         </style>
         <input type="number" style="background-color: #ffffff" name="price" placeholder="Price" size="30" align="left"> DKK.-<br/>
-        <form action="upload_file.php" method="post" enctype="multipart/form-data">
-            <label for="file">PICTURE --><input type="file" name="picture"></label>
-        </form>
+      <!--  <form action="upload_file.php" method="post" enctype="multipart/form-data">
+            <label for="file">PICTURE <input type="file" name="picture"></label>
+        </form>-->
         <input type="submit" name="publish" value="Add To DailySpecials!" />
     </form>
 </div>

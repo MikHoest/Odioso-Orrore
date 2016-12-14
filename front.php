@@ -86,7 +86,7 @@ $result = mysqli_query($connection, $query);
        <p class="customfont" style="text-align: center;"><a href='Menu.php' style="color: #000000" >The Daily Special</a></p>
            <?php
 
-           $query = "SELECT * FROM dailyspecial ORDER BY rand(" . date("Ymd") . ") LIMIT 1"; //need to fix this for new special every day!!
+           $query = "SELECT * FROM dailyspecial ORDER BY ID DESC LIMIT 1"; //need to fix this for new special every day!!
            mysqli_query($connection, $query) or die('Error querying database.');
 
            $result = mysqli_query($connection, $query);
@@ -104,7 +104,7 @@ $result = mysqli_query($connection, $query);
 <div class="wrapper" style="height: inherit";>
     <p class="customfont" style="padding: 20px; font-weight: bold; text-align: center;"><a href='Menu.php' style="color: #000000" >The Special Drink</a></p>
     <?php
-    $query = "SELECT * FROM drinks LIMIT 1";
+    $query = "SELECT * FROM drinks ORDER BY ID DESC LIMIT 1";
     mysqli_query($connection, $query) or die('Error querying database.');
 
     $result = mysqli_query($connection, $query);
