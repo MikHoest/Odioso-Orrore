@@ -3,36 +3,35 @@ require_once("admin/include/session.php");
 require_once("admin/include/connection.php");
 require_once("admin/include/functions.php");
 
-if(isset($_POST{'submit'})) {
-
-    $myMail = "frid4463@easv365.dk";
+if(isset($_POST{'submit'}))
+{
+    //$myMail = "frid4463@easv365.dk";
     $name = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['name'])));
     $telephone = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['telephone'])));
     $tableID = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['tableID'])));
     $timeID = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['timeID'])));
     $date = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['date'])));
-    $timeSlot = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['timeSlot'])));
+    //$timeSlot = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['timeSlot'])));
     $numberGuest = $_POST['numberGuest'];
 
-    $resCheck = "SELECT * FROM usertabletime";
+    $resCheck = "SELECT * FROM usertabletime";  //To check if the table is already reserved
     $checked = mysqli_query($connection, $resCheck);
     foreach ($checked as $res)
     {
-        if ($res[''])
+        if (($res['tableID']) <= 5 && ($res['timeID']) ) //tableID are less then 5 on each timeID on every date
         {
-
+            //add to the usertabletime db and the reservation db
+        }
+        else
+        {
+            echo "Sorry $name, table number $tableID is reserved at $timeID on the selected date, please select a new time, table or date to reserve a table.";
         }
     }
-//    if($tableID != 4 )
-//    {
-//        echo "Please select a valid Table!";
-//    }
     $query = "INSERT INTO reservation (`name`, `tableID`, `telephone`, `date`, `timeID`) VALUES ('$name', '$tableID', '$telephone', '$date', '$timeID')";
-            // "INSERT INTO `usertabletime`(`tableID`, `timeID`) VALUES ('$tableID', '$timeID')";
-            //"INSERT INTO `tabletime` (`timeSlot`) VALUES (`$timeSlot`)";
+            // "INSERT INTO `usertabletime`(`tableID`, `timeID`, `date`) VALUES ('$tableID', '$timeID', '$date')";
     mysqli_query($connection, $query) or die('Error querying database.');
-    mail($myMail, $name, $date, $timeID, $numberGuest);
     echo "Thank you ".$name." you have a reservation on the ".$date." at ".$timeID." for ".$numberGuest." guests.";
+    //mail($myMail, $name, $date, $timeID, $numberGuest);
 }
 ?>
 <!DOCTYPE html>
@@ -135,7 +134,7 @@ if(isset($_POST{'submit'})) {
                 <th>
                     <p class="customfont" style="font-size: 30px; text-align: left; color: black;">Table Number<th>
                     <select name="tableID">
-                        <option value="1">Table 1</option><option value="2">Table 2</option><option value="3">Table 3</option><option value="4">Table 4</option>
+                        <option value="1">Table 1</option><option value="2">Table 2</option><option value="3">Table 3</option><option value="4">Table 4</option><option value="5">Table 5</option>
                     </select>
                 </th>
             </tr>
