@@ -5,6 +5,7 @@ require_once("admin/include/functions.php");
 
 if(isset($_POST{'submit'})) {
 
+    $myMail = "frid4463@easv365.dk";
     $name = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['name'])));
     $telephone = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['telephone'])));
     $tableID = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['tableID'])));
@@ -13,16 +14,24 @@ if(isset($_POST{'submit'})) {
     $timeSlot = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['timeSlot'])));
     $numberGuest = $_POST['numberGuest'];
 
-    $resCheck = "";
-//    if($tableID >= 4)
+    $resCheck = "SELECT * FROM usertabletime";
+    $checked = mysqli_query($connection, $resCheck);
+    foreach ($checked as $res)
+    {
+        if ($res[''])
+        {
+
+        }
+    }
+//    if($tableID != 4 )
 //    {
 //        echo "Please select a valid Table!";
 //    }
-    $query = "INSERT INTO `reservation`(`name`, `tableID`, `telephone`, `date`, `timeID`) VALUES ('$name', '$tableID', '$telephone', '$date', '$timeID')";
+    $query = "INSERT INTO reservation (`name`, `tableID`, `telephone`, `date`, `timeID`) VALUES ('$name', '$tableID', '$telephone', '$date', '$timeID')";
             // "INSERT INTO `usertabletime`(`tableID`, `timeID`) VALUES ('$tableID', '$timeID')";
             //"INSERT INTO `tabletime` (`timeSlot`) VALUES (`$timeSlot`)";
     mysqli_query($connection, $query) or die('Error querying database.');
-
+    mail($myMail, $name, $date, $timeID, $numberGuest);
     echo "Thank you ".$name." you have a reservation on the ".$date." at ".$timeID." for ".$numberGuest." guests.";
 }
 ?>
