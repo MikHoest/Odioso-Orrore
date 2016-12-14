@@ -11,14 +11,14 @@ if(isset($_POST{'publish'})) {
  $description = $_POST['description'];
 
  $query = "INSERT INTO news(`title`, `description`) VALUES ('$title', '$description')";
-
+ var_dump($query);
  mysqli_query($connection, $query) or die('Error querying database.');
 }
 ?>
 
 <head>
  <!DOCTYPE html>
- <html lang="en" xmlns="http://www.w3.org/1999/html">
+ <html lang="en" xmlns="http://www.w3.org/1999/html" >
 
   <meta charset="UTF-8">
   <title>Odioso Orrore</title>

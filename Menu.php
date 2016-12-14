@@ -22,13 +22,11 @@ require_once("admin/include/functions.php");
 <!-- buttons on top - links -->
 <div class="container">
     <ul class="navbar-fixed-top" id="myTopnav">
-
         <div class="icon">
             <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
                 <p class="navicon" style="color: white;"> ☠ </p>
             </a>
         </div>
-
         <li id="home"><a href="front.php" style="float: none"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a>
         <li id="menu"><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS%20-%20Kopi.png" onmouseover="this.src='picz/MENU-NEWS-HOVER'" onmouseout="this.src='picz/MENU-NEWS%20-%20Kopi.png'"></a></li>
         <li id="reservations"><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png" onmouseover="this.src='picz/MENU-RESERVATIONS-HOVER'" onmouseout="this.src='picz/MENU-RESERVATIONS%20-%20Kopi.png'"></a></li>
@@ -41,7 +39,6 @@ require_once("admin/include/functions.php");
     <li><span>2</span></li>
     <li><span>3</span></li>
 </ul>
-
 <!-- SLIDESHOW END -->
 <script>
     function myFunction() {
@@ -53,14 +50,12 @@ require_once("admin/include/functions.php");
         }
     }
 </script>
-
 <!-- Logo -->
 <div class="logo">
     <a href="front.php">
         <img src="picz/Logo2.png" style="width: 160px;">
     </a>
 </div>
-
 <br><br><br>
 <div style="height: inherit; background-color: white; border-radius: 3px; opacity: 0.5; max-width: 75%; margin-left: 15%;">
     <p class="customfont" style="font-weight: bold; text-align: center; color: black;">Odioso Orrore</p>
