@@ -152,17 +152,6 @@ if(isset($_POST{'submit'})) {
     </form>
 </div>
 <br>
-<!--<body>
-    <br><br><br>
-<link href="calendar.css" type="text/css" rel="stylesheet" /> 
-<?php
-include 'calendar.php';
-
-$calendar = new Calendar();
-
-echo $calendar->show();
-?>
-</body>-->
     <div class="container"></div>
     <footer>
         <div class="footer"><p class="customfont" style="font-size: 20px; color: white; font-weight: normal;">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
