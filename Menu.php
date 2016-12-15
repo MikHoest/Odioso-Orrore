@@ -63,7 +63,7 @@ require_once("admin/include/functions.php");
 </div>
 <br>
 <!-- Daily Special -->
-<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont">Daily Specials</a></p> <!-- fix this-->
+<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont">Daily Specials</a></p>
 <?php
 $query = "SELECT * FROM dailyspecial";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -75,9 +75,9 @@ while ($row = mysqli_fetch_array($result))
     $dailySpecial=$row['dailySpecial'];
     $ingredients=$row['ingredients'];
     $price=$row['price'];
-    $picture=$row['picture'];
+    $picture="picz/Menupics/".$row['picture'];
 
-    echo "<div class='foodContent'><table><p class='customfont'>".$dailySpecial."</p></div><br><br>"."<div align='justify' style='font-size: 18px; font-family: Verdana'>" .$ingredients . "</div><p class='customfont' align='center' style='font-size: 25px; text-align: left;'><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><img src='$picture' alt='$dailySpecial, $ingredients' style='height: 200px; width: 200px;'></table></div>";
+    echo "<div class='foodContent'><table><p class='customfont'>".$dailySpecial."</p></div><br><br>"."<div align='justify' style='font-size: 18px; font-family: Verdana'>" .$ingredients . "</div><p class='customfont' align='center' style='font-size: 25px; text-align: left;'><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><div><img src='$picture' alt='$dailySpecial, $ingredients' style='height: 150px; width: 300px;'></table></div>";
 }
 ?>
 </div>
@@ -96,7 +96,7 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture="picz/Menupics/".$row['picture'];
 
-    echo "<div class='foodContent' style='border-radius: 2px;'><table><p class='customfont'>".$mainCourse."</p></div><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class='customfont' align='center' style='font-size: 25px; text-align: left;'><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><img src='$picture' alt='$mainCourse, $ingredients'  style='height: 169px; width: 300px;'></table></div>";
+    echo "<div class='foodContent' style='border-radius: 2px;'><table><p class='customfont'>".$mainCourse."</p></div><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class='customfont' align='center' style='font-size: 25px; text-align: left;'><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><div><img src='$picture' alt='$mainCourse, $ingredients'  style='height: 150px; width: 300px;'></table></div>";
 }
 ?>
 </div>
@@ -113,9 +113,9 @@ while ($row = mysqli_fetch_array($result))
         $drink=$row['drink'];
         $ingredients=$row['ingredients'];
         $price=$row['price'];
-        $picture=$row['picture'];
+        $picture="picz/Menupics/".$row['picture'];
 
-        echo "<div class='foodContent' style='border-radius: 2px;'><p class='customfont'>".$drink."</p></div><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class='customfont' align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><img src='$picture' alt='$drink, $ingredients' style='height: 200px; width: 200px;'></table></div>";
+        echo "<div class='foodContent' style='border-radius: 2px;'><p class='customfont'>".$drink."</p></div><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class='customfont' align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><div><img src='$picture' alt='$drink, $ingredients' style='height: 150px; width: 300px;'></table></div>";
     }
     ?>
 </div>

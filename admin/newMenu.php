@@ -93,7 +93,6 @@ foreach ($upmsg as $msg)
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
-
 </head>
 <body>
 <div class="wrapper" style="background-color: #237d35; background-image: none; opacity: 0.8;">
@@ -114,17 +113,5 @@ foreach ($upmsg as $msg)
         <input type="submit" name="publish" value="Add To Menu!" />
     </form>
 </div>
-<!-- <div class="wrapper" style="background-color: #237d35; background-image: none; opacity: 0.8;">
-    <h4 align="center">Main Course section</h4>
-    <form action="newMenu.php" method="post">
-        <input type="text" style="background-color: #ffffff" name="maincourse" placeholder="Main Course" size="30" align="center"><br/>
-        <textarea class="nooResize" name="ingredients" style="background-color: #ffffff" cols="30" placeholder= "Ingredients" rows="5" align="right"></textarea><br/>
-        <input type="number" style="background-color: #ffffff" name="price" placeholder="Price" size="30" align="left"> DKK.-<br/>
-    </form>
-    <form action="upload_file.php" method="post" enctype="multipart/form-data">
-        <label for="file">PICTURE -><input type="file" name="picture"></label>
-    </form>
-    <input type="submit" name="publish" value="Add To Menu!" />
-</div> -->
 </body>
 </html>

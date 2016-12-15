@@ -71,7 +71,7 @@ if(isset($_POST['publish']))
         $price = $_POST['price'];
 
 
-        $query = "INSERT INTO drinks(`drink`, `ingredients`, `price`, `picture`) VALUES ($drink,$ingredients,$price, $picture)";
+        $query = "INSERT INTO drinks(`drink`, `ingredients`, `price`, `picture`) VALUES ($drink, $ingredients, $price, $picture)";
         mysqli_query($connection, $query) or die('Error querying database.');
         array_push($upmsg, "The Upload Was a Success!! ");
 
