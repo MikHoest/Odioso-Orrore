@@ -3,6 +3,7 @@ require_once("include/session.php");
 require_once("include/connection.php");
 require_once("include/functions.php");
 include('adminSwitch.php');
+include ('MENU_uploader.php');
 confirm_logged_in();
 
 if(isset($_POST{'publish'})) {

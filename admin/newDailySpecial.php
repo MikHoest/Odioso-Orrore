@@ -3,6 +3,7 @@ require_once("include/session.php");
 require_once("include/connection.php");
 require_once("include/functions.php");
 include('adminSwitch.php');
+include ('DS_uploader.php');
 confirm_logged_in();
 
 if(isset($_POST{'publish'})) {
@@ -11,7 +12,7 @@ if(isset($_POST{'publish'})) {
     $ingredients = $_POST['ingredients'];
     $price = $_POST['price'];
     //$review = $_POST['review'];
-   // $picture = $_POST['picture']; , `picture`, '$picture'
+    //$picture = $_POST['picture']; , `picture`, '$picture'
 
     $query = "INSERT INTO dailyspecial (`dailySpecial`, `ingredients`, `price`) VALUES ('$dailySpecial', '$ingredients', '$price')";
     mysqli_query($connection, $query) or die('Error querying database.');
