@@ -43,7 +43,7 @@ if(isset($_POST{'submit'}))
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="//resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -151,8 +151,8 @@ if(isset($_POST{'submit'}))
             </tr>
             <tr>
                 <th>
-                    <input name="submit" type="submit" onclick="return validate();" value="Book Your Table">
-                    <!--<input name="Submit" type="submit" value="Check if Available">-->
+                    <input name="submit" type="submit" value="Book Your Table">
+                    <!--<input name="Submit" type="submit" onclick="return validate();" value="Check if Available">-->
 
                 </th>
             </tr>
