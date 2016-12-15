@@ -176,7 +176,7 @@ $result = mysqli_query($connection, $query);
             <input type="text" style="background-color: #ffffff" name="name" placeholder="Name" size="30" align="center" required><br/>
             <input type="email" style="background-color: #ffffff" name="email" placeholder="Email" size="30" align="center" required><br/>
             <textarea class="nooResize" name="message" style="background-color: #ffffff" cols="32" placeholder= "Message" rows="5" align="center" required></textarea><br/>
-            <td align="center" valign="top"><p class="customfont" style="font-size: 20px; text-align: left;"> Validation code:</p></td>
+            <td align="center" valign="top"><p class="customfont" style="font-size: 25px; text-align: left;"> Validation code:</p></td>
             <!-- <input type="submit" style="background-color: #a21b0c" name="submit" value="SEND!" /> -->
             <table>
                 <?php if(isset($msg)){?>
