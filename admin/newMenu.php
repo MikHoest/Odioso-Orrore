@@ -88,14 +88,10 @@ foreach ($upmsg as $msg)
     echo "<h1>".$msg."<h1>";
 }
 ?>
-</body>
-</html>
-<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
 </head>
-<body>
-<div class="wrapper" style="background-color: #237d35; background-image: none; opacity: 0.8;">
+    <div class="wrapper" style="background-color: #237d35; background-image: none; opacity: 0.8;">
     <h4 align="center">Main Course section</h4>
     <form action="newMenu.php" method="post" enctype="multipart/form-data">
         <input type="text" style="background-color: #ffffff" name="mainCourse" placeholder="Main Course" size="30" align="center"><br/>

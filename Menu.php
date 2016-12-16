@@ -63,7 +63,7 @@ require_once("admin/include/functions.php");
 </div>
 <br>
 <!-- Daily Special -->
-<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont">Daily Specials</a></p>
+<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont" style="color: black; text-align: center;">Daily Specials</a></p>
 <?php
 $query = "SELECT * FROM dailyspecial";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -102,7 +102,7 @@ while ($row = mysqli_fetch_array($result))
 ?>
 </div>
 <!-- Main Menu -->
-<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont">Main Menu</a></p>
+<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont" style="color: black; text-align: center;">Main Menu</a></p>
 <?php
 $query = "SELECT * FROM menuitems";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -141,7 +141,7 @@ while ($row = mysqli_fetch_array($result))
 ?>
 </div>
 <!-- Drinks -->
-<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont">Drinks</a></p> <!-- fix this-->
+<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont" style="color: black; text-align: center;">Drinks</a></p> <!-- fix this-->
 <?php
 $query = "SELECT * FROM drinks";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -171,7 +171,7 @@ while ($row = mysqli_fetch_array($result))
                     </ins>
                 </p>
                 <div>
-                    <img src='$picture' alt='$drink, $ingredients' style='height: 150px; width: 300px;'>
+                    <img src='$picture' alt='$drink, $ingredients' style='height: inherit; width: inherit;'>
                 </div>
                 <hr>
             </table>
