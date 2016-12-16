@@ -14,23 +14,23 @@ define("MAX_SIZE", "3000");
 $upmsg = array();
 if(isset($_POST['publish']))
 {
-    if ($_FILES['picture']['name'])
+    if($_FILES['picture']['name'])
     {
         $imageName = $_FILES['picture']['name'];
         $file = $_FILES['picture']['tmp_name'];
         $imageType = getimagesize($file);
-        if ($imageType[2] = 1 || $imageType[2] = 2 || $imageType[2] = 3)
+        if($imageType[2] = 1|| $imageType[2] = 2 || $imageType[2] = 3)
         {
             $size = filesize($_FILES['picture']['tmp_name']);
-            if ($size < MAX_SIZE * 1024)
+            if($size < MAX_SIZE*1024)
             {
                 $prefix = uniqid();
-                $picture = $prefix . "_" . $imageName;
-                $newName = "../picz/Menupics/" . $picture;
+                $picture = $prefix."_".$imageName;
+                $newName="../picz/Menupics/".$picture;
                 $resobj = new imgResizer();
                 $resobj->load($file);
 
-                if ($_POST['wSize'] && $_POST['hSize'])
+                if($_POST['wSize'] && $_POST['hSize'])
                 {
                     $width = $_POST['wSize'];
                     $height = $_POST['hSize'];
@@ -70,11 +70,9 @@ if(isset($_POST['publish']))
         $ingredients = $_POST['ingredients'];
         $price = $_POST['price'];
 
-
-        $query = "INSERT INTO drinks(`drink`, `ingredients`, `price`, `picture`) VALUES ($drink, $ingredients, $price, $picture)";
+        $query = "INSERT INTO drinks (`drink`, `ingredients`, `price`, `picture`) VALUES ('$drink', '$ingredients', '$price', '$picture')";
         mysqli_query($connection, $query) or die('Error querying database.');
         array_push($upmsg, "The Upload Was a Success!! ");
-
     }
     else
     {
@@ -82,6 +80,16 @@ if(isset($_POST['publish']))
     }
 }
 ?>
+<html>
+<body>
+<?php
+foreach ($upmsg as $msg)
+{
+    echo "<h1>".$msg."<h1>";
+}
+?>
+</body>
+</html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; char    set=ISO-8859-15" />

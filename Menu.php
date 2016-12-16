@@ -77,12 +77,32 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture="picz/Menupics/".$row['picture'];
 
-    echo "<div class='foodContent'><table><p class='customfont'>".$dailySpecial."</p></div><br><br>"."<div align='justify' style='font-size: 18px; font-family: Verdana'>" .$ingredients . "</div><p class='customfont' align='center' style='font-size: 25px; text-align: left;'><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><div><img src='$picture' alt='$dailySpecial, $ingredients' style='height: 150px; width: 300px;'></table></div>";
+    echo "<div class='foodContent'>
+            <table>
+                <p class='customfont'>
+                    ".$dailySpecial."
+                </p>
+                    <br><br>"."
+                <div align='justify' style='font-size: 18px; font-family: Verdana'>
+                    " .$ingredients . "
+                </div>
+                <p class='customfont' align='center' style='font-size: 25px; text-align: left;'>
+                    <br><br><br>
+                    <ins>
+                        "."Price: ".$price .".- DKK
+                    </ins>
+                </p>
+                <div>
+                    <img src='$picture' alt='$dailySpecial, $ingredients' style='height: 150px; width: 300px;'>
+                </div>
+                <hr>
+            </table>
+          </div>";
 }
 ?>
 </div>
 <!-- Main Menu -->
-<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont">Main Menu</a></p> <!-- fix this-->
+<div class="foodwrapper" style="border-radius: 2px;"><p class="customfont">Main Menu</a></p>
 <?php
 $query = "SELECT * FROM menuitems";
 mysqli_query($connection, $query) or die('Error querying database.');
@@ -96,33 +116,81 @@ while ($row = mysqli_fetch_array($result))
     $price=$row['price'];
     $picture="picz/Menupics/".$row['picture'];
 
-    echo "<div class='foodContent' style='border-radius: 2px;'><table><p class='customfont'>".$mainCourse."</p></div><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class='customfont' align='center' style='font-size: 25px; text-align: left;'><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><div><img src='$picture' alt='$mainCourse, $ingredients'  style='height: 150px; width: 300px;'></table></div>";
+    echo "<div class='foodContent' style='border-radius: 2px;'>
+            <table>
+                <p class='customfont'>
+                    ".$mainCourse."
+                </p>
+                    <br><br>"."
+                <div align='justify' style='font-size: 18 px; font-family: Verdana'>
+                    " .$ingredients . "
+                </div>
+                <p class='customfont' align='center' style='font-size: 25px; text-align: left;'>
+                    <br><br><br>
+                    <ins>
+                        "."Price: ".$price .".- DKK
+                    </ins>
+                </p>
+                <div>
+                    <img src='$picture' alt='$mainCourse, $ingredients'  style='height: 150px; width: 300px;'>
+                </div>
+                <hr>
+            </table>
+          </div>";
 }
 ?>
 </div>
 <!-- Drinks -->
 <div class="foodwrapper" style="border-radius: 2px;"><p class="customfont">Drinks</a></p> <!-- fix this-->
-    <?php
-    $query = "SELECT * FROM drinks";
-    mysqli_query($connection, $query) or die('Error querying database.');
+<?php
+$query = "SELECT * FROM drinks";
+mysqli_query($connection, $query) or die('Error querying database.');
 
-    $result = mysqli_query($connection, $query);
+$result = mysqli_query($connection, $query);
 
-    while ($row = mysqli_fetch_array($result))
-    {
-        $drink=$row['drink'];
-        $ingredients=$row['ingredients'];
-        $price=$row['price'];
-        $picture="picz/Menupics/".$row['picture'];
+while ($row = mysqli_fetch_array($result))
+{
+    $drink=$row['drink'];
+    $ingredients=$row['ingredients'];
+    $price=$row['price'];
+    $picture="picz/Menupics/".$row['picture'];
 
-        echo "<div class='foodContent' style='border-radius: 2px;'><p class='customfont'>".$drink."</p></div><br><br>"."<div align='justify' style='font-size: 18 px; font-family: Verdana'>" .$ingredients . "</div><p class='customfont' align='center' style=\"font-size: 25px; text-align: left; \"><br><br><br><ins>"."Price: ".$price .".- DKK</ins></p><div><img src='$picture' alt='$drink, $ingredients' style='height: 150px; width: 300px;'></table></div>";
-    }
-    ?>
+    echo "<div class='foodContent' style='border-radius: 2px;'>
+            <table>
+                <p class='customfont'>
+                    ".$drink."
+                </p>
+                    <br><br>"."
+                <div align='justify' style='font-size: 18 px; font-family: Verdana'>
+                    " .$ingredients . "
+                </div>
+                <p class='customfont' align='center' style=\"font-size: 25px; text-align: left; \">
+                    <br><br><br>
+                    <ins>
+                        "."Price: ".$price .".- DKK
+                    </ins>
+                </p>
+                <div>
+                    <img src='$picture' alt='$drink, $ingredients' style='height: 150px; width: 300px;'>
+                </div>
+                <hr>
+            </table>
+          </div>";
+}
+?>
 </div>
 <br><br><br>
 <div class="container"></div>
 <footer>
-    <div class="footer"><p class="customfont" style="font-size: 20px; color: white; font-weight: normal;">☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22<br><br><a href="admin/login.php" style="color: white">© 2016 - Odioso Orrore - ☠</a></p></div>
+    <div class="footer">
+        <p class="customfont" style="font-size: 20px; color: white; font-weight: normal;">
+            ☠ Opening Hours: Monday - Thursday: 10-22 Friday - Saturday: 12-00 Sundays: 12-22
+                <br><br>
+            <a href="admin/login.php" style="color: white">
+                © 2016 - Odioso Orrore - ☠
+            </a>
+        </p>
+    </div>
 </footer>
 </body>
 </html>
