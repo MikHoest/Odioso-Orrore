@@ -134,31 +134,32 @@ $result = mysqli_query($connection, $query);
     <p class="customfont" style="font-weight: bold; text-align: center; color: black;"><a href="Reservation.php" class="popup">HERE</a></p>
 </div>
 <br><br><br><br>
-
 <script type='text/javascript'>
     function refreshCaptcha()
     {
         var img = document.images['captchaimg'];
         img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
     }
-    //(function(d, s, id) //what the fuck is this?
+    //(function(d, s, id) //what the fuck is this? when not commented out refresh captcha does not work
+    function myFunction() {
+        alert("Hello! I am an alert box!");
+    }
 </script>
 <!-- CONTACT -->
 <div class="wrapper" style="height: inherit;">
-        <?php
-        if(isset($_POST['Submit']))
-        {
-            // code for check server side validation
-            if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0)
-            {
-                $msg="<span style='color:red'>The Validation code does not match!</span>";// Captcha verification is incorrect.
-            }
-            else// Captcha verification is Correct. Final Code Execute here!
-            {
-                $msg="<span style='color:green'>The Validation code has been matched.</span>";
-            }
-        }
-        ?>
+<?php
+if(isset($_POST['Submit']))
+{
+    if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0) // code for check server side validation
+    {
+        $msg="<span style='color:red'>The Validation code does not match!</span>"; // Captcha verification is incorrect.
+    }
+    else        // Captcha verification is Correct. Final Code Execute here!
+    {
+        $msg="<span style='color:green'>The Validation code has been matched.</span>";
+    }
+}
+?>
     <!-- SocialMedia -->
     <div class="right" >
     <p class="customfont" style="padding: 20px; font-weight: bold; color: black; text-align: left;">Visit Us</p>
