@@ -26,41 +26,28 @@ require_once("admin/include/functions.php");
     </style>
 </head>
 <body>
-
 <ul class="navbar-fixed-top" id="myTopnav">
     <div class="icon">
         <a href="javascript:void(0)" style="font-size:40px;" onclick="myFunction()">
             <p class="navicon" style="color: white;"> ☠ </p>
         </a>
     </div>
-
     <li id="home"><a href="index.php" style="float: none"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a>
     <li id="menu"><a href="Menu.php" style="float: none"><img src="picz/MENU-MENU%20-%20Kopi.png" onmouseover="this.src='picz/MENU-MENU-HOVER'" onmouseout="this.src='picz/MENU-MENU%20-%20Kopi.png'"></a></li>
     <li id="reservations"><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png" onmouseover="this.src='picz/MENU-RESERVATIONS-HOVER'" onmouseout="this.src='picz/MENU-RESERVATIONS%20-%20Kopi.png'"></a></li>
-
 </ul>
-
 <!-- SLIDESHOW -->
 <ul class="cb-slideshow">
     <li>
         <span>1</span>
-
     </li>
-
     <li>
         <span>2</span>
-
     </li>
-
     <li>
         <span>3</span>
-
     </li>
 </ul>
-
-
-
-
 <!-- SLIDESHOW END -->
 <script>
     function myFunction() {
