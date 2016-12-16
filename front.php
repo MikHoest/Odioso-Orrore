@@ -146,11 +146,15 @@ $result = mysqli_query($connection, $query);
 <!-- CONTACT -->
 <div class="wrapper" style="height: inherit;">
         <?php
-        if(isset($_POST['Submit'])){
+        if(isset($_POST['Submit']))
+        {
             // code for check server side validation
-            if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0){
+            if(empty($_SESSION['captcha_code'] ) || strcasecmp($_SESSION['captcha_code'], $_POST['captcha_code']) != 0)
+            {
                 $msg="<span style='color:red'>The Validation code does not match!</span>";// Captcha verification is incorrect.
-            }else{// Captcha verification is Correct. Final Code Execute here!
+            }
+            else// Captcha verification is Correct. Final Code Execute here!
+            {
                 $msg="<span style='color:green'>The Validation code has been matched.</span>";
             }
         }
