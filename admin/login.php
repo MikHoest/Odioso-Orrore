@@ -3,7 +3,6 @@ require_once("include/session.php");
 require_once("include/connection.php");
 require_once("include/functions.php");
 
-
     if (logged_in()) {
 		redirect_to("backendSwitch.php");
 	}
@@ -46,7 +45,6 @@ if (!empty($message))
 {
     echo "<p>" . $message . "</p>";
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -67,21 +65,16 @@ if (!empty($message))
             font-size: 0px;
             text-align: center;
         }
-
         li {
             float: none;
             display: inline-block;
-
         }
-
         li a {
             display: inline-block;
             color: #fefffd;
             padding: 0px;
         }
-
         li a:hover {
-
             background-color: rgba(255, 104, 107, 0);
             color: rgba(177, 21, 21, 0.8);
             font-style: normal;
