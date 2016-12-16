@@ -30,7 +30,7 @@ if(isset($_POST{'publish'})) {
 </head>
  </html>
 <body>
-<div class="wrapper" style="background-color: #0011ff; background-image: none; opacity: 0.8; align-content: center">
+<div class="wrapper" style="background-color: #b559ff; background-image: none; opacity: 0.8; align-content: center">
  <h4 align="center">The News section</h4>
  <form action="newNews.php" method="post">
   <input type="text" style="background-color: #ffffff" name="title" placeholder="TITLE" size="30"><br/>

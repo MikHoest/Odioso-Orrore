@@ -171,7 +171,7 @@ while ($row = mysqli_fetch_array($result))
                     </ins>
                 </p>
                 <div>
-                    <img src='$picture' alt='$drink, $ingredients' style='height: inherit; width: inherit;'>
+                    <img src='$picture' alt='$drink, $ingredients' style='height: 200px; width: inherit;'>
                 </div>
                 <hr>
             </table>

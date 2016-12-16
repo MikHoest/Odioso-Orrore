@@ -91,7 +91,7 @@ foreach ($upmsg as $msg)
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
 </head>
-    <div class="wrapper" style="background-color: #237d35; background-image: none; opacity: 0.8;">
+    <div class="wrapper" style="background-color: #7b7d21; background-image: none; opacity: 0.8;">
     <h4 align="center">Daily Special section</h4>
     <form action="newDailySpecial.php" method="post" enctype="multipart/form-data">
         <input type="text" style="background-color: #ffffff" name="dailySpecial" placeholder="Daily Special" size="30" align="center"><br/>
@@ -104,8 +104,8 @@ foreach ($upmsg as $msg)
         </style>
         <input type="number" style="background-color: #ffffff" name="price" placeholder="Price" size="30" align="left"> DKK.-<br/>
         <b>Image: </b> <input type="file" name="picture"> <br>
-        <b>Width: </b> <input type="text" name="wSize"> <br>
-        <b>Height: </b> <input type="text" name="hSize"> <br>
+        <b>Width: ( 512 ) </b> <input type="text" name="wSize"> <br>
+        <b>Height: ( 512 )</b> <input type="text" name="hSize"> <br>
         <input type="submit" name="publish" value="Add To DailySpecials!" />
     </form>
 </div>
