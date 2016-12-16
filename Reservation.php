@@ -83,7 +83,7 @@ if(isset($_POST{'submit'}))
         });
 
     </script>
-<li id="home"><a href="front.php" style="float: inherit"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a></li>
+<li id="home"><a href="index.php" style="float: inherit"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a></li>
 <br><br><br>
 <div class="wrapper" style="height: inherit; align-content: center";>
     <form action="Reservation.php" method="post">

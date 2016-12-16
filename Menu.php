@@ -8,7 +8,7 @@ require_once("admin/include/functions.php");
 <head>
     <meta charset="UTF-8 utf-8">
     <title>Menu</title>
-    <link href="cssCap/style.css">
+    <link href="xtrastuff/cssCap/style.css">
     <link rel="stylesheet" type="text/css" href="bootstrap" />
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
@@ -27,7 +27,7 @@ require_once("admin/include/functions.php");
                 <p class="navicon" style="color: white;"> ☠ </p>
             </a>
         </div>
-        <li id="home"><a href="front.php" style="float: none"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a>
+        <li id="home"><a href="index.php" style="float: none"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a>
         <li id="menu"><a href="theNews.php" style="float: none"><img src="picz/MENU-NEWS%20-%20Kopi.png" onmouseover="this.src='picz/MENU-NEWS-HOVER'" onmouseout="this.src='picz/MENU-NEWS%20-%20Kopi.png'"></a></li>
         <li id="reservations"><a href="Reservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png" onmouseover="this.src='picz/MENU-RESERVATIONS-HOVER'" onmouseout="this.src='picz/MENU-RESERVATIONS%20-%20Kopi.png'"></a></li>
 
@@ -52,7 +52,7 @@ require_once("admin/include/functions.php");
 </script>
 <!-- Logo -->
 <div class="logo">
-    <a href="front.php">
+    <a href="index.php">
         <img src="picz/Logo2.png" style="width: 160px;">
     </a>
 </div>

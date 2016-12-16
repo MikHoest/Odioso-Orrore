@@ -5,7 +5,7 @@ require_once("include/functions.php");
 
 
     if (logged_in()) {
-		redirect_to("index.php");
+		redirect_to("backendSwitch.php");
 	}
 	// START FORM PROCESSING
 	if (isset($_POST['submit'])) { // Form has been submitted.
@@ -25,7 +25,7 @@ require_once("include/functions.php");
             {
                 $_SESSION['user_id'] = $found_user['ID'];
                 $_SESSION['user'] = $found_user['userName'];
-                redirect_to("index.php");
+                redirect_to("backendSwitch.php");
             }
             else
             {
@@ -100,7 +100,7 @@ if (isset($connection)){mysqli_close($connection);}
     <input type="password" name="pass" placeholder="Password" maxlength="30" value="" />
     <br>
     <input type="submit" name="submit" value="Login" />
-    <h2><a href="../front.php">Frontpage</a></h2>
+    <h2><a href="../index.php">Frontpage</a></h2>
 </form>
 <br>
 </div>
