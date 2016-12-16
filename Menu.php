@@ -104,7 +104,7 @@ while ($row = mysqli_fetch_array($result))
 <!-- Main Menu -->
 <div class="foodwrapper" style="border-radius: 2px;"><p class="customfont" style="color: black; text-align: center;">Main Menu</a></p>
 <?php
-$query = "SELECT * FROM menuItems";
+$query = "SELECT * FROM menuitems";
 mysqli_query($connection, $query) or die('Error querying database.');
 
 $result = mysqli_query($connection, $query);
