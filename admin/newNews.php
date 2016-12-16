@@ -11,7 +11,6 @@ if(isset($_POST{'publish'})) {
  $description = $_POST['description'];
 
  $query = "INSERT INTO news(`title`, `description`) VALUES ('$title', '$description')";
- var_dump($query);
  mysqli_query($connection, $query) or die('Error querying database.');
 }
 ?>
