@@ -14,15 +14,15 @@ require_once("admin/include/functions.php");
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" href="picz/Logo2.png">
-    <style type="text/css">
-        @font-face {
-            font-family: "Cardinal";
-            src: url(fonts/Cardinal.ttf) format("truetype");
-        }
-        p.customfont {
-            font-family: "Cardinal", Verdana, Tahoma, sans-serif;
-        }
-    </style>
+        <style type="text/css">
+            @font-face {
+                font-family: "Cardinal";
+                src: url(fonts/Cardinal.ttf) format("truetype");
+            }
+            p.customfont {
+                font-family: "Cardinal", Verdana, Tahoma, sans-serif;
+            }
+        </style>
 </head>
 <body>
 <ul class="navbar-fixed-top" id="myTopnav">
@@ -31,9 +31,9 @@ require_once("admin/include/functions.php");
             <p class="navicon" style="color: white;"> ☠ </p>
         </a>
     </div>
-    <li id="home"><a href="index.php" style="float: none"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a>
-    <li id="menu"><a href="theMenu.php" style="float: none"><img src="picz/MENU-MENU%20-%20Kopi.png" onmouseover="this.src='picz/MENU-MENU-HOVER'" onmouseout="this.src='picz/MENU-MENU%20-%20Kopi.png'"></a></li>
-    <li id="reservations"><a href="theReservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png" onmouseover="this.src='picz/MENU-RESERVATIONS-HOVER'" onmouseout="this.src='picz/MENU-RESERVATIONS%20-%20Kopi.png'"></a></li>
+    <li id="home"><a href="index.php" style="float: none"><img src="picz/MENU-HOME%20-%20Kopi.png" onmouseover="this.src='picz/MENU-HOME-HOVER.png'" onmouseout="this.src='picz/MENU-HOME%20-%20Kopi.png'"></a>
+    <li id="menu"><a href="theMenu.php" style="float: none"><img src="picz/MENU-MENU%20-%20Kopi.png" onmouseover="this.src='picz/MENU-MENU-HOVER.png'" onmouseout="this.src='picz/MENU-MENU%20-%20Kopi.png'"></a></li>
+    <li id="reservations"><a href="theReservation.php" style="float: none"><img src="picz/MENU-RESERVATIONS%20-%20Kopi.png" onmouseover="this.src='picz/MENU-RESERVATIONS-HOVER.png'" onmouseout="this.src='picz/MENU-RESERVATIONS%20-%20Kopi.png'"></a></li>
 </ul>
 <!-- SLIDESHOW -->
 <ul class="cb-slideshow">
