@@ -14,7 +14,6 @@ require_once("admin/include/functions.php");
     <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" href="picz/Logo2.png">
-
     <style type="text/css">
         @font-face {
             font-family: "Cardinal";
@@ -73,7 +72,7 @@ require_once("admin/include/functions.php");
 <br>
 <div style="background-color: white; border-radius: 3px; opacity: 0.5; width: 75%; margin-left: 15%;">
     <p class="customfont" style="padding-top: 20px; font-weight: bold; text-align: center; color: #000000;">Odioso Orrore</p>
-    <p class="customfont" style="padding-bottom: 20px; font-weight: bold; text-align: center; color: #000000;">NEWS</p>
+     <p class="customfont" style="padding-bottom: 20px; font-weight: bold; text-align: center; color: #000000;">NEWS</p>
 </div>
 <br>
 <!-- NEWS -->
