@@ -88,7 +88,23 @@ while ($row = mysqli_fetch_array($result))
     $title=$row['title'];
     $description=$row['description'];
     $date=$row['date'];
-    echo "<div class='wrapper' align='left' style='border-radius: 3px;'><p class='customfont' style='font-size: 25px;'>" . "Date: ". $date. "<div align='center'><p class='customfont' style='font-size: 50px;'>" . $title. "</div><br>"."<div align='justify' style=' font-family: Verdana'>" .$description . "</div></div><br>";
+    echo "<div class='wrapper' align='left' style='border-radius: 3px;'>
+            <table>
+                <p class='customfont' style='font-size: 25px;'>
+                    ". $date. "
+                </p>
+                    <div align='center'>
+                <p class='customfont' style='font-size: 40px; text-align: left;'>
+                    " . $title. "
+                </p>
+                    </div>
+                        <br>"."
+                <div align='justify' style=' font-family: Verdana'>
+                    " .$description . "
+                </div>
+            </table>
+            </div>
+            <br>";
 }
 ?>
 </div>
