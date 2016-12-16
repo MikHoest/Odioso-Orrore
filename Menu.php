@@ -93,7 +93,7 @@ while ($row = mysqli_fetch_array($result))
                     </ins>
                 </p>
                 <div>
-                    <img src='$picture' alt='$dailySpecial, $ingredients' style='height: 150px; width: 300px;'>
+                    <img src='$picture' alt='$dailySpecial, $ingredients' style='height: 200px; width: inherit;'>
                 </div>
                 <hr>
             </table>
@@ -104,7 +104,7 @@ while ($row = mysqli_fetch_array($result))
 <!-- Main Menu -->
 <div class="foodwrapper" style="border-radius: 2px;"><p class="customfont" style="color: black; text-align: center;">Main Menu</a></p>
 <?php
-$query = "SELECT * FROM menuitems";
+$query = "SELECT * FROM menuItems";
 mysqli_query($connection, $query) or die('Error querying database.');
 
 $result = mysqli_query($connection, $query);
@@ -132,7 +132,7 @@ while ($row = mysqli_fetch_array($result))
                     </ins>
                 </p>
                 <div>
-                    <img src='$picture' alt='$mainCourse, $ingredients'  style='height: 150px; width: 300px;'>
+                    <img src='$picture' alt='$mainCourse, $ingredients'  style='height: 200px; width: inherit;'>
                 </div>
                 <hr>
             </table>
