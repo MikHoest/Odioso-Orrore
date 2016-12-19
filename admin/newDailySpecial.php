@@ -69,14 +69,15 @@ if(isset($_POST['publish']))
         $dailySpecial = $_POST['dailySpecial'];
         $ingredients = $_POST['ingredients'];
         $price = $_POST['price'];
+        $today = $_POST['today'];
 
-        $query = "INSERT INTO dailyspecial (`dailySpecial`, `ingredients`, `price`, `picture`) VALUES ('$dailySpecial', '$ingredients', '$price', '$picture')";
+        $query = "INSERT INTO dailyspecial (`dailySpecial`, `ingredients`, `price`, `picture`, `today`) VALUES ('$dailySpecial', '$ingredients', '$price', '$picture', '$today')";
         mysqli_query($connection, $query) or die('Error querying database.');
         array_push($upmsg, "The Upload Was a Success!! ");
     }
     else
     {
-        array_push($upmsg, "Nothing was selected, SELECT A FUCKING IMAGE or gtfo!!");
+        array_push($upmsg, "Nothing was selected, SELECT A PICTURE !");
     }
 }
 ?>
@@ -103,6 +104,15 @@ foreach ($upmsg as $msg)
             }
         </style>
         <input type="number" style="background-color: #ffffff" name="price" placeholder="Price" size="30" align="left"> DKK.-<br/>
+        <select name="today">
+            <option value="Mon">Monday</option>
+            <option value="Tue">Tuesday</option>
+            <option value="Wed">Wednesday</option>
+            <option value="Thu">Thursday</option>
+            <option value="Fri">Friday</option>
+            <option value="Sat">Saturday</option>
+            <option value="Sun">Sunday</option>
+        </select>
         <b>Image: </b> <input type="file" name="picture"> <br>
         <b>Width: ( 512 ) </b> <input type="text" name="wSize"> <br>
         <b>Height: ( 512 )</b> <input type="text" name="hSize"> <br>
