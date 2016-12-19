@@ -7,51 +7,6 @@
     <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <style>
-        ul
-        {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: rgba(177, 21, 21, 0);
-            font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
-            font-size: 0;
-            text-align: center;
-        }
-        li
-        {
-            float: none;
-            display: inline-block;
-        }
-        li a
-        {
-            display: inline-block;
-            color: #fefffd;
-            padding: 0;
-        }
-        li a:hover
-        {
-
-            background-color: rgba(255, 104, 107, 0);
-            color: rgb(255, 255, 255);
-            font-style: normal;
-            text-decoration: none;
-        }
-        .vertical_line
-        {
-            height:150px;
-            width:1px;
-            background:#000;
-        }
-        @font-face {
-            font-family: "Cardinal";
-            src: url(fonts/Cardinal.ttf) format("truetype");
-        }
-        p.customfont {
-            font-family: "Cardinal", Verdana, Tahoma, sans-serif;
-        }
-    </style>
 </head>
 <body>
 <div class="wrapper"  style="background-color: #ffffff; opacity: 0.8;">

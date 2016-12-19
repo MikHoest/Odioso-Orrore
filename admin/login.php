@@ -26,7 +26,7 @@ require_once("include/functions.php");
                 redirect_to("index.php");
             } else {
                 // username/password combo was not found in the database
-                $message = "Username/password combination incorrect.<br/>
+                $message = "Username/password combination incorrect.<br>
 					Please make sure your caps lock key is off and try again.";
             }
         }
@@ -52,38 +52,7 @@ if (!empty($message))
     <link rel="stylesheet" type="text/css" href="../bootstrap" />
     <link href="../bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="../bootstrap/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: rgba(177, 21, 21, 0);
-            font-family: Verdana;
-            font-size: 0px;
-            text-align: center;
-        }
 
-        li {
-            float: none;
-            display: inline-block;
-
-        }
-
-        li a {
-            display: inline-block;
-            color: #fefffd;
-            padding: 0px;
-        }
-
-        li a:hover {
-
-            background-color: rgba(255, 104, 107, 0);
-            color: rgba(177, 21, 21, 0.8);
-            font-style: normal;
-            text-decoration: none;
-        }
-    </style>
 </head>
 <?php
 if (isset($connection)){mysqli_close($connection);}
