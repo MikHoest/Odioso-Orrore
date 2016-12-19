@@ -112,7 +112,7 @@ foreach ($upmsg as $msg)
             <option value="Fri">Friday</option>
             <option value="Sat">Saturday</option>
             <option value="Sun">Sunday</option>
-        </select>
+        </select><br>
         <b>Image: </b> <input type="file" name="picture"> <br>
         <b>Width: ( 512 ) </b> <input type="text" name="wSize"> <br>
         <b>Height: ( 512 )</b> <input type="text" name="hSize"> <br>
