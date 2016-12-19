@@ -1,3 +1,5 @@
 mobile.js
 bootstrap/css/bootstrap.css
 *.php
+admin/login.php
+admin/adminSwitch.php

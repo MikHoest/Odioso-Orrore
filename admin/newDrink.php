@@ -2,7 +2,7 @@
 require_once("include/session.php");
 require_once("include/connection.php");
 require_once("include/functions.php");
-include('adminSwitch.php');
+include('backend.php');
 
 confirm_logged_in();
 
@@ -14,23 +14,23 @@ define("MAX_SIZE", "3000");
 $upmsg = array();
 if(isset($_POST['publish']))
 {
-    if ($_FILES['picture']['name'])
+    if($_FILES['picture']['name'])
     {
         $imageName = $_FILES['picture']['name'];
         $file = $_FILES['picture']['tmp_name'];
         $imageType = getimagesize($file);
-        if ($imageType[2] = 1 || $imageType[2] = 2 || $imageType[2] = 3)
+        if($imageType[2] = 1|| $imageType[2] = 2 || $imageType[2] = 3)
         {
             $size = filesize($_FILES['picture']['tmp_name']);
-            if ($size < MAX_SIZE * 1024)
+            if($size < MAX_SIZE*1024)
             {
                 $prefix = uniqid();
-                $picture = $prefix . "_" . $imageName;
-                $newName = "../picz/Menupics/" . $picture;
+                $picture = $prefix."_".$imageName;
+                $newName="../picz/Menupics/".$picture;
                 $resobj = new imgResizer();
                 $resobj->load($file);
 
-                if ($_POST['wSize'] && $_POST['hSize'])
+                if($_POST['wSize'] && $_POST['hSize'])
                 {
                     $width = $_POST['wSize'];
                     $height = $_POST['hSize'];
@@ -70,11 +70,9 @@ if(isset($_POST['publish']))
         $ingredients = $_POST['ingredients'];
         $price = $_POST['price'];
 
-
-        $query = "INSERT INTO drinks(`drink`, `ingredients`, `price`, `picture`) VALUES ($drink, $ingredients, $price, $picture)";
+        $query = "INSERT INTO drinks (`drink`, `ingredients`, `price`, `picture`) VALUES ('$drink', '$ingredients', '$price', '$picture')";
         mysqli_query($connection, $query) or die('Error querying database.');
         array_push($upmsg, "The Upload Was a Success!! ");
-
     }
     else
     {
@@ -83,13 +81,19 @@ if(isset($_POST['publish']))
 }
 ?>
 <html>
+<body>
+<?php
+foreach ($upmsg as $msg)
+{
+    echo "<h1>".$msg."<h1>";
+}
+?>
 <head>
     <meta http-equiv="Content-Type" content="text/html; char    set=ISO-8859-15" />
 </head>
-<body>
-<div class="wrapper" style="background-color: #237d35; background-image: none; opacity: 0.8;">
+    <div class="wrapper" style="background-color: #376d7d; background-image: none; opacity: 0.8;">
     <h4 align="center">New Drink section</h4>
-    <form action="newDrink.php" method="post">
+    <form action="newDrink.php" method="post" enctype="multipart/form-data">
         <input type="text" style="background-color: #ffffff" name="drink" placeholder="Drink" size="30" align="center"><br/>
         <textarea class="nooResize" name="ingredients" style="background-color: #ffffff" cols="30" placeholder= "Ingredients" rows="5" align="right"></textarea><br/>
         <style>
@@ -99,9 +103,9 @@ if(isset($_POST['publish']))
             }
         </style>
         <input type="number" style="background-color: #ffffff" name="price" placeholder="Price" size="30" align="left"> DKK.-<br/>
-        <b>Image: </b> <input type="file" name="image"> <br>
-        <b>Width: </b> <input type="text" name="wSize"> <br>
-        <b>Height: </b> <input type="text" name="hSize"> <br>
+        <b>Image: </b> <input type="file" name="picture"> <br>
+        <b>Width: ( 512 )</b> <input type="text" name="wSize"> <br>
+        <b>Height: ( 512 )</b> <input type="text" name="hSize"> <br>
         <input type="submit" name="publish" value="Add To Drinks!" />
     </form>
 </div>

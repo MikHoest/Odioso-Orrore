@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 		//$query = "INSERT INTO login (fname, userName, password) VALUES ($name, $username, $hashed_password)";
 		$query = "INSERT INTO `login` (`ID`, `fname`, `userName`, `password`) VALUES (NULL, '$name', '$username', '$hashed_password')";
 		$result = mysqli_query($connection, $query);
-		redirect_to("index.php");
+		redirect_to("backendSwitch.php");
 	}
 }
 if (!empty($message))

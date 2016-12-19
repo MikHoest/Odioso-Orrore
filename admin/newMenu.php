@@ -2,7 +2,7 @@
 require_once("include/session.php");
 require_once("include/connection.php");
 require_once("include/functions.php");
-include('adminSwitch.php');
+include('backend.php');
 
 confirm_logged_in();
 
@@ -88,14 +88,10 @@ foreach ($upmsg as $msg)
     echo "<h1>".$msg."<h1>";
 }
 ?>
-</body>
-</html>
-<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-15" />
 </head>
-<body>
-<div class="wrapper" style="background-color: #237d35; background-image: none; opacity: 0.8;">
+    <div class="wrapper" style="background-color: #237d35; background-image: none; opacity: 0.8;">
     <h4 align="center">Main Course section</h4>
     <form action="newMenu.php" method="post" enctype="multipart/form-data">
         <input type="text" style="background-color: #ffffff" name="mainCourse" placeholder="Main Course" size="30" align="center"><br/>
@@ -108,8 +104,8 @@ foreach ($upmsg as $msg)
         </style>
         <input type="number" style="background-color: #ffffff" name="price" placeholder="Price" size="30" align="left"> DKK.-<br/>
         <b>Image: </b> <input type="file" name="picture"> <br>
-        <b>Width: </b> <input type="text" name="wSize"> <br>
-        <b>Height: </b> <input type="text" name="hSize"> <br>
+        <b>Width: ( 512 )</b> <input type="text" name="wSize"> <br>
+        <b>Height: ( 512 )</b> <input type="text" name="hSize"> <br>
         <input type="submit" name="publish" value="Add To Menu!" />
     </form>
 </div>
