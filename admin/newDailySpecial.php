@@ -19,7 +19,7 @@ if(isset($_POST['publish']))
         $imageName = $_FILES['picture']['name'];
         $file = $_FILES['picture']['tmp_name'];
         $imageType = getimagesize($file);
-        if($imageType[2] = 1|| $imageType[2] = 2 || $imageType[2] = 3)
+        if($imageType[2] = 1|| $imageType[2] = 2 || $imageType[2] = 3) //img type compared to a php list - page 8 OOP lecture-03-2
         {
             $size = filesize($_FILES['picture']['tmp_name']);
             if($size < MAX_SIZE*1024)
@@ -66,10 +66,10 @@ if(isset($_POST['publish']))
             array_push($upmsg, "Unknown image type!! ");
         }
         $resobj->save($newName);
-        $dailySpecial = $_POST['dailySpecial'];
-        $ingredients = $_POST['ingredients'];
-        $price = $_POST['price'];
-        $today = $_POST['today'];
+        $dailySpecial = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['dailySpecial'])));
+        $ingredients = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['ingredients'])));
+        $price = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['price'])));
+        $today = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['today'])));
 
         $query = "INSERT INTO dailyspecial (`dailySpecial`, `ingredients`, `price`, `picture`, `today`) VALUES ('$dailySpecial', '$ingredients', '$price', '$picture', '$today')";
         mysqli_query($connection, $query) or die('Error querying database.');

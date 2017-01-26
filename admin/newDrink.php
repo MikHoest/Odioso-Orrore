@@ -66,9 +66,9 @@ if(isset($_POST['publish']))
             array_push($upmsg, "Unknown image type!! ");
         }
         $resobj->save($newName);
-        $drink = $_POST['drink'];
-        $ingredients = $_POST['ingredients'];
-        $price = $_POST['price'];
+        $drink = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['drink'])));
+        $ingredients = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['ingredients'])));
+        $price = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['price'])));
 
         $query = "INSERT INTO drinks (`drink`, `ingredients`, `price`, `picture`) VALUES ('$drink', '$ingredients', '$price', '$picture')";
         mysqli_query($connection, $query) or die('Error querying database.');

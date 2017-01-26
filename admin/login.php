@@ -16,15 +16,19 @@ require_once("include/functions.php");
         $query = "SELECT `ID`, `userName`, `password` FROM `login` WHERE `userName` = ('$username') LIMIT 1";
         $result = mysqli_query($connection, $query);
 
-        if (mysqli_num_rows($result) == 1) {
+        if (mysqli_num_rows($result) == 1)
+        {
             // username/password authenticated
             // and only 1 match
             $found_user = mysqli_fetch_array($result);
-            if(password_verify($password, $found_user['password'])){
+            if(password_verify($password, $found_user['password']))
+            {
                 $_SESSION['user_id'] = $found_user['ID'];
                 $_SESSION['user'] = $found_user['userName'];
                 redirect_to("backendSwitch.php");
-            } else {
+            }
+            else
+            {
                 // username/password combo was not found in the database
                 $message = "Username/password combination incorrect.<br>
 					Please make sure your caps lock key is off and try again.";

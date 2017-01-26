@@ -7,8 +7,8 @@ confirm_logged_in();
 
 if(isset($_POST{'publish'})) {
 
- $title = $_POST['title'];
- $description = $_POST['description'];
+ $title = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['title'])));
+ $description = trim(htmlspecialchars(mysqli_real_escape_string($connection,$_POST['description'])));
 
  $query = "INSERT INTO news(`title`, `description`) VALUES ('$title', '$description')";
  mysqli_query($connection, $query) or die('Error querying database.');
